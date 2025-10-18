@@ -179,3 +179,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+/Spurious_Feature/ViT-Adapter
+/Spurious_Feature/segmentation
+/Spurious_Feature/detectron2
+Spurious_Feature/VitDet_huge_LVIS.pkl
+Spurious_Feature/sam_vit_l_0b3195.pth
+Old_Testing_Unknown_Files/all_embeddings.dat
+Old_Testing_Unknown_Files/vectors.json
