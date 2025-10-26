@@ -186,3 +186,9 @@ Spurious_Feature/VitDet_huge_LVIS.pkl
 Spurious_Feature/sam_vit_l_0b3195.pth
 Old_Testing_Unknown_Files/all_embeddings.dat
 Old_Testing_Unknown_Files/vectors.json
+Spurious_Feature/ObjectDetection/grounding_dino_tiny.onnx
+Spurious_Feature/ObjectDetection/yolov8l-world.pt
+Spurious_Feature/ObjectDetection/yolov8x-worldv2.pt
+Spurious_Feature/ObjectDetection/yolov8x.pt
+Spurious_Feature/VAE/model.ckpt
+Spurious_Feature/VitDet_base_LVIS.pkl
