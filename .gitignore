@@ -192,3 +192,4 @@ Spurious_Feature/ObjectDetection/yolov8x-worldv2.pt
 Spurious_Feature/ObjectDetection/yolov8x.pt
 Spurious_Feature/VAE/model.ckpt
 Spurious_Feature/VitDet_base_LVIS.pkl
+*.png
