@@ -4,9 +4,28 @@ import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 import time
+import json
+import argparse
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+from typing import List
 import urllib.request
 from ultralytics import YOLO
+from tqdm import tqdm
+
+
+# ============================================================
+# CONFIG
+# ============================================================
+
+IMG_EXTS = {".jpg", ".jpeg", ".png", ".bmp"}
+
+COCO_KEYPOINT_NAMES = [
+    "nose", "left_eye", "right_eye", "left_ear", "right_ear",
+    "left_shoulder", "right_shoulder", "left_elbow", "right_elbow",
+    "left_wrist", "right_wrist", "left_hip", "right_hip",
+    "left_knee", "right_knee", "left_ankle", "right_ankle"
+]
 
 MEDIAPIPE_MODELS = {
     0: (
@@ -26,6 +45,32 @@ MEDIAPIPE_MODELS = {
     ),
 }
 
+
+# ============================================================
+# FAST IMAGE LOADER
+# ============================================================
+
+class FastImageLoader:
+    def __init__(self, num_workers=8):
+        self.executor = ThreadPoolExecutor(max_workers=num_workers)
+
+    def load(self, path: Path):
+        try:
+            return cv2.imread(str(path))
+        except Exception:
+            return None
+
+    def load_batch(self, paths: List[Path]):
+        return list(self.executor.map(self.load, paths))
+
+    def shutdown(self):
+        self.executor.shutdown(wait=False)
+
+
+# ============================================================
+# MODEL DOWNLOAD
+# ============================================================
+
 def ensure_mediapipe_model(complexity: int, model_dir="models/mediapipe") -> Path:
     model_name, url = MEDIAPIPE_MODELS[complexity]
     model_dir = Path(model_dir)
@@ -38,9 +83,14 @@ def ensure_mediapipe_model(complexity: int, model_dir="models/mediapipe") -> Pat
 
     return model_path
 
+
+# ============================================================
+# MEDIAPIPE POSE ESTIMATOR
+# ============================================================
+
 class MediaPipePoseEstimator:
     # Changed default complexity to 2 (Heavy) for better accuracy
-    def __init__(self, complexity=2, yolo_model='yolov8m.pt'):
+    def __init__(self, complexity=2, yolo_model='models/yolov8m.pt'):
         
         model_path = ensure_mediapipe_model(complexity)
         self.model_name = f"MediaPipe-Pose-C{complexity}"
@@ -176,8 +226,8 @@ class MediaPipePoseEstimator:
 
         return detections
 
-    def predict_single(self, image):
-        all_detections = self.predict(image)
+    def predict_single(self, image, conf_threshold=0.25):
+        all_detections = self.predict(image, conf_threshold=conf_threshold)
         if len(all_detections) == 0:
             return None
         return max(all_detections, key=lambda x: x['score'])
@@ -192,21 +242,114 @@ class MediaPipePoseEstimator:
     def __del__(self):
         self.close()
 
+
+# ============================================================
+# DIRECTORY PIPELINE
+# ============================================================
+
+def process_directory(
+    input_dir: Path,
+    output_dir: Path,
+    complexity: int,
+    yolo_model: str,
+    batch_size: int,
+    num_workers: int,
+    conf: float,
+    draw: bool,
+):
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    jsonl_path = output_dir / "poses.jsonl"
+
+    processed = set()
+    if jsonl_path.exists():
+        for line in open(jsonl_path, "r", encoding="utf-8"):
+            processed.add(json.loads(line)["image"])
+
+    paths = [
+        p for p in input_dir.rglob("*")
+        if p.is_file()
+        and p.suffix.lower() in IMG_EXTS
+        and "facemesh" not in (x.lower() for x in p.parts)
+        and p.name not in processed
+    ]
+
+    print(f"Found {len(paths)} images to process")
+
+    loader = FastImageLoader(num_workers)
+    estimator = MediaPipePoseEstimator(
+        complexity=complexity,
+        yolo_model=yolo_model,
+    )
+
+    for i in tqdm(range(0, len(paths), batch_size)):
+        batch = paths[i:i + batch_size]
+        images = loader.load_batch(batch)
+
+        with open(jsonl_path, "a", encoding="utf-8") as f:
+            for p, img in zip(batch, images):
+                if img is None:
+                    continue
+
+                det = estimator.predict_single(img, conf_threshold=conf)
+                if det is None:
+                    record = {
+                        "image": p.name,
+                        "keypoints": [0.0] * 51,
+                        "score": 0.0,
+                    }
+                else:
+                    record = {
+                        "image": p.name,
+                        "keypoints": det["keypoints"].flatten().tolist(),
+                        "score": det["score"],
+                    }
+
+                f.write(json.dumps(record) + "\n")
+
+                if draw and det is not None:
+                    vis = img.copy()
+                    for x, y, v in det["keypoints"]:
+                        if v > 0:
+                            cv2.circle(vis, (int(x), int(y)), 3, (0, 255, 0), -1)
+                    
+                    x1, y1, x2, y2 = det["bbox"]
+                    cv2.rectangle(vis, (int(x1), int(y1)), (int(x2), int(y2)), (255, 0, 0), 2)
+                    
+                    out = output_dir / p.relative_to(input_dir)
+                    out.parent.mkdir(parents=True, exist_ok=True)
+                    cv2.imwrite(str(out), vis)
+
+    loader.shutdown()
+    estimator.close()
+
+
+# ============================================================
+# CLI
+# ============================================================
+
 if __name__ == "__main__":
-    # Test with Heavy model (Complexity 2)
-    estimator = MediaPipePoseEstimator(complexity=2, yolo_model='yolov8m.pt')
-    
-    # Create a dummy image for testing if file doesn't exist
-    if not Path('test_image.jpg').exists():
-        print("Creating dummy test image...")
-        image = np.zeros((640, 640, 3), dtype=np.uint8)
-    else:
-        image = cv2.imread('test_image.jpg')
-    
-    print("Processing image...")
-    start = time.time()
-    # Ensure max_detections is high enough for the test
-    all_people = estimator.predict(image, max_detections=20)
-    elapsed = time.time() - start
-    
-    print(f"Detected {len(all_people)} people in {elapsed*1000:.1f}ms")
+    ap = argparse.ArgumentParser("MediaPipe Pose + YOLO Directory Pipeline")
+    ap.add_argument("--input-dir", required=True)
+    ap.add_argument("--output-dir", required=True)
+    ap.add_argument("--complexity", type=int, default=2, choices=[0, 1, 2],
+                    help="0=lite, 1=full, 2=heavy")
+    ap.add_argument("--yolo-model", default="models/yolov8m.pt")
+    ap.add_argument("--batch-size", type=int, default=16)
+    ap.add_argument("--num-workers", type=int, default=8)
+    ap.add_argument("--conf", type=float, default=0.25)
+    ap.add_argument("--draw", action="store_true")
+    args = ap.parse_args()
+
+    process_directory(
+        Path(args.input_dir),
+        Path(args.output_dir),
+        args.complexity,
+        args.yolo_model,
+        args.batch_size,
+        args.num_workers,
+        args.conf,
+        args.draw,
+    )
+
+# .venv_test\Scripts\python.exe mediapipe_pose.py --input-dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned\Female_Accountant" --output-dir "test" --draw

@@ -1,176 +1,279 @@
 import os
 import time
-from math import ceil
-from tqdm.auto import tqdm
 import argparse
-import cv2
+from math import ceil
 from concurrent.futures import ThreadPoolExecutor
+from tqdm import tqdm
+
+import cv2
 import torch
-from torch.utils.data import Dataset, DataLoader
-from PIL import Image, UnidentifiedImageError
 import numpy as np
+from PIL import Image, UnidentifiedImageError
 from transformers import AutoImageProcessor, AutoModelForDepthEstimation
 
-# Ensure NumPy types are correctly defined
+# ------------------------------------------------------------
+# NumPy compatibility
+# ------------------------------------------------------------
+# NOTE: Some third-party libraries (e.g., older Torch / OpenCV /
+#       HF dependencies) still expect deprecated NumPy aliases.
+#       These assignments ensure backward compatibility without
+#       affecting numerical behavior.
 np.float_ = np.float64
 np.complex_ = np.complex128
 
-# ---------------- Dataset ----------------
-class DepthImageDataset(Dataset):
+# ------------------------------------------------------------
+# Fast RGB Loader (same as RGB / Shuffle)
+# ------------------------------------------------------------
+class FastRGBLoader:
     """
-    Loads images as PIL.Image objects, resizing them to a fixed size for batching,
-    returning the image, path, and original size.
-    Skips images that are already processed (resume logic).
+    Fast image loader with optional TurboJPEG acceleration.
+
+    NOTE:
+    - This loader mirrors the RGB / Pixel-Shuffle pipelines to ensure
+      that differences in downstream behavior are attributable solely
+      to the *depth transformation*, not to I/O or resizing artifacts.
+    - Images are always converted to RGB and resized to a fixed
+      canonical size (384x384) before depth inference.
     """
-    def __init__(self, image_dir, output_dir=None, target_size=(384, 384), extensions=(".jpg", ".jpeg", ".png")):
+        
+    def __init__(self, target_size=(384, 384)):
         self.target_size = target_size
-        all_images = [
-            os.path.join(image_dir, f)
-            for f in os.listdir(image_dir)
-            if f.lower().endswith(extensions)
-        ]
 
-        # Determine already processed images
-        processed_basenames = set()
-        if output_dir and os.path.exists(output_dir):
-            for f in os.listdir(output_dir):
-                if f.lower().endswith("_depth.png"):
-                    processed_basenames.add(os.path.splitext(f)[0].replace("_depth", ""))
-
-        # Only keep unprocessed images
-        self.image_paths = [p for p in all_images if os.path.splitext(os.path.basename(p))[0] not in processed_basenames]
-        if processed_basenames:
-            print(f"Resuming: skipping {len(processed_basenames)} already processed images.")
-
-    def __len__(self):
-        return len(self.image_paths)
-
-    def __getitem__(self, idx):
-        path = self.image_paths[idx]
-        original_size = None
-        img = None
-        
         try:
-            img = Image.open(path).convert("RGB")
-            original_size = img.size  # store original (W, H)
+            from turbojpeg import TurboJPEG
+            self.jpeg = TurboJPEG()
+            self.use_turbo = True
+        except Exception:
+            self.jpeg = None
+            self.use_turbo = False
 
-            w, h = original_size
+    def load(self, path):
+        ext = os.path.splitext(path)[1].lower()
+
+        try:
+            if self.use_turbo and ext in (".jpg", ".jpeg"):
+                with open(path, "rb") as f:
+                    arr = self.jpeg.decode(f.read())
+                img = Image.fromarray(arr, "RGB")
+            else:
+                img = Image.open(path).convert("RGB")
+
+            w, h = img.size
             if w <= 1 or h <= 1:
-                raise ValueError("Invalid image dimensions")
-            
-            # Resize to fixed target size for batching
+                raise ValueError
+
+            original_size = img.size
             img = img.resize(self.target_size, Image.BICUBIC)
+            return img, original_size
 
-        except (UnidentifiedImageError, OSError, ValueError) as e:
-            # Robust error handling: Return black placeholder
-            img = Image.new("RGB", self.target_size, color=(0, 0, 0))
-            original_size = self.target_size
-            print(f"⚠️ Replaced corrupted image with black placeholder: {path} ({e})")
-        
-        return img, path, original_size
+        except (UnidentifiedImageError, OSError, ValueError):
+            return Image.new("RGB", self.target_size), self.target_size
 
-# ---------------- Collate Function ----------------
-def collate_depth_batch(batch):
-    """Simple collate to group items from the dataset."""
-    imgs, paths, sizes = zip(*batch)
-    return list(imgs), list(paths), list(sizes)
 
-# ---------------- DataLoader ----------------
-def get_depth_image_loader(image_dir, output_dir=None, batch_size=32, num_workers=4):
-    dataset = DepthImageDataset(image_dir, output_dir)
-    loader = DataLoader(
-        dataset,
-        batch_size=batch_size,
-        num_workers=num_workers,
-        shuffle=False,
-        collate_fn=collate_depth_batch,
-        pin_memory=True
-    )
-    return loader, len(dataset)
+# ------------------------------------------------------------
+# Input collection
+# ------------------------------------------------------------
+def collect_images(image_dir, output_dir, exclude_dirs):
+    """
+    Collect unprocessed images while preserving directory structure.
 
-# ---------------- Save Depth Map ----------------
-def save_depth_map_cv2(depth_np, save_path):
-    depth_rgb = np.repeat(depth_np[..., np.newaxis], 3, axis=-1)
+    NOTE:
+    - Images are skipped if a corresponding *_depth.png already exists.
+    - This makes the pipeline resumable and safe for large-scale runs.
+    - Directory exclusion (e.g., 'facemesh') prevents feedback loops
+      across multiple transformation pipelines.
+    """
+    image_dir = os.path.abspath(image_dir)
+    output_dir = os.path.abspath(output_dir)
+    exclude_dirs = {d.lower() for d in exclude_dirs}
+
+    samples = []
+    processed = set()
+
+    if os.path.exists(output_dir):
+        for root, _, files in os.walk(output_dir):
+            for f in files:
+                if f.endswith("_depth.png"):
+                    rel = os.path.relpath(os.path.join(root, f), output_dir)
+                    processed.add(rel.replace("_depth.png", ""))
+
+    for root, dirs, files in os.walk(image_dir):
+        dirs[:] = [d for d in dirs if d.lower() not in exclude_dirs]
+
+        for f in files:
+            if not f.lower().endswith((".jpg", ".jpeg", ".png")):
+                continue
+
+            full = os.path.join(root, f)
+            rel = os.path.relpath(full, image_dir)
+
+            if os.path.splitext(rel)[0] in processed:
+                continue
+
+            samples.append((full, rel))
+
+    return samples
+
+
+# ------------------------------------------------------------
+# Save depth map
+# ------------------------------------------------------------
+def save_depth_map(depth_np, save_path):
+    """
+    Save depth as a 3-channel PNG.
+
+    NOTE:
+    - Depth is replicated across RGB channels to match standard
+      image-classification input expectations.
+    - This mirrors the grayscale depth encoding used in dataset
+      classification experiments.
+    """
+    depth_rgb = np.repeat(depth_np[..., None], 3, axis=-1)
     cv2.imwrite(save_path, depth_rgb)
 
-# ---------------- Main Script ----------------
+
+# ------------------------------------------------------------
+# Main
+# ------------------------------------------------------------
 def main(args):
     start_time = time.time()
     os.makedirs(args.output_dir, exist_ok=True)
-    
-    # --- 1. Setup Model and Processor ---
+
     device = torch.device(args.device)
-    
+
+    # ---- Output resize handling ----
+    # NOTE:
+    # - Optional *final* resize allows alignment with other pipelines
+    #   (e.g., fixed 224×224 or 256×256 inputs for classifiers).
+    # - Depth inference itself is always performed at 384×384.
+    if args.resize is None:
+        output_resize = None
+    elif len(args.resize) == 1:
+        output_resize = (args.resize[0], args.resize[0])
+    else:
+        output_resize = (args.resize[0], args.resize[1])
+
+    # ---- Depth model ----
+    # NOTE:
+    # - Depth-Anything-V2 isolates *spatial geometry* while discarding
+    #   texture and color.
+    # - This corresponds exactly to the "depth" transformation used to
+    #   measure structural dataset bias.
     model_name = f"depth-anything/Depth-Anything-V2-{args.model_size}-hf"
-    image_processor = AutoImageProcessor.from_pretrained(model_name, use_fast=True, size={"height": 384, "width": 384})
+    processor = AutoImageProcessor.from_pretrained(
+        model_name,
+        use_fast=True,
+        size={"height": 384, "width": 384},
+    )
     model = AutoModelForDepthEstimation.from_pretrained(model_name).to(device).eval()
 
-    # --- 2. Load DataLoader (with resume) ---
-    loader, dataset_len = get_depth_image_loader(
-        args.image_dir, 
-        output_dir=args.output_dir,
-        batch_size=args.batch_size, 
-        num_workers=args.num_workers
-    )
-    
-    if dataset_len == 0:
-        print("No remaining images to process. Exiting.")
+    samples = collect_images(args.image_dir, args.output_dir, args.exclude_dirs)
+    if not samples:
+        print("No remaining images to process.")
         return
 
-    print(f"Remaining images to process: {dataset_len}")
-    imgid_counter = 0
-    total_batches = ceil(dataset_len / args.batch_size)
+    print(f"Remaining images to process: {len(samples)}")
 
-    # --- 3. Process Batches ---
-    pbar = tqdm(loader, desc="Processing Batches", total=total_batches)
-    with ThreadPoolExecutor(max_workers=args.num_workers) as executor:
-        for batch_imgs, batch_paths, batch_sizes in pbar:
-            inputs = image_processor(images=batch_imgs, return_tensors="pt").to(device)
+    loader = FastRGBLoader(target_size=(384, 384))
+    total_batches = ceil(len(samples) / args.batch_size)
+
+    with ThreadPoolExecutor(max_workers=args.num_workers) as pool:
+        pbar = tqdm(range(0, len(samples), args.batch_size),
+                    total=total_batches,
+                    desc="Processing batches")
+
+        for i in pbar:
+            batch = samples[i:i + args.batch_size]
+
+            imgs, rels, orig_sizes = [], [], []
+            for full, rel in batch:
+                img, orig = loader.load(full)
+                imgs.append(img)
+                rels.append(rel)
+                orig_sizes.append(orig)
+
+            inputs = processor(images=imgs, return_tensors="pt").to(device)
+
             with torch.no_grad():
-                outputs = model(**inputs)
-                predicted_depth = outputs.predicted_depth
+                predicted_depth = model(**inputs).predicted_depth
 
             futures = []
-            for depth_map, path, original_size in zip(predicted_depth, batch_paths, batch_sizes):
-                prediction = torch.nn.functional.interpolate(
-                    depth_map.unsqueeze(0).unsqueeze(0),
-                    size=original_size[::-1],
+            for depth_map, rel, orig_size in zip(predicted_depth, rels, orig_sizes):
+
+                # ---- Upsample to original resolution ----
+                # NOTE:
+                # - Bicubic interpolation preserves smooth geometry.
+                # - align_corners=False avoids edge distortions.
+                depth = torch.nn.functional.interpolate(
+                    depth_map[None, None],
+                    size=orig_size[::-1],
                     mode="bicubic",
-                    align_corners=False
-                ).squeeze()
+                    align_corners=False,
+                )[0, 0].cpu().numpy()
 
-                depth_np = prediction.cpu().numpy()
-                if depth_np.max() != depth_np.min():
-                    depth_np = (depth_np - depth_np.min()) / (depth_np.max() - depth_np.min()) * 255.0
+                if depth.max() != depth.min():
+                    depth = (depth - depth.min()) / (depth.max() - depth.min()) * 255.0
                 else:
-                    depth_np = np.zeros_like(depth_np)
-                depth_np = depth_np.astype(np.uint8)
+                    depth = np.zeros_like(depth)
 
-                save_filename = os.path.splitext(os.path.basename(path))[0] + "_depth.png"
-                save_path = os.path.join(args.output_dir, save_filename)
-                futures.append(executor.submit(save_depth_map_cv2, depth_np, save_path))
-                imgid_counter += 1
+                depth = depth.astype(np.uint8)
+
+                # ---- FINAL RESIZE (optional) ----
+                # NOTE:
+                # - Applied *after* depth computation to avoid altering
+                #   spatial relationships learned by the depth model.
+                if output_resize is not None:
+                    depth = cv2.resize(depth, output_resize, interpolation=cv2.INTER_CUBIC)
+
+                save_rel = os.path.splitext(rel)[0] + "_depth.png"
+                save_path = os.path.join(args.output_dir, save_rel)
+                os.makedirs(os.path.dirname(save_path), exist_ok=True)
+
+                futures.append(pool.submit(save_depth_map, depth, save_path))
 
             for f in futures:
                 f.result()
 
-    total_time = time.time() - start_time
     print(f"\nDepth maps saved to {args.output_dir}")
-    print(f"Total images processed: {imgid_counter}")
-    print(f"Total processing time: {total_time:.2f}s")
+    print(f"Total time: {time.time() - start_time:.2f}s")
 
-# ---------------- CLI ----------------
+
+# ------------------------------------------------------------
+# CLI
+# ------------------------------------------------------------
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Batch Depth Estimation with resume (skip already processed images)")
-    parser.add_argument("--image_dir", type=str, required=True)
-    parser.add_argument("--output_dir", type=str, required=True)
-    parser.add_argument("--batch_size", type=int, default=32)
-    parser.add_argument("--num_workers", type=int, default=4)
-    parser.add_argument("--device", type=str, default="cuda", help="cuda or cpu")
-    parser.add_argument("--model_size", type=str, default="Large", choices=["Small", "Base", "Large", "Giant"], 
-                        help="Depth-Anything V2 model size to use (Small is fastest).")
+    parser = argparse.ArgumentParser(
+        description="Depth pipeline aligned with RGB / Shuffle (+ output resize)"
+    )
+    parser.add_argument("--image_dir", required=True)
+    parser.add_argument("--output_dir", required=True)
+    parser.add_argument("--batch_size", type=int, default=8)
+    parser.add_argument("--num_workers", type=int, default=8)
+    parser.add_argument("--device", default="cuda")
+    parser.add_argument(
+        "--model_size",
+        default="Small",
+        choices=["Small", "Base", "Large", "Giant"],
+    )
+    parser.add_argument(
+        "--resize",
+        type=int,
+        nargs="+",
+        help="Final output size: one value (square) or two values (W H)",
+    )
+    parser.add_argument(
+        "--exclude_dirs",
+        nargs="*",
+        default=["facemesh"],
+    )
+
     args = parser.parse_args()
     main(args)
 
-# Small & Base should be sufficiently fast Large (was used in the paper not fast enough)
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\.venv-Copy-Copy\Scripts\python.exe" "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\Depth\depth.py" --image_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\ImageCaptioningEvaluationDatasets\LAION-5B-10k\LAION-5B-10k-images" --batch_size 8 --num_workers 8 --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\Depth\LAION-5B-10k-depth" --model_size "Small"
+# ===========================================================
+# EXAMPLE USAGE
+# python Depth.py --image_dir "path/to/input" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "path/to/output" --exclude_dirs facemesh --device cuda --model_size Small
+
+# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
+# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
+# --model_size Small -> This is done as the small model is faster and the paper notes that it is sufficiently fast for depth estimation. However Large was used in the paper but it is not fast enough for large scale processing.

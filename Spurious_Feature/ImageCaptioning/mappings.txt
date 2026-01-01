@@ -1,0 +1,12 @@
+woman:person
+man:person
+boy:child
+girl:child
+he:they
+she:they
+his:their
+her:their
+himself:themselves
+herself:themselves
+businessman:businessperson
+businesswoman:businessperson

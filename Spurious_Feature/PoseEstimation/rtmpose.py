@@ -1,1035 +1,34 @@
-# # # # import cv2
-# # # # import numpy as np
-# # # # from mmpose.apis.inference import init_model, inference_topdown
-# # # # import time
-# # # # from ultralytics import YOLO
-
-# # # # class RTMPoseEstimator:
-# # # #     def __init__(self, model_size='m'):
-# # # #         """
-# # # #         model_size: 't' (tiny), 's', 'm', 'l'
-# # # #         """
-# # # #         # Configuration and checkpoint paths
-# # # #         config_map = {
-# # # #             't': 'rtmpose-t_8xb256-420e_coco-256x192.py',
-# # # #             's': 'rtmpose-s_8xb256-420e_coco-256x192.py',
-# # # #             'm': 'rtmpose-m_8xb256-420e_coco-256x192.py',
-# # # #             'l': 'rtmpose-l_8xb256-420e_coco-384x288.py'
-# # # #         }
-        
-# # # #         checkpoint_map = {
-# # # #             't': 'rtmpose-t_simcc-coco_pt-aic-coco_420e-256x192.pth',
-# # # #             's': 'rtmpose-s_simcc-coco_pt-aic-coco_420e-256x192.pth',
-# # # #             'm': 'rtmpose-m_simcc-coco_pt-aic-coco_420e-256x192.pth',
-# # # #             'l': 'rtmpose-l_simcc-coco_pt-aic-coco_420e-384x288.pth'
-# # # #         }
-        
-# # # #         config_file = f'mmpose/configs/body_2d_keypoint/rtmpose/coco/{config_map[model_size]}'
-# # # #         checkpoint_file = f'https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/{checkpoint_map[model_size]}'
-        
-# # # #         self.model = init_model(config_file, checkpoint_file, device='cuda:0')
-# # # #         self.model_name = f'RTMPose-{model_size.upper()}'
-        
-# # # #         # Person detector
-# # # #         self.detector = YOLO('yolov8n.pt')
-        
-# # # #     def predict(self, image, conf_threshold=0.25):
-# # # #         """
-# # # #         Returns COCO format keypoints for ALL detected persons
-# # # #         """
-# # # #         # Detect all people
-# # # #         det_results = self.detector(image, classes=[0], verbose=False, conf=conf_threshold)
-        
-# # # #         if len(det_results[0].boxes) == 0:
-# # # #             return []
-        
-# # # #         # Get all bboxes
-# # # #         bboxes = []
-# # # #         person_confs = []
-# # # #         for i in range(len(det_results[0].boxes)):
-# # # #             bbox = det_results[0].boxes.xyxy[i].cpu().numpy()
-# # # #             person_conf = det_results[0].boxes.conf[i].cpu().numpy()
-# # # #             bboxes.append([bbox[0], bbox[1], bbox[2], bbox[3], 1.0])
-# # # #             person_confs.append(person_conf)
-        
-# # # #         # Convert to numpy array for MMPose
-# # # #         bboxes_array = np.array(bboxes)
-        
-# # # #         # Run pose estimation on all detected people at once
-# # # #         pose_results = inference_topdown(self.model, image, bboxes=bboxes_array)
-        
-# # # #         detections = []
-# # # #         for i, pose_result in enumerate(pose_results):
-# # # #             # Extract keypoints
-# # # #             keypoints = pose_result.pred_instances.keypoints[0]  # [17, 2]
-# # # #             scores = pose_result.pred_instances.keypoint_scores[0]  # [17]
-            
-# # # #             # Combine to COCO format [17, 3]
-# # # #             keypoints_with_scores = np.concatenate([
-# # # #                 keypoints, scores.reshape(-1, 1)
-# # # #             ], axis=1)
-            
-# # # #             detections.append({
-# # # #                 'keypoints': keypoints_with_scores,
-# # # #                 'score': float(person_confs[i]),  # Use detection confidence
-# # # #                 'bbox': det_results[0].boxes.xyxy[i].cpu().numpy()
-# # # #             })
-        
-# # # #         return detections
-    
-# # # #     def predict_single(self, image):
-# # # #         """Single person prediction (highest confidence)"""
-# # # #         all_detections = self.predict(image)
-# # # #         if len(all_detections) == 0:
-# # # #             return None
-# # # #         return max(all_detections, key=lambda x: x['score'])
-    
-# # # #     def predict_batch(self, images):
-# # # #         """Process multiple images"""
-# # # #         predictions = []
-# # # #         for img in images:
-# # # #             predictions.append(self.predict(img))
-# # # #         return predictions
-    
-# # # #     def benchmark(self, image, num_runs=100):
-# # # #         """Measure inference speed"""
-# # # #         # Warmup
-# # # #         for _ in range(10):
-# # # #             self.predict(image)
-        
-# # # #         start = time.time()
-# # # #         for _ in range(num_runs):
-# # # #             self.predict(image)
-# # # #         end = time.time()
-        
-# # # #         avg_time = (end - start) / num_runs
-# # # #         fps = 1.0 / avg_time
-        
-# # # #         return {
-# # # #             'model': self.model_name,
-# # # #             'avg_time_ms': avg_time * 1000,
-# # # #             'fps': fps
-# # # #         }
-
-
-# # # # # Example usage
-# # # # if __name__ == "__main__":
-# # # #     estimator = RTMPoseEstimator(model_size='s')
-    
-# # # #     # image = cv2.imread('test_image.jpg')
-# # # #     image = cv2.imread(r'G:\Thesis\ImageRetrieval\Professions_125k_test\Female_Accountant\0.210_0000_1042168.jpg')
-# # # #     all_people = estimator.predict(image)
-    
-# # # #     print(f"Detected {len(all_people)} people")
-# # # #     for i, person in enumerate(all_people):
-# # # #         print(f"  Person {i+1}: confidence {person['score']:.3f}")
-    
-# # # #     # Single person
-# # # #     best_person = estimator.predict_single(image)
-# # # #     if best_person:
-# # # #         print(f"\nBest person: confidence {best_person['score']:.3f}")
-    
-# # # #     # Visualize all
-# # # #     annotated = image.copy()
-# # # #     colors = [(255, 0, 0), (0, 255, 0), (0, 0, 255)]
-    
-# # # #     for idx, person in enumerate(all_people):
-# # # #         color = colors[idx % len(colors)]
-# # # #         for kp in person['keypoints']:
-# # # #             x, y, conf = kp
-# # # #             if conf > 0.5:
-# # # #                 cv2.circle(annotated, (int(x), int(y)), 4, color, -1)
-        
-# # # #         x1, y1, x2, y2 = person['bbox']
-# # # #         cv2.rectangle(annotated, (int(x1), int(y1)), (int(x2), int(y2)), color, 2)
-    
-# # # #     cv2.imshow('RTMPose All People', annotated)
-# # # #     cv2.waitKey(0)
-    
-# # # #     benchmark_results = estimator.benchmark(image)
-# # # #     print(f"\nBenchmark Results:")
-# # # #     print(f"Model: {benchmark_results['model']}")
-# # # #     print(f"Average Time: {benchmark_results['avg_time_ms']:.2f} ms")
-# # # #     print(f"FPS: {benchmark_results['fps']:.2f}")
-
-
-# # # import cv2
-# # # import numpy as np
-# # # import time
-# # # from pathlib import Path
-
-# # # import mmpose
-# # # from mmpose.apis.inference import init_model, inference_topdown
-# # # from ultralytics import YOLO
-
-# # # RTMPOSE_CONFIGS = {
-# # #     "t": (
-# # #         "rtmpose-t_8xb256-420e_coco-256x192.py",
-# # #         "https://raw.githubusercontent.com/open-mmlab/mmpose/main/"
-# # #         "configs/body_2d_keypoint/rtmpose/coco/"
-# # #         "rtmpose-t_8xb256-420e_coco-256x192.py",
-# # #     ),
-# # #     "s": (
-# # #         "td-hm_hrnet-w48_8xb32-210e_coco-256x192.py",
-# # #         # "rtmpose-s_8xb256-420e_coco-256x192.py",
-# # #         "https://raw.githubusercontent.com/open-mmlab/mmpose/main/"
-# # #         "configs/body_2d_keypoint/rtmpose/coco/"
-# # #         "rtmpose-s_8xb256-420e_coco-256x192.py",
-# # #     ),
-# # #     "m": (
-# # #         "rtmpose-m_8xb256-420e_coco-256x192.py",
-# # #         "https://raw.githubusercontent.com/open-mmlab/mmpose/main/"
-# # #         "configs/body_2d_keypoint/rtmpose/coco/"
-# # #         "rtmpose-m_8xb256-420e_coco-256x192.py",
-# # #     ),
-# # #     "l": (
-# # #         "rtmpose-l_8xb256-420e_coco-384x288.py",
-# # #         "https://raw.githubusercontent.com/open-mmlab/mmpose/main/"
-# # #         "configs/body_2d_keypoint/rtmpose/coco/"
-# # #         "rtmpose-l_8xb256-420e_coco-384x288.py",
-# # #     ),
-# # # }
-
-# # # HRNET_MODELS = {
-# # #     "w32_256": {
-# # #         "config": "td-hm_hrnet-w32_8xb32-210e_coco-256x192.py",
-# # #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# # #                       "hrnet_w32_coco_256x192-8e0b4c43_20200708.pth",
-# # #     },
-# # #     "w32_384": {
-# # #         "config": "td-hm_hrnet-w32_8xb32-210e_coco-384x288.py",
-# # #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# # #                       "hrnet_w32_coco_384x288-5ed6c1c9_20200708.pth",
-# # #     },
-# # #     "w48_256": {
-# # #         "config": "td-hm_hrnet-w48_8xb32-210e_coco-256x192.py",
-# # #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# # #                       "hrnet_w48_coco_256x192-b9e0b3ab_20200708.pth",
-# # #     },
-# # #     "w48_384": {
-# # #         "config": "td-hm_hrnet-w48_8xb32-210e_coco-384x288.py",
-# # #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# # #                       "hrnet_w48_coco_384x288-033f4f36_20200708.pth",
-# # #     },
-# # # }
-
-
-# # # import urllib.request
-# # # from pathlib import Path
-
-# # # import zipfile
-# # # import urllib.request
-# # # from pathlib import Path
-# # # import shutil
-# # # import tempfile
-
-
-# # # def ensure_mmpose_configs(config_root: Path = Path("models/mmpose_configs")) -> Path:
-# # #     """
-# # #     Ensure full MMPose configs tree is available locally.
-# # #     Downloads and extracts configs/ from the official GitHub repo if missing.
-# # #     """
-
-# # #     config_root = Path(config_root)
-# # #     configs_dir = config_root / "configs"
-
-# # #     if configs_dir.exists():
-# # #         return configs_dir
-
-# # #     print("[RTMPose] Downloading full MMPose configs...")
-
-# # #     url = "https://github.com/open-mmlab/mmpose/archive/refs/heads/main.zip"
-
-# # #     with tempfile.TemporaryDirectory() as tmpdir:
-# # #         zip_path = Path(tmpdir) / "mmpose.zip"
-# # #         urllib.request.urlretrieve(url, zip_path)
-
-# # #         with zipfile.ZipFile(zip_path, "r") as zf:
-# # #             for member in zf.namelist():
-# # #                 if "mmpose-main/configs/" in member:
-# # #                     zf.extract(member, tmpdir)
-
-# # #         extracted_root = Path(tmpdir) / "mmpose-main" / "configs"
-# # #         shutil.copytree(extracted_root, configs_dir)
-
-# # #     print("[RTMPose] Configs ready:", configs_dir)
-# # #     return configs_dir
-
-
-# # # def ensure_rtmpose_config(
-# # #     model_size: str,
-# # #     config_dir: str | Path = "models/mmpose_configs/rtmpose",
-# # # ) -> Path:
-# # #     """
-# # #     Ensure RTMPose config file is present locally.
-# # #     Downloads it from the official mmpose GitHub repo if missing.
-# # #     """
-
-# # #     if model_size not in RTMPOSE_CONFIGS:
-# # #         raise ValueError(
-# # #             f"Invalid model_size '{model_size}'. "
-# # #             f"Choose from {list(RTMPOSE_CONFIGS.keys())}"
-# # #         )
-
-# # #     filename, url = RTMPOSE_CONFIGS[model_size]
-
-# # #     config_dir = Path(config_dir)
-# # #     config_dir.mkdir(parents=True, exist_ok=True)
-
-# # #     config_path = config_dir / filename
-
-# # #     if not config_path.exists():
-# # #         print(f"[RTMPose] Downloading config: {filename}")
-# # #         print(f"[RTMPose] Source: {url}")
-# # #         urllib.request.urlretrieve(url, config_path)
-
-# # #     return config_path
-
-
-# # # class RTMPoseEstimator:
-# # #     def __init__(self, model_variant='w48_256'):
-# # #         """
-# # #         model_variant: 'w32_256', 'w32_384', 'w48_256', 'w48_384'
-# # #         """
-
-# # #         # ------------------------------------------------------------
-# # #         # CONFIG / CHECKPOINT MAPS
-# # #         # ------------------------------------------------------------
-# # #         # config_map = {
-# # #         #     't': 'rtmpose-t_8xb256-420e_coco-256x192.py',
-# # #         #     's': 'rtmpose-s_8xb256-420e_coco-256x192.py',
-# # #         #     'm': 'rtmpose-m_8xb256-420e_coco-256x192.py',
-# # #         #     'l': 'rtmpose-l_8xb256-420e_coco-384x288.py'
-# # #         # }
-
-# # #         # checkpoint_map = {
-# # #         #     't': 'rtmpose-t_simcc-coco_pt-aic-coco_420e-256x192.pth',
-# # #         #     's': 'rtmpose-s_simcc-coco_pt-aic-coco_420e-256x192.pth',
-# # #         #     'm': 'rtmpose-m_simcc-coco_pt-aic-coco_420e-256x192.pth',
-# # #         #     'l': 'rtmpose-l_simcc-coco_pt-aic-coco_420e-384x288.pth'
-# # #         # }
-
-# # #         # if model_size not in config_map:
-# # #         #     raise ValueError(f"Invalid model_size '{model_size}'. Choose from {list(config_map.keys())}")
-
-# # #         # # ------------------------------------------------------------
-# # #         # # RESOLVE CONFIG PATH FROM INSTALLED MMPOSE PACKAGE
-# # #         # # ------------------------------------------------------------
-# # #         # configs_root = ensure_mmpose_configs(Path("models/mmpose_configs"))
-
-# # #         # config_file = (
-# # #         #     configs_root
-# # #         #     / "body_2d_keypoint"
-# # #         #     / "topdown_heatmap" #"rtmpose"
-# # #         #     / "coco"
-# # #         #     / RTMPOSE_CONFIGS[model_size][0]
-# # #         # )
-
-# # #         # if not config_file.exists():
-# # #         #     raise FileNotFoundError(f"RTMPose config not found: {config_file}")
-
-# # #         # # ------------------------------------------------------------
-# # #         # # CHECKPOINT (AUTO-DOWNLOADED & CACHED)
-# # #         # # ------------------------------------------------------------
-# # #         # checkpoint_file = (
-# # #         #     # "https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/"
-# # #         #     # "rtmpose-s_simcc-coco_420e-256x192.pth"
-# # #         #     "https://download.openmmlab.com/mmpose/top_down/hrnet/hrnet_w48_coco_256x192-b9e0b3ab_20200708.pth"
-# # #         # )
-
-# # #         # checkpoint_file = r'C:\Users\User\Downloads\td-hm_hrnet-w48_8xb32-210e_coco-256x192-0e67c616_20220913.pth'
-
-# # #         variant = HRNET_MODELS[model_variant]
-
-# # #         configs_root = ensure_mmpose_configs(Path("models/mmpose_configs"))
-
-# # #         config_file = (
-# # #             configs_root
-# # #             / "body_2d_keypoint"
-# # #             / "topdown_heatmap"
-# # #             / "coco"
-# # #             / variant["config"]
-# # #         )
-
-# # #         checkpoint_file = variant["checkpoint"]
-
-
-# # #         # ------------------------------------------------------------
-# # #         # INITIALIZE RTMPOSE MODEL
-# # #         # ------------------------------------------------------------
-# # #         self.model = init_model(
-# # #             str(config_file),
-# # #             checkpoint_file,
-# # #             device="cuda:0"
-# # #         )
-
-# # #         self.model_name = f"RTMPose-{model_variant.upper()}"
-
-# # #         # ------------------------------------------------------------
-# # #         # PERSON DETECTOR (YOLOv8)
-# # #         # ------------------------------------------------------------
-# # #         self.detector = YOLO("yolov8n.pt")
-
-# # #     # ============================================================
-# # #     # INFERENCE
-# # #     # ============================================================
-
-# # #     def predict(self, image, conf_threshold=0.25):
-# # #         """
-# # #         Returns COCO-format keypoints for ALL detected persons
-# # #         """
-
-# # #         det_results = self.detector(
-# # #             image,
-# # #             classes=[0],          # person
-# # #             conf=conf_threshold,
-# # #             verbose=False
-# # #         )
-
-# # #         if len(det_results[0].boxes) == 0:
-# # #             return []
-
-# # #         bboxes = []
-# # #         person_confs = []
-
-# # #         for i in range(len(det_results[0].boxes)):
-# # #             bbox = det_results[0].boxes.xyxy[i].cpu().numpy()
-# # #             conf = det_results[0].boxes.conf[i].cpu().numpy()
-
-# # #             # MMPose expects [x1, y1, x2, y2, score]
-# # #             # bboxes.append([bbox[0], bbox[1], bbox[2], bbox[3], 1.0])
-# # #             bboxes.append([bbox[0], bbox[1], bbox[2], bbox[3]])
-# # #             person_confs.append(conf)
-
-# # #         bboxes_array = np.asarray(bboxes, dtype=np.float32)
-
-# # #         pose_results = inference_topdown(
-# # #             self.model,
-# # #             image,
-# # #             bboxes=bboxes_array
-# # #         )
-
-# # #         detections = []
-
-# # #         for i, pose_result in enumerate(pose_results):
-# # #             keypoints = pose_result.pred_instances.keypoints[0]           # [17, 2]
-# # #             scores = pose_result.pred_instances.keypoint_scores[0]        # [17]
-
-# # #             keypoints_with_scores = np.concatenate(
-# # #                 [keypoints, scores[:, None]],
-# # #                 axis=1
-# # #             )  # [17, 3]
-
-# # #             detections.append({
-# # #                 "keypoints": keypoints_with_scores,
-# # #                 "score": float(person_confs[i]),
-# # #                 "bbox": det_results[0].boxes.xyxy[i].cpu().numpy()
-# # #             })
-
-# # #         return detections
-
-# # #     # ============================================================
-# # #     # CONVENIENCE WRAPPERS
-# # #     # ============================================================
-
-# # #     def predict_single(self, image):
-# # #         """Return highest-confidence person only"""
-# # #         detections = self.predict(image)
-# # #         if not detections:
-# # #             return None
-# # #         return max(detections, key=lambda x: x["score"])
-
-# # #     def predict_batch(self, images):
-# # #         """Process multiple images sequentially"""
-# # #         return [self.predict(img) for img in images]
-
-# # #     # ============================================================
-# # #     # BENCHMARKING
-# # #     # ============================================================
-
-# # #     def benchmark(self, image, num_runs=100):
-# # #         """Measure average inference latency"""
-
-# # #         for _ in range(10):  # warmup
-# # #             self.predict(image)
-
-# # #         start = time.time()
-# # #         for _ in range(num_runs):
-# # #             self.predict(image)
-# # #         end = time.time()
-
-# # #         avg_time = (end - start) / num_runs
-
-# # #         return {
-# # #             "model": self.model_name,
-# # #             "avg_time_ms": avg_time * 1000,
-# # #             "fps": 1.0 / avg_time
-# # #         }
-
-
-# # # # ============================================================
-# # # # EXAMPLE USAGE
-# # # # ============================================================
-
-# # # if __name__ == "__main__":
-
-# # #     estimator = RTMPoseEstimator(model_variant='w48_256')
-
-# # #     image = cv2.imread(
-# # #         r"C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\PoseEstimation\Coco\val2017\000000000785.jpg"
-# # #     )
-
-# # #     all_people = estimator.predict(image)
-
-# # #     print(f"Detected {len(all_people)} people")
-# # #     for i, person in enumerate(all_people):
-# # #         print(f"  Person {i+1}: confidence {person['score']:.3f}")
-
-# # #     best_person = estimator.predict_single(image)
-# # #     if best_person:
-# # #         print(f"\nBest person confidence: {best_person['score']:.3f}")
-
-# # #     # ------------------------------------------------------------
-# # #     # VISUALIZATION
-# # #     # ------------------------------------------------------------
-# # #     annotated = image.copy()
-# # #     colors = [(255, 0, 0), (0, 255, 0), (0, 0, 255)]
-
-# # #     for idx, person in enumerate(all_people):
-# # #         color = colors[idx % len(colors)]
-
-# # #         for x, y, conf in person["keypoints"]:
-# # #             if conf > 0.5:
-# # #                 cv2.circle(annotated, (int(x), int(y)), 4, color, -1)
-
-# # #         x1, y1, x2, y2 = person["bbox"]
-# # #         cv2.rectangle(
-# # #             annotated,
-# # #             (int(x1), int(y1)),
-# # #             (int(x2), int(y2)),
-# # #             color,
-# # #             2
-# # #         )
-
-# # #     cv2.imshow("RTMPose - All People", annotated)
-# # #     cv2.waitKey(0)
-# # #     cv2.destroyAllWindows()
-
-# # #     # ------------------------------------------------------------
-# # #     # BENCHMARK
-# # #     # ------------------------------------------------------------
-# # #     results = estimator.benchmark(image)
-# # #     print("\nBenchmark Results:")
-# # #     print(f"Model: {results['model']}")
-# # #     print(f"Average Time: {results['avg_time_ms']:.2f} ms")
-# # #     print(f"FPS: {results['fps']:.2f}")
-
-
-# # import cv2
-# # import numpy as np
-# # import time
-# # from pathlib import Path
-# # import urllib.request
-# # import zipfile
-# # import tempfile
-# # import shutil
-
-# # from ultralytics import YOLO
-# # from mmpose.apis import init_model, inference_topdown
-
-
-# # # ============================================================
-# # # HRNet MODEL REGISTRY
-# # # ============================================================
-
-# # HRNET_MODELS = {
-# #     "w32_256": {
-# #         "config": "td-hm_hrnet-w32_8xb32-210e_coco-256x192.py",
-# #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# #                       "hrnet_w32_coco_256x192-8e0b4c43_20200708.pth",
-# #     },
-# #     "w32_384": {
-# #         "config": "td-hm_hrnet-w32_8xb32-210e_coco-384x288.py",
-# #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# #                       "hrnet_w32_coco_384x288-5ed6c1c9_20200708.pth",
-# #     },
-# #     "w48_256": {
-# #         "config": "td-hm_hrnet-w48_8xb32-210e_coco-256x192.py",
-# #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# #                       "hrnet_w48_coco_256x192-b9e0b3ab_20200708.pth",
-# #     },
-# #     "w48_384": {
-# #         "config": "td-hm_hrnet-w48_8xb32-210e_coco-384x288.py",
-# #         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-# #                       "hrnet_w48_coco_384x288-033f4f36_20200708.pth",
-# #     },
-# # }
-
-
-# # # ============================================================
-# # # ENSURE MMPOSE CONFIGS ARE AVAILABLE LOCALLY
-# # # ============================================================
-
-# # def ensure_mmpose_configs(root: Path = Path("models/mmpose_configs")) -> Path:
-# #     configs_dir = root / "configs"
-# #     if configs_dir.exists():
-# #         return configs_dir
-
-# #     print("[Pose] Downloading MMPose configs...")
-# #     url = "https://github.com/open-mmlab/mmpose/archive/refs/heads/main.zip"
-
-# #     with tempfile.TemporaryDirectory() as tmp:
-# #         zip_path = Path(tmp) / "mmpose.zip"
-# #         urllib.request.urlretrieve(url, zip_path)
-
-# #         with zipfile.ZipFile(zip_path, "r") as zf:
-# #             for name in zf.namelist():
-# #                 if "mmpose-main/configs/" in name:
-# #                     zf.extract(name, tmp)
-
-# #         extracted = Path(tmp) / "mmpose-main" / "configs"
-# #         shutil.copytree(extracted, configs_dir)
-
-# #     print("[Pose] Configs ready:", configs_dir)
-# #     return configs_dir
-
-
-# # # ============================================================
-# # # POSE ESTIMATOR
-# # # ============================================================
-
-# # class PoseEstimator:
-# #     def __init__(
-# #         self,
-# #         model_variant: str = "w48_256",
-# #         use_yolo: bool = True,
-# #         device: str = "cuda:0",
-# #     ):
-# #         """
-# #         model_variant: one of HRNET_MODELS keys
-# #         use_yolo: if True, run YOLO person detection first
-# #         """
-
-# #         if model_variant not in HRNET_MODELS:
-# #             raise ValueError(f"Invalid model_variant: {model_variant}")
-
-# #         self.use_yolo = use_yolo
-
-# #         # Resolve config
-# #         configs_root = ensure_mmpose_configs()
-# #         variant = HRNET_MODELS[model_variant]
-
-# #         config_file = (
-# #             configs_root
-# #             / "body_2d_keypoint"
-# #             / "topdown_heatmap"
-# #             / "coco"
-# #             / variant["config"]
-# #         )
-
-# #         # Init pose model
-# #         self.model = init_model(
-# #             str(config_file),
-# #             variant["checkpoint"],
-# #             device=device,
-# #         )
-
-# #         self.model_name = f"HRNet-{model_variant.upper()}"
-
-# #         # Optional YOLO detector
-# #         self.detector = YOLO("yolov8n.pt") if use_yolo else None
-
-
-# #     # ========================================================
-# #     # INFERENCE
-# #     # ========================================================
-
-# #     def predict(self, image, conf_threshold=0.25):
-# #         """
-# #         Returns a list of detections:
-# #         {
-# #             keypoints: [17, 3],
-# #             score: float,
-# #             bbox: [x1, y1, x2, y2] or full image
-# #         }
-# #         """
-
-# #         # ----------------------------------------------------
-# #         # CASE 1: YOLO OFF → pose on full image
-# #         # ----------------------------------------------------
-# #         if not self.use_yolo:
-# #             pose_results = inference_topdown(self.model, image)
-
-# #             detections = []
-# #             for pose in pose_results:
-# #                 kpts = pose.pred_instances.keypoints[0]
-# #                 scores = pose.pred_instances.keypoint_scores[0]
-
-# #                 detections.append({
-# #                     "keypoints": np.concatenate([kpts, scores[:, None]], axis=1),
-# #                     "score": float(scores.mean()),
-# #                     "bbox": np.array([0, 0, image.shape[1], image.shape[0]])
-# #                 })
-# #             return detections
-
-# #         # ----------------------------------------------------
-# #         # CASE 2: YOLO ON → pose per bounding box
-# #         # ----------------------------------------------------
-# #         det = self.detector(
-# #             image,
-# #             classes=[0],
-# #             conf=conf_threshold,
-# #             verbose=False
-# #         )
-
-# #         if len(det[0].boxes) == 0:
-# #             return []
-
-# #         bboxes = det[0].boxes.xyxy.cpu().numpy()
-
-# #         pose_results = inference_topdown(
-# #             self.model,
-# #             image,
-# #             bboxes=bboxes
-# #         )
-
-# #         detections = []
-# #         for i, pose in enumerate(pose_results):
-# #             kpts = pose.pred_instances.keypoints[0]
-# #             scores = pose.pred_instances.keypoint_scores[0]
-
-# #             detections.append({
-# #                 "keypoints": np.concatenate([kpts, scores[:, None]], axis=1),
-# #                 "score": float(det[0].boxes.conf[i]),
-# #                 "bbox": bboxes[i]
-# #             })
-
-# #         return detections
-
-
-# #     # ========================================================
-# #     # HELPERS
-# #     # ========================================================
-
-# #     def predict_single(self, image):
-# #         detections = self.predict(image)
-# #         return max(detections, key=lambda x: x["score"]) if detections else None
-
-# #     def benchmark(self, image, runs=50):
-# #         for _ in range(10):
-# #             self.predict(image)
-
-# #         t0 = time.time()
-# #         for _ in range(runs):
-# #             self.predict(image)
-# #         dt = (time.time() - t0) / runs
-
-# #         return {
-# #             "model": self.model_name,
-# #             "avg_time_ms": dt * 1000,
-# #             "fps": 1.0 / dt,
-# #         }
-
-
-# # # ============================================================
-# # # EXAMPLE USAGE
-# # # ============================================================
-
-# # if __name__ == "__main__":
-
-# #     estimator = PoseEstimator(
-# #         model_variant="w48_256",
-# #         use_yolo=True,   # toggle here
-# #     )
-
-# #     image = cv2.imread(
-# #         r"C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\PoseEstimation\Coco\val2017\000000001000.jpg" #000000000785.jpg"
-# #     )
-
-# #     detections = estimator.predict(image)
-# #     print(f"Detected {len(detections)} people")
-
-# #     vis = image.copy()
-# #     for person in detections:
-# #         for x, y, c in person["keypoints"]:
-# #             if c > 0.5:
-# #                 cv2.circle(vis, (int(x), int(y)), 3, (0, 255, 0), -1)
-
-# #         x1, y1, x2, y2 = person["bbox"]
-# #         cv2.rectangle(vis, (int(x1), int(y1)), (int(x2), int(y2)), (255, 0, 0), 2)
-
-# #     cv2.imshow("Pose Estimation", vis)
-# #     cv2.waitKey(0)
-# #     cv2.destroyAllWindows()
-
-
-# import cv2
-# import numpy as np
-# import time
-# from pathlib import Path
-# import urllib.request
-# import zipfile
-# import tempfile
-# import shutil
-
-# from ultralytics import YOLO
-# from mmpose.apis import init_model, inference_topdown
-
-
-# # ============================================================
-# # HRNet MODEL REGISTRY (COCO TOP-DOWN)
-# # ============================================================
-
-# HRNET_MODELS = {
-#     "w32_256": {
-#         "config": "td-hm_hrnet-w32_8xb32-210e_coco-256x192.py",
-#         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-#                       "hrnet_w32_coco_256x192-8e0b4c43_20200708.pth",
-#     },
-#     "w32_384": {
-#         "config": "td-hm_hrnet-w32_8xb32-210e_coco-384x288.py",
-#         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-#                       "hrnet_w32_coco_384x288-5ed6c1c9_20200708.pth",
-#     },
-#     "w48_256": {
-#         "config": "td-hm_hrnet-w48_8xb32-210e_coco-256x192.py",
-#         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-#                       "hrnet_w48_coco_256x192-b9e0b3ab_20200708.pth",
-#     },
-#     "w48_384": {
-#         "config": "td-hm_hrnet-w48_8xb32-210e_coco-384x288.py",
-#         "checkpoint": "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-#                       "hrnet_w48_coco_384x288-033f4f36_20200708.pth",
-#     },
-# }
-
-
-# # ============================================================
-# # ENSURE MMPOSE CONFIGS ARE AVAILABLE LOCALLY
-# # ============================================================
-
-# def ensure_mmpose_configs(root: Path = Path("models/mmpose_configs")) -> Path:
-#     configs_dir = root / "configs"
-#     if configs_dir.exists():
-#         return configs_dir
-
-#     print("[MMPose] Downloading config repository...")
-#     url = "https://github.com/open-mmlab/mmpose/archive/refs/heads/main.zip"
-
-#     with tempfile.TemporaryDirectory() as tmp:
-#         zip_path = Path(tmp) / "mmpose.zip"
-#         urllib.request.urlretrieve(url, zip_path)
-
-#         with zipfile.ZipFile(zip_path, "r") as zf:
-#             for name in zf.namelist():
-#                 if "mmpose-main/configs/" in name:
-#                     zf.extract(name, tmp)
-
-#         extracted = Path(tmp) / "mmpose-main" / "configs"
-#         shutil.copytree(extracted, configs_dir)
-
-#     print("[MMPose] Configs ready:", configs_dir)
-#     return configs_dir
-
-
-# # ============================================================
-# # TOP-DOWN POSE ESTIMATOR (EVALUATOR-COMPATIBLE)
-# # ============================================================
-
-# class MMPoseTopDownEstimator:
-#     """
-#     Drop-in compatible with models_to_test:
-#       predict(image, gt_boxes=None)
-#     """
-
-#     def __init__(
-#         self,
-#         model_variant: str = "w48_256",
-#         use_yolo: bool = True,
-#         device: str = "cuda:0",
-#     ):
-#         if model_variant not in HRNET_MODELS:
-#             raise ValueError(f"Invalid model_variant: {model_variant}")
-
-#         self.use_yolo = use_yolo
-
-#         # Resolve config
-#         configs_root = ensure_mmpose_configs()
-#         variant = HRNET_MODELS[model_variant]
-
-#         self.config_file = (
-#             configs_root
-#             / "body_2d_keypoint"
-#             / "topdown_heatmap"
-#             / "coco"
-#             / variant["config"]
-#         )
-
-#         self.checkpoint = variant["checkpoint"]
-
-#         self.model = init_model(
-#             str(self.config_file),
-#             self.checkpoint,
-#             device=device,
-#         )
-
-#         self.model_name = f"HRNet-{model_variant.upper()}"
-
-#         self.detector = YOLO("yolov8n.pt") if use_yolo else None
-
-
-#     # ========================================================
-#     # MAIN API (EVALUATOR EXPECTS THIS)
-#     # ========================================================
-
-#     def predict(self, image, gt_boxes=None, conf_threshold=0.25):
-#         """
-#         Args:
-#             image: np.ndarray (H, W, 3)
-#             gt_boxes: Optional[np.ndarray] of shape (N, 4)
-#         Returns:
-#             List[{
-#                 keypoints: (17, 3),
-#                 score: float,
-#                 bbox: (4,)
-#             }]
-#         """
-
-#         # ----------------------------------------------------
-#         # ORACLE MODE (GT BOXES PROVIDED)
-#         # ----------------------------------------------------
-#         if gt_boxes is not None:
-#             return self._predict_from_boxes(image, gt_boxes)
-
-#         # ----------------------------------------------------
-#         # NO DETECTOR → FULL IMAGE
-#         # ----------------------------------------------------
-#         if not self.use_yolo:
-#             pose_results = inference_topdown(self.model, image)
-
-#             detections = []
-#             for pose in pose_results:
-#                 kpts = pose.pred_instances.keypoints[0]
-#                 scores = pose.pred_instances.keypoint_scores[0]
-
-#                 detections.append({
-#                     "keypoints": np.concatenate([kpts, scores[:, None]], axis=1),
-#                     "score": float(scores.mean()),
-#                     "bbox": np.array([0, 0, image.shape[1], image.shape[0]])
-#                 })
-
-#             return detections
-
-#         # ----------------------------------------------------
-#         # STANDARD MODE → YOLO PERSON DETECTOR
-#         # ----------------------------------------------------
-#         det = self.detector(
-#             image,
-#             classes=[0],
-#             conf=conf_threshold,
-#             verbose=False
-#         )
-
-#         if len(det[0].boxes) == 0:
-#             return []
-
-#         bboxes = det[0].boxes.xyxy.cpu().numpy()
-#         scores_det = det[0].boxes.conf.cpu().numpy()
-
-#         return self._predict_from_boxes(image, bboxes, scores_det)
-
-
-#     # ========================================================
-#     # INTERNAL: BOX-BASED INFERENCE
-#     # ========================================================
-
-#     def _predict_from_boxes(self, image, boxes, det_scores=None):
-#         pose_results = inference_topdown(
-#             self.model,
-#             image,
-#             bboxes=boxes
-#         )
-
-#         detections = []
-#         for i, pose in enumerate(pose_results):
-#             kpts = pose.pred_instances.keypoints[0]
-#             scores = pose.pred_instances.keypoint_scores[0]
-
-#             detections.append({
-#                 "keypoints": np.concatenate([kpts, scores[:, None]], axis=1),
-#                 "score": float(det_scores[i]) if det_scores is not None else float(scores.mean()),
-#                 "bbox": boxes[i]
-#             })
-
-#         return detections
-
-
-#     # ========================================================
-#     # OPTIONAL UTILITIES
-#     # ========================================================
-
-#     def predict_single(self, image, gt_boxes=None):
-#         dets = self.predict(image, gt_boxes)
-#         return max(dets, key=lambda x: x["score"]) if dets else None
-
-#     def benchmark(self, image, runs=50):
-#         for _ in range(10):
-#             self.predict(image)
-
-#         t0 = time.time()
-#         for _ in range(runs):
-#             self.predict(image)
-#         dt = (time.time() - t0) / runs
-
-#         return {
-#             "model": self.model_name,
-#             "avg_time_ms": dt * 1000,
-#             "fps": 1.0 / dt,
-#         }
-
-# # ============================================================
-# # EXAMPLE USAGE
-# # ============================================================
-
-# if __name__ == "__main__":
-
-#     estimator = MMPoseTopDownEstimator(
-#         model_variant="w48_256",
-#         use_yolo=True,   # toggle here
-#     )
-
-#     image = cv2.imread(
-#         r"C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\PoseEstimation\Coco\val2017\000000000785.jpg" #000000001000.jpg" #
-#     )
-
-#     detections = estimator.predict(image)
-#     print(f"Detected {len(detections)} people")
-
-#     vis = image.copy()
-#     for person in detections:
-#         for x, y, c in person["keypoints"]:
-#             if c > 0.5:
-#                 cv2.circle(vis, (int(x), int(y)), 3, (0, 255, 0), -1)
-
-#         x1, y1, x2, y2 = person["bbox"]
-#         cv2.rectangle(vis, (int(x1), int(y1)), (int(x2), int(y2)), (255, 0, 0), 2)
-
-#     cv2.imshow("Pose Estimation", vis)
-#     cv2.waitKey(0)
-#     cv2.destroyAllWindows()
-
-
 import cv2
 import numpy as np
 import time
+import json
+import argparse
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+from typing import List
 import urllib.request
 import zipfile
 import tempfile
 import shutil
+import torch
 
 from ultralytics import YOLO
 from mmpose.apis import init_model, inference_topdown
+from tqdm import tqdm
+
+
+# ============================================================
+# CONFIG
+# ============================================================
+
+IMG_EXTS = {".jpg", ".jpeg", ".png", ".bmp"}
+
+COCO_KEYPOINT_NAMES = [
+    "nose", "left_eye", "right_eye", "left_ear", "right_ear",
+    "left_shoulder", "right_shoulder", "left_elbow", "right_elbow",
+    "left_wrist", "right_wrist", "left_hip", "right_hip",
+    "left_knee", "right_knee", "left_ankle", "right_ankle"
+]
 
 
 # ============================================================
@@ -1038,34 +37,55 @@ from mmpose.apis import init_model, inference_topdown
 
 HRNET_MODELS = {
     "w32_256": {
-        "config": "td-hm_hrnet-w32_8xb32-210e_coco-256x192.py",
+        "config": "td-hm_hrnet-w32_8xb64-210e_coco-256x192.py",
         "checkpoint": (
-            "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-            "hrnet_w32_coco_256x192-8e0b4c43_20200708.pth"
+            "https://download.openmmlab.com/mmpose/v1/body_2d_keypoint/topdown_heatmap/coco/"
+            "td-hm_hrnet-w32_8xb64-210e_coco-256x192-81c58e40_20220909.pth"
         ),
     },
     "w32_384": {
-        "config": "td-hm_hrnet-w32_8xb32-210e_coco-384x288.py",
+        "config": "td-hm_hrnet-w32_8xb64-210e_coco-384x288.py",
         "checkpoint": (
-            "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-            "hrnet_w32_coco_384x288-5ed6c1c9_20200708.pth"
+            "https://download.openmmlab.com/mmpose/v1/body_2d_keypoint/topdown_heatmap/coco/"
+            "td-hm_hrnet-w32_8xb64-210e_coco-384x288-ca5956af_20220909.pth"
         ),
     },
     "w48_256": {
         "config": "td-hm_hrnet-w48_8xb32-210e_coco-256x192.py",
         "checkpoint": (
-            "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-            "hrnet_w48_coco_256x192-b9e0b3ab_20200708.pth"
+            "https://download.openmmlab.com/mmpose/v1/body_2d_keypoint/topdown_heatmap/coco/"
+            "td-hm_hrnet-w48_8xb32-210e_coco-256x192-0e67c616_20220913.pth"
         ),
     },
     "w48_384": {
         "config": "td-hm_hrnet-w48_8xb32-210e_coco-384x288.py",
         "checkpoint": (
-            "https://download.openmmlab.com/mmpose/top_down/hrnet/"
-            "hrnet_w48_coco_384x288-033f4f36_20200708.pth"
+            "https://download.openmmlab.com/mmpose/v1/body_2d_keypoint/topdown_heatmap/coco/"
+            "td-hm_hrnet-w48_8xb32-210e_coco-384x288-c161b7de_20220915.pth"
         ),
     },
 }
+
+
+# ============================================================
+# FAST IMAGE LOADER
+# ============================================================
+
+class FastImageLoader:
+    def __init__(self, num_workers=8):
+        self.executor = ThreadPoolExecutor(max_workers=num_workers)
+
+    def load(self, path: Path):
+        try:
+            return cv2.imread(str(path))
+        except Exception:
+            return None
+
+    def load_batch(self, paths: List[Path]):
+        return list(self.executor.map(self.load, paths))
+
+    def shutdown(self):
+        self.executor.shutdown(wait=False)
 
 
 # ============================================================
@@ -1123,9 +143,8 @@ class MMPoseTopDownEstimator:
         self,
         model_variant: str = "w48_256",
         use_yolo: bool = True,
-        device: str = "cuda:0",
-        yolo_weights: str = "yolov8n.pt",
-    ):
+        yolo_weights: str = "models/yolov8m.pt",
+    ):  
         if model_variant not in HRNET_MODELS:
             raise ValueError(
                 f"Invalid model_variant: {model_variant}. "
@@ -1148,6 +167,8 @@ class MMPoseTopDownEstimator:
         if not self.config_file.exists():
             raise FileNotFoundError(f"Config file not found: {self.config_file}")
 
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
         self.model = init_model(
             str(self.config_file),
             variant["checkpoint"],  # MMPose will download/cache this automatically
@@ -1159,7 +180,6 @@ class MMPoseTopDownEstimator:
 
         # Visualization window name
         self._viz_win = "Oracle Pose Debug"
-
 
     # ========================================================
     # MAIN API
@@ -1222,6 +242,14 @@ class MMPoseTopDownEstimator:
 
         return self._predict_from_boxes(image, boxes_xyxy, det_scores)
 
+    def predict_single(self, image, conf_threshold=0.25):
+        """
+        Returns highest-confidence single-person detection
+        """
+        detections = self.predict(image, conf_threshold=conf_threshold)
+        if len(detections) == 0:
+            return None
+        return max(detections, key=lambda x: x['score'])
 
     # ========================================================
     # BOX FORMAT / VALIDATION
@@ -1295,7 +323,6 @@ class MMPoseTopDownEstimator:
             return boxes_out, None
         return boxes_out, det_scores[keep]
 
-
     # ========================================================
     # INTERNAL HELPERS
     # ========================================================
@@ -1340,7 +367,6 @@ class MMPoseTopDownEstimator:
             })
         return detections
 
-
     # ========================================================
     # VISUALIZATION (ORACLE DEBUG)
     # ========================================================
@@ -1374,8 +400,6 @@ class MMPoseTopDownEstimator:
 
         cv2.imshow(self._viz_win, vis)
         cv2.waitKey(0)
-        # cv2.destroyWindow(self._viz_win)
-
 
     # ========================================================
     # OPTIONAL UTILITIES
@@ -1396,37 +420,117 @@ class MMPoseTopDownEstimator:
             "fps": 1.0 / dt,
         }
 
+
 # ============================================================
-# EXAMPLE USAGE
+# DIRECTORY PIPELINE
+# ============================================================
+
+def process_directory(
+    input_dir: Path,
+    output_dir: Path,
+    model_variant: str,
+    yolo_model: str,
+    batch_size: int,
+    num_workers: int,
+    conf: float,
+    draw: bool,
+):
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    jsonl_path = output_dir / "poses.jsonl"
+
+    processed = set()
+    if jsonl_path.exists():
+        for line in open(jsonl_path, "r", encoding="utf-8"):
+            processed.add(json.loads(line)["image"])
+
+    paths = [
+        p for p in input_dir.rglob("*")
+        if p.is_file()
+        and p.suffix.lower() in IMG_EXTS
+        and "facemesh" not in (x.lower() for x in p.parts)
+        and p.name not in processed
+    ]
+
+    print(f"Found {len(paths)} images to process")
+
+    loader = FastImageLoader(num_workers)
+    estimator = MMPoseTopDownEstimator(
+        model_variant=model_variant,
+        use_yolo=True,
+        yolo_weights=yolo_model,
+    )
+
+    for i in tqdm(range(0, len(paths), batch_size)):
+        batch = paths[i:i + batch_size]
+        images = loader.load_batch(batch)
+
+        with open(jsonl_path, "a", encoding="utf-8") as f:
+            for p, img in zip(batch, images):
+                if img is None:
+                    continue
+
+                det = estimator.predict_single(img, conf_threshold=conf)
+                if det is None:
+                    record = {
+                        "image": p.name,
+                        "keypoints": [0.0] * 51,
+                        "score": 0.0,
+                    }
+                else:
+                    record = {
+                        "image": p.name,
+                        "keypoints": det["keypoints"].flatten().tolist(),
+                        "score": det["score"],
+                    }
+
+                f.write(json.dumps(record) + "\n")
+
+                if draw and det is not None:
+                    vis = img.copy()
+                    for x, y, v in det["keypoints"]:
+                        if v > 0:
+                            cv2.circle(vis, (int(x), int(y)), 3, (0, 255, 0), -1)
+                    
+                    x1, y1, x2, y2 = det["bbox"]
+                    cv2.rectangle(vis, (int(x1), int(y1)), (int(x2), int(y2)), (255, 0, 0), 2)
+                    
+                    out = output_dir / p.relative_to(input_dir)
+                    out.parent.mkdir(parents=True, exist_ok=True)
+                    cv2.imwrite(str(out), vis)
+
+    loader.shutdown()
+
+
+# ============================================================
+# CLI
 # ============================================================
 
 if __name__ == "__main__":
+    ap = argparse.ArgumentParser("MMPose HRNet + YOLO Pose Directory Pipeline")
+    ap.add_argument("--input-dir", required=True)
+    ap.add_argument("--output-dir", required=True)
+    ap.add_argument("--model-variant", default="w48_256", 
+                    choices=list(HRNET_MODELS.keys()))
+    ap.add_argument("--yolo-model", default="models\yolov8m.pt")
+    ap.add_argument("--batch-size", type=int, default=16)
+    ap.add_argument("--num-workers", type=int, default=8)
+    ap.add_argument("--conf", type=float, default=0.25)
+    ap.add_argument("--draw", action="store_true")
+    args = ap.parse_args()
 
-    estimator = MMPoseTopDownEstimator(
-        model_variant="w48_256",
-        use_yolo=True,   # toggle here
+    process_directory(
+        Path(args.input_dir),
+        Path(args.output_dir),
+        args.model_variant,
+        args.yolo_model,
+        args.batch_size,
+        args.num_workers,
+        args.conf,
+        args.draw,
     )
 
-    image = cv2.imread(
-        r"C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\PoseEstimation\Coco\val2017\000000000785.jpg" #000000001000.jpg" #
-    )
-
-    detections = estimator.predict(image)
-    print(f"Detected {len(detections)} people")
-
-    vis = image.copy()
-    for person in detections:
-        for x, y, c in person["keypoints"]:
-            if c > 0.5:
-                cv2.circle(vis, (int(x), int(y)), 3, (0, 255, 0), -1)
-
-        x1, y1, x2, y2 = person["bbox"]
-        cv2.rectangle(vis, (int(x1), int(y1)), (int(x2), int(y2)), (255, 0, 0), 2)
-
-    cv2.imshow("Pose Estimation", vis)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+# .venv_test\Scripts\python.exe rtmpose.py --input-dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned\Female_Accountant" --output-dir "test_rtmpose" --draw
 
 # https://github.com/open-mmlab/mmpose/blob/main/demo/docs/en/2d_human_pose_demo.md
-
 # https://mmpose.readthedocs.io/en/latest/model_zoo/body_2d_keypoint.html#topdown-heatmap-hrnet-on-coco
