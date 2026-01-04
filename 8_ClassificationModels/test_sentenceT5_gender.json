@@ -1,0 +1,658 @@
+{
+    "train": [
+        {
+            "image": "img_0001.jpg",
+            "caption": "A man wearing a suit standing in a modern office",
+            "label": 0
+        },
+        {
+            "image": "img_0002.jpg",
+            "caption": "A woman working on a laptop at a desk in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0003.jpg",
+            "caption": "A man walking through a busy city street",
+            "label": 0
+        },
+        {
+            "image": "img_0004.jpg",
+            "caption": "A woman holding a coffee cup while sitting indoors",
+            "label": 1
+        },
+        {
+            "image": "img_0005.jpg",
+            "caption": "A man standing outdoors wearing a jacket",
+            "label": 0
+        },
+        {
+            "image": "img_0006.jpg",
+            "caption": "A woman smiling while talking on the phone",
+            "label": 1
+        },
+        {
+            "image": "img_0007.jpg",
+            "caption": "A man sitting on a chair in a conference room",
+            "label": 0
+        },
+        {
+            "image": "img_0008.jpg",
+            "caption": "A woman typing on a keyboard at work",
+            "label": 1
+        },
+        {
+            "image": "img_0009.jpg",
+            "caption": "A man crossing the road near office buildings",
+            "label": 0
+        },
+        {
+            "image": "img_0010.jpg",
+            "caption": "A woman standing near a window inside an office",
+            "label": 1
+        },
+        {
+            "image": "img_0011.jpg",
+            "caption": "A man wearing glasses and reading documents",
+            "label": 0
+        },
+        {
+            "image": "img_0012.jpg",
+            "caption": "A woman reviewing paperwork at a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0013.jpg",
+            "caption": "A man sitting alone in a meeting room",
+            "label": 0
+        },
+        {
+            "image": "img_0014.jpg",
+            "caption": "A woman preparing notes for a presentation",
+            "label": 1
+        },
+        {
+            "image": "img_0015.jpg",
+            "caption": "A man leaning against a wall inside an office",
+            "label": 0
+        },
+        {
+            "image": "img_0016.jpg",
+            "caption": "A woman standing next to a whiteboard",
+            "label": 1
+        },
+        {
+            "image": "img_0017.jpg",
+            "caption": "A man looking at his phone while walking indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0018.jpg",
+            "caption": "A woman sitting at a desk with a notebook",
+            "label": 1
+        },
+        {
+            "image": "img_0019.jpg",
+            "caption": "A man entering an office building",
+            "label": 0
+        },
+        {
+            "image": "img_0020.jpg",
+            "caption": "A woman leaving an office carrying a bag",
+            "label": 1
+        },
+        {
+            "image": "img_0021.jpg",
+            "caption": "A man wearing a blazer in a professional setting",
+            "label": 0
+        },
+        {
+            "image": "img_0022.jpg",
+            "caption": "A woman standing confidently in a workplace",
+            "label": 1
+        },
+        {
+            "image": "img_0023.jpg",
+            "caption": "A man reviewing files at his desk",
+            "label": 0
+        },
+        {
+            "image": "img_0024.jpg",
+            "caption": "A woman organizing documents in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0025.jpg",
+            "caption": "A man seated near a conference table",
+            "label": 0
+        },
+        {
+            "image": "img_0026.jpg",
+            "caption": "A woman presenting information on a screen",
+            "label": 1
+        },
+        {
+            "image": "img_0027.jpg",
+            "caption": "A man walking through a hallway at work",
+            "label": 0
+        },
+        {
+            "image": "img_0028.jpg",
+            "caption": "A woman waiting near an elevator indoors",
+            "label": 1
+        },
+        {
+            "image": "img_0029.jpg",
+            "caption": "A man standing near office desks",
+            "label": 0
+        },
+        {
+            "image": "img_0030.jpg",
+            "caption": "A woman adjusting her chair at a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0031.jpg",
+            "caption": "A man talking to a colleague in an office",
+            "label": 0
+        },
+        {
+            "image": "img_0032.jpg",
+            "caption": "A woman listening attentively in a meeting",
+            "label": 1
+        },
+        {
+            "image": "img_0033.jpg",
+            "caption": "A man standing alone in a lobby",
+            "label": 0
+        },
+        {
+            "image": "img_0034.jpg",
+            "caption": "A woman walking through an office corridor",
+            "label": 1
+        },
+        {
+            "image": "img_0035.jpg",
+            "caption": "A man carrying a briefcase indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0036.jpg",
+            "caption": "A woman holding a tablet at work",
+            "label": 1
+        },
+        {
+            "image": "img_0037.jpg",
+            "caption": "A man sitting quietly in a waiting area",
+            "label": 0
+        },
+        {
+            "image": "img_0038.jpg",
+            "caption": "A woman standing next to office furniture",
+            "label": 1
+        },
+        {
+            "image": "img_0039.jpg",
+            "caption": "A man reading emails on a computer",
+            "label": 0
+        },
+        {
+            "image": "img_0040.jpg",
+            "caption": "A woman typing on a laptop at a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0041.jpg",
+            "caption": "A man entering a meeting room",
+            "label": 0
+        },
+        {
+            "image": "img_0042.jpg",
+            "caption": "A woman leaving a conference room",
+            "label": 1
+        },
+        {
+            "image": "img_0043.jpg",
+            "caption": "A man standing near office windows",
+            "label": 0
+        },
+        {
+            "image": "img_0044.jpg",
+            "caption": "A woman arranging items on a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0045.jpg",
+            "caption": "A man adjusting his tie indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0046.jpg",
+            "caption": "A woman reviewing notes before a meeting",
+            "label": 1
+        },
+        {
+            "image": "img_0047.jpg",
+            "caption": "A man sitting in a professional workspace",
+            "label": 0
+        },
+        {
+            "image": "img_0048.jpg",
+            "caption": "A woman standing calmly in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0049.jpg",
+            "caption": "A man walking past desks in an office",
+            "label": 0
+        },
+        {
+            "image": "img_0050.jpg",
+            "caption": "A woman holding documents near her desk",
+            "label": 1
+        }
+    ],
+    "val": [
+        {
+            "image": "img_0101.jpg",
+            "caption": "A man standing near a desk in an office",
+            "label": 0
+        },
+        {
+            "image": "img_0102.jpg",
+            "caption": "A woman sitting at a desk in a workplace",
+            "label": 1
+        },
+        {
+            "image": "img_0103.jpg",
+            "caption": "A man walking through an office corridor",
+            "label": 0
+        },
+        {
+            "image": "img_0104.jpg",
+            "caption": "A woman holding documents in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0105.jpg",
+            "caption": "A man adjusting his jacket indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0106.jpg",
+            "caption": "A woman typing on a laptop at work",
+            "label": 1
+        },
+        {
+            "image": "img_0107.jpg",
+            "caption": "A man standing beside a conference table",
+            "label": 0
+        },
+        {
+            "image": "img_0108.jpg",
+            "caption": "A woman preparing notes at her desk",
+            "label": 1
+        },
+        {
+            "image": "img_0109.jpg",
+            "caption": "A man reading paperwork in an office",
+            "label": 0
+        },
+        {
+            "image": "img_0110.jpg",
+            "caption": "A woman waiting near an elevator at work",
+            "label": 1
+        },
+        {
+            "image": "img_0111.jpg",
+            "caption": "A man entering a meeting room",
+            "label": 0
+        },
+        {
+            "image": "img_0112.jpg",
+            "caption": "A woman leaving a conference room",
+            "label": 1
+        },
+        {
+            "image": "img_0113.jpg",
+            "caption": "A man sitting in a professional workspace",
+            "label": 0
+        },
+        {
+            "image": "img_0114.jpg",
+            "caption": "A woman standing next to office furniture",
+            "label": 1
+        },
+        {
+            "image": "img_0115.jpg",
+            "caption": "A man carrying a briefcase indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0116.jpg",
+            "caption": "A woman holding a tablet at work",
+            "label": 1
+        },
+        {
+            "image": "img_0117.jpg",
+            "caption": "A man walking past office desks",
+            "label": 0
+        },
+        {
+            "image": "img_0118.jpg",
+            "caption": "A woman standing near a window in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0119.jpg",
+            "caption": "A man talking to a colleague at work",
+            "label": 0
+        },
+        {
+            "image": "img_0120.jpg",
+            "caption": "A woman listening during a meeting",
+            "label": 1
+        },
+        {
+            "image": "img_0121.jpg",
+            "caption": "A man reviewing files at his desk",
+            "label": 0
+        },
+        {
+            "image": "img_0122.jpg",
+            "caption": "A woman organizing paperwork in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0123.jpg",
+            "caption": "A man standing alone in an office lobby",
+            "label": 0
+        },
+        {
+            "image": "img_0124.jpg",
+            "caption": "A woman walking through a workplace hallway",
+            "label": 1
+        },
+        {
+            "image": "img_0125.jpg",
+            "caption": "A man sitting quietly in a waiting area",
+            "label": 0
+        },
+        {
+            "image": "img_0126.jpg",
+            "caption": "A woman standing calmly near a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0127.jpg",
+            "caption": "A man checking emails on a computer",
+            "label": 0
+        },
+        {
+            "image": "img_0128.jpg",
+            "caption": "A woman adjusting her chair at a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0129.jpg",
+            "caption": "A man wearing glasses in an office setting",
+            "label": 0
+        },
+        {
+            "image": "img_0130.jpg",
+            "caption": "A woman reviewing notes before work",
+            "label": 1
+        },
+        {
+            "image": "img_0131.jpg",
+            "caption": "A man standing near office windows",
+            "label": 0
+        },
+        {
+            "image": "img_0132.jpg",
+            "caption": "A woman holding a notebook at work",
+            "label": 1
+        },
+        {
+            "image": "img_0133.jpg",
+            "caption": "A man entering an office building",
+            "label": 0
+        },
+        {
+            "image": "img_0134.jpg",
+            "caption": "A woman leaving an office carrying a bag",
+            "label": 1
+        },
+        {
+            "image": "img_0135.jpg",
+            "caption": "A man sitting near a conference table",
+            "label": 0
+        },
+        {
+            "image": "img_0136.jpg",
+            "caption": "A woman standing confidently in a workplace",
+            "label": 1
+        },
+        {
+            "image": "img_0137.jpg",
+            "caption": "A man leaning against a wall indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0138.jpg",
+            "caption": "A woman smiling while working at her desk",
+            "label": 1
+        },
+        {
+            "image": "img_0139.jpg",
+            "caption": "A man walking through a modern office",
+            "label": 0
+        },
+        {
+            "image": "img_0140.jpg",
+            "caption": "A woman holding documents near her desk",
+            "label": 1
+        }
+    ],
+    "test": [
+        {
+            "image": "img_0201.jpg",
+            "caption": "A man walking through an office hallway",
+            "label": 0
+        },
+        {
+            "image": "img_0202.jpg",
+            "caption": "A woman standing near a desk at work",
+            "label": 1
+        },
+        {
+            "image": "img_0203.jpg",
+            "caption": "A man sitting at a desk in an office",
+            "label": 0
+        },
+        {
+            "image": "img_0204.jpg",
+            "caption": "A woman typing on a keyboard at work",
+            "label": 1
+        },
+        {
+            "image": "img_0205.jpg",
+            "caption": "A man reviewing paperwork indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0206.jpg",
+            "caption": "A woman holding a coffee cup in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0207.jpg",
+            "caption": "A man standing beside office desks",
+            "label": 0
+        },
+        {
+            "image": "img_0208.jpg",
+            "caption": "A woman waiting near an office door",
+            "label": 1
+        },
+        {
+            "image": "img_0209.jpg",
+            "caption": "A man adjusting his tie in a workplace",
+            "label": 0
+        },
+        {
+            "image": "img_0210.jpg",
+            "caption": "A woman organizing items on a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0211.jpg",
+            "caption": "A man sitting quietly in a meeting room",
+            "label": 0
+        },
+        {
+            "image": "img_0212.jpg",
+            "caption": "A woman standing next to a presentation screen",
+            "label": 1
+        },
+        {
+            "image": "img_0213.jpg",
+            "caption": "A man walking past conference rooms",
+            "label": 0
+        },
+        {
+            "image": "img_0214.jpg",
+            "caption": "A woman holding a tablet while standing",
+            "label": 1
+        },
+        {
+            "image": "img_0215.jpg",
+            "caption": "A man reading emails at his desk",
+            "label": 0
+        },
+        {
+            "image": "img_0216.jpg",
+            "caption": "A woman reviewing documents in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0217.jpg",
+            "caption": "A man entering a professional workspace",
+            "label": 0
+        },
+        {
+            "image": "img_0218.jpg",
+            "caption": "A woman leaving a meeting room",
+            "label": 1
+        },
+        {
+            "image": "img_0219.jpg",
+            "caption": "A man standing near a conference table",
+            "label": 0
+        },
+        {
+            "image": "img_0220.jpg",
+            "caption": "A woman sitting comfortably at her desk",
+            "label": 1
+        },
+        {
+            "image": "img_0221.jpg",
+            "caption": "A man walking through a corporate office",
+            "label": 0
+        },
+        {
+            "image": "img_0222.jpg",
+            "caption": "A woman standing calmly in an office environment",
+            "label": 1
+        },
+        {
+            "image": "img_0223.jpg",
+            "caption": "A man holding documents near his desk",
+            "label": 0
+        },
+        {
+            "image": "img_0224.jpg",
+            "caption": "A woman preparing notes before a meeting",
+            "label": 1
+        },
+        {
+            "image": "img_0225.jpg",
+            "caption": "A man standing near office windows",
+            "label": 0
+        },
+        {
+            "image": "img_0226.jpg",
+            "caption": "A woman sitting at a desk with a notebook",
+            "label": 1
+        },
+        {
+            "image": "img_0227.jpg",
+            "caption": "A man checking his phone indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0228.jpg",
+            "caption": "A woman waiting in a workplace hallway",
+            "label": 1
+        },
+        {
+            "image": "img_0229.jpg",
+            "caption": "A man sitting near office furniture",
+            "label": 0
+        },
+        {
+            "image": "img_0230.jpg",
+            "caption": "A woman holding a bag while standing in an office",
+            "label": 1
+        },
+        {
+            "image": "img_0231.jpg",
+            "caption": "A man entering a conference room",
+            "label": 0
+        },
+        {
+            "image": "img_0232.jpg",
+            "caption": "A woman leaving an office corridor",
+            "label": 1
+        },
+        {
+            "image": "img_0233.jpg",
+            "caption": "A man seated at a workstation",
+            "label": 0
+        },
+        {
+            "image": "img_0234.jpg",
+            "caption": "A woman adjusting papers on a desk",
+            "label": 1
+        },
+        {
+            "image": "img_0235.jpg",
+            "caption": "A man walking through a professional setting",
+            "label": 0
+        },
+        {
+            "image": "img_0236.jpg",
+            "caption": "A woman standing near office equipment",
+            "label": 1
+        },
+        {
+            "image": "img_0237.jpg",
+            "caption": "A man leaning against a desk indoors",
+            "label": 0
+        },
+        {
+            "image": "img_0238.jpg",
+            "caption": "A woman holding documents in a workplace",
+            "label": 1
+        },
+        {
+            "image": "img_0239.jpg",
+            "caption": "A man standing calmly in an office space",
+            "label": 0
+        },
+        {
+            "image": "img_0240.jpg",
+            "caption": "A woman walking through a modern office",
+            "label": 1
+        }
+    ]
+}

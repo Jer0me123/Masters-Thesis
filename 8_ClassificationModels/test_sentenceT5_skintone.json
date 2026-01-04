@@ -1,0 +1,52 @@
+{
+    "train": [
+        {
+            "caption": "A person with light skin standing in a bright office",
+            "label": 0
+        },
+        {
+            "caption": "A person with medium skin tone sitting at a desk",
+            "label": 1
+        },
+        {
+            "caption": "A person with dark skin walking outdoors",
+            "label": 2
+        },
+        {
+            "caption": "A person with medium skin holding a book indoors",
+            "label": 1
+        },
+        {
+            "caption": "A person with light skin wearing glasses",
+            "label": 0
+        }
+    ],
+    "val": [
+        {
+            "caption": "A person with dark skin standing near a window",
+            "label": 2
+        },
+        {
+            "caption": "A person with light skin working on a laptop",
+            "label": 0
+        },
+        {
+            "caption": "A person with medium skin standing near a window",
+            "label": 1
+        }
+    ],
+    "test": [
+        {
+            "caption": "A person with medium skin tone sitting on a couch",
+            "label": 1
+        },
+        {
+            "caption": "A person with dark skin walking through a hallway",
+            "label": 2
+        },
+        {
+            "caption": "A person with light skin standing near a window",
+            "label": 0
+        }
+    ]
+}

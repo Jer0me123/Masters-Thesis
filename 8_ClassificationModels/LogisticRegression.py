@@ -372,20 +372,51 @@ def bootstrap_auc_binary(y_true, scores, n=5000, seed=0):
         np.percentile(aucs, 97.5),
     )
 
+# def bootstrap_auc_multiclass(y_true, probs, n=5000, seed=0):
+#     rng = np.random.default_rng(seed)
+#     aucs = []
+
+#     for _ in range(n):
+#         idx = rng.integers(0, len(y_true), len(y_true))
+#         aucs.append(
+#             roc_auc_score(
+#                 y_true[idx],
+#                 probs[idx],
+#                 multi_class="ovr",
+#                 average="macro",
+#             )
+#         )
+
+#     return (
+#         np.mean(aucs),
+#         np.percentile(aucs, 2.5),
+#         np.percentile(aucs, 97.5),
+#     )
+
 def bootstrap_auc_multiclass(y_true, probs, n=5000, seed=0):
     rng = np.random.default_rng(seed)
     aucs = []
+    num_classes = probs.shape[1]
 
     for _ in range(n):
         idx = rng.integers(0, len(y_true), len(y_true))
+        y_sample = y_true[idx]
+
+        # Skip resamples that drop a class
+        if len(np.unique(y_sample)) < num_classes:
+            continue
+
         aucs.append(
             roc_auc_score(
-                y_true[idx],
+                y_sample,
                 probs[idx],
                 multi_class="ovr",
                 average="macro",
             )
         )
+
+    if len(aucs) == 0:
+        raise RuntimeError("No valid bootstrap samples contained all classes")
 
     return (
         np.mean(aucs),
@@ -393,11 +424,12 @@ def bootstrap_auc_multiclass(y_true, probs, n=5000, seed=0):
         np.percentile(aucs, 97.5),
     )
 
+
 # ============================================================
 # Model factory (paper-aligned)
 # ============================================================
 
-def build_logistic_regression(task, feature_type):
+def build_logistic_regression(task, feature_type, max_iter=1000, tol=0.0001):
     """
     Paper-aligned logistic regression configuration.
 
@@ -411,7 +443,9 @@ def build_logistic_regression(task, feature_type):
             penalty="l2",
             C=1.0,
             solver="lbfgs",
-            max_iter=1000,
+            max_iter=max_iter,
+            tol=tol,
+            verbose=2
         )
 
     if feature_type == "objects":
@@ -419,7 +453,9 @@ def build_logistic_regression(task, feature_type):
             penalty="l1",
             C=1.0,
             solver="liblinear",
-            max_iter=1000,
+            max_iter=max_iter,
+            tol=tol,
+            verbose=2
         )
 
     raise ValueError(f"Unsupported feature type: {feature_type}")
@@ -435,6 +471,10 @@ def parse_args():
     p.add_argument("--feature_type",
                    choices=["mean_rgb", "objects"],
                    required=True)
+    
+    p.add_argument("--max_iter", type=int, default=1000, help="Maximum number of iterations") # Paper-aligned default is 1000
+    p.add_argument("--tolerance", type=float, default=0.0001, help="Tolerance for early stopping") # The defaults tol for LogisticRegression Class is 0.0001
+
     p.add_argument("--seeds", type=int, nargs="+", default=[0])
     p.add_argument("--bootstrap", action="store_true")
     p.add_argument("--out_dir", default="outputs")
