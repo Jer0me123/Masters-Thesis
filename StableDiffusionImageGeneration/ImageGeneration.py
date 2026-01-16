@@ -659,10 +659,10 @@ if __name__ == "__main__":
     print(f"[INFO] Loaded {len(profession_list)} professions from {args.prompt_config}")
 
     # Run generation for all professions
-    for label in profession_list:
+    for index, label in enumerate(profession_list):
         prompt = prompt_template.format(profession=label)
 
-        print(f"\n[INFO] Processing label='{label}'")
+        print(f"\n[INFO] Processing label {index}='{label}'")
 
         generate_with_validation(
             prompt=prompt,
@@ -680,6 +680,8 @@ if __name__ == "__main__":
     validator.shutdown()
 
 # python ImageGeneration.py --output_dir "G:\Thesis\StableDiffusionGeneratedImages" --yolo_person_path "models\yolo12s.pt" --yolo_face_path "models\yolov12l-face.pt" --total_images_per_label 1000 --batch_size 2 --device "cuda" --prompt_config "prompts.json"
+
+# python ImageGeneration.py --output_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages" --yolo_person_path "models\yolo12s.pt" --yolo_face_path "models\yolov12l-face.pt" --total_images_per_label 1000 --batch_size 2 --device "cuda" --prompt_config "prompts.json"
 
 """
 ==============================================================================

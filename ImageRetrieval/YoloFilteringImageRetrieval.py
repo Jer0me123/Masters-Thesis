@@ -13,6 +13,23 @@ import torch
 import os
 import argparse
 
+def load_manifest(path: Path):
+    if not path.exists():
+        print("Doesnt Exist")
+        return set()
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return set(data.get("completed_groups", []))
+
+def save_manifest(path: Path, completed_groups: set):
+    tmp = path.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(
+            {"completed_groups": sorted(completed_groups)},
+            f,
+            indent=2
+        )
+    tmp.replace(path)  # atomic on Windows + POSIX
 
 def box_iou(a, b):
     xA = max(a[0], b[0])
@@ -123,13 +140,13 @@ def validate_image_fast(
     min_face_person_ratio=0.02
 ):
     # # ---------- PERSON FILTER ----------
-    if person_boxes != None:
-        persons = person_boxes[
-            (person_boxes[:, 5] == 0) &
-            (person_boxes[:, 4] >= min_person_conf)
-        ]
-        if len(persons) == 0:
-            return None
+    # if person_boxes != None:
+    persons = person_boxes[
+        (person_boxes[:, 5] == 0) &
+        (person_boxes[:, 4] >= min_person_conf)
+    ]
+    if len(persons) == 0:
+        return None
 
     # ---------- FACE FILTER ----------
     faces = face_boxes[face_boxes[:, 4] >= min_face_conf]
@@ -146,26 +163,26 @@ def validate_image_fast(
         return None
 
     # # ---------- PERSON–FACE RELATION ----------
-    if person_boxes != None:
-        for pb in persons:
-            px1, py1, px2, py2, _, _ = pb
-            px1, py1, px2, py2 = map(int, [px1, py1, px2, py2])
-            person_area = (px2 - px1) * (py2 - py1)
+    # if person_boxes != None:
+    for pb in persons:
+        px1, py1, px2, py2, _, _ = pb
+        px1, py1, px2, py2 = map(int, [px1, py1, px2, py2])
+        person_area = (px2 - px1) * (py2 - py1)
 
-            centroid_inside = px1 <= fcx <= px2 and py1 <= fcy <= py2
-            iou = box_iou([fx1, fy1, fx2, fy2], [px1, py1, px2, py2])
+        centroid_inside = px1 <= fcx <= px2 and py1 <= fcy <= py2
+        iou = box_iou([fx1, fy1, fx2, fy2], [px1, py1, px2, py2])
 
-            if (centroid_inside or iou >= iou_thresh) and \
-            face_area / person_area >= min_face_person_ratio:
-                face_crop = segment_face(face_roi, face_mesh)
-                if face_crop is None:
-                    return None
+        if (centroid_inside or iou >= iou_thresh) and \
+        face_area / person_area >= min_face_person_ratio:
+            face_crop = segment_face(face_roi, face_mesh)
+            if face_crop is None:
+                return None
 
-                return {
-                    "face_box": [fx1, fy1, fx2, fy2],
-                    "person_box": [px1, py1, px2, py2],
-                    "face_crop": face_crop
-                }
+            return {
+                "face_box": [fx1, fy1, fx2, fy2],
+                "person_box": [px1, py1, px2, py2],
+                "face_crop": face_crop
+            }
 
     face_crop = segment_face(face_roi, face_mesh)
     if face_crop is None:
@@ -176,38 +193,38 @@ def validate_image_fast(
         "face_crop": face_crop
     }
 
-def iter_groups_from_jsonl(jsonl_path: Path, image_root: Path, max_per_prompt=None):
-    """
-    Yields:
-        (group_name, [(Path, score, group_id), ...])
-    """
+# def iter_groups_from_jsonl(jsonl_path: Path, image_root: Path, max_per_prompt=None):
+#     """
+#     Yields:
+#         (group_name, [(Path, score, group_id), ...])
+#     """
 
-    def resolve_src(r):
-        raw = Path(r["image_path"])
-        if raw.is_absolute():
-            return raw
-        return image_root / raw.parent.parent / f"{r['group_id']}_images" / raw.name
+#     def resolve_src(r):
+#         raw = Path(r["image_path"])
+#         if raw.is_absolute():
+#             return raw
+#         return image_root / raw.parent.parent / f"{r['group_id']}_images" / raw.name
 
-    with open(jsonl_path, "r", encoding="utf-8") as f:
-        for line in f:
-            try:
-                obj = json.loads(line)
-            except json.JSONDecodeError:
-                continue
+#     with open(jsonl_path, "r", encoding="utf-8") as f:
+#         for line in f:
+#             try:
+#                 obj = json.loads(line)
+#             except json.JSONDecodeError:
+#                 continue
 
-            prompt = re.sub(r'[<>:"/\\|?*]', '_', obj["prompt"]).strip().replace(" ", "_")
-            results = obj.get("results", [])
+#             prompt = re.sub(r'[<>:"/\\|?*]', '_', obj["prompt"]).strip().replace(" ", "_")
+#             results = obj.get("results", [])
 
-            if max_per_prompt:
-                results = results[:max_per_prompt]
+#             if max_per_prompt:
+#                 results = results[:max_per_prompt]
 
-            items = []
-            for r in results:
-                p = resolve_src(r)
-                items.append((p, r["score"], r["group_id"]))
+#             items = []
+#             for r in results:
+#                 p = resolve_src(r)
+#                 items.append((p, r["score"], r["group_id"]))
 
-            if items:
-                yield prompt, items
+#             if items:
+#                 yield prompt, items
 
 def iter_groups_from_fs(input_root: Path, img_exts):
     for dirpath, _, filenames in os.walk(input_root):
@@ -245,6 +262,158 @@ def _copy_and_write(item, out_dir, face_dir, mode='copy'):
 
     return final_name
 
+import time
+
+# def process_groups(
+#     groups_iter,
+#     output_root,
+#     yolo_face,
+#     yolo_person,
+#     face_mesh,
+#     loader,
+#     batch_size,
+#     mode,
+#     device
+# ):
+#     manifest_path = output_root / "manifest.json"
+#     completed_groups = load_manifest(manifest_path)
+
+#     # for group_name, items in groups_iter:
+#     for group_idx, (group_name, items) in enumerate(groups_iter, start=1):
+#         print(f"SKIPPING - {time.time()}")
+#         if group_name in completed_groups:
+#             continue
+
+#         group_pbar = tqdm(total=len(items), desc=f"Group {group_idx}: {group_name}",  unit="img", leave=True)
+
+#         out_dir = output_root / group_name
+#         face_dir = out_dir / "facemesh"
+#         out_dir.mkdir(parents=True, exist_ok=True)
+#         face_dir.mkdir(exist_ok=True)
+
+#         valid_path = out_dir / "valid.txt"
+#         invalid_path = out_dir / "invalid.txt"
+
+#         processed = load_name_set(valid_path) | load_name_set(invalid_path)
+
+#         for i in range(0, len(items), batch_size):
+#             batch_items = [
+#                 it for it in items[i:i + batch_size]
+#                 if format_name(it[0], it[1], it[2]) not in processed
+#             ]
+
+#             if not batch_items:
+#                 continue
+            
+#             batch_paths = [p for p, _, _ in batch_items]
+#             batch_imgs = loader.load_batch(batch_paths)
+
+#             # Drop failed decodes
+#             valid = [
+#                 (it, img) for it, img in zip(batch_items, batch_imgs)
+#                 if img is not None
+#             ]
+#             if not valid:
+#                 continue
+
+#             batch_items, batch_imgs = zip(*valid)
+
+#             with torch.inference_mode():
+#                 person_results = yolo_person(list(batch_imgs), verbose=False, device=device, max_det=5) if yolo_person != None else None
+#                 face_results = yolo_face(list(batch_imgs), verbose=False, device=device, max_det=5)
+
+#             person_boxes_batch = [
+#                 r.boxes.data.cpu().numpy() if r.boxes is not None else None
+#                 for r in person_results
+#             ] if yolo_person != None else [None] * len(batch_items)
+
+#             face_boxes_batch = [
+#                 r.boxes.data.cpu().numpy() if r.boxes is not None else None
+#                 for r in face_results
+#             ]
+
+#             accepted = []
+#             rejected = []
+
+#             for (img_path, score, group_id), img_bgr, pb, fb in zip(
+#                 batch_items, batch_imgs, person_boxes_batch, face_boxes_batch
+#             ):
+#                 final_name = format_name(img_path, score, group_id)
+
+#                 # if img_bgr is None or pb is None or fb is None:
+#                 if img_bgr is None or fb is None:
+#                     rejected.append(final_name)
+#                     continue
+                
+#                 validated = validate_image_fast(img_bgr, pb, fb, face_mesh)
+#                 # validated = validate_image_fast(img_bgr, fb, face_mesh)
+#                 if validated is None:
+#                     rejected.append(final_name)
+#                     continue
+
+#                 accepted.append((img_path, validated, final_name))
+
+#             # Tune this — I/O bound, so higher than CPU count is fine
+#             max_workers = min(32, (os.cpu_count() or 8) * 2)
+
+#             with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#                 futures = [executor.submit(_copy_and_write, item, out_dir, face_dir, mode) for item in accepted]
+
+#                 # Optional: force completion & surface exceptions
+#                 for f in as_completed(futures):
+#                     f.result()
+
+
+#             append_names(valid_path, [n for _, _, n in accepted])
+#             append_names(invalid_path, rejected)
+
+#             group_pbar.update(len(batch_items))
+        
+#         completed_groups.add(group_name)
+#         save_manifest(manifest_path, completed_groups)
+
+def iter_groups_from_jsonl(jsonl_path: Path, image_root: Path, max_per_prompt=None):
+    """
+    Yields:
+        (group_name, lazy_items_function)
+    where lazy_items_function returns [(Path, score, group_id), ...] when called
+    """
+
+    def resolve_src(r):
+        raw = Path(r["image_path"])
+        if raw.is_absolute():
+            return raw
+        return image_root / raw.parent.parent / f"{r['group_id']}_images" / raw.name
+
+    with open(jsonl_path, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                obj = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+
+            prompt = re.sub(r'[<>:"/\\|?*]', '_', obj["prompt"]).strip().replace(" ", "_")
+            results = obj.get("results", [])
+
+            if max_per_prompt:
+                results = results[:max_per_prompt]
+
+            if not results:
+                continue
+
+            # Return a lambda that will resolve paths only when called
+            def make_items_loader(results_copy):
+                def load_items():
+                    items = []
+                    for r in results_copy:
+                        p = resolve_src(r)
+                        items.append((p, r["score"], r["group_id"]))
+                    return items
+                return load_items
+
+            yield prompt, make_items_loader(results)
+
+
 def process_groups(
     groups_iter,
     output_root,
@@ -256,10 +425,30 @@ def process_groups(
     mode,
     device
 ):
+    manifest_path = output_root / "manifest.json"
+    completed_groups = load_manifest(manifest_path)
+    print(manifest_path)
+    print(completed_groups)
 
-    for group_name, items in groups_iter:
-        group_pbar = tqdm(total=len(items), desc=f"Group: {group_name}",  unit="img", leave=True)
+    print(f"Loaded manifest with {len(completed_groups)} completed groups")
 
+    processed_count = 0
+    skipped_count = 0
+
+    for group_idx, (group_name, items_loader) in enumerate(groups_iter, start=1):
+        
+        # Fast skip check - no expensive operations
+        if group_name in completed_groups:
+            print(f"[SKIPPING] - Group {group_idx}: {group_name}")
+            skipped_count += 1
+            continue
+
+        # Only now do we actually load the items (resolve paths, etc.)
+        items = items_loader() if callable(items_loader) else items_loader
+        
+        print(f"\nProcessing group {group_idx}: {group_name} ({len(items)} items)")
+        
+        group_pbar = tqdm(total=len(items), desc=f"{group_name}", unit="img", leave=True, mininterval=0.0)
 
         out_dir = output_root / group_name
         face_dir = out_dir / "facemesh"
@@ -272,23 +461,27 @@ def process_groups(
         processed = load_name_set(valid_path) | load_name_set(invalid_path)
 
         for i in range(0, len(items), batch_size):
+
             batch_items = [
                 it for it in items[i:i + batch_size]
                 if format_name(it[0], it[1], it[2]) not in processed
             ]
+            # print(f"Batch Length: {len(batch_items)}")
 
             if not batch_items:
+                # print("Batch Skipped as its already fully processed")
+                group_pbar.update(min(batch_size, len(items) - i))
                 continue
             
             batch_paths = [p for p, _, _ in batch_items]
             batch_imgs = loader.load_batch(batch_paths)
 
-            # Drop failed decodes
             valid = [
                 (it, img) for it, img in zip(batch_items, batch_imgs)
                 if img is not None
             ]
             if not valid:
+                group_pbar.update(len(batch_items))
                 continue
 
             batch_items, batch_imgs = zip(*valid)
@@ -315,34 +508,194 @@ def process_groups(
             ):
                 final_name = format_name(img_path, score, group_id)
 
-                # if img_bgr is None or pb is None or fb is None:
                 if img_bgr is None or fb is None:
                     rejected.append(final_name)
                     continue
                 
                 validated = validate_image_fast(img_bgr, pb, fb, face_mesh)
-                # validated = validate_image_fast(img_bgr, fb, face_mesh)
                 if validated is None:
                     rejected.append(final_name)
                     continue
 
                 accepted.append((img_path, validated, final_name))
 
-            # Tune this — I/O bound, so higher than CPU count is fine
             max_workers = min(32, (os.cpu_count() or 8) * 2)
 
             with ThreadPoolExecutor(max_workers=max_workers) as executor:
                 futures = [executor.submit(_copy_and_write, item, out_dir, face_dir, mode) for item in accepted]
 
-                # Optional: force completion & surface exceptions
                 for f in as_completed(futures):
                     f.result()
-
 
             append_names(valid_path, [n for _, _, n in accepted])
             append_names(invalid_path, rejected)
 
             group_pbar.update(len(batch_items))
+        
+        group_pbar.close()
+        
+        completed_groups.add(group_name)
+        save_manifest(manifest_path, completed_groups)
+        processed_count += 1
+
+    print(f"\n{'='*60}")
+    print(f"Processing complete!")
+    print(f"Skipped: {skipped_count} groups (already completed)")
+    print(f"Processed: {processed_count} groups")
+    print(f"{'='*60}")
+
+# def process_groups(
+#     groups_iter,
+#     output_root,
+#     yolo_face,
+#     yolo_person,
+#     face_mesh,
+#     loader,
+#     batch_size,
+#     mode,
+#     device
+# ):
+#     manifest_path = output_root / "manifest.json"
+#     completed_groups = load_manifest(manifest_path)
+#     print(manifest_path)
+#     print(completed_groups)
+
+#     print(f"Loaded manifest with {len(completed_groups)} completed groups")
+
+#     processed_count = 0
+#     skipped_count = 0
+
+#     max_workers = min(32, (os.cpu_count() or 8))
+#     print(f"WORKERS: {max_workers}")
+
+#     for group_idx, (group_name, items_loader) in enumerate(groups_iter, start=1):
+
+#         # Fast skip check - no expensive operations
+#         if group_name in completed_groups:
+#             print(f"[SKIPPING] - Group {group_idx}: {group_name}")
+#             skipped_count += 1
+#             continue
+
+#         # Only now do we actually load the items (resolve paths, etc.)
+#         items = items_loader() if callable(items_loader) else items_loader
+
+#         print(f"\nProcessing group {group_idx}: {group_name} ({len(items)} items)")
+
+#         group_pbar = tqdm(total=len(items), desc=f"{group_name}", unit="img", leave=True)
+
+#         out_dir = output_root / group_name
+#         face_dir = out_dir / "facemesh"
+#         out_dir.mkdir(parents=True, exist_ok=True)
+#         face_dir.mkdir(exist_ok=True)
+
+#         valid_path = out_dir / "valid.txt"
+#         invalid_path = out_dir / "invalid.txt"
+
+#         processed = load_name_set(valid_path) | load_name_set(invalid_path)
+#         print(f"Valid: {len(load_name_set(valid_path))}")
+#         print(f"Invalid: {len(load_name_set(invalid_path))}")
+#         print(f"Total: {len(processed)}")
+
+#         # ----------------------------------------------------
+#         # Pre-filter processed images (instant tqdm jump)
+#         # ----------------------------------------------------
+#         remaining_items = [
+#             it for it in items
+#             if format_name(it[0], it[1], it[2]) not in processed
+#         ]
+
+#         processed_hits = len(items) - len(remaining_items)
+#         if processed_hits:
+#             group_pbar.update(processed_hits)
+
+#         print(f"Already processed: {processed_hits}")
+#         print(f"Remaining to process: {len(remaining_items)}")
+
+#         # ----------------------------------------------------
+#         # Process remaining items in batches (fast slicing)
+#         # ----------------------------------------------------
+#         for i in range(0, len(remaining_items), batch_size):
+#             batch_items = remaining_items[i:i + batch_size]
+
+#             # -------------------------
+#             # Process batch
+#             # -------------------------
+#             batch_paths = [p for p, _, _ in batch_items]
+#             batch_imgs = loader.load_batch(batch_paths)
+
+#             valid = [
+#                 (it, img) for it, img in zip(batch_items, batch_imgs)
+#                 if img is not None
+#             ]
+#             if not valid:
+#                 group_pbar.update(len(batch_items))
+#                 continue
+
+#             batch_items, batch_imgs = zip(*valid)
+
+#             with torch.inference_mode():
+#                 person_results = (
+#                     yolo_person(list(batch_imgs), verbose=False, device=device, max_det=5)
+#                     if yolo_person is not None else None
+#                 )
+#                 face_results = yolo_face(list(batch_imgs), verbose=False, device=device, max_det=5)
+
+#             person_boxes_batch = [
+#                 r.boxes.data.cpu().numpy() if r.boxes is not None else None
+#                 for r in person_results
+#             ] if yolo_person is not None else [None] * len(batch_items)
+
+#             face_boxes_batch = [
+#                 r.boxes.data.cpu().numpy() if r.boxes is not None else None
+#                 for r in face_results
+#             ]
+
+#             accepted = []
+#             rejected = []
+
+#             for (img_path, score, group_id), img_bgr, pb, fb in zip(
+#                 batch_items, batch_imgs, person_boxes_batch, face_boxes_batch
+#             ):
+#                 final_name = format_name(img_path, score, group_id)
+
+#                 if img_bgr is None or fb is None:
+#                     rejected.append(final_name)
+#                     continue
+
+#                 validated = validate_image_fast(img_bgr, pb, fb, face_mesh)
+#                 if validated is None:
+#                     rejected.append(final_name)
+#                     continue
+
+#                 accepted.append((img_path, validated, final_name))
+
+
+
+#             # with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#             #     futures = [
+#             #         executor.submit(_copy_and_write, item, out_dir, face_dir, mode)
+#             #         for item in accepted
+#             #     ]
+#             #     for f in as_completed(futures):
+#             #         f.result()
+
+#             # append_names(valid_path, [n for _, _, n in accepted])
+#             # append_names(invalid_path, rejected)
+
+#             group_pbar.update(len(batch_items))
+
+#         group_pbar.close()
+
+#         completed_groups.add(group_name)
+#         save_manifest(manifest_path, completed_groups)
+#         processed_count += 1
+
+#     print(f"\n{'='*60}")
+#     print(f"Processing complete!")
+#     print(f"Skipped: {skipped_count} groups (already completed)")
+#     print(f"Processed: {processed_count} groups")
+#     print(f"{'='*60}")
+
 
 def process_dataset_dir(
     input_root,
@@ -463,3 +816,10 @@ if __name__ == "__main__":
 # python YoloFilteringImageRetrieval.py --input_root "G:\Thesis" --output_root "E:\ImageRetrieval\Professions_125k_Cleaned" --jsonl_path "G:\Thesis\ImageRetrieval\Professions_125k_test\125k_retrieval_results_batchsize_10.jsonl" --yolo_face_model_path "models/yolov8n-face.pt" --mode "copy" --batch_size 128
 
 # python YoloFilteringImageRetrieval.py --input_root "G:\Thesis" --output_root "E:\ImageRetrieval\Professions_125k_Cleaned" --jsonl_path "G:\Thesis\ImageRetrieval\Professions_125k_test\125k_retrieval_results_batchsize_10.jsonl" --yolo_face_model_path "models/yolov8n-face.pt" --mode "copy" --batch_size 16
+
+
+# ImageRetrieval\.venv\Scripts\Activate.bat
+# cd ImageRetrieval
+# python YoloFilteringImageRetrieval.py --input_root "G:\Thesis" --output_root "G:\Thesis\ImageRetrieval\Professions_125k_ISCO_Aligned" --jsonl_path "G:\Thesis\ImageRetrieval\Professions_125k_ISCO_Aligned\retrieval_results_batchsize_10.jsonl" --yolo_face_model_path "models/yolov8n-face.pt" --yolo_person_model_path "models/yolov8n.pt" --mode "copy" --batch_size 128
+
+# python YoloFilteringImageRetrieval.py --input_root "F:\Thesis" --output_root "E:\ImageRetrieval\Professions_125k_ISCO_Aligned" --jsonl_path "D:\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl" --yolo_face_model_path "models/yolov8n-face.pt" --yolo_person_model_path "models/yolov8n.pt" --mode "copy" --batch_size 128
