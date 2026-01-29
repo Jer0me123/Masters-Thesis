@@ -1,0 +1,100 @@
+prompts_file: "configs/gender/female/prompt.yaml"
+
+pretrained_model:
+  name_or_path: "CompVis/stable-diffusion-v1-4"
+  v2: false
+  v_pred: false
+  clip_skip: 1
+
+network:
+  rank: 4                # IMPORTANT: >1 to counter occupation bias
+  alpha: 4.0
+  multiplier: 1.0
+
+train:
+  precision: float32
+  noise_scheduler: "ddim"
+  iterations: 3000       # 1000 is usually too weak for occupation debiasing
+  batch_size: 1
+  lr: 0.0001
+  unet_lr: 0.0001
+  text_encoder_lr: 5e-05
+
+  optimizer_type: "AdamW8bit"
+  lr_scheduler: "cosine_with_restarts"
+  lr_warmup_steps: 500
+  lr_scheduler_num_cycles: 3
+
+  max_denoising_steps: 50  # allow adapters to act later in diffusion
+
+  orthogonal_regularization: true
+  orthogonal_weight: 1.0   # meaningful now because male exists
+
+save:
+  name: "doctor_female"
+  path: "output/gender/doctor_female"
+  per_steps: 500
+  precision: float32
+
+logging:
+  use_wandb: true
+  interval: 500
+  seed: 0
+  generate_num: 2
+  run_name: "doctor_female"
+  verbose: false
+  prompts:
+    - "A photo of a doctor"
+    - "A professional doctor"
+    - "A medical doctor"
+
+other:
+  use_xformers: true
+
+
+# prompts_file: "configs/gender/female/prompt.yaml"
+
+# pretrained_model:
+#   name_or_path: "CompVis/stable-diffusion-v1-4"
+#   v2: false
+#   v_pred: false
+#   clip_skip: 1
+
+# network:
+#   rank: 1  # Increased from 1 for better capacity
+#   alpha: 1.0  # Match rank for standard LoRA scaling
+#   multiplier: 1.0
+
+# train:
+#   precision: float32
+#   noise_scheduler: "ddim"
+#   iterations: 1000  # Increased from 1000 for better generalization
+#   batch_size: 2  # Increased from 1 (reduce to 1 if OOM)
+#   lr: 0.00001
+#   unet_lr: 0.0001
+#   text_encoder_lr: 5e-05
+#   optimizer_type: "AdamW8bit"
+#   lr_scheduler: "cosine_with_restarts"
+#   lr_warmup_steps: 500
+#   lr_scheduler_num_cycles: 3
+#   max_denoising_steps: 30
+#   orthogonal_regularization: true
+#   orthogonal_weight: 0.1
+
+# save:
+#   name: "gender_female"
+#   path: "output/gender/female"
+#   per_steps: 500
+#   precision: float32
+
+# logging:
+#   use_wandb: true
+#   interval: 500
+#   seed: 0
+#   generate_num: 2
+#   run_name: "gender_female_universal"
+#   verbose: false
+#   prompts: ['A photo of a worker', 'A CEO', 'a nurse', 'an engineer', 'a lawyer']
+
+# other:
+#   use_xformers: true

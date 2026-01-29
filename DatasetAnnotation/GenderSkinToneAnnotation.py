@@ -812,4 +812,11 @@ if __name__ == "__main__":
 #     --lab_stats_path "models/lab_stats.npz" \
 #     --batch_size 64
 
-# python GenderSkinToneAnnotation.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir "test" --skin_model_path "G:\Thesis\CasualConversationv2_Dataset\Models\rgb\Model 1\vgg16_mst_best.pth" --skin_model_type classifier --skin_output_mode unbinned --skin_input_mode rgb
+# python GenderSkinToneAnnotation.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir "G:\Thesis\ImageRetrieval\test" --skin_model_path "G:\Thesis\CasualConversationv2_Dataset\Models\rgb\Model 1\vgg16_mst_best.pth" --skin_model_type classifier --skin_output_mode unbinned --skin_input_mode rgb
+
+
+# python GenderSkinToneAnnotation.py --image_dir "E:\ImageRetrieval\Professions_125k_ISCO_Aligned" --output_dir "E:\ImageRetrieval\Professions_125k_ISCO_Aligned_Annotations" --skin_model_path "G:\Thesis\CasualConversationv2_Dataset\Models\rgb\Model 1\vgg16_mst_best.pth" --skin_model_type classifier --skin_output_mode unbinned --skin_input_mode rgb
+
+# python GenderSkinToneAnnotation.py --image_dir "E:\ImageRetrieval\Professions_125k_ISCO_Aligned" --output_dir "E:\ImageRetrieval\Professions_125k_ISCO_Aligned_Annotations" --skin_model_path "G:\Thesis\CasualConversationv2_Dataset\Models\rgb\Model 1\vgg16_mst_best.pth" --skin_model_type classifier --skin_output_mode unbinned --skin_input_mode rgb
+
+# python GenderSkinToneAnnotation.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages_Annotations" --skin_model_path "G:\Thesis\CasualConversationv2_Dataset\Models\rgb\Model 1\vgg16_mst_best.pth" --skin_model_type classifier --skin_output_mode unbinned --skin_input_mode rgb

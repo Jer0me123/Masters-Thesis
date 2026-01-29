@@ -430,3 +430,8 @@ if __name__ == "__main__":
 # (specifically, the RGB sum of a reference pixel), ensuring that each
 # image is shuffled in a reproducible way across runs, provided the
 # preprocessing pipeline (decoding, resizing, color ordering) is unchanged.
+
+
+# python PixelPatchShufflingMeanRGB.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "E:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\Shuffling&Colour" --exclude_dirs face_crops --patch_sizes 2 4 8 16 --do_pixel_shuffle --do_patch_shuffle --do_mean_rgb
+
+# python PixelPatchShufflingMeanRGB.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\Shuffling&Colour" --exclude_dirs facemesh --patch_sizes 2 4 8 16 --do_pixel_shuffle --do_patch_shuffle --do_mean_rgb

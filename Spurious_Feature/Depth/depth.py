@@ -276,4 +276,9 @@ if __name__ == "__main__":
 
 # --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
 # --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --model_size Small -> This is done as the small model is faster and the paper notes that it is sufficiently fast for depth estimation. However Large was used in the paper but it is not fast enough for large scale processing.
+# --model_size Small -> This is done as the small model is faster and the paper notes that it is sufficiently good for depth estimation. However Large was used in the paper but it is not fast enough for large scale processing.
+
+# python Depth.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "E:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned\Depth" --exclude_dirs face_crops --device cuda --model_size Small
+
+
+# python Depth.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "Depth_MoveToEDrive" --exclude_dirs face_crops --device cuda --model_size Small

@@ -249,3 +249,5 @@ if __name__ == "__main__":
 # --model_name facebook/mask2former-swin-large-ade-semantic -> This is the model used for semantic segmentation in the paper, the difference is that this is derived from huggigface transformers library whilst the paper doesn't do that.
 
 # "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\.venv-Copy-Copy\Scripts\python.exe" "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\SemanticSegmentation\test.py" --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned"  --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\SemanticSegmentation\test_2" --batch_size 8 --fixed_size 512 512
+
+# python SemanticSegmentation.py --image_dir  "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir  "G:\SemanticSegmentation_MoveToEDrive" --resize 224 224 --batch_size 16 --num_workers 8 --exclude_dirs face_crops --fixed_size 512 512

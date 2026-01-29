@@ -1,0 +1,14 @@
+# This file includes a list of classes to exclude, however it doesn't exclude objects which can hint at a gender but are not 100% assocaited with one
+
+Human arm
+Human body
+Human ear
+Human eye
+Human face
+Human foot
+Human hair
+Human hand
+Human head
+Human leg
+Human mouth
+Human nose

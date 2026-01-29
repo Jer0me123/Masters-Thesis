@@ -240,7 +240,26 @@ def detect_objects(args):
 
     excluded_dirs = {d.lower() for d in args.exclude_dirs}
     excluded_classes = {c.title() for c in args.exclude_classes}
+
+    if args.exclude_classes_file:
+        with open(args.exclude_classes_file, "r", encoding="utf-8") as f:
+            file_classes = {
+                line.strip().title()
+                for line in f
+                if line.strip() and not line.strip().startswith("#")
+            }
+        excluded_classes |= file_classes
+
     included_classes = {c.title() for c in args.include_classes}
+
+    if args.include_classes_file:
+        with open(args.include_classes_file, "r", encoding="utf-8") as f:
+            file_classes = {
+                line.strip().title()
+                for line in f
+                if line.strip() and not line.strip().startswith("#")
+            }
+        included_classes |= file_classes
 
     completed = set()
     if jsonl_path.exists():
@@ -324,7 +343,9 @@ if __name__ == "__main__":
     parser.add_argument("--agnostic_nms", action="store_true")
     parser.add_argument("--exclude_dirs", nargs="+", default=["facemesh"])
     parser.add_argument("--exclude_classes", nargs="+", default=[])
+    parser.add_argument("--exclude_classes_file", type=str, default=None, help="Path to a text file with one class name per line to exclude")
     parser.add_argument("--include_classes", nargs="+", default=[])
+    parser.add_argument("--include_classes_file", type=str, default=None, help="Path to a text file with one class name per line to include")
     parser.add_argument("--operation", nargs="+", choices=["normal", "white_background"], default=["normal"])
     parser.add_argument("--resize", type=int, nargs=2, metavar=("WIDTH", "HEIGHT"), default=None)
     detect_objects(parser.parse_args())
@@ -352,3 +373,9 @@ if __name__ == "__main__":
 # python ObjectDetection.py --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned" --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\ObjectDetection\test3" --model_path "yolov8x-oiv7.pt" --color_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\ObjectDetection\openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --resize 224 224 --operation normal white_background --exclude_classes "Human face" --label_remap "label_remap.json"
 
 # NOTE: The label_remap.json file is not complete and needs to be extended to include all the necessary class mappings.
+
+# python ObjectDetection.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\ObjectDetection" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs face_crops --resize 224 224 --operation normal white_background --label_remap "label_remap.json" --exclude_classes_file "exclude_classes.txt"
+
+# python ObjectDetection.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ObjectDetection" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --resize 224 224 --operation normal white_background --label_remap "label_remap.json" --exclude_classes_file "exclude_classes.txt"
+
+

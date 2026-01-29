@@ -1,0 +1,31 @@
+# This file includes a list of classes to exclude. This also include things such as Dress & Human beard which although not 100% associated with a gender are strongly tied to 1 gender over the other.
+# Might be worth considering remapping these aspects scuh as dress -> clothing instead of removing them
+
+Human arm
+Human beard
+Human body
+Human ear
+Human eye
+Human face
+Human foot
+Human hair
+Human hand
+Human head
+Human leg
+Human mouth
+Human nose
+Brassiere
+Dress
+Miniskirt
+Skirt
+High heels
+Lipstick
+Face powder
+Cosmetics
+Earrings
+Necklace
+Tiara
+Handbag
+Doll
+Facial tissue holder
+Fashion accessory

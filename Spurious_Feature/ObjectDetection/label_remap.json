@@ -1,4 +1,6 @@
 {
     "Man": "Person",
-    "Woman": "Person"
+    "Woman": "Person",
+    "Boy": "Person",
+    "Girl": "Person"
 }

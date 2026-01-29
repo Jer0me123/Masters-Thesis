@@ -474,3 +474,8 @@ if __name__ == "__main__":
 # higher detection rates, more consistent IoU, and fewer low-quality
 # masks that fail QC. This leads to more usable outputs and comparable
 # end-to-end throughput when processed in batches.
+
+
+# python Occlusion.py --model mask2former_coco --image_dir  "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir  "G:\Occlusion_MoveToEDrive"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs face_crops
+
+# python Occlusion.py --model mask2former_coco --image_dir  "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\Occlusion"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs facemesh
