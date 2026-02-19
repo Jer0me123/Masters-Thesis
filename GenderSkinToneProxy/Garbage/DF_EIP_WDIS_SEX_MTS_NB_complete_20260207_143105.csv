@@ -1,0 +1,748 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,MTS,MTS_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,25.99
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,15.081
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,10.908
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,14.581
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,9.049
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,5.532
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,11.409
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,6.032
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,5.377
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,25.99
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,10.817
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,10.908
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,0.972
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,3.293
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,14.581
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,7.141
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,5.532
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.619
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,11.409
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,3.677
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,5.377
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,0.682
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.673
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,19.706
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,13.606
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,6.1
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,10.361
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,7.176
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,3.185
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,9.345
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,6.43
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,2.915
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,18.493
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,7.729
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,10.764
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,6.196
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,3.981
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,2.215
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,12.297
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,3.748
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,8.549
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,18.493
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,4.951
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,10.764
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,0.608
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,2.17
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,6.196
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,2.836
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,2.215
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.048
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,12.297
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,2.115
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,8.549
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.122
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2022,
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2022,
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2022,
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2019,44.766
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,22.731
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,22.035
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2019,23.302
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,14.138
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,9.165
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2019,21.464
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,8.593
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,12.871
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,140.345
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,60.114
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,80.232
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,53.989
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,32.474
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,21.515
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,86.356
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,27.639
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,58.717
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,140.345
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,43.879
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,80.232
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,3.798
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,12.437
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,53.989
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,26.13
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,21.515
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,0.587
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,5.758
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,86.356
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,17.749
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,58.717
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,3.21
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,6.68
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,140.276
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,13.248
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,7.992
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,69.309
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,7.265
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,2.508
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,70.967
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,5.983
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,5.484
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,140.276
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,10.243
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,6.356
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.982
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,69.309
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,6.59
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,1.528
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,70.967
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,3.653
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,4.828
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.307
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2024,119.036
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2024,59.537
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2024,59.5
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2024,1.636
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_X,Not elsewhere classified,2024,119.036
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2024,0.98
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_X,Not elsewhere classified,2024,59.537
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2024,0.656
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_X,Not elsewhere classified,2024,59.5
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,12.975
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,8.645
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,4.33
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,6.864
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,4.996
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1.868
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,6.112
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,3.649
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,2.463
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,12.975
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,6.429
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,4.33
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,2.043
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,6.864
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,4.461
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,1.868
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,6.112
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,1.968
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,2.463
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,782.383
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,456.877
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,325.506
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,344.898
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,229.9
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,114.998
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,437.485
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,226.977
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,210.508
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,50.203
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,31.895
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,18.308
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,28.388
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,19.313
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,9.075
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,21.815
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,12.582
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,9.233
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,25.1
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,18.178
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,6.922
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2018,
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,12.545
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,9.441
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,3.104
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2018,
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,12.555
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,8.737
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,3.818
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2018,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2022,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2021,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2021,
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,2.614
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,1.964
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,0.651
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,1.889
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,1.407
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,0.482
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,0.725
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,0.557
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,41.087
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,26.893
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,14.194
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2018,
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,22.065
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,15.474
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,6.592
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2018,
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,19.022
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,11.42
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,7.602
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2018,
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,98.529
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,40.12
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,58.409
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,40.291
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,21.964
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,18.328
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,58.238
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,18.156
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,40.081
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,55.748
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,34.98
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,20.767
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,27.986
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,19.796
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,8.19
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,27.761
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,15.184
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,12.577
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2023,7.056
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,4.085
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,2.972
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2023,2.844
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,1.536
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,1.309
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2023,4.212
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,2.549
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,1.663
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2023,7.056
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2023,2.813
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2023,2.972
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2023,0.508
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2023,0.764
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2023,2.844
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2023,1.256
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2023,1.309
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2023,
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2023,0.164
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2023,4.212
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2023,1.557
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2023,1.663
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2023,0.392
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2023,0.601
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,3.832
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,3.235
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,1.861
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,1.265
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,1.97
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,1.97
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,83.282
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,46.552
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,36.73
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,44.037
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,28.712
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,15.325
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,39.245
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,17.84
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,21.405
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,48.726
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,25.529
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,17.599
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,2.265
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,3.334
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,26.733
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,16.647
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,7.145
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,2.245
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,21.993
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,8.882
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,10.454
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,1.568
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.089
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,67.546
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,37.109
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,30.437
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,30.709
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,20.204
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,10.506
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,36.837
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,16.906
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,19.931
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,29.612
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,15.423
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,14.189
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,11.957
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,7.801
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,4.156
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,17.655
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,7.622
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,10.033
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,29.808
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,19.398
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,10.41
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,16.607
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,12.074
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,4.533
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,13.201
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,7.324
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,5.877
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,29.808
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,16.695
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,8.537
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2024,1.873
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,0.314
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,2.389
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,16.607
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,11.047
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,3.753
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2024,0.78
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,0.102
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,0.925
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,13.201
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,5.648
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,4.784
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2024,1.093
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,0.212
+CAN,Canada,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.465
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,81.466
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,42.351
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,39.115
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,39.541
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,19.382
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,20.159
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,41.925
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,22.97
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,18.956
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,81.466
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,25.76
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,26.809
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2024,12.306
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,6.362
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,10.229
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,39.541
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,13.629
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,13.862
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2024,6.297
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,1.762
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,3.991
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,41.925
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,12.131
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,12.947
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2024,6.009
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,4.6
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,6.238
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2021,
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2021,
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2021,
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_X,Not elsewhere classified,2021,
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_X,Not elsewhere classified,2021,
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_X,Not elsewhere classified,2021,
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2017,181.678
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2017,74.128
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2017,107.55
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2017,37.919
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2017,22.442
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2017,15.477
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2017,143.758
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2017,51.686
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2017,92.073
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2017,181.678
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2017,49.65
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2017,28.899
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2017,78.651
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2017,5.846
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2017,18.631
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2017,37.919
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2017,18.47
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2017,6.97
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2017,8.507
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2017,
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2017,3.08
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2017,143.758
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2017,31.18
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2017,21.929
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2017,70.144
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2017,4.954
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2017,15.552
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2022,5.469
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,3.521
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,1.948
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2022,2.908
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,1.558
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,1.35
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2022,2.562
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,1.963
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2022,5.469
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2022,2.146
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2022,1.458
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2022,2.908
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2022,0.64
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2022,0.86
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2022,2.562
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2022,1.506
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2022,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2022,
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,17.69
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,11.824
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,5.866
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,4.818
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,3.785
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1.033
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,12.872
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,8.039
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,4.833
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,17.69
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,7.399
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,5.508
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2024,
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,1.322
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,3.103
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,4.818
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,2.898
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,0.928
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2024,
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,0.743
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,12.872
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,4.501
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,4.58
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2024,
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,1.178
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,2.36
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,200.756
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,144.872
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,55.884
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,130.734
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,94.193
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,36.541
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,70.022
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,50.68
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,19.343
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,200.756
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,105.955
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,55.884
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,11.902
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,27.015
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,130.734
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,79.564
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,36.541
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,2.382
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,12.247
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,70.022
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,26.391
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,19.343
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,9.52
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,14.769
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2023,319.517
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,243.605
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,75.912
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2023,231.331
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,183.361
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,47.97
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2023,88.186
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,60.244
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,27.942
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2023,319.517
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2023,219.743
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2023,75.912
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2023,6.06
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2023,17.803
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2023,231.331
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2023,171.794
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2023,47.97
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2023,2.519
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2023,9.048
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2023,88.186
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2023,47.949
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2023,27.942
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2023,3.541
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2023,8.755
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,928.969
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,597.221
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,331.748
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,536.578
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,353.66
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,182.918
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,392.391
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,243.561
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,148.83
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,928.969
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,480.512
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,331.748
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,56.489
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,60.22
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,536.578
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,300.869
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,182.918
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,14.699
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,38.092
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,392.391
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,179.643
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,148.83
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,41.79
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,22.128
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2023,249.031
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,180.622
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,67.962
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2023,
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2023,166.939
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,130.794
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,35.874
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2023,
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2023,82.092
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,49.828
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,32.088
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2023,
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2023,249.031
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2023,164.967
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2023,67.962
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2023,4.537
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2023,11.118
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_X,Not elsewhere classified,2023,
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2023,166.939
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2023,121.39
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2023,35.874
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2023,1.749
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2023,7.655
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_X,Not elsewhere classified,2023,
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2023,82.092
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2023,43.577
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2023,32.088
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2023,2.788
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2023,3.463
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_X,Not elsewhere classified,2023,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,5.069
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,3.784
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1.285
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,3.885
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,3.036
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,0.849
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,1.184
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,0.748
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,5.069
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,3.099
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,1.285
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,3.885
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,2.605
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,0.849
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,1.184
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,0.495
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,904.397
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,412.331
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,470.127
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2024,21.939
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,187.463
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,145.377
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,30.022
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2024,12.064
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,716.934
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,266.954
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,440.105
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2024,9.875
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,904.397
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,365.736
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,470.127
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,14.238
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,32.357
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_X,Not elsewhere classified,2024,21.939
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,187.463
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,140.599
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,30.022
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,3.534
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_X,Not elsewhere classified,2024,12.064
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,716.934
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,225.137
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,440.105
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,12.994
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,28.823
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_X,Not elsewhere classified,2024,9.875
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,40.173
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,22.974
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,17.199
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,20.569
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,12.622
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,7.947
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,19.605
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,10.352
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,9.253
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,40.173
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,20.299
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,17.199
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,0.577
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,2.098
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,20.569
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,11.304
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,7.947
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,1.205
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,19.605
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,8.995
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,9.253
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,0.463
+ISR,Israel,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,0.893
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2016,282.139
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2016,178.326
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2016,103.813
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2016,123.739
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2016,93.413
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2016,30.326
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2016,158.4
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2016,84.913
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2016,73.487
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2016,282.139
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2016,162.117
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2016,102.584
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2016,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2016,3.635
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2016,12.574
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2016,123.739
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2016,85.056
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2016,30.326
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2016,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2016,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2016,7.971
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2016,158.4
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2016,77.06
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2016,72.258
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2016,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2016,3.249
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2016,4.604
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2021,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2021,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2021,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_X,Not elsewhere classified,2021,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_X,Not elsewhere classified,2021,
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_X,Not elsewhere classified,2021,
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2019,1334.037
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,921.685
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,412.352
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2019,530.581
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,463.718
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,66.863
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2019,803.456
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,457.967
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,345.489
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2019,1334.037
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2019,831.227
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2019,399.77
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2019,42.403
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2019,48.055
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2019,530.581
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2019,454.821
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2019,66.863
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2019,
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2019,
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2019,803.456
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2019,376.407
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2019,332.907
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2019,38.838
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2019,42.723
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2019,12.582
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2019,
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2019,12.582
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,2201.846
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,895.856
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1305.99
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,991.505
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,412.456
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,579.049
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,1210.341
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,483.4
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,726.941
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,2201.846
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,732.544
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,1305.99
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,55.833
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,107.48
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,991.505
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,364.867
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,579.049
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,14.688
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,32.902
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,1210.341
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,367.677
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,726.941
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,41.145
+TUR,Türkiye,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,74.579
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,3274.494
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,2600.494
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,674.0
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,1501.031
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1281.367
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,219.664
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,1773.463
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1319.127
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,454.336
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_TOTAL,Total,2024,3274.494
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SGLE,Single,2024,2492.267
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_MRD,Married,2024,376.545
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_UNION,Union / Cohabiting,2024,297.455
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_WID,Widowed,2024,55.215
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,MTS_DETAILS_SEP,Divorced or legally separated,2024,53.012
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_TOTAL,Total,2024,1501.031
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SGLE,Single,2024,1254.136
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_MRD,Married,2024,124.294
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_UNION,Union / Cohabiting,2024,95.371
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_WID,Widowed,2024,7.866
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,MTS_DETAILS_SEP,Divorced or legally separated,2024,19.365
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_TOTAL,Total,2024,1773.463
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SGLE,Single,2024,1238.131
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_MRD,Married,2024,252.251
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_UNION,Union / Cohabiting,2024,202.085
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_WID,Widowed,2024,47.349
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,MTS_DETAILS_SEP,Divorced or legally separated,2024,33.647

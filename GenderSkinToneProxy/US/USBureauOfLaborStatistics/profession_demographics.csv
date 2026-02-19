@@ -1,0 +1,201 @@
+Profession,Found in BLS Data
+Accountant,True
+Actor,True
+Actuary,False
+Administrative Assistant,True
+Administrator,True
+Air Traffic Controller,True
+Animal Trainer,True
+Anthropologist,False
+Appraiser,True
+Archaeologist,False
+Architect,True
+Archivist,True
+Art Director,False
+Artist,True
+Astronaut,False
+Astronomer,True
+Athlete,True
+Audio Technician,False
+Auditor,True
+Automotive Designer,False
+Baker,True
+Banker,False
+Bankruptcy Specialist,False
+Barber,True
+Barista,False
+Bartender,True
+Basketball player,False
+Biologist,False
+Biomedical Engineer,True
+Blacksmith,False
+Bodyguard,False
+Bounty Hunter,False
+Boxer,False
+Brand Manager,False
+Brewer,False
+Bricklayer,False
+Broker,True
+Builder,True
+Butcher,True
+CEO,False
+Carer,False
+Carpenter,True
+Cartographer,True
+Cashier,True
+Chef,True
+Chemical Engineer,True
+Chemist,True
+Chiropractor,True
+Civil Engineer,True
+Claims Adjuster,True
+Cleaner,True
+Clerk,True
+Coach,True
+Comedian,False
+Compliance Officer,True
+Composer,True
+Conservation Officer,False
+Construction Worker,False
+Copywriter,False
+Court Reporter,True
+Crime Scene Investigator,False
+Customer Support Specialist,False
+DJ,True
+Dancer,True
+Data Scientist,False
+Database Administrator,True
+Debt Counselor,False
+Dentist,True
+Detective,True
+Development Officer,False
+Dietitian,True
+Director,True
+Doctor,False
+Dog Walker,False
+Draughtsperson,False
+Driver,True
+Economist,True
+Editor,True
+Electrician,True
+Emergency Management Specialist,False
+Entrepreneur,False
+Environmental Engineer,True
+Ergonomist,False
+Estate Planner,False
+Event Coordinator,False
+Executive Assistant,False
+Exterminator,False
+Facilities Manager,True
+Farmer,True
+Fashion Designer,True
+Firefighter,True
+Fishmonger,False
+Flight Attendant,True
+Florist,False
+Football player,False
+Forklift Operator,False
+Gardener,False
+Geologist,False
+Graphic Designer,True
+Grocer,False
+Hair dresser,False
+Handyperson,False
+Health Inspector,False
+Historian,False
+Hotel Concierge,False
+Hotel Manager,False
+Human Resources Specialist,False
+IT Support Specialist,False
+Illustrator,False
+Industrial Designer,True
+Insurance Underwriter,True
+Janitor,True
+Jeweller,False
+Journalist,True
+Judge,True
+Lawyer,True
+Librarian,True
+Lifeguard,False
+Loan Officer,True
+Logger,False
+Logistics Manager,False
+Magician,False
+Makeup Artist,False
+Marine Biologist,False
+Marketing Manager,True
+Masseur,False
+Mathematician,True
+Mayor,False
+Mechanic,True
+Meteorologist,False
+Midwife,False
+Miner,True
+Model,True
+Musician,True
+News Reader,False
+Nurse,True
+Nutritionist,True
+Oceanographer,False
+Office Assistant,False
+Operations Manager,True
+Optician,True
+Painter,True
+Paralegal,True
+Paramedic,True
+Park Ranger,False
+Payroll Specialist,False
+Personal Trainer,False
+Pharmacist,True
+Photographer,True
+Physicist,True
+Pilot,True
+Plumber,True
+Police Officer,True
+Politician,False
+Postal Worker,False
+Priest,False
+Procurement Officer,False
+Professor,False
+Property Manager,False
+Psychologist,True
+Quality Assurance Inspector,False
+Real Estate Agent,False
+Receptionist,True
+Researcher,True
+Roofer,True
+Safety Inspector,False
+Sailor,True
+Salesperson,True
+Scientist,True
+Security Officer,False
+Shopkeeper,False
+Singer,True
+Skier,False
+Social Worker,True
+Software Engineer,False
+Soldier,False
+Sound Engineer,False
+Statistician,True
+Street Vendor,True
+Surfer,False
+Surgeon,True
+Swimmer,False
+Tailor,True
+Tattoo Artist,False
+Teacher,True
+Technician,True
+Tennis Player,False
+Therapist,True
+Translator,True
+Umpire,True
+Urban Planner,False
+Usher,True
+Veterinarian,True
+Videographer,False
+Waiter,True
+Waste Collection Worker,False
+Welder,False
+Wholesaler,False
+Writer,True
+Zoologist,False

@@ -1,0 +1,74 @@
+[
+  {
+    "code": "OCU_ISCO08_TOTAL",
+    "name": "Total",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_1",
+    "name": "1. Managers",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_2",
+    "name": "2. Professionals",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_3",
+    "name": "3. Technicians and associate professionals",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_4",
+    "name": "4. Clerical support workers",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_5",
+    "name": "5. Service and sales workers",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_6",
+    "name": "6. Skilled agricultural, forestry and fishery workers",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_7",
+    "name": "7. Craft and related trades workers",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_8",
+    "name": "8. Plant and machine operators, and assemblers",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_9",
+    "name": "9. Elementary occupations",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_0",
+    "name": "0. Armed forces occupations",
+    "description": "",
+    "parent": null
+  },
+  {
+    "code": "OCU_ISCO08_X",
+    "name": "X. Not elsewhere classified",
+    "description": "",
+    "parent": null
+  }
+]

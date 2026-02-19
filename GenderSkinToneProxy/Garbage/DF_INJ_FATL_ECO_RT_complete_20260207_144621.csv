@@ -1,0 +1,891 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,ECO,ECO_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,3.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,3.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,19.22
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,58.58
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.63
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,3.68
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,0.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,6.14
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,1.11
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,2.59
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.76
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,1.4
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.82
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.83
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,1.95
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,1.58
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.91
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+AUT,Austria,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.1
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.1
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,3.72
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.44
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,6.58
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.2
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,5.65
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.67
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.89
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.45
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,2.21
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,1.36
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,3.32
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+BEL,Belgium,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.13
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.13
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,17.36
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,0.55
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,3.64
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,6.25
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,4.94
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.81
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,5.4
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.59
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.56
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.39
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,1.28
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.41
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.3
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,1.46
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+CHE,Switzerland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,0.71
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,0.71
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,2.59
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,6.33
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,0.6
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.58
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,3.54
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,2.88
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.28
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,2.64
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.37
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.05
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.08
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.42
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.16
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.52
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.12
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.21
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.12
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.57
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.14
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+DEU,Germany,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.71
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.71
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,7.17
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,41.31
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.59
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,8.71
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,7.25
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.79
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,7.1
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.28
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.58
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.71
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.6
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.2
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.21
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.79
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.74
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.24
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+ESP,Spain,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,3.6
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,3.6
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,7.97
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,9.72
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,4.08
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,2.85
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,7.05
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,9.25
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,2.49
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,8.72
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,2.15
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,2.46
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,1.41
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,3.94
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,1.78
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,5.83
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.83
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,2.32
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,1.39
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,3.32
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,1.79
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2021,0.0
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+FRA,France,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2018,0.78
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2018,0.78
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2018,12.57
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2018,0.74
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2018,1.11
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2018,0.51
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2018,4.8
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2018,1.48
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2018,0.66
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2018,4.29
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2018,0.0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2018,0.23
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2018,0.0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2018,0.0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2018,0.0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2018,0.45
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2018,0.57
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2018,0.03
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2018,0.14
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2018,0.23
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2018,0.0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2018,0.0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2018,0.0
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,2.01
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,2.01
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,8.97
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,9.98
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.53
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.68
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,5.13
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,9.21
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,1.38
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,4.75
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.79
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.39
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.63
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.25
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,2.57
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.76
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.12
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.36
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.3
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.56
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+ITA,Italy,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,0.38
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,0.38
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,1.03
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,4.64
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,0.84
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,1.39
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,1.25
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.21
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,1.46
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.46
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.21
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.08
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.48
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.13
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.28
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.18
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.19
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.05
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.1
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.28
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+NLD,Netherlands,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.04
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.04
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,5.06
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.33
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,7.86
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,4.69
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.34
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,3.67
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.98
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.67
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.65
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.57
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.24
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.87
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+SWE,Sweden,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.64
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.64
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,5.58
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,16.65
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.19
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,5.18
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,1.71
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,8.39
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.48
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,5.45
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.0
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.63
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,5.35
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.43
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.39
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.77
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.48
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.23
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+CZE,Czechia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.03
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.03
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,9.02
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,2.74
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,14.03
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,2.09
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.64
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,2.15
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.18
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+DNK,Denmark,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.04
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.04
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,12.84
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,0.89
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,1.09
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,1.03
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,3.58
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.74
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.79
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,10.74
+FIN,Finland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2022,0.62
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2022,0.62
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2022,0.45
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2022,18.49
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2022,1.76
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2022,2.47
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2022,6.45
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2022,0.3
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2022,1.03
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2022,0.0
+GRC,Greece,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.47
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.47
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,7.18
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,0.64
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,2.73
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,11.29
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,6.03
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.57
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,4.74
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.67
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,1.63
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.51
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+HUN,Hungary,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.44
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.44
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,15.86
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,0.37
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,14.61
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,4.96
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.3
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,1.67
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.57
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,1.77
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.56
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2021,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2021,0.0
+IRL,Ireland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2022,1.12
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.29
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,19.68
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,1.49
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.35
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,2.38
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,1.12
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,8.25
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.94
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.64
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.7
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.43
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+NOR,Norway,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.18
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.18
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,2.16
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,13.51
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.04
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,1.77
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,5.36
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,3.7
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.58
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,3.39
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.31
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.19
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.56
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.36
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,1.07
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.39
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.25
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.1
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,1.77
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,0.26
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2022,0.0
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2022,0.0
+POL,Poland,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,2.69
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,2.69
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,7.27
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,6.69
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,3.48
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.0
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,5.39
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,11.56
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.82
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,7.36
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.89
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,3.69
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.78
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,3.77
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,1.84
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.25
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.2
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,4.0
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.99
+PRT,Portugal,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,29.93
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,2.57
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,2.57
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,19.98
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,2.68
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.33
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,6.6
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,3.69
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,8.5
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,1.02
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,7.35
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,1.4
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,1.16
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.96
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.8
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,1.66
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+ROU,Romania,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2024,3.02
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_AGR,Agriculture,2018,13.987
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_MAN,Manufacturing,2018,3.694
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_CON,Construction,2018,11.703
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_MEL,"Mining and quarrying; Electricity, gas and water supply",2018,7.982
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_MKT,"Trade, Transportation, Accommodation and Food, and Business and Administrative Services",2018,3.899
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_PUB,"Public Administration, Community, Social and other Services and Activities",2018,1.67
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_X,Not classified,2018,0.0
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2024,3.02
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2024,10.53
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2024,5.08
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2024,3.28
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2024,4.33
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2024,3.57
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2024,13.4
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2024,1.98
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2024,10.48
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2024,0.34
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2024,1.6
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2024,0.87
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2024,4.32
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2024,1.35
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2024,1.22
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2024,2.04
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2024,0.13
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2024,0.27
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2024,2.98
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2024,2.81
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2024,0.57
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2024,0.0
+ARG,Argentina,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.0
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,5.198
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_TOTAL,Total,2023,5.198
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_A,"A. Agriculture, hunting and forestry",2023,43.359
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_B,B. Fishing,2022,23.58
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_C,C. Mining and quarrying,2023,15.49
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_D,D. Manufacturing,2023,3.401
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_E,"E. Electricity, gas and water supply",2023,5.025
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_F,F. Construction,2023,11.694
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_G,"G. Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods",2023,0.305
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_H,H. Hotels and restaurants,2022,0.48
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_I,"I. Transport, storage and communications",2023,5.611
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_J,J. Financial intermediation,2023,0.0
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_L,L. Public administration and defence; compulsory social security,2023,8.862
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_M,M. Education,2022,
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_O,"O. Other community, social and personal service activities",2023,0.915
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_Q,Q. Extraterritorial organizations and bodies,2023,0.0
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_P,P. Activities of private households as employers and undifferentiated production activities of private households,2023,0.0
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_K,"K. Real estate, renting and business activities",2023,0.473
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_N,N. Health and social work,2023,0.148
+CAN,Canada,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_X,X. Not elsewhere classified,2022,
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2018,3.058
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_TOTAL,Total,2018,3.058
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_A,"A. Agriculture, hunting and forestry",2018,6.071
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_B,B. Fishing,2018,4.952
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_C,C. Mining and quarrying,2018,8.224
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_D,D. Manufacturing,2018,3.549
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_E,"E. Electricity, gas and water supply",2018,13.726
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_F,F. Construction,2018,4.455
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_G,"G. Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods",2018,0.926
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_H,H. Hotels and restaurants,2018,1.235
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_I,"I. Transport, storage and communications",2018,11.422
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_J,J. Financial intermediation,2018,1.636
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_K,"K. Real estate, renting and business activities",2018,1.659
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_L,L. Public administration and defence; compulsory social security,2018,0.501
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_N,N. Health and social work,2018,0.514
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_O,"O. Other community, social and personal service activities",2018,2.694
+CHL,Chile,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_M,M. Education,2018,1.02
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,6.46
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,6.46
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,6.09
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,4.5
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,15.84
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,8.95
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,1.89
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,7.47
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.73
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,1.36
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,2.49
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,2.78
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,2.69
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.68
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,4.61
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,50.91
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,36.04
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.87
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,3.85
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,7.69
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,1.47
+COL,Colombia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2023,0.0
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.32
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.32
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,25.0
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.33
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,0.33
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,6.76
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.14
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.18
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.14
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,9.49
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.77
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,3.85
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.3
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.04
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2020,1.45
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,0.08
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,0.44
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,1.03
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2020,0.0
+JPN,Japan,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,10.31
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2021,7.512
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2021,7.512
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2021,0.231
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2021,0.162
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2021,0.935
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2021,0.079
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2021,0.034
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2021,0.674
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2021,0.95
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2021,0.709
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2021,0.172
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2021,0.02
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2021,0.049
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2021,0.0
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2021,0.394
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2021,0.025
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2021,2.461
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2021,0.0
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2021,0.369
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2021,0.015
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2021,0.015
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2021,0.212
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2021,0.0
+MEX,Mexico,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2021,0.005
+URY,Uruguay,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2018,3.73
+URY,Uruguay,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2018,3.73
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,3.5
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_AGR,Agriculture,2018,57.4
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_MAN,Manufacturing,2018,2.6
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_CON,Construction,2018,15.97
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_MEL,"Mining and quarrying; Electricity, gas and water supply",2018,16.81
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_MKT,"Trade, Transportation, Accommodation and Food, and Business and Administrative Services",2018,3.82
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,3.5
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,20.3
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,16.9
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,2.5
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,3.3
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2018,23.75
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,9.6
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2018,2.78
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,12.9
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,2.0
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,1.1
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.3
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,3.1
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.5
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2018,8.6
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,1.0
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.7
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,3.2
+USA,United States of America,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,3.1
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.416
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_TOTAL,Total,2017,1.62
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_A,"A. Agriculture, hunting and forestry",2017,12.2
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_B,B. Fishing,2017,15.6
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_C,C. Mining and quarrying,2017,1.6
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_D,D. Manufacturing,2017,0.7
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_E,"E. Electricity, gas and water supply",2017,1.1
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_F,F. Construction,2017,2.9
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_G,"G. Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods",2017,0.6
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_H,H. Hotels and restaurants,2017,0.6
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_I,"I. Transport, storage and communications",2017,8.0
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_J,J. Financial intermediation,2017,0.4
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_K,"K. Real estate, renting and business activities",2017,0.6
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_L,L. Public administration and defence; compulsory social security,2017,0.3
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_M,M. Education,2017,0.5
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_N,N. Health and social work,2017,0.5
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_O,"O. Other community, social and personal service activities",2017,0.8
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_P,P. Activities of private households as employers and undifferentiated production activities of private households,2017,0.0
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_Q,Q. Extraterritorial organizations and bodies,2017,0.0
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.416
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,9.189
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2023,2.059
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.321
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2023,1.198
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2023,3.789
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,3.408
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.532
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,7.045
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2023,0.547
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2023,0.0
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.0
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,0.474
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2023,0.152
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.958
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2023,1.657
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2023,0.34
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2023,0.046
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2023,2.327
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2023,1.668
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2023,0.0
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2023,0.0
+AUS,Australia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2023,0.0
+KOR,Republic of Korea,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,3.93
+KOR,Republic of Korea,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,3.93
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2022,14.58
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_TOTAL,Total,2017,3.8
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_A,"A. Agriculture, hunting and forestry",2017,10.9
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_B,B. Fishing,2015,42.0
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_C,C. Mining and quarrying,2017,10.2
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_D,D. Manufacturing,2017,3.7
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_E,"E. Electricity, gas and water supply",2017,5.6
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_F,F. Construction,2017,9.1
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_G,"G. Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods",2017,3.1
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_H,H. Hotels and restaurants,2017,0.9
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_I,"I. Transport, storage and communications",2017,5.9
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_J,J. Financial intermediation,2017,0.5
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_K,"K. Real estate, renting and business activities",2017,1.4
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_L,L. Public administration and defence; compulsory social security,2017,4.8
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_M,M. Education,2015,1.0
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_N,N. Health and social work,2017,0.5
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_O,"O. Other community, social and personal service activities",2017,3.6
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_P,P. Activities of private households as employers and undifferentiated production activities of private households,2017,3.7
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC3_Q,Q. Extraterritorial organizations and bodies,2017,3.7
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2022,14.58
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2022,9.29
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2022,11.7
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2022,3.43
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2022,11.54
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2022,33.72
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2022,15.26
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2022,27.92
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2022,3.72
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2022,5.13
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2022,1.23
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2022,28.92
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2022,0.98
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2022,12.79
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2022,1.97
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2022,3.96
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2022,30.23
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2022,5.34
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2022,5.73
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2022,11.09
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2022,25.65
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2022,26.81
+MYS,Malaysia,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2022,0.0
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2021,3.22
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2021,3.22
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2021,4.13
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2021,10.7
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2021,6.55
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2021,17.52
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2021,3.72
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2021,10.91
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2021,0.89
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2021,5.21
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2021,4.44
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2021,4.72
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2021,2.53
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2021,5.69
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2021,0.4
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2021,0.38
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2021,0.58
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2019,4.7
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2019,0.0
+PHL,Philippines,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2019,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,0.99
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,0.99
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,1.2
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,3.4
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,0.2
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2023,3.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2022,0.8
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2023,0.4
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2020,2.4
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2023,1.3
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2020,18.3
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2023,0.4
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2020,0.0
+SGP,Singapore,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2020,0.0
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2024,4.9
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2024,4.9
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2024,28.86
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2024,12.19
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2024,3.1
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2024,32.67
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2024,19.56
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2024,17.33
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2024,3.85
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2024,15.97
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2024,1.74
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2024,1.81
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2024,1.64
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2024,2.38
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2024,1.38
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2024,2.79
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2024,3.5
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2024,0.0
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2024,0.83
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2024,1.88
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2024,2.74
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2024,0.0
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2024,0.0
+THA,Thailand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2024,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2022,2.9
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2022,2.9
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2022,7.8
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2022,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2022,4.8
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2022,5.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2015,15.32
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2022,2.2
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2022,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2022,0.8
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2022,2.5
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2015,5.2
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2022,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2022,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2015,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2015,34.24
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2022,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2022,1.4
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2022,1.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2015,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2015,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2022,0.0
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2022,1.1
+EGY,Egypt,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2022,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2023,1.624
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2023,1.624
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2023,5.724
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2023,3.634
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2023,13.359
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2023,2.558
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2015,14.09
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2015,0.0
+ISR,Israel,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2015,0.0
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2015,2.3
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2015,2.3
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2015,0.0
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2015,
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2015,0.0
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2015,0.0
+NZL,New Zealand,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2015,
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_AGGREGATE_TOTAL,Total,2024,11.47
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_TOTAL,Total,2024,11.47
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_A,A. Agriculture; forestry and fishing,2024,22.62
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_B,B. Mining and quarrying,2024,49.14
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_C,C. Manufacturing,2024,11.51
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_D,"D. Electricity; gas, steam and air conditioning supply",2024,18.87
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_E,"E. Water supply; sewerage, waste management and remediation activities",2024,15.43
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_F,F. Construction,2024,27.71
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_G,G. Wholesale and retail trade; repair of motor vehicles and motorcycles,2024,4.07
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_H,H. Transportation and storage,2024,32.33
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_I,I. Accommodation and food service activities,2024,6.58
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_J,J. Information and communication,2024,2.1
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_K,K. Financial and insurance activities,2024,2.69
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_L,L. Real estate activities,2024,8.39
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_M,"M. Professional, scientific and technical activities",2024,2.66
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_N,N. Administrative and support service activities,2024,6.45
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_O,O. Public administration and defence; compulsory social security,2024,5.21
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_P,P. Education,2024,1.53
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_Q,Q. Human health and social work activities,2024,1.42
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_R,"R. Arts, entertainment and recreation",2024,1.1
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_S,S. Other service activities,2024,2.96
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_T,T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use,2024,0.0
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_U,U. Activities of extraterritorial organizations and bodies,2024,0.0
+TUR,Türkiye,A,Annual,INJ_FATL_RT,Fatal occupational injuries per 100'000 workers,ECO_ISIC4_X,X. Not elsewhere classified,2024,29.67

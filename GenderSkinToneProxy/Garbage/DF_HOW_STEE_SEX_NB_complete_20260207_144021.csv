@@ -1,0 +1,73 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,29.61
+AUT,Austria,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,32.12
+AUT,Austria,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,25.29
+CHE,Switzerland,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,36.91
+CHE,Switzerland,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,39.54
+CHE,Switzerland,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,33.29
+FRA,France,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,31.65
+FRA,France,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,32.88
+FRA,France,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,29.76
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,33.62
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,36.14
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,30.27
+ITA,Italy,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2020,32.86
+ITA,Italy,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2020,34.38
+ITA,Italy,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2020,30.31
+CZE,Czechia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,35.16
+CZE,Czechia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,36.25
+CZE,Czechia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,33.55
+GRC,Greece,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,37.7
+GRC,Greece,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,38.26
+GRC,Greece,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,36.96
+PRT,Portugal,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,33.39
+PRT,Portugal,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,35.02
+PRT,Portugal,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,31.3
+ARG,Argentina,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,36.18
+ARG,Argentina,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,39.18
+ARG,Argentina,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,32.69
+BRA,Brazil,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,38.63
+BRA,Brazil,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,39.79
+BRA,Brazil,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,37.37
+COL,Colombia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2017,47.61
+COL,Colombia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2017,48.58
+COL,Colombia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2017,45.61
+MEX,Mexico,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,42.71
+MEX,Mexico,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,44.15
+MEX,Mexico,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,40.44
+PER,Peru,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,40.43
+PER,Peru,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,42.36
+PER,Peru,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,37.74
+URY,Uruguay,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,33.72
+URY,Uruguay,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,36.26
+URY,Uruguay,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,30.78
+USA,United States of America,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,37.04
+USA,United States of America,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,39.27
+USA,United States of America,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,35.04
+IDN,Indonesia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2023,42.08
+IDN,Indonesia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2023,43.75
+IDN,Indonesia,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2023,39.57
+IND,India,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,57.11
+IND,India,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,58.44
+IND,India,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,54.13
+PHL,Philippines,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2023,40.58
+PHL,Philippines,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2023,43.07
+PHL,Philippines,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2023,37.94
+THA,Thailand,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,43.19
+THA,Thailand,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,43.22
+THA,Thailand,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,43.15
+VNM,Viet Nam,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,44.79
+VNM,Viet Nam,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,45.66
+VNM,Viet Nam,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,43.54
+EGY,Egypt,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,46.06
+EGY,Egypt,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,46.83
+EGY,Egypt,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,44.29
+ISR,Israel,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,37.03
+ISR,Israel,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,39.06
+ISR,Israel,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,34.21
+KEN,Kenya,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2022,41.18
+KEN,Kenya,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2022,42.79
+KEN,Kenya,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2022,37.69
+TUR,Türkiye,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_T,Total,2024,43.44
+TUR,Türkiye,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_M,Male,2024,43.92
+TUR,Türkiye,A,Annual,HOW_STEE_NB,Average weekly hours actually worked per employee in a STEM occupation,SEX_F,Female,2024,42.66

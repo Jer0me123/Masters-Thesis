@@ -1,0 +1,262 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,MTS,MTS_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,834.712
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,437.485
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,397.227
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,529.083
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,276.434
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,252.649
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,305.63
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,161.051
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,144.578
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,1149.068
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,645.303
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,503.765
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2015,8.358
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,661.742
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,360.419
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,301.323
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2015,4.056
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,487.326
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,284.884
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,202.442
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2015,4.302
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,5431.92
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,287.433
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,605.933
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,3190.894
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,168.657
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,352.245
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,2241.027
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,118.775
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,253.687
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2024,4538.555
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2024,2669.991
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2024,1868.564
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,5705.457
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,2785.243
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,2919.486
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,3295.264
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1544.776
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1749.76
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,2410.194
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1240.468
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1169.726
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2024,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,879.566
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,353.294
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,526.272
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,545.989
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,218.414
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,327.575
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,333.577
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,134.88
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,198.697
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,404.83
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,147.136
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,257.694
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,229.431
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,79.293
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,150.139
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,175.399
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,67.843
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,107.556
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,707.596
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,366.716
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,340.881
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2015,
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,390.708
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,182.254
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,208.454
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2015,
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,316.888
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,184.461
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,132.427
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2015,
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,1223.672
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,504.196
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,719.476
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,646.355
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,256.5
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,389.855
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,577.317
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,247.696
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,329.621
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2020,971.389
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,401.014
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,570.375
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2020,550.3
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,186.136
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,364.164
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2020,421.089
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2020,214.878
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2020,206.211
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2017,1546.792
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2017,671.517
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2017,875.275
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2017,1075.705
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2017,428.214
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2017,647.491
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2017,471.087
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2017,243.303
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2017,227.784
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2022,7331.446
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,2730.26
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,4565.266
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2022,35.92
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2022,4279.018
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,1487.087
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,2774.931
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2022,17.001
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2022,3052.428
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,1243.174
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,1790.335
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2022,18.919
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,3923.341
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1831.98
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,2091.224
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,2452.281
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1013.218
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1439.001
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,1471.06
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,818.762
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,652.223
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2024,0.137
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2024,
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2024,0.076
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,146.97
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,91.043
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,55.927
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,79.385
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,47.879
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,31.506
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,67.585
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,43.164
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,24.421
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,30465.909
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,13093.775
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,17372.133
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,14420.397
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,5508.717
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,8911.68
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,16045.512
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,7585.058
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,8460.454
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,2290.85
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,743.73
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1547.12
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2018,875.461
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,1224.041
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,369.47
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,854.571
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2018,465.542
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,1066.81
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,374.26
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,692.549
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2018,409.919
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2023,4277.58
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,1296.542
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,2981.038
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2023,2625.652
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,688.329
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,1937.323
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2023,1651.928
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,608.214
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,1043.715
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,15756.387
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,5409.044
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,10347.343
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,11206.652
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,3653.557
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,7553.096
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,4549.735
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1755.488
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,2794.248
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2023,1917.351
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,842.973
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,1073.52
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2023,0.859
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2023,975.548
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,427.762
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,547.422
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2023,0.364
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2023,941.804
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2023,415.211
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2023,526.098
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2023,0.495
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,1489.139
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,995.903
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,465.669
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2024,27.567
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,790.234
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,515.033
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,264.903
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2024,10.299
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,698.905
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,480.87
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,200.767
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2024,17.269
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,1933.067
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,490.777
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1442.29
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2016,
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,1153.114
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,309.743
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,843.37
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2016,
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,779.953
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,181.034
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,598.919
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2016,
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,2011.299
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,649.109
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1358.022
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2024,4.168
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,1427.567
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,422.705
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1001.756
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2024,3.106
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,583.732
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,226.405
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,356.265
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2024,
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,769.536
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,234.9
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,534.635
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,444.088
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,134.28
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,309.808
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,325.447
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,100.621
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,224.827
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2022,569.127
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,165.898
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,403.228
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2022,398.6
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,94.587
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,304.013
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2022,170.527
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2022,71.311
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2022,99.216
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2019,1939.316
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,521.68
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,1407.538
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2019,1264.26
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,309.599
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,944.562
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2019,675.057
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2019,212.081
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2019,462.976
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_X,Not elsewhere classified,2019,
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_X,Not elsewhere classified,2019,
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_X,Not elsewhere classified,2019,
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_TOTAL,Total,2024,2591.414
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,1097.942
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1493.472
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_TOTAL,Total,2024,1612.634
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,610.706
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,1001.929
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_TOTAL,Total,2024,978.78
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_1,Single / Widowed / Divorced,2024,487.237
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,MTS_AGGREGATE_2,Married / Union / Cohabiting,2024,491.543

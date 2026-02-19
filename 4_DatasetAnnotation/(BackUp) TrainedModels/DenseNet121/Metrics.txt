@@ -1,0 +1,13 @@
+-> python DenseNet121_SkinTone_Training.py --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --save-dir "G:\Thesis\Models\DenseNet_LAB" --epochs 32 --batch-size 32 --val-ratio 0.35 --lr 1e-4 --weight-decay 1e-4 --threshold 0.5 --gpu 0 --mode classification --loss oce --finetune last
+
+-> Trained using pre-computed LAB normalization values:
+	lab_mean = np.array([27.715821371226003, 10.521480987873188, 8.514460146640673], dtype=np.float32)
+        lab_std  = np.array([24.70048803837073, 8.827357389195186, 8.660419910058293], dtype=np.float32)
+
+-> Validate Epoch 26: 100%|█████████████████| 2028/2028 [15:07<00:00,  2.24it/s, loss=0.0983, acc=0.00]
+[EPOCH 26] TrainLoss=0.0017 TrainAcc=99.13% | ValLoss=0.3167 ValAcc=33.70% | L2 mean=12.516, std=13.393
+[EARLY STOP] No improvement for 10/10 epochs
+[EARLY STOP] Triggered! Best ValAcc: 34.12%
+[INFO] Early stopping triggered at epoch 26
+[INFO] Saved FINAL model -> G:\Thesis\Models\DenseNet_LAB\densenet121_lab_final.pth
+[INFO] Training complete. Best ValAcc: 34.12%, Best ValLoss: 0.1804

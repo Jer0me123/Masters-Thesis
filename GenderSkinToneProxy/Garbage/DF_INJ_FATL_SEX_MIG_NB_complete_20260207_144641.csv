@@ -1,0 +1,310 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,MIG,MIG_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2024,59
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,39
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,70
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2024,58
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,38
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,66
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2024,1
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2022,1
+AUT,Austria,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,4
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,45
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,11
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,34
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,43
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,11
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,32
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,2
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2021,1
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,2
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2018,1
+BEL,Belgium,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2018,1
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,58
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,27
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,31
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,55
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,27
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,28
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,3
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2020,2
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,3
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2018,1
+CHE,Switzerland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2018,1
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,397
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,50
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,345
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2022,2
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,364
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,50
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,312
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2022,2
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,33
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2021,1
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,33
+DEU,Germany,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_X,Unknown,2016,3
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,411
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,70
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,341
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,393
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,69
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,324
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,18
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2022,1
+ESP,Spain,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,17
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2024,37
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2017,3
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2017,45
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2022,775
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2024,35
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2017,3
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2017,43
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2022,699
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2024,2
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2015,2
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2017,2
+FRA,France,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_X,Unknown,2022,76
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2015,260
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2015,0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2015,0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2015,260
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2015,236
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2015,0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2015,0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2015,236
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2015,24
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2015,0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2015,0
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_X,Unknown,2015,24
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,469
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,90
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,379
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2017,484
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,441
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,87
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,354
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2017,453
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,28
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2022,3
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,25
+ITA,Italy,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_X,Unknown,2017,31
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,25
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,1
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,24
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,24
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,1
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,23
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,1
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2020,0
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,1
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2020,0
+NLD,Netherlands,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2020,0
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2024,40
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2015,0
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2015,0
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2022,40
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2024,39
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2015,0
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2015,0
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2022,31
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2024,1
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2015,0
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2015,0
+SWE,Sweden,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_X,Unknown,2022,9
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,77
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,17
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,63
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2022,8
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,73
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,16
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,59
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2022,8
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,4
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2022,1
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,4
+CZE,Czechia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_X,Unknown,2019,1
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,41
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,8
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,33
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,36
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,4
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,32
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,1
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2019,1
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,1
+DNK,Denmark,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2016,1
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,27
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2023,0
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2023,27
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,26
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2023,0
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2023,26
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,1
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2023,0
+FIN,Finland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2023,1
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,25
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,9
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,16
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,25
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,9
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,16
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2020,2
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2015,0
+GRC,Greece,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2020,2
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2024,75
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2024,2
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2024,73
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2024,69
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2024,2
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2024,67
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2024,6
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2024,0
+HUN,Hungary,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2024,6
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,25
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,1
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,24
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,25
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,1
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,24
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2018,1
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2015,0
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2018,1
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2020,1
+IRL,Ireland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2020,1
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,31
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,3
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,28
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2015,2
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,31
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,3
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,28
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2015,2
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2021,1
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2015,0
+NOR,Norway,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2021,1
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,168
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,7
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,173
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,159
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,7
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,164
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,9
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2016,1
+POL,Poland,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,9
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,141
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,10
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,131
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,136
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,10
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,126
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,5
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2015,0
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,5
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2018,9
+PRT,Portugal,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2018,9
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2024,139
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2024,1
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2024,138
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_X,Unknown,2022,1
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2024,129
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2024,1
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2024,128
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_X,Unknown,2022,1
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2024,10
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2024,0
+ROU,Romania,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2024,10
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,337
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,305
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,10
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2023,11
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2023,304
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2023,11
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2023,294
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2023,0
+ARG,Argentina,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2023,10
+BRA,Brazil,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2015,2387
+BRA,Brazil,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2016,2156
+CHL,Chile,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2018,160
+CHL,Chile,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2018,149
+CHL,Chile,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2018,11
+COL,Colombia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2015,1742
+COL,Colombia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,760
+JPN,Japan,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2015,972
+MEX,Mexico,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2021,1526
+MEX,Mexico,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2021,1292
+MEX,Mexico,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2021,234
+PER,Peru,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2015,179
+PER,Peru,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2015,168
+PER,Peru,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2015,11
+URY,Uruguay,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,27
+URY,Uruguay,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,26
+URY,Uruguay,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,1
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,5283
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2018,1028
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2018,4222
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,4832
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2018,966
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2018,3871
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,447
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2018,62
+USA,United States of America,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2018,351
+AUS,Australia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,200
+AUS,Australia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,189
+AUS,Australia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,10
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,812
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2023,85
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2023,727
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,783
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2023,77
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2023,706
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,29
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2023,8
+KOR,Republic of Korea,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2023,21
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,1344
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,1207
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,137
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,1285
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,1150
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,135
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,59
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,57
+MYS,Malaysia,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2022,2
+PHL,Philippines,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2019,310
+PHL,Philippines,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2021,169
+SGP,Singapore,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,36
+SGP,Singapore,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,36
+SGP,Singapore,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2023,0
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2024,595
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2024,67
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2024,528
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2024,554
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2024,64
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2024,490
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2024,41
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2024,3
+THA,Thailand,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2024,38
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2023,75
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2023,17
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2023,58
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2023,75
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2023,17
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2023,58
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2020,1
+ISR,Israel,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2020,1
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2024,1905
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2024,21
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2024,1884
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2024,1851
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2024,20
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2024,1831
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2024,54
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2024,1
+TUR,Türkiye,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2024,53
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_TOTAL,Total,2022,83
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_MIGRANT,Migrants,2022,15
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_T,Total,MIG_STATUS_NONMIG,Non migrants,2022,68
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_TOTAL,Total,2022,83
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_MIGRANT,Migrants,2022,15
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_M,Male,MIG_STATUS_NONMIG,Non migrants,2022,68
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_TOTAL,Total,2022,0
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_MIGRANT,Migrants,2022,0
+ZAF,South Africa,A,Annual,INJ_FATL_NB,Cases of fatal occupational injury,SEX_F,Female,MIG_STATUS_NONMIG,Non migrants,2022,0

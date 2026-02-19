@@ -1,0 +1,959 @@
+\graphicspath{{content/chapters/2_background/figures/}}
+
+\chapter{Background \& Literature Review}%
+\label{chp:background&lit}
+
+% Mention LAION-5B, GRAD-CAM, Skin Tone annotaion (Fitpatrick / MONK), Debiasing SD Models (Re-training, Finetuning, At inference)
+
+
+\section{Re-LAION-5B Dataset}
+Re-LAION-5B is a large-scale, openly released image-text dataset comprising approximately 5.85 billion image-text pairs harvested from the publicly accessible portions of the internet via Common Crawl, a non-profit organisation that continuously indexes web content and makes its archived crawl data freely available to researchers \cite{Schuhmann_2022_Laion5b, CommonCrawl_2007_CommonCrawl}. The dataset is a re-release of the original LAION-5B, itself introduced by Schuhmann et al. \cite{Schuhmann_2022_Laion5b} as one of the largest publicly available multimodal training corpora at the time of its release. The re-release was motivated by the discovery of \acrshort{csam} within the original corpus, with Re-LAION-5B representing a re-filtered version produced through improved safety filtering pipelines, including enhanced perceptual hashing and classifier-based detection methods designed to remove harmful content \cite{Laion_2024_Relaion5B}.
+
+The construction pipeline of the original LAION-5B, which Re-LAION-5B is derived from, is structured as follows. HTML pages indexed by Common Crawl are parsed to extract image URLs paired with their associated \texttt{alt} text, yielding raw image-caption pairs at web scale. These pairs are subsequently filtered using a CLIP-based semantic similarity score \cite{Radford_2021_CLIP}, computed as the cosine similarity between image and text embeddings using OpenAI's ViT-B/32 CLIP model for English pairs and a multilingual CLIP variant for all others. As described by Schuhmann et al. \cite{Schuhmann_2022_LAION5B}, pairs below a cosine similarity of 0.28 were discarded for English content and below 0.26 for non-English content, a step that removed approximately 90\% of the original 50 billion candidate pairs. Additional filtering stages remove near-duplicate pairs using locality-sensitive hashing, apply NSFW classifiers to exclude explicit content, and enforce minimum resolution and caption length requirements to discard low-quality samples.
+
+The resulting dataset is stratified by detected language into three subsets: LAION-2B-en, comprising approximately 2.32 billion English-language image-text pairs; LAION-2B-multi, comprising approximately 2.26 billion pairs spanning over 100 other languages; and LAION-1B-nolang, comprising approximately 1.27 billion samples for which no language could be reliably detected, which frequently correspond to images of products, places, or content dominated by proper nouns \cite{Schuhmann_2022_LAION5B}. Together these three subsets constitute the full LAION-5B corpus of approximately 5.85 billion pairs.
+
+A further aesthetics-filtered derivative was constructed exclusively from LAION-2B-en. Using a linear classifier trained on CLIP ViT-L/14 image embeddings to predict human aesthetic ratings, Schuhmann \cite{laionAesthetics} produced a series of nested subsets of LAION-2B-en filtered by predicted aesthetic score. The subset used for training Stable Diffusion v1.5, referred to as LAION-Aesthetics v2 5+, retains only those pairs with a predicted aesthetic score exceeding 5.0 out of 10, an original image resolution of at least 512$\times$512 pixels, and an estimated watermark probability below 0.5 \cite{sd15modelcard}, yielding approximately 600 million image-text pairs. LAION-Aesthetics is therefore not a separate corpus but a quality-filtered offshoot of the English-language component of LAION-5B.
+
+
+Despite the scale and ambition of the dataset, several significant concerns have been raised regarding its content. Birhane et al. \cite{Birhane_2021_MultiModalDatasetsMisogynyPornography} conducted an audit of LAION-400M, a predecessor to LAION-5B, and identified substantial quantities of misogynistic, pornographic, and racially derogatory content embedded within the corpus, reflecting the unfiltered nature of web-scraped data. These findings were later extended to LAION-5B itself, reinforcing concerns that automated safety filtering is insufficient to remove harmful material at billion-scale. Beyond explicit harmful content, the web-scraped construction process introduces systematic demographic and representational imbalances, as the statistical composition of online imagery reflects existing societal inequities in content production, platform access, and visual representation \cite{Birhane_2021_MultiModalDatasetsMisogynyPornography, Mehrabi_2022_SurveyBiasFairnessMachine}.
+
+A practically significant limitation of the Re-LAION-5B release concerns the availability of pre-computed embeddings. The original LAION-5B release included pre-computed CLIP image and text embeddings alongside image URLs and captions, enabling efficient nearest-neighbour retrieval and semantic search without requiring users to independently process raw images. These embeddings underpinned tools such as the LAION CLIP retrieval service, which allowed researchers to query the dataset semantically. In the Re-LAION-5B re-release, these pre-computed embeddings were not made publicly available, as the re-filtering process altered the dataset composition and the associated embedding infrastructure was not reconstructed at the time of release \cite{Laion_2024_Relaion5B}. As a result, any research requiring embedding-based retrieval from Re-LAION-5B must independently compute CLIP embeddings from raw image downloads, introducing substantial computational overhead and making large-scale semantic queries considerably more difficult to execute than was the case with the original release. For this thesis, this absence necessitates the derivation of image embeddings as part of the data acquisition pipeline.
+
+%\section{Stable Diffusion: Architecture, Training, and Dataset Lineage}\\
+%Stable Diffusion is a family of open-source text-to-image generative models based on the latent diffusion model (LDM) framework introduced by Rombach et al. [1]. The central architectural innovation of LDMs is the decoupling of the generative process from the pixel space of the original image. A Variational Autoencoder (VAE) [43] is first trained to learn a compressed latent representation of images, with its encoder mapping high-resolution inputs into a lower-dimensional latent space and its decoder reconstructing images from latent codes. Once trained, the VAE encoder and decoder are frozen, and all subsequent generative modelling is performed within this learned latent space rather than at full pixel resolution. This compression dramatically reduces the computational cost of training and inference relative to pixel-space diffusion models such as DALL-E [44] or earlier score-based generative models, making high-resolution image synthesis tractable at scale.
+%The diffusion process itself follows the denoising diffusion probabilistic model (DDPM) framework [45], in which a forward process incrementally corrupts a clean latent representation by adding Gaussian noise over a fixed number of timesteps, and a learned reverse process — implemented as a U-Net [46] — iteratively denoises a noisy latent to recover a clean sample. At inference time, generation begins from a sample of pure Gaussian noise and proceeds through repeated application of the denoising network over multiple timesteps to produce a coherent latent, which is then decoded into a full image by the VAE decoder.
+%Conditioning on text prompts is achieved through cross-attention mechanisms integrated into the intermediate layers of the U-Net backbone. Text inputs are encoded using a pretrained CLIP text encoder [24], producing a sequence of text embeddings that are injected into the denoising network via cross-attention at multiple spatial resolutions. This conditioning mechanism enables the model to align generated image content with the semantic content of the input prompt. During inference, classifier-free guidance (CFG) [47] is typically applied, in which the denoising network is evaluated both with and without the text conditioning signal, and the final score estimate is computed as a weighted combination of the two. Higher CFG scale values produce outputs more strongly adherent to the prompt at the cost of reduced sample diversity and occasional visual artefacts.
+%Stable Diffusion v1.5, the model examined in this thesis, was released by RunwayML and is a continuation of training from Stable Diffusion v1.2, itself initialised from v1.1 weights produced by CompVis. Training was conducted on the LAION-Aesthetics v2 5+ subset, comprising approximately 600 million image-text pairs selected from LAION-5B on the basis of a predicted aesthetic quality score [42]. This score was produced by a linear classifier trained on human preference ratings using CLIP embeddings as input features, filtering the broader LAION-2B-en corpus to retain only those pairs predicted to have high visual quality. The model was trained at 512×512 pixel resolution using the Adam optimiser and a linear noise schedule [48]. Critically, the training corpus is a direct derivative of the broader LAION-5B dataset, inheriting its web-scraped composition, demographic and representational imbalances, and the spurious statistical regularities documented in Section 2.1. The open-source availability of both model weights and the documented training data lineage makes Stable Diffusion v1.5 particularly well-suited for mechanistic bias analysis, as findings can be independently verified and directly linked to known properties of the training corpus.
+%Subsequent iterations in the Stable Diffusion family have progressively diverged from this openly documented training data lineage. Stable Diffusion 2.0 and 2.1, developed by Stability AI, were trained on a subset of LAION-5B filtered using a more stringent NSFW classifier and employed a larger OpenCLIP text encoder [49] in place of the original CLIP encoder, but retained the LAION-scraped foundation. Stable Diffusion XL (SDXL) adopted an enlarged dual-encoder architecture and a multi-aspect ratio training procedure, but was trained on a proprietary dataset curated by Stability AI whose composition has not been publicly disclosed [50]. More recent releases including Stable Diffusion 3 and Stable Diffusion 3.5 introduce rectified flow transformers as the denoising backbone and similarly rely on undisclosed proprietary training corpora [51]. This progressive shift away from openly documented training data reduces external reproducibility and substantially limits the capacity for independent bias auditing in later models. The absence of training data transparency in newer systems reinforces the methodological value of focusing the present analysis on Stable Diffusion v1.5, where the training data lineage remains traceable and findings can be grounded in documented dataset properties.
+
+\section{Spurious Features in Machine Learning}
+\label{sec:spurious_features}
+
+\subsection*{Defining Spurious Features and Spurious Correlations}
+A key challenge in deploying machine learning models reliably is their tendency to learn
+features that are predictive within the training data but carry no causal or semantic
+relationship to the target variable. Such features are termed \emph{spurious features}, and
+the statistical associations they form with target labels are known as \emph{spurious correlations}~\cite{Arjovsky_2020_InvariantRiskMinimization,Sagawa_2020_DistributionallyRobustNeuralNetworksForGroupShifts}. Formally, a spurious correlation exists when a feature $f$ co-occurs with a label $y$ across the training distribution $p_{\text{train}}(f, y)$ but this co-occurrence does not persist under distribution shift, i.e., $p_{\text{train}}(f \mid y) \neq p_{\text{test}}(f \mid y)$, or
+when $f$ carries no causal information about $y$ despite being statistically correlated with
+it. A canonical illustration is a gender classifier trained on a dataset where women are
+disproportionately photographed wearing dresses: the model may learn clothing type as a
+reliable decision cue rather than facial or morphological features. This correlation holds
+within the training distribution but breaks under shift, for instance when the model
+encounters images of men in kilts or women in suits, exposing the feature as spurious. A
+model that learns to exploit such a feature in lieu of causally relevant ones is said to
+learn a \emph{shortcut}~\cite{Geirhos_2020_ShortcutLearningInDeepNeuralNetworks}.
+
+Geirhos et al.~\cite{Geirhos_2020_ShortcutLearningInDeepNeuralNetworks} provide a
+comprehensive treatment of shortcut learning in the deep learning literature. They
+characterise a shortcut as any decision rule that performs well on the training distribution
+by exploiting a feature correlated with the correct label but which does not reflect the
+underlying task concept. Shortcuts are distinguished from genuinely useful features not by
+their statistical properties within the training set but by their failure to generalise when
+the spurious correlation is broken, either through natural distribution shift or deliberate
+intervention. Critically, Geirhos et al. argue that shortcut learning is not a pathological
+edge case but a rational consequence of empirical risk minimisation: given a choice between a
+reliable spurious cue and a harder-to-learn causal feature, gradient-based optimisation will
+consistently favour whichever feature reduces training loss most efficiently.
+
+\subsection*{Taxonomies of Spurious Features in Computer Vision}
+
+Spurious features in visual data can be broadly categorised along two dimensions: the level
+of the image hierarchy at which they reside, and whether they reflect properties of the
+subject, the context, or the acquisition process.
+
+%At the \emph{pixel and statistical level}, low-level image attributes encompassing mean colour channel values, brightness distribution, contrast statistics, JPEG compression artefacts among others can serve as reliable proxies for class labels, thereby enabling shortcut learning particularly when the dataset collection process introduces systematic correlations between acquisition conditions and class membership. Jo and Bengio  in \cite{Jo_2017_SurfaceStatisticalRegularities} demonstrate that Convolutional Neural Networks (\acrshort{cnn}) trained on benchmark datasets are inclined to learn surface statistical regularities as opposed to high level abstractions, whilst achieving high classification accuracy even when these statistical regularities bear no semantic relationship to the class concept. Furthermore, Geirhos et al. in \cite{Geirhos_2019_TextureBias} demonstrates how ImageNet-trained CNNs exhibit a strong \emph{texture bias} opting to rely on texture for object classification as opposed to shape, particularly apparent when the texture of one object is rendered onto the shape of another.
+
+At the \emph{pixel and statistical level}, low-level image attributes encompassing mean
+colour channel values, brightness distributions, contrast statistics, and jpeg
+compression artefacts can serve as reliable proxies for class labels, thereby enabling
+shortcut learning particularly when the dataset collection process introduces systematic
+correlations between acquisition conditions and class membership.
+Jo and Bengio~\cite{Jo_2017_SurfaceStatisticalRegularities} demonstrate that
+Convolutional Neural Networks (\acrshort{cnn}) trained on benchmark datasets are inclined
+to learn surface statistical regularities as opposed to high-level abstractions, achieving
+high classification accuracy even when these regularities bear no semantic relationship to
+the class concept. Furthermore, Geirhos et al.~\cite{Geirhos_2019_TextureBias} demonstrate
+how ImageNet-trained \acrshort{cnn}s exhibit a strong \emph{texture bias}, opting to rely
+on texture for object classification as opposed to shape, an effect particularly apparent
+when the texture of one object is rendered onto the shape of another.
+
+%At the \emph{frequency domain level}, the Fourier decomposition of images separates
+%low-frequency components (smooth colour gradients, global illumination) from high-frequency
+%components (edges, fine textures, compression ringing).  Wang et al. \cite{Wang_2020_HighFrequencyComponentHelpsExplainTheGeneralizationOfCNN}
+%demonstrate that CNNs can exploit high-frequency features that are imperceptible to the human
+%eye as spurious shortcuts, and that adversarially introduced high-frequency perturbations can
+%drastically alter model decisions without any perceptible change to image content.  This
+%sensitivity is particularly concerning in datasets assembled from diverse web sources,
+%where different image origins often carry systematically different frequency signatures
+%arising from camera hardware, processing pipelines, and compression settings.
+
+At the \emph{frequency domain level}, the Fourier decomposition of images separates
+low-frequency components, such as smooth colour gradients and global illumination, from
+high-frequency components including edges, fine textures, and compression ringing. Wang et
+al.~\cite{Wang_2020_HighFrequencyComponentHelpsExplainTheGeneralizationOfCNN} demonstrate
+that \acrshort{cnn}s can exploit high-frequency features imperceptible to the human eye as
+spurious shortcuts, and that adversarially introduced high-frequency perturbations can
+substantially alter model decisions without any visible change to image content. This
+sensitivity is particularly concerning in datasets assembled from diverse web sources, where
+different image origins often carry systematically different frequency signatures arising from
+variation in camera hardware, processing pipelines, and compression settings.
+
+%At the \emph{contextual and background level}, spurious features can arise from statistical
+%regularities in scene composition rather than in the subject itself.  Beery et
+%al. \cite{Beery_2018_RecognitionTerraIncognita} demonstrate this dramatically in a wildlife
+%recognition setting, showing that classifiers trained on images where animals consistently
+%appear against certain background types fail severely when the same animal appears against
+%an unfamiliar background, revealing that the background has been learned as a more reliable
+%shortcut than animal morphology.  Xiao et al. \cite{Xiao_2021_NoiseOrSignal} reach similar
+%conclusions in the context of ImageNet, demonstrating that models achieve non-trivial
+%classification accuracy when trained and tested on background-only images with the foreground
+%objects masked, establishing that contextual scene statistics constitute a pervasive spurious
+%signal in standard benchmarks.  Torralba and Efros \cite{Torralba_2011_UnbiasedLookDatasetBias}
+%earlier identified a related phenomenon at the dataset level: models trained on one visual
+%dataset and evaluated on another exhibit sharp performance drops, demonstrating that much of
+%what models learn reflects dataset-specific statistical regularities rather than
+%generalisable visual concepts.
+
+At the \emph{contextual and background level}, spurious features can arise from statistical
+regularities in scene composition rather than in the subject itself. Beery et
+al.~\cite{Beery_2018_RecognitionTerraIncognita} demonstrate this in a wildlife recognition
+setting, showing that classifiers trained on images where animals consistently appear against
+certain background types fail severely when the same animal appears against an unfamiliar
+background, revealing that the background has been learned as a more reliable shortcut than
+animal morphology. Xiao et al.~\cite{Xiao_2021_NoiseOrSignal} reach similar conclusions in
+the context of ImageNet, demonstrating that models achieve non-trivial classification
+accuracy when trained and tested on background-only images with foreground objects masked,
+establishing that contextual scene statistics constitute a pervasive spurious signal in
+standard benchmarks. Torralba and Efros~\cite{Torralba_2011_UnbiasedLookDatasetBias} earlier
+identified a related phenomenon at the dataset level: models trained on one visual dataset
+and evaluated on another exhibit sharp performance drops, demonstrating that much of what
+models learn reflects dataset-specific statistical regularities rather than generalisable
+visual concepts.
+
+%At the \emph{semantic and co-occurrence level}, spurious correlations can be encoded in
+%higher-level statistical regularities such as the tendency for certain object categories to
+%co-occur with certain scenes, or for certain demographic attributes to be associated with
+%particular activities. These correlations are not artefacts of image acquisition but reflect
+%genuine societal patterns or collection biases that are absorbed into the training
+%distribution and subsequently exploited by the model. Zhao et
+%al. \cite{Zhao_2017_MenAlsoLikeShopping} demonstrate that gender-stereotypical object
+%co-occurrences in image captioning datasets cause models to amplify those associations in
+%their outputs, with activities such as cooking and shopping disproportionately paired with
+%female subjects and sports with male subjects — patterns that persist and intensify in model
+%predictions beyond their frequency in the training data. Singh et
+%al.~\cite{Singh_2020_DontJudgeObject} further demonstrate the consequences of such
+%co-occurrence dependencies, showing that models trained on standard benchmarks rely heavily
+%on the presence of contextually expected objects and scenes to make predictions, and that
+%performance degrades substantially when objects appear without their typical co-occurring
+%context, confirming that semantic co-occurrence regularities function as learned shortcuts
+%rather than robust recognition features.
+
+At the \emph{semantic and co-occurrence level}, spurious correlations can be encoded in
+higher-level statistical regularities such as the tendency for certain object categories to
+co-occur with certain scenes, or for certain demographic attributes to be associated with
+particular activities. These correlations are not artefacts of image acquisition but reflect
+genuine societal patterns or collection biases that are absorbed into the training
+distribution and subsequently exploited by the model. Zhao et
+al.~\cite{Zhao_2017_MenAlsoLikeShopping} demonstrate that gender-stereotypical object
+co-occurrences in image captioning datasets cause models to amplify those associations in
+their outputs, with activities such as cooking and shopping disproportionately paired with
+female subjects and sports with male subjects, associations that persist and intensify in
+model predictions beyond their frequency in the training data. Singh et
+al.~\cite{Singh_2020_DontJudgeObject} further demonstrate the consequences of such
+co-occurrence dependencies, showing that models trained on standard benchmarks rely heavily
+on the presence of contextually expected objects and scenes, and that performance degrades
+substantially when objects appear without their typical co-occurring context, confirming that
+semantic co-occurrence regularities function as learned shortcuts rather than robust
+recognition features.
+
+%At the \emph{structural and geometric level}, the shapes and spatial arrangements of objects
+%constitute a further tier of potentially spurious structure that is independent of both
+%global colour statistics and semantic object identity. Classical edge detection algorithms
+%such as the Canny edge detector~\cite{Canny_1986_ComputationalApproachEdgeDetection} reduce
+%an image to a binary boundary map that captures object contours while discarding colour and
+%texture entirely, preserving only structural information about object shape and boundary
+%distributions. Class-agnostic segmentation tools such as the Segment Anything
+%Model~\cite{Kirillov_2023_SegmentAnything} extend this to cleaner, higher-quality contour
+%representations that are minimally affected by local pixel variation. Monocular depth
+%estimation encodes the relative spatial geometry of a scene, capturing information about
+%object positioning and scene layout without reference to object semantics or surface
+%appearance. Since these structural properties --- edge distributions, object silhouettes, and
+%scene geometry --- are systematically shaped by the contexts and environments in which images
+%are captured, they can carry dataset-specific or demographic-specific spurious signals that
+%are entirely invisible to pixel-level or semantic-level analysis. The sufficiency of local
+%spatial structure for classification is further evidenced by Brendel and
+%Bethge~\cite{Brendel_2019_BagNet}, who demonstrate that models operating solely on small
+%independent image patches of fixed size, with no access to global spatial relationships,
+%achieve surprisingly high accuracy on ImageNet, confirming that local structural features
+%within small receptive fields are sufficient to support above-chance classification without
+%any holistic understanding of image content.
+
+At the \emph{structural and geometric level}, the shapes and spatial arrangements of objects
+constitute a further tier of potentially spurious structure that is independent of both
+global colour statistics and semantic object identity. Classical edge detection algorithms
+such as the Canny edge detector~\cite{Canny_1986_ComputationalApproachEdgeDetection} reduce
+an image to a binary boundary map that captures object contours while discarding colour and
+texture entirely, preserving only structural information about object shape and boundary
+distributions. Class-agnostic segmentation tools such as the Segment Anything
+Model~\cite{Kirillov_2023_SegmentAnything} extend this to cleaner, higher-quality contour
+representations that are minimally affected by local pixel variation. Monocular depth
+estimation encodes the relative spatial geometry of a scene, capturing information about
+object positioning and scene layout without reference to object semantics or surface
+appearance. Since these structural properties --- edge distributions, object silhouettes, and
+scene geometry --- are systematically shaped by the contexts and environments in which images
+are captured, they can carry dataset-specific or demographic-specific spurious signals that
+are entirely invisible to pixel-level or semantic-level analysis. The sufficiency of local
+spatial structure for classification is further evidenced by Brendel and
+Bethge~\cite{Brendel_2019_BagNet}, who demonstrate that models operating solely on small
+independent image patches of fixed size, with no access to global spatial relationships,
+achieve surprisingly high accuracy on ImageNet, confirming that local structural features
+within small receptive fields are sufficient to support above-chance classification without
+any holistic understanding of image content.
+
+%At the \emph{person level}, in datasets where the target variable relates to people, the
+%body itself becomes a source of multi-layered spurious signals arising from appearance,
+%shape, size, location, and pose. These components can be disentangled through selective
+%occlusion protocols that independently mask person and background regions, enabling the
+%spurious contribution of each image area to be estimated in isolation. The general principle
+%that background context and subject appearance each independently contribute to model
+%decisions is well established in the shortcut learning
+%literature~\cite{Beery_2018_RecognitionTerraIncognita, Xiao_2021_NoiseOrSignal}. In the
+%person-centric case, this extends to person \emph{shape} (the silhouette produced by a
+%segmentation mask), person \emph{location and size} (captured by a bounding box), and
+%\emph{body pose} (the spatial configuration of keypoints), each of which may encode
+%systematic differences between demographic groups that were present in the collection
+%conditions of the training data. A particularly consequential implication concerns
+%fairness-through-blindness mitigation strategies, which attempt to remove gendered
+%information by occluding the person in an
+%image~\cite{Hendricks_2018_WomenAlsoSnowboard, Wang_2019_BalancedDatasetsNotEnough}.
+%Because the background independently encodes demographic-correlated spurious signals, such
+%interventions may leave the majority of the relevant shortcut information intact, producing
+%corrections that appear effective under standard evaluation but fail when the background
+%co-occurrence pattern is disrupted.
+
+At the \emph{person level}, in datasets where the target variable relates to people, the
+body introduces a distinct layer of spurious signals that compounds the background-level
+effects described above. A person's appearance, shape, spatial location, and pose may each
+independently correlate with demographic group membership when the collection conditions of
+a dataset introduce systematic differences in how different groups are photographed. This
+has direct consequences for a class of bias mitigation approaches known as
+\emph{fairness through blindness}, which attempt to remove protected attribute information
+by occluding the person in an
+image~\cite{Hendricks_2018_WomenAlsoSnowboard, Wang_2019_BalancedDatasetsNotEnough}.
+Because person-level spurious features are intertwined with background signals and encoded
+across multiple representational layers simultaneously, such occlusion-based interventions
+may leave substantial demographic information intact, a limitation examined in detail in
+Section~\ref{subsec:meister2023}.
+
+%At the \emph{semantic representation level}, richer image representations that preserve
+%object identity while discarding pixel-level detail can themselves carry dataset-specific
+%spurious signals across a hierarchy of abstraction. Semantic segmentation maps, which assign
+%a class label to every pixel, retain the spatial distribution of scene categories while
+%removing texture and colour, encoding information about which types of environments and
+%objects are systematically associated with which classes or groups. Object detection
+%representations, which reduce each image to a set of labelled bounding boxes, preserve
+%object co-occurrence statistics and coarse spatial layout while discarding all internal pixel
+%content. Image captions, which serve as the primary training signal for vision-language
+%models~\cite{Radford_2021_LearningTransferableVisualModels}, discard all visual information
+%in favour of natural language but still encode semantic regularities that reflect the
+%statistical composition of the underlying image distribution. \acrshort{vae} reconstructions,
+%which pass images through a learned bottleneck to compress and regenerate visual content,
+%provide a means of isolating semantic from low-level signals; as noted in works on generative
+%compression~\cite{Rombach_2022_CVPR}, this process selectively preserves semantic structure
+%while removing high-frequency details, effectively functioning as a diagnostic to determine
+%if bias resides in the semantic content or in low-level acquisition artefacts. Taken
+%together, these representation types demonstrate that spurious features are not confined to
+%the pixel domain but permeate the full hierarchy of visual abstraction.
+
+At the \emph{semantic representation level}, richer image representations that preserve
+object identity while discarding pixel-level detail can themselves carry dataset-specific
+spurious signals across a hierarchy of abstraction. Semantic segmentation maps, which assign
+a class label to every pixel, retain the spatial distribution of scene categories while
+removing texture and colour, encoding information about which types of environments and
+objects are systematically associated with which classes or groups. Object detection
+representations, which reduce each image to a set of labelled bounding boxes, preserve
+object co-occurrence statistics and coarse spatial layout while discarding all internal pixel
+content. Image captions produced by vision-language models discard all visual information in
+favour of natural language but still encode semantic regularities that reflect the statistical
+composition of the underlying image distribution. \acrshort{vae} reconstructions, which pass
+images through a learned bottleneck to compress and regenerate visual content --- as
+implemented in latent diffusion architectures such as that of Rombach et
+al.~\cite{Rombach_2022_CVPR} --- provide a further diagnostic: if reconstructed images
+remain discriminable after compression, the bias resides primarily in semantic content rather
+than in low-level acquisition artefacts such as jpeg compression or sensor noise.
+Taken together, these representation types demonstrate that spurious features are not
+confined to the pixel domain but permeate the full hierarchy of visual abstraction.
+
+\subsection*{Spurious Features and Demographic Bias}
+
+The intersection of spurious features and demographic fairness constitutes a particularly
+consequential research area.  When a spurious feature correlates not merely with a label but
+with a sensitive attribute such as gender, race, or skin tone, a model that exploits the
+shortcut will systematically produce disparate outcomes across demographic groups.  Buolamwini
+and Gebru~\cite{Buolamwini_2018_BiasGenderClassification} provide a foundational empirical
+demonstration of this: commercial gender classifiers trained on datasets overrepresenting
+lighter-skinned individuals exhibit substantially higher error rates for darker-skinned
+individuals, a disparity attributable in part to the model relying on skin-tone correlates
+as classification shortcuts.  Mehrabi et al.~\cite{Mehrabi_2022_SurveyBiasFairnessMachine}
+offer a comprehensive survey cataloguing the mechanisms by which such demographic shortcuts
+enter models, the most relevant of which being representation bias (some groups being underrepresented in
+training data), measurement bias (features being measured differently across groups) and
+aggregation bias (heterogeneous sub-populations being pooled under a single model).
+
+Critically, even features that appear neutral --- colour statistics, pose distributions,
+background scenes --- can function as proxies for demographic attributes when the
+dataset composition creates systematic correlations between these low-level properties
+and group membership.  Meister et al.~\cite{Meister_2023_GenderArtifactsinVisualDatasets}
+term these \emph{gender artifacts} and demonstrate that they are effectively impossible to
+fully remove from standard visual datasets without also removing information necessary for
+downstream tasks.  This proxy mechanism means that standard debiasing interventions which
+remove explicit demographic signals may leave intact the spurious low-level features that
+encode equivalent information, producing only superficial corrections.
+
+\subsection*{Spurious Features in Text-to-Image Generative Systems}
+
+The concern about spurious features takes on a distinct character in the context of
+text-to-image generative models.  Whereas discriminative models learn to \emph{exploit}
+spurious correlations to make predictions, generative models trained on biased data learn to
+\emph{reproduce} those correlations in their outputs: biased statistical regularities present
+in the training corpus become embedded in the model's learned prior over images, causing the
+model to synthesise spurious feature patterns even when the conditioning prompt contains no
+information that should elicit them.
+
+The training pipeline of latent diffusion models such as Stable
+Diffusion~\cite{Rombach_2022_CVPR} illustrates this concretely.  The model learns a joint
+distribution over image latents conditioned on text embeddings derived from CLIP~\cite{Radford_2021_CLIP}.
+Since CLIP itself is pretrained on web-scraped image-text pairs, it encodes the same
+societal and compositional biases present in internet imagery~\cite{Birhane_2021_MultiModalDatasetsMisogynyPornography,
+	Schuhmann_2022_Laion5b}.  Spurious correlations in the training data between text tokens
+(e.g.\ occupation words) and low-level image features (e.g.\ skin tone distributions, colour
+palettes, or compositional conventions) are absorbed into the diffusion model's score
+function, causing those features to be hallucinated at generation time even in the absence
+of explicit demographic prompting.
+
+Bianchi et al.~\cite{Bianchi_2023_TTIGenAmplifiesDemographicStereotypes} demonstrate this
+empirically, showing that text-to-image models not only reflect the demographic
+under-representation present in their training data but actively amplify stereotypical
+associations: prompts specifying occupations produce generated images with demographic
+distributions more extreme than those documented in real-world labour statistics.  Luccioni
+et al.~\cite{Luccioni_2023_AnalyzingSocietalRepresentationsDiffusionModels} extend this
+finding across a broader set of models and prompt categories, confirming that the amplification
+effect is systemic rather than model-specific.  Critically, neither study addresses the
+question of \emph{which specific low-level image features} encode these biases, treating the
+model as a black box and measuring only demographic outcomes.
+
+% -----------------------------------------------------------------
+
+\subsection*{Understanding Bias in Large-Scale Visual Datasets}
+\label{subsec:zeng2024}
+
+Zeng et al.~\cite{Zeng_2024_UnderstandingBiasinLargeScaleVisualDatasets} aim to identify
+the concrete forms of bias that make large-scale pre-training datasets easily distinguishable
+by neural networks. Their work builds on the dataset classification task introduced by
+Torralba and Efros~\cite{Torralba_2011_UnbiasedLookDatasetBias} in 2011 and revisited by
+Liu and He~\cite{Liu_2024_DecadeBattleDatasetBias} in 2024, who found that three widely-used
+datasets --- YFCC100M~\cite{Thomee_2016_YFCC100M}, CC12M~\cite{Changpinyo_2021_CC12M}, and
+DataComp-1B~\cite{Gadre_2023_DataComp} --- can be classified by a neural network with
+84.7\,\% accuracy. While this confirms the datasets are biased, it does not explain
+\emph{which} image properties are responsible. Zeng et al.\ address this gap.
+
+\subsubsection*{Transformation-Based Bias Quantification}
+
+The central contribution is a transformation-based framework. The idea is straightforward:
+apply a transformation that preserves one type of visual information while removing all
+others, train a dataset classifier on the transformed images, and use the resulting accuracy
+to measure how much bias that type of information carries. The three datasets --- YFCC100M,
+CC12M, and DataComp-1B, referred to collectively as YCD --- represent the kind of large-scale
+internet-scraped data used to pre-train modern vision models. For each transformation, 1M
+images per dataset are used for training and 10K for validation using a ConvNeXt-Tiny model
+trained for 30 epochs. On unmodified images, Zeng et al.\ achieve a reference accuracy of
+82.0\,\%, which all transformation results are compared against.
+
+The transformations cover the full range of visual information from raw pixels to high-level
+semantics. At the semantic level, segmentation using ViT-Adapter-Large with the ADE20K
+vocabulary (150 classes) converts each image into a colour-coded class map, removing texture
+but keeping the spatial layout of objects; the classifier reaches 69.8\,\% accuracy. Object
+detection using ViTDet-Huge with the LVIS vocabulary (1,203 classes) keeps bounding boxes
+and class labels but removes all pixel content, yielding 61.9\,\%. Image captioning with
+LLaVA\,1.5 removes all visual information entirely, yet short captions still achieve
+63.8\,\% and long captions 66.1\,\%, both close to the segmentation result. These results
+show that semantic content --- specifically, which categories of objects appear in each
+dataset --- is a primary source of dataset bias.
+
+A \acrshort{vae} experiment provides further context. Passing images through the bottleneck
+of a pretrained Stable Diffusion \acrshort{vae} and reconstructing them only reduces accuracy
+from 82.0\,\% to 77.4\,\%, showing that low-level properties such as jpeg
+compression artefacts or resolution differences contribute relatively little to the overall
+bias.
+
+The structural transformations produce a surprising result. Canny edge detection achieves
+71.0\,\% accuracy, \acrshort{sam}-based class-agnostic contour extraction reaches 73.2\,\%,
+and monocular depth estimation with Depth-Anything-V2 yields 73.1\,\%. These representations
+contain no object labels or semantic information, yet they \emph{outperform} most semantic
+transformations. This shows that the shapes and spatial arrangements of objects differ
+significantly across datasets and carry as much discriminative information as object category
+--- an important finding for any bias mitigation strategy focused solely on semantic content.
+
+To separate the contribution of local structure from global spatial layout, Zeng et al.\
+run pixel-level and patch-level shuffling experiments. Randomly shuffling individual pixels
+removes all spatial structure and limits the classifier to colour statistics alone; accuracy
+falls to 52.2\,\%, just above the 33.3\,\% chance level. Shuffling $16\!\times\!16$ patches
+instead recovers nearly all discriminability, reaching 81.2\,\%. This shows that local
+spatial structure within small image regions is sufficient to distinguish datasets, and that
+global composition matters much less than local texture and shape. A mean-RGB experiment
+pushes this further by compressing each image to a single average colour per channel.
+Even this three-number summary achieves 48.5\,\% accuracy, roughly 15 percentage points
+above chance. YFCC images are substantially darker on average than CC or DataComp, likely
+because YFCC contains more outdoor photography captured under varied natural lighting.
+
+Frequency domain analysis shows that bias is present across the full frequency spectrum.
+Applying high-pass filters (capturing texture and sharp edges) yields 79.2\,\% accuracy,
+while low-pass filters (capturing smooth gradients and global structure) yield 70.4\,\%,
+both close to the reference. This means that frequency-domain spurious signals exist at
+multiple scales simultaneously, and that mitigation approaches targeting a single frequency
+range will not remove the bias entirely.
+
+Finally, combining two transformations together increases accuracy beyond what either
+achieves alone. For example, combining pixel shuffling with SAM contours reaches 74.2\,\%,
+compared to 73.1\,\% for SAM contours alone. This shows that different types of spurious
+signals carry partly independent information, which is directly relevant to the
+multi-transformation approach used in this thesis.
+
+\subsubsection*{Propagation of Bias into Generative Models}
+
+A central question for this thesis is whether biases in training data carry through into the
+outputs of generative models. Zeng et al.\ test this by training separate unconditional
+Diffusion Transformer (DiT) models on each of the three YCD datasets and classifying the
+resulting synthetic images. These generated images can be classified with 77.6\,\% accuracy,
+nearly matching the 82.0\,\% reference on real images. This demonstrates that generative
+models reproduce the distributional biases of their training data to a degree that is largely
+preserved in their outputs. A second experiment using a single pretrained SDXL-Turbo model
+conditioned on LLaVA-generated captions achieves 58.1\,\%, confirming that semantic bias is
+partly transmitted even when the generative model is not dataset-specific. Together, these
+results show a clear link between training data composition and generative model output,
+directly supporting the central hypothesis of this thesis.
+
+\subsubsection*{Semantic Explanation of Dataset Differences}
+
+To explain \emph{why} the datasets are distinguishable, Zeng et al.\ use two complementary
+approaches. First, Gradient-weighted Class Activation Mapping (\acrshort{gradcam}) applied
+to the reference classifier shows that the model focuses on specific objects --- such as
+elephant herds, tables, and pens --- to identify dataset origin. This motivates the use of
+object-level analysis as an interpretability tool.
+
+A logistic regression model trained on binary object-presence vectors from the ImageNet,
+LVIS, and ADE20K vocabularies achieves 52.0--52.4\,\% accuracy depending on the vocabulary,
+well above the 33.3\,\% chance level but well below the 82.0\,\% of the neural classifier.
+This gap shows that object identity alone does not fully explain the neural classifier's
+ability to distinguish datasets, meaning that lower-level and structural signals also play a
+role. The regression coefficients reveal clear patterns: YFCC is associated with outdoor
+infrastructure such as traffic lights, poles, and stages, while CC and DataComp are
+associated with household items, products, and digital graphics. YFCC also contains a
+notably higher variety of objects per image than the other two datasets, consistent with its
+origin in less-curated, user-generated Flickr photography.
+
+Open-ended language analysis using \acrshort{lda} topic modelling and GPT-4o summarisation
+of LLaVA-generated captions characterises YFCC as outdoor and human-centred, DataComp as
+product-focused with clean backgrounds and few people, and CC as a mix of the two. These
+findings are validated by prompting LLaVA to answer simple binary questions --- such as
+``Is this image a product showcase?'' and ``Is this image depicting an outdoor scene?'' ---
+across all three datasets, confirming that the identified differences reflect genuine
+properties of the data rather than quirks of the analysis method.
+
+
+% -----------------------------------------------------------------
+
+
+% -----------------------------------------------------------------
+
+\subsection*{Gender Artifacts in Visual Datasets}
+\label{subsec:meister2023}
+% -----------------------------------------------------------------
+
+Meister et al.~\cite{Meister_2023_GenderArtifactsinVisualDatasets} systematically
+investigate the nature and prevalence of \emph{gender artifacts} in large-scale computer
+vision datasets.  A gender artifact is defined as a visual cue that is both \emph{learnable}
+--- a modern image classifier can use it to distinguish images labelled female from those
+labelled male --- and \emph{interpretable}, meaning it has a recognisable human corollary
+such as colour, shape, or scene composition.  This dual constraint focuses the analysis on
+the most consequential correlations: those that automated systems can exploit and that carry
+socially legible meaning.
+
+The work is motivated by a gap in the fairness literature.  A widely used family of
+bias-mitigation techniques, collectively termed \emph{fairness through blindness}, assumes
+that removing a person's visible appearance from an image is sufficient to eliminate the
+gendered signal.  Meister et al.\ challenge this directly by asking a more fundamental
+question: to what extent can gendered information truly be removed from a visual dataset?
+
+One methodological point is important for interpreting the results.  The authors call their
+model a \emph{gender artifact model} rather than a gender classifier, because it is a
+diagnostic tool for understanding dataset correlations, not a system intended to predict
+gender identity.  The gender labels used are derived from external annotators' perceptions
+rather than self-reported identity, reflecting the limitations of existing dataset annotation
+practices, and are used solely to reveal distributional differences in the data.
+
+\subsubsection*{Datasets and Model}
+
+The analysis focuses on two widely used object-recognition benchmarks: Microsoft
+COCO~\cite{Lin_2014_COCO} and OpenImages~\cite{Kuznetsova_2020_OpenImagesV4}.  For COCO,
+gender labels are inferred from image captions using a keyword-matching heuristic following
+prior work~\cite{Zhao_2017_MenAlsoLikeShopping}; for OpenImages, labels come from the More
+Inclusive Annotations for People (MIAP) subset~\cite{Schumann_2021_StepInclusivePeopleAnnotations}.
+Both datasets are skewed male, with 69.2\,\% and 62.9\,\% male-labelled images in COCO and
+OpenImages respectively.  The gender artifact model is a
+ResNet-50~\cite{He_2016_DeepResidualLearning} pretrained on ImageNet, with hyperparameters
+tuned on a held-out validation set.  Performance is reported as the area under the ROC
+curve (AUC), where 50\,\% represents chance-level discrimination.
+
+\subsubsection*{Resolution and Colour Artifacts}
+
+The first set of experiments investigates artifacts in the global perceptual properties of
+images.  Images are progressively downsampled from $224\!\times\!224$ to $7\!\times\!7$
+pixels, with the model trained and evaluated at each resolution separately.  In colour
+images, the AUC remains well above chance even at $7\!\times\!7$ (59.2\,\% on COCO;
+63.9\,\% on OpenImages), a resolution at which almost all semantic content is destroyed.
+Repeating the experiment in greyscale, the AUC falls to near chance at $28\!\times\!28$,
+showing that colour is the primary carrier of gender-correlated signal at low resolutions,
+and that the model's ability to discriminate cannot be attributed to residual shape or object
+information.
+
+To isolate this colour artifact in its simplest form, the authors train a logistic regression
+classifier on just three features: the mean pixel value of the red, green, and blue channels.
+This achieves AUCs of 58.0\,\% $\pm$\,0.4 and 59.1\,\% $\pm$\,0.4 on COCO and OpenImages
+respectively.  The likely explanation is a compositional confound: images of male-labelled
+individuals are disproportionately set in outdoor sports contexts dominated by green tones,
+while images of female-labelled individuals more often feature close-up portraits with
+lighter average pixel values.
+
+\subsubsection*{Person and Background Artifacts}
+
+The second set of experiments uses a systematic occlusion protocol to separate gender
+artifacts arising from the person from those arising from the background.  The conditions
+evaluated are: the full unmodified image (\emph{Full}); the full image with the background
+masked in black (\emph{Full NoBg}); the image with the person replaced by their segmentation
+mask (\emph{MaskSegm}); the image with the person replaced by a bounding box
+(\emph{MaskRect}); and combinations of these with and without the background.
+
+\paragraph{Person appearance.}
+With all person pixels visible, the gender artifact model achieves an AUC of 93.4\,\%
+$\pm$\,0.2 on COCO.  Removing the background reduces this only slightly, to 92.7\,\%
+$\pm$\,0.2, confirming that the person's appearance is the dominant signal under normal
+conditions.
+
+\paragraph{Person shape and pose.}
+When the person's appearance is replaced by a white segmentation mask but the background
+remains visible (MaskSegm), the model still achieves 79.6\,\% $\pm$\,0.3 on COCO.  The
+silhouette alone --- which still reveals cues such as hair length and clothing outline ---
+carries substantial gendered information even before texture or colour are considered.
+Removing the background as well (MaskSegm NoBg), performance drops only to 74.8\,\%
+$\pm$\,0.3, confirming that silhouette shape and position are meaningful gender artifacts
+independent of scene context.
+
+Taking this further, the authors train the model on the 17 COCO keypoint locations alone,
+with no pixel content.  This yields an AUC of 64.8\,\% $\pm$\,0.4.  A normalised pose-only
+representation --- keypoints rescaled to a fixed area and centred to remove size and location
+information --- still achieves 58.0\,\% $\pm$\,0.0, establishing body pose as a gender
+artifact in its own right.  Qualitatively, male-associated poses tend to be smaller and
+active (e.g.\ sporting actions), while female-associated poses tend to be larger relative to
+the frame and static.  This is supported quantitatively: the normalised area of
+female-labelled persons in the COCO training set (0.18 $\pm$\,$10^{-4}$) is significantly
+larger than for male-labelled persons (0.13 $\pm$\,$10^{-5}$), confirmed at $p < 0.01$ and
+replicated in OpenImages.
+
+\paragraph{Background as a gender artifact.}
+When the person is occluded but the background is left intact, the gendered signal is not
+eliminated.  Under the MaskRect condition --- matching the occlusion strategy used by several
+prominent mitigation methods~\cite{Hendricks_2018_WomenAlsoSnowboard,Wang_2019_BalancedDatasets}
+--- the AUC remains at 70.8\,\% $\pm$\,0.3 on COCO and 63.1\,\% $\pm$\,0.4 on OpenImages.
+This shows that the background scene itself encodes gender-correlated information, which
+directly undermines the core assumption of fairness-through-blindness approaches.
+
+Class Activation Map (CAM) analysis explains why: when the person is occluded, the model
+shifts its attention onto background objects, associating indoor objects (e.g.\ ovens and
+beds) with female labels and outdoor objects (e.g.\ skateboards and motorcycles) with male
+labels.  Scene type, not just pixel statistics, is the operative artifact in these
+conditions.
+
+Out-of-distribution evaluations --- training on COCO and testing on OpenImages, and vice
+versa --- confirm that these patterns hold across datasets, suggesting they reflect broad
+regularities in how photographs are composed rather than quirks of any single collection
+process.
+
+\subsubsection*{Contextual Object Artifacts}
+
+The third set of experiments examines the gender information carried by the identity of
+objects in a scene.  A logistic regression classifier trained on a binary object-presence
+vector achieves an AUC of 75.4\,\% on COCO and 63.3\,\% on OpenImages.  The classifier's
+weights reflect familiar stereotypes: objects most predictive of female-labelled images
+include hair driers, handbags, and teddy bears, while those most predictive of male-labelled
+images include skateboards, ties, and snowboards.
+
+An iterative removal experiment shows that this gendered information is not concentrated in a
+few obviously gendered objects.  Retaining only the 14 most gendered objects still achieves
+72.1\,\% AUC.  Random removal tells the same story: 30 randomly selected objects from the
+80 annotated COCO categories yield 66.8\,\%, and just 10 randomly chosen objects still
+achieve 58.0\,\%.  Gendered information is distributed broadly across the object vocabulary,
+and there is no small set of objects whose removal would meaningfully eliminate object-level
+artifacts.
+
+\subsubsection*{Analysis of Fairness-Through-Blindness Methods}
+
+To evaluate how existing mitigation methods interact with these artifacts in practice, the
+authors apply the adversarial debiasing approach of Wang et
+al.~\cite{Wang_2019_BalancedDatasets} to COCO images.  This method trains a U-Net to
+identify and remove image pixels that carry salient gender information.  When the authors
+examine which pixels are actually removed from held-out validation images, the results are
+striking: 76.8\,\% of removed pixels come from the background, not the person, and 20.4\,\%
+$\pm$\,15.7 of all background pixels across the dataset are masked out.  The objects most
+frequently affected include giraffes, trains, elephants, buses, and horses --- objects
+commonly found in the active outdoor scenes associated with male-labelled images.
+
+This shows that the method ends up suppressing scene-level information --- including objects
+that may be necessary for downstream tasks such as object recognition --- rather than the
+person-centric gendered information it was designed to target.  The broader lesson is that
+because gendered signals are spread throughout the image, any method trying to remove them
+will inevitably also remove task-relevant content.
+
+\subsubsection*{Discussion and Broader Implications}
+
+The authors draw three main conclusions.  First, gender artifacts are so widely distributed
+across image structure --- from mean colour to silhouette shape to object co-occurrence ---
+that removing them without also removing task-relevant information is not feasible.  Second,
+the experiments reveal an incoherence in what a gender classifier actually predicts: if a
+model can infer gender labels from the mean pixel colour, a 7$\times$7 blurred image, or the
+presence of a skateboard, then what it has learned reflects the compositional biases of the
+dataset rather than gender expression in any meaningful sense.  Third, the authors recommend
+moving away from fairness-through-blindness approaches towards \emph{fairness-aware} methods
+that explicitly account for distributional differences across demographic groups, and towards
+disaggregated evaluation practices that make those differences visible.
+
+
+\newpage
+\section{Demographic Annotation in Large-Scale Image Datasets}
+
+To study demographic bias in large-scale visual datasets and generative models, images must be annotated with sensitive attributes such as gender and skin tone. These annotations are the variable against which spurious feature distributions are measured, so the quality and validity of the annotation process is a central methodological concern. Unlike object category labels, where a clear ground truth can be defined in principle, demographic annotations are contested. They sit at the intersection of biological, social, perceptual, and cultural factors, which makes them inherently harder to assign reliably. This section surveys the annotation practices used in large-scale computer vision research, examines the sources of measurement bias and label uncertainty in both human and automated annotation, reviews the main frameworks used for skin tone annotation, outlines the core limitations of visual demographic inference, and addresses the specific challenges that arise when annotating synthetic images produced by generative models.
+
+
+\subsection{Human and Automated Annotation Practices}
+Demographic attributes in visual datasets have traditionally been labelled by human annotators. Early face recognition datasets such as Labelled Faces in the Wild (LFW) \cite{Huang_2007_LFW} included identity labels and exhibited variation in attributes such as gender and race, but were not designed explicitly for demographic fairness analysis. Large-scale object-centric benchmarks such as MS-COCO \cite{Lin_2014_COCO} include the category “person,” yet do not provide structured demographic annotations. OpenImages \cite{Kuznetsova_2020_OpenImagesV4} extends this hierarchy by including subclasses such as man, woman, boy, and girl, but these annotations were not originally developed under a fairness-driven protocol and are not exhaustive. A more explicit attempt at inclusive demographic annotation is the More Inclusive Annotations for People (MIAP) dataset \cite{Schumann_2021_StepInclusivePeopleAnnotations}, which revises the OpenImages person hierarchy and introduces non-binary gender presentation labels under a formal multi-annotator framework designed to support fairness analysis. Considered together, these efforts demonstrate that human annotation of demographic attributes is feasible at scale, but methodologically complex. Unlike object category labels, demographic attributes are highly sensitive to annotator subjectivity, cultural background, and perceptual ambiguity, making disagreement and label uncertainty intrinsic rather than incidental to the task.
+
+Inter-annotator agreement for demographic labels is typically lower than for object category labels, reflecting the greater interpretive ambiguity involved in assigning socially constructed attributes. Studies of automated gender classification systems show that performance degrades most sharply for individuals whose gender presentation does not conform to binary or culturally dominant norms \cite{Scheuerman_2019_HowComputersSeeGender}. This pattern suggests that ambiguity and non-conformity pose systematic challenges for both human and machine labeling processes. Crucially, such disagreement cannot be treated as mere annotation noise. Aroyo and Welty \cite{Aroyo_2015_CrowdTruth} argue that annotator disagreement often encodes genuine differences in perception and interpretation, and that collapsing annotations to a single majority label can obscure meaningful variation in how examples are understood.
+
+For skin tone annotation, reliability is further complicated by the fact that visible appearance depends not only on intrinsic pigmentation but also on imaging conditions. Clinical and web-sourced image datasets frequently vary in illumination, camera calibration, and post-processing, making it difficult to disentangle perceived skin tone from lighting artefacts \cite{Groh_2021_Fitzpatrick17k}. As a result, both perceptual ambiguity and technical variability contribute to uncertainty in demographic labels.
+
+At the scale of web-scraped datasets such as Re-LAION-5B, manual demographic annotation is not practically feasible. As a result, large-scale studies frequently rely on automated demographic inference, in which pre-trained classifiers are applied to images to estimate attributes such as gender, perceived race, age, or skin tone. Datasets and models such as FairFace \cite{Karkkainen_2021_FairFace}, which provides race, gender, and age labels across a relatively balanced distribution of seven racial categories, are commonly used for this purpose due to their accessibility and improved demographic coverage relative to earlier benchmarks.
+
+However, automated annotation introduces a structural circularity. Demographic classifiers are themselves trained on human-annotated datasets that encode the same perceptual subjectivities, cultural assumptions, and representational imbalances discussed above. As demonstrated by Buolamwini and Gebru \cite{Buolamwini_2018_GenderShades}, performance disparities in commercial gender classifiers reflect underlying dataset imbalances and phenotypic skew. When such models are subsequently used to annotate new datasets, they propagate the statistical structure and potential biases of their training data into downstream analyses.
+
+Automated demographic inference therefore does not eliminate the epistemic limitations of manual annotation; rather, it relocates them into a learned decision boundary whose internal criteria are opaque. At scale, this can transform annotation bias from an observable human disagreement into a systematic, model-mediated measurement artefact.
+
+\subsection{Measurement Bias and Label Uncertainty}
+
+Measurement bias arises when the process used to assign labels systematically distorts the metric it intends to measure \cite{Mehrabi_2022_SurveyBiasFairnessMachine}. In the context of demographic annotation, this distortion can occur at multiple stages: through annotator subjectivity, dataset imbalance, or automated inference error. Unlike object categories, demographic attributes such as gender presentation or skin tone lack stable visual ground truth and are instead inferred from perceptual cues. As a result, measurement error is not purely random but often structured.
+
+Empirical audits of commercial gender classifiers demonstrate that error rates vary substantially across intersectional subgroups. Buolamwini and Gebru \cite{Buolamwini_2018_GenderShades} show that darker-skinned females experience significantly higher misclassification rates than lighter-skinned males, revealing systematic disparities tied to both observable traits and dataset composition. When automated classifiers trained on such data are used to annotate large-scale web datasets, these subgroup-specific error patterns become embedded in the generated labels.
+
+In large-scale auditing pipelines, confidence thresholds are often used to discard low-probability predictions. While this improves precision, it can also disproportionately exclude images whose appearance deviates from dominant training distributions. Because datasets such as FairFace were explicitly constructed to mitigate racial imbalance \cite{Karkkainen_2021_FairFace}, their existence highlights the fact that earlier benchmarks were systematically skewed. If annotation models inherit residual imbalances, confidence filtering may amplify rather than eliminate selection effects.
+
+These issues are particularly consequential when demographic labels function not as outcomes but as covariates against which feature distributions are measured. In such settings, structured annotation error can produce apparent correlations between visual artefacts and demographic attributes that reflect classifier error patterns rather than properties of the underlying data. Without ground truth labels at scale, disentangling genuine distributional structure from measurement artefact becomes statistically intractable. Careful selection and documentation of annotation models is therefore essential when demographic attributes are used to audit spurious correlations in large-scale visual datasets.
+
+\subsection{Skin Tone Annotation Frameworks}
+
+The choice of skin tone annotation framework is a methodological decision that directly affects the validity of downstream fairness and correlation analyses. A skin tone scale must satisfy two criteria for use in large-scale visual auditing: (i) construct validity for image-based measurement, and (ii) operational stability under real-world imaging conditions.
+
+The most widely used skin tone framework in computer vision is the Fitzpatrick Skin Type (FST) scale. Originally developed in dermatology to classify sun-reactive skin response to ultraviolet exposure \cite{Fitzpatrick_1988_SkinTypes}, the six-point scale was not designed to measure visual pigmentation per se, but rather tanning and burning propensity. Its categories are anchored in self-reported photoreactivity rather than directly observable colour properties, creating a construct mismatch when applied to image-based demographic annotation. Subsequent work has documented both the underrepresentation of darker skin types in dermatological datasets and the compression of variation at the darker end of the Fitzpatrick scale \cite{Groh_2021_Fitzpatrick17k}. In fairness auditing contexts, such compression reduces sensitivity precisely where subgroup disparities are often most pronounced. The scale’s clinical origin and uneven granularity therefore limit its suitability as a measurement instrument for large-scale image datasets.
+
+The Monk Skin Tone (MST) scale was developed to address these limitations by providing a ten-point ordinal framework explicitly designed for technology and machine learning applications \cite{Schumann_2024_MonkSkinTone}. Unlike Fitzpatrick, the MST scale is anchored to visual reference swatches intended for photographic assessment rather than sun-reactive history. Empirical annotation studies show that trained annotators can reliably apply MST categories in alignment with expert judgments, although systematic variation across annotator groups remains observable \cite{Schumann_2024_MonkSkinTone}. This highlights an important methodological point: while MST improves construct alignment for image-based tasks, skin tone annotation remains a subjective perceptual process rather than an objective measurement.
+
+Perceived inclusivity also matters when demographic attributes are used for fairness evaluation. A large-scale survey comparing Fitzpatrick, the Monk scale, and a 40-shade commercial palette found that Fitzpatrick was perceived as significantly less representative, particularly among darker-skinned and historically marginalized participants \cite{Heldreth_2024_WhichSkinToneMeasures}. Notably, the ten-point MST scale was perceived as comparably inclusive to the much finer-grained commercial palette, suggesting that improved colour distribution and category design can increase representativeness without excessive cognitive burden. These findings support the adoption of MST as a more appropriate perceptual measurement instrument for fairness-oriented annotation.
+
+A separate modelling decision concerns how the MST categories are treated analytically. Although skin tone varies continuously and the MST scale is ordinal, fine-grained ten-class prediction is often unstable in uncontrolled photographic conditions. Empirical work evaluating MST estimation under diverse lighting environments demonstrates substantial degradation in fine-grained classification performance, particularly in intermediate tone ranges \cite{Mbatha_2024_SkinToneLighting}. When tones are grouped into broader light, medium, and dark categories, estimation stability improves markedly across lighting conditions. For large-scale web-scraped imagery, where illumination and camera calibration are uncontrolled, a grouped treatment therefore provides greater robustness and reduces boundary-level annotation noise. In the context of this thesis, grouping is not a simplification of the construct but a strategy to reduce measurement variance that could otherwise obscure or artificially induce spurious correlations.
+
+Another methodological risk arises from shortcut learning during skin tone estimation. When classifiers are trained on full images, models may exploit background, clothing, or contextual artefacts correlated with skin tone labels rather than pigmentation itself. Experimental evidence shows that full-image CNN models achieve higher raw accuracy but rely on contextual features, as revealed by Grad-CAM analyses, whereas models trained on segmented facial skin regions exhibit activations concentrated on skin pixels \cite{Matias_2024_EnhancingFairnessMST}. This distinction is critical: if annotation models rely on contextual artefacts, any subsequent correlation analysis risks detecting dataset-specific backgrounds rather than genuine pigmentation-related structure. For this reason, skin tone classification in this thesis is applied to detected facial skin regions rather than full images, reducing the likelihood that annotation labels encode spurious environmental signals.
+
+%Taken together, these considerations motivate three methodological choices in this work: (i) adoption of the Monk Skin Tone scale over Fitzpatrick due to improved construct alignment and perceived inclusivity; (ii) use of grouped MST categories to enhance robustness under variable imaging conditions; and (iii) restriction of classification to segmented facial skin regions to minimise shortcut learning. Each decision is guided not by classifier accuracy alone, but by the requirement that demographic annotations function as stable and interpretable covariates in the analysis of spurious feature distributions within large-scale visual datasets.
+
+
+
+\subsection{Limitations of Visual Demographic Inference}
+
+A fundamental limitation of demographic annotation from visual data is the distinction between perceived attributes and self-identified attributes. Systems that infer gender from images do not measure gender identity; rather, they predict whether a subject’s appearance conforms to culturally dominant norms of gendered presentation. Scheuerman et al. demonstrate that commercial gender classification systems operationalise gender as a binary perceptual category and exhibit systematic failures on individuals whose presentation diverges from normative expectations \cite{Scheuerman_2019_HowComputersSeeGender}. In most visual datasets, gender labels are derived from annotator perception rather than self-reported identity. Consequently, what is measured is not gender identity but perceived gender expression.
+
+This distinction has methodological implications for fairness evaluation. When generative outputs are compared to demographic statistics—such as labour force participation rates disaggregated by gender—the annotation variable and the statistical benchmark may refer to different constructs. The former reflects appearance-based perception; the latter reflects identity-based self-reporting. Any discrepancy between these constructs introduces ambiguity into downstream bias measurement.
+
+A second limitation concerns the instability of photometric inference under varying acquisition conditions. Skin tone classifiers operate on visible colour values, which are sensitive to illumination colour temperature, exposure, sensor characteristics, and post-processing. In uncontrolled web-scale datasets such as Re-LAION-5B, images are captured under heterogeneous lighting conditions ranging from professional studio setups to low-light mobile photography. Annotation error under such variability is unlikely to be random. Certain lighting styles, aesthetic conventions, or photographic contexts may be overrepresented in particular communities or content domains, creating a confound between acquisition-level artefacts and demographic inference quality.
+
+This issue is further compounded in synthetic imagery. In diffusion-based models such as Stable Diffusion v1.5, lighting is not an external environmental factor but a learned prior embedded in the generative model. If the model preferentially associates specific lighting distributions with certain prompts or demographic cues, automated skin tone classification applied to generated images may conflate representational bias with generative lighting bias. In this setting, annotation error can become entangled with the model’s learned visual style, making it difficult to separate genuine demographic skew from measurement artefact.
+
+A related conceptual distinction must be drawn between race and skin tone. Race is a socially constructed category shaped by historical, political, and cultural processes; it cannot be reliably inferred from visual appearance alone. Skin tone, by contrast, is a photometric property of visible surface pigmentation. While correlated with racial categorisation in many societies, the two constructs are not equivalent. Fairness audits that operationalise race through perceived visual categorisation introduce additional layers of annotator subjectivity and cultural variability \cite{Raji_2019_ActionableAuditing}. Skin tone, though still perceptually mediated and affected by imaging conditions, is more directly grounded in observable colour properties and more closely aligned with the low-level image features examined in spurious feature analysis.
+
+Taken together, these limitations highlight that demographic labels derived from visual inference function as measurement instruments rather than ground truth variables. They encode perceptual conventions, acquisition conditions, and annotation design choices. In large-scale visual audits, observed correlations between image features and demographic attributes may therefore reflect properties of the annotation process itself. Recognising this constraint is essential when interpreting spurious feature distributions in both web-scraped datasets and generative model outputs.
+
+
+%
+%The most basic limitation of demographic annotation from visual data is the difference between perceived attributes — those inferred by an observer from how a subject looks — and self-identified attributes — those reported by the subject as part of their own identity. Scheuerman et al. \cite{Scheuerman_2019_HowComputersSeeGender} argue that systems which claim to classify gender from appearance are not measuring gender identity. They are measuring the extent to which a subject's appearance matches culturally dominant norms of gendered presentation. A system that infers gender from hair length, clothing, or facial structure is learning the statistical patterns of a socially shaped visual convention, not a biological or identity-level property. This matters for bias research because demographic annotations derived from visual inference do not measure the same thing as demographic identity statistics — such as labour force participation rates disaggregated by gender — against which generative model outputs are commonly compared.
+%
+%The quality of automated demographic inference is also affected by lighting and photographic conditions. Skin tone classifiers are sensitive to illumination colour temperature, exposure level, and white balance, all of which change the visible colour of skin in the image without any change to the subject's actual skin tone. This is a particular problem for Re-LAION-5B, which contains images captured under an enormous range of conditions, from professional studio lighting to low-light mobile photography. A skin tone classifier trained on images from controlled settings will produce more errors on images with unusual lighting, and those errors will not be evenly spread across the dataset. Images with unusual artificial lighting, heavy post-processing, or significant underexposure are more common in certain photographic contexts and communities, which creates a confound between acquisition-level spurious signals and demographic annotation quality. For synthetic images from Stable Diffusion v1.5, lighting is a product of the generative model itself, which means the model's learned tendency to generate certain lighting conditions may interact with skin tone classification in ways that are hard to separate from genuine demographic representation effects.
+%
+%A related but distinct limitation concerns the difference between race and skin tone. Race is a socially constructed category with complex historical, political, and cultural dimensions that cannot be read directly from visual appearance. Skin tone is a photometric property of the surface visible in an image. The two are correlated but not the same, and treating them as equivalent in annotation frameworks produces analyses that are both sociologically imprecise and technically confounded. In practice, fairness research that uses visual data operationalises race as a perceived category inferred from appearance, which adds layers of annotator subjectivity and cultural variability \cite{Raji_2019_ActionableAuditing}. This thesis uses skin tone rather than racial category as the primary demographic covariate, following the approach of Meister et al. \cite{Meister_2023_GenderArtifactsinVisualDatasets}. Skin tone is a more directly observable photometric property, less affected by the ambiguities of racial classification, and more naturally aligned with the low-level image features examined in the spurious feature analysis.
+
+%The ethical dimensions of automated demographic inference at scale also require acknowledgement. Systems that infer gender or skin tone from images at scale can enable discrimination, surveillance, or misrepresentation of identity, even when the stated purpose is bias auditing. Hamidi et al. [Hamidi_2018_GenderRecognition] raise the concern that developing and normalising gender recognition systems, even for research purposes, contributes to the legitimisation of inferring identity attributes from appearance without subject consent. This risk is greatest for individuals whose gender expression does not conform to binary norms. This thesis uses automated demographic annotation only to characterise the distributional properties of image datasets and does not perform inference on identifiable individuals. Nonetheless, the methodological choices made — which attributes are annotated, which tools are used, and how results are reported — carry ethical weight and are treated accordingly throughout the analysis.
+
+%\subsection{Annotation of Synthetic Images}
+%
+%Applying demographic annotation tools to images generated by text-to-image models raises challenges beyond those described in the preceding sections. Automated demographic classifiers and face detection models are trained on real photographs, and their representations are calibrated to the statistical properties of real-image distributions. Synthetic images produced by latent diffusion models such as Stable Diffusion v1.5 come from a learned generative distribution that, while visually convincing, differs from real photographs in consistent ways. These differences appear as generative artefacts — characteristic texture patterns, blending inconsistencies, unnatural skin surface detail, and geometric regularities in facial structure — that arise from the architecture of the diffusion model and the variational autoencoder bottleneck through which images are decoded [Rombach_2022_LDM]. These artefacts can cause face detectors and demographic classifiers to produce unreliable outputs. Face detectors may miss faces that a human observer would easily identify. Classifiers may produce confident but incorrect attribute predictions, driven by surface patterns in the synthetic image that were not present in their training data.
+%
+%How much detection reliability is affected depends on the specific generative model and sampling settings, and on how large the gap is between the real-image training distribution and the synthetic images being annotated. Bianchi et al. [Bianchi_2023_TextToImageStereotypes] and Luccioni et al. [Luccioni_2023_StableBias] both apply demographic classifiers directly to synthetic images from large-scale text-to-image models, accepting classifier outputs as reliable demographic annotations without testing whether classifier accuracy holds in the synthetic domain. This is a practical necessity, since ground truth labels are unavailable for synthetic images, but the assumption merits scrutiny. Face detectors trained on real images may show different false positive and false negative rates on synthetic faces depending on the level of photorealism and the frequency of generative artefacts. Furthermore, sampling temperature, guidance scale, and prompt content all affect the visual properties of generated images, which means annotation reliability may vary across experimental conditions in ways that confound comparisons of demographic distributions between real and synthetic image sets.
+%
+%Confidence filtering — discarding annotations where the predicted probability falls below a set threshold — is the main practical strategy for managing annotation uncertainty in synthetic image sets, as it is in real-image pipelines. However, classifier confidence is harder to interpret in the synthetic domain. A high-confidence prediction may reflect a genuinely photorealistic face with clear demographic cues, or it may reflect a synthetic face whose surface properties happen to match the strong decision cues in the classifier's feature space, without representing a real person. Low-confidence predictions may result from genuine perceptual ambiguity in the generated face, or from generative artefacts that reduce the quality of the classifier's internal representation. Without validation against human annotations on a held-out set of synthetic images, it is not possible to tell which of these applies. In this thesis, confidence thresholds are used as a principled way to select a high-quality annotation subset, while acknowledging that the retained set may not represent the full distribution of generated images. This limitation is carried through to the interpretation of demographic correlation results. How to validate demographic annotation tools on synthetic image distributions remains an open problem, and no established standard practice existed at the time of writing.
+
+
+
+%A fundamental yet underexplored dimension of this problem involves spurious features—low-level, non-semantic image characteristics including color statistics, texture patterns, edge distributions, frequency domain properties, and compression artifacts [11, 12]. Unlike semantic features that capture meaningful visual content (e.g., objects, scenes, actions), spurious features represent superficial statistical regularities that arise from data collection processes, image sources, camera characteristics, or post-processing pipelines.
+
+%First, different image sources exhibit distinct spurious signatures—a phenomenon sometimes termed "dataset fingerprinting" or "dataset personality" [15, 16]. Web-scraped datasets, social media images, professional photography, and synthetic images each carry characteristic statistical patterns unrelated to their semantic content. When classifiers can reliably distinguish between image sources using only these low-level features, it indicates that spurious patterns are systematically embedded in data distributions.
+%Second, and most critically for fairness, spurious features may correlate with sensitive attributes such as gender, ethnicity, or age. If certain demographic groups are disproportionately represented in images with specific color palettes, lighting conditions, image quality levels, or compression artifacts within the training data, models can learn to exploit these superficial cues for demographic classification. This creates a particularly insidious form of bias: predictions ostensibly based on semantic content may actually rely on non-semantic shortcuts invisible to human observers and standard evaluation metrics.
+%Third, the generative training process itself may transform spurious feature distributions in complex ways. It remains unclear whether diffusion models faithfully reproduce the spurious patterns present in training data, systematically amplify certain features while suppressing others, or introduce entirely new spurious correlations through the learned denoising process. Understanding this transformation is essential for predicting how training data characteristics will manifest in deployed systems.
+
+
+
+
+%Figure~\ref{fig:sample} shows a sample figure and how to cross-reference
+%figures.
+%%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=\textwidth,keepaspectratio]{sample}
+%    \caption[Short sample caption.]{Longer caption that  and shows below the figure.\label{fig:sample}}
+%\end{figure}
+%%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+%Mauris sed ipsum risus.
+%Nulla aliquet quis quam sed eleifend.
+%Donec rutrum, dolor id vulputate pharetra, nulla tortor laoreet nisl,
+%pellentesque dapibus velit dolor suscipit purus.
+%Phasellus vitae eleifend sem.
+%Integer ultricies ex in neque pellentesque, vitae facilisis orci aliquam.
+%In pellentesque mollis turpis, eu tristique lacus eleifend nec.
+%Vestibulum orci neque, rhoncus vitae convallis eu, suscipit quis dui.
+%Nulla libero elit, porta sit amet sagittis vel, placerat sit amet tortor.
+%Aliquam hendrerit dolor sit amet sollicitudin ornare.
+%Aliquam placerat sodales est, in vestibulum nisl efficitur in.
+%Nulla venenatis aliquam sem, at volutpat nisl pellentesque eleifend.
+%Praesent vitae euismod nulla, eget vehicula turpis.
+%Duis quis tellus vitae nisi tempus tincidunt.
+%
+
+
+
+
+
+%\section{Literature Review}%
+%\label{sec:literature_review}
+%
+%Vivamus sit amet orci erat.
+%Morbi eleifend velit purus, sed gravida metus ullamcorper sed.
+%Aliquam sit amet interdum nulla, in aliquam diam.
+%Aliquam non libero tortor.
+%Nulla imperdiet dolor vel justo semper, ut efficitur enim varius.
+%Donec ultrices odio id orci fringilla tristique.
+%Ut fringilla nec felis a finibus.
+%Sed a felis sed odio elementum porta a ac nisl.
+%Curabitur suscipit, sem et facilisis tempus, nisl elit vestibulum eros, in
+%varius dolor enim vitae ante.
+%Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+%curae; Nullam condimentum tempor consectetur.
+%Aliquam non porta nisi.
+%Proin molestie tincidunt tellus, id varius nibh finibus eget.
+%
+%Vestibulum et neque erat.
+%Curabitur metus velit, dictum non vehicula vitae, sodales sed purus.
+%In mattis a mauris nec imperdiet.
+%Duis volutpat mi eget egestas placerat.
+%Vivamus non purus erat.
+%Cras quis egestas libero.
+%Sed id diam at enim vehicula porttitor.
+%
+%Mauris tincidunt elementum porttitor.
+%Curabitur eu elit et metus luctus ultrices.
+%Aenean varius orci in turpis consectetur efficitur.
+%Quisque lacinia sagittis pharetra.
+%Aliquam efficitur aliquam arcu, vel ullamcorper tortor volutpat nec.
+%Curabitur sit amet semper tortor.
+%Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+%curae; Cras at leo aliquet, porta mauris nec, pharetra augue.
+%Nam volutpat eu urna in ullamcorper.
+%Aliquam ultrices condimentum odio id eleifend.
+%Mauris tellus felis, mattis et pellentesque ac, laoreet vitae eros.
+%Aliquam at nisl lorem.
+%Quisque consequat ligula nec tellus ornare eleifend.
+%
+%\section{Instructions}%
+%\label{sec:instructions}
+%
+%This sentence refers to Section~\ref{sec:literature_review}, as an example of
+%how to do cross-referencing.
+%Equation~\eqref{eq:emc} shows one of the most famous equations.
+%%
+%\begin{equation}
+%    \label{eq:emc}
+%    e = mc^2
+%\end{equation}
+%%
+%An example of how to create multiple equations, where they all align is given
+%below.
+%%
+%\begin{align}
+%    e & = mc^2          \\
+%    m & = \frac{e}{c^2}
+%\end{align}
+%
+%\section{Inserting references}%
+%\label{sec:inserting_references}
+%
+%To insert a reference, the entry must be inserted in the \texttt{references.bib}
+%file.
+%The key or unique ID of the entry is then used to refer to it.
+%\LaTeX{} will automatically number the entry and generate the list of
+%references.
+%The paper in~\cite{sample_key} is used as a referencing example.
+%
+%\section{Inserting acronyms}%
+%\label{sec:inserting_acronyms_and_glossary_entries}
+%
+%The \gls{tcp} and \gls{udp} protocols are two layer 4 protocols, used for
+%demonstrating how to use acronyms.
+%On the second use of an acronym, only its initials are shown as demonstrated in
+%the following sentence.
+%The \gls{tcp} and \gls{udp} protocols are two layer 4 protocols, used for
+%demonstrating how to use acronyms.
+%
+%\section{Using glossary terms}%
+%\label{sec:using_glossary_terms}
+%
+%Let \gls{G} represent a loop-free directed graph, where \gls{V} and \gls{E}
+%represent the set of nodes and edges, respectively.
+%
+%\section{Inserting a table}%
+%\label{sec:inserting_a_table}
+%
+%A simple table is shown in Table~\ref{tab:simple}, with a more complex example
+%given in Table~\ref{tab:complex}.
+%
+%\begin{table}
+%    \caption{Simple table example.\label{tab:simple}}
+%    \centering
+%    \begin{tblr}{|c|S[table-format=3.2]|c|}
+%        \hline
+%        \textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
+%        \hline
+%        1                 & 2.3               & Orange            \\
+%        2                 & 100.5             & Blue              \\
+%        3                 & 35.0              & Black             \\
+%        \hline
+%    \end{tblr}
+%\end{table}
+%
+%\begin{table}
+%    \centering
+%    \caption{Complex table example.\label{tab:complex}}
+%    \begin{tblr}{|Q[m,0.2\textwidth]|Q[m,0.2\textwidth]|Q[m,0.2\textwidth]|Q[m,0.2\textwidth]|}
+%        \hline
+%        \SetCell[r=2]{c} Table Head & \SetCell[c=3]{c} Table Column Head & & \\
+%        \hline
+%        & Table column subhead 1 & Table column subhead 2 & Table column subhead 3 \\
+%        \hline
+%        Item 1 & 2 & 3 & 4 \\
+%        \hline
+%        Item 2 & 2 & 3 & 4 \\
+%        \hline
+%        Item 3 & 2 & 3 & 4 \\
+%        \hline
+%        Item 4 & 2 & 3 & 4 \\
+%        \hline
+%    \end{tblr}
+%\end{table}
+%
+%\section{Inserting code snippet}%
+%\label{sec:inserting_code_snippet}
+%
+%The code snippet in Listing~\ref{lst:python_example} demonstrates a very simple
+%python program.
+%
+%\begin{lstlisting}[language=Python,caption=Python example,label={lst:python_example}]
+%def main() -> None:
+%    print("Hello World")
+%
+%if __name__ == "__main__":
+%    main()
+%\end{lstlisting}
+%
+%\section{Inserting theorems, corollaries and lemmas}%
+%\label{sec:inserting_theorems,_corollaries_and_lemmas}
+%
+%\begin{theorem}
+%    Let \(f\) be a function whose derivative exists in every point, then \(f\) is
+%    a continuous function.
+%\end{theorem}
+%
+%\begin{theorem}[Pythagorean theorem]
+%    \label{pythagorean}
+%    This is a theorem about right triangles and can be summarised in the next
+%    equation
+%    \[ x^2 + y^2 = z^2 \]
+%\end{theorem}
+%
+%And a consequence of theorem \ref{pythagorean} is the statement in the next
+%corollary.
+%
+%\begin{corollary}
+%    There's no right rectangle whose sides measure 3cm, 4cm, and 6cm.
+%\end{corollary}
+%
+%You can reference theorems such as \ref{pythagorean} when a label is assigned.
+%
+%\begin{lemma}
+%    Given two line segments whose lengths are \(a\) and \(b\) respectively there is a
+%    real number \(r\) such that \(b=ra\).
+%\end{lemma}
+%
+%\section{Inserting an algorithm}%
+%\label{sec:inserting_an_algorithm}
+%
+%The pseudocode for a basic \gls{ea} using NSGA-II is given in
+%Algorithm~\ref{alg:evolutionaryAlgorithm}.
+%
+%\begin{algorithm}
+%    \caption{Pseudocode for an Evolutionary Algorithm}%
+%    \label{alg:evolutionaryAlgorithm}
+%    \begin{algorithmic}
+%        \State \( \mathcal{P} \) = Population Size
+%        \State \( \chi \) = Number of Generations
+%        \State \( \omega \) = Crossover Probability
+%        \State \( \psi \) = Mutation Probability
+%        \State
+%        \State population = GenerateInitialPopulation(\( \mathcal{P} \))
+%        \For{\( 1, 2, \ldots, \chi \)}
+%        \State offspring = TournamentSelection(population, \( \mathcal{P} \))
+%        % Crossover
+%        \For{\(c_i \in \) offspring, \( i = 1, 3, 5, \ldots, \mathcal{P}\)}
+%        \State \(z\) = random(0, 1)
+%        \If{\( z < \omega \)}
+%        \State Crossover(\( c_i, c_{i+1} \))
+%        \EndIf
+%        \EndFor
+%        % Mutation
+%        \For{\(c_i \in \) offspring}
+%        \State \(z\) = random(0, 1)
+%        \If{\( z < \psi \)}
+%        \State Mutate(\( c_i \))
+%        \EndIf
+%        \EndFor
+%        % Calculate fitness
+%        \State CalculatePopulationFitness(offspring)
+%        % Update population size
+%        \State population = NSGA-II([population + offspring], \(\mathcal{P}\))
+%        \EndFor
+%    \end{algorithmic}
+%\end{algorithm}

@@ -295,6 +295,13 @@ def train_one_model(
         val_metrics = evaluate(model, val_loader, num_classes, device)
         val_score = val_metrics["metric"]
 
+        print(
+            f"[VAL] epoch={epoch+1} "
+            f"auc={val_metrics['auc']:.4f} "
+            f"acc={val_metrics['accuracy']:.4f} "
+            f"f1={val_metrics['f1']:.4f}"
+        )
+
         if val_score > best_metric:
             best_metric = val_score
             best_state = {
@@ -583,7 +590,7 @@ def load_splits(json_path):
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--splits_json", required=True)
-    p.add_argument("--task", choices=["gender", "skintone"], required=True)
+    p.add_argument("--task", choices=["gender", "skintone", "dataset_classification"], required=True)
     p.add_argument("--epochs", type=int, default=15) # Default as per the paper
     p.add_argument("--batch_size", type=int, default=64) # Default as per the paper
     p.add_argument("--seeds", type=int, nargs="+", default=[0])
@@ -622,7 +629,7 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     Path(args.out_dir).mkdir(exist_ok=True)
 
-    num_classes = 1 if args.task == "gender" else 3
+    num_classes = 1 if (args.task == "gender" or args.task == "dataset_classification") else 3
 
     train_s, val_s, test_s = load_splits(args.splits_json)
 
@@ -630,19 +637,25 @@ def main():
         ImageLabelDataset(train_s, train_transform()),
         batch_size=args.batch_size,
         shuffle=True,
-        num_workers=0, #4,
+        num_workers=8,
+        pin_memory=True,
+        persistent_workers=True
     )
     val_loader = DataLoader(
         ImageLabelDataset(val_s, eval_transform()),
         batch_size=args.batch_size,
         shuffle=False,
-        num_workers=0, #4,
+        num_workers=4,
+        pin_memory=True,
+        persistent_workers=True
     )
     test_loader = DataLoader(
         ImageLabelDataset(test_s, eval_transform()),
         batch_size=args.batch_size,
         shuffle=False,
-        num_workers=0, #4,
+        num_workers=4,
+        pin_memory=True,
+        persistent_workers=True
     )
 
     csv_path = Path(args.out_dir) / f"results_{args.task}.csv"
@@ -733,3 +746,23 @@ if __name__ == "__main__":
 
 # python ResNet-50_Convnext-Tiny_Classification.py --splits_json splits_skintone.json --task skintone --seeds 0 1 2 3 4 --bootstrap --backbone resnet50 --batch_size 64 --earlystopping --patience 5 --save_mode best --out_dir outputs_ResNet50_skinTone
 # python ResNet-50_Convnext-Tiny_Classification.py --splits_json splits_skintone.json --task skintone --seeds 0 1 2 3 4 --bootstrap --backbone convnext_tiny --batch_size 16 --earlystopping --patience 5 --save_mode best --out_dir outputs_Convnext_Tiny_skinTone
+
+
+
+
+
+# python ResNet-50_Convnext-Tiny_Classification.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\splits_gender_face_stratified_lowpass.json" --task gender --seeds 0 1 2 3 4 --bootstrap --backbone resnet50 --batch_size 64 --earlystopping --patience 5 --save_mode best --out_dir outputs_ResNet50_SD_lowpass_gender
+
+
+
+# python ResNet-50_Convnext-Tiny_Classification.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\splits_gender_face_stratified_balanced_lowpass.json" --task gender --seeds 0 --bootstrap --backbone resnet50 --batch_size 64 --earlystopping --patience 5 --save_mode best --out_dir outputs_ResNet50_SD_lowpass_balanced_gender --epochs 5
+
+# python ResNet-50_Convnext-Tiny_Classification.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\splits_gender_face_stratified_balanced_highpass.json" --task gender --seeds 0 --bootstrap --backbone resnet50 --batch_size 64 --earlystopping --patience 5 --save_mode best --out_dir outputs_ResNet50_SD_highpass_balanced_gender --epochs 5
+
+# python ResNet-50_Convnext-Tiny_Classification.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\splits_gender_face_stratified_balanced_depth.json" --task gender --seeds 0 --bootstrap --backbone resnet50 --batch_size 64 --earlystopping --patience 5 --save_mode best --out_dir outputs_ResNet50_SD_depth_balanced_gender --epochs 5
+
+
+
+
+
+# python ResNet-50_Convnext-Tiny_Classification.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassification\splits_face_combined_stratified.json" --task dataset_classification --seeds 0 --bootstrap --backbone resnet50 --batch_size 64 --earlystopping --patience 2 --save_mode best --out_dir officialOutputs/outputs_ResNet50_SD_depth_balanced_gender --epochs 15

@@ -1,0 +1,58 @@
+\documentclass{fict}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\input{content/glossary}
+\input{content/acronyms}
+
+% Title might need to be changed to reflect the new approach
+\title{Evaluating the Quality of the LAION-2B Dataset:
+Insights into Large-Scale Image Dataset Assessment}
+\author{Jerome Agius}
+\supervisor{Dr Dylan Seychell}
+\degreename{Master of Science in Artificial Intelligence [Taught and Research (Mainly by Research)] (M.Sc.(Melit.))}
+\titledate{May 2026}
+
+\begin{document}
+\frontmatter{}
+\pagestyle{pageNumbersOnly}
+
+\input{content/title.tex}
+\input{content/abstract.tex}
+ \input{content/acknowledgements.tex}
+ \clearpage{}
+
+ \tableofcontents{}
+ \addcontentsline{toc}{chapter}{Contents}
+ \clearpage{}
+
+ \listoffigures{}
+ \addcontentsline{toc}{chapter}{List of Figures}
+ \clearpage{}
+
+ \listoftables{}
+ \addcontentsline{toc}{chapter}{List of Tables}
+ \clearpage{}
+
+ \printglossary[type=\acronymtype,nonumberlist,title=List of Abbreviations]
+ \addcontentsline{toc}{chapter}{List of Abbreviations}
+ \clearpage{}
+
+ \printglossary[nonumberlist,title=Glossary of Symbols]
+ \addcontentsline{toc}{chapter}{Glossary of Symbols}
+ \clearpage{}
+
+ \mainmatter{}
+ \pagestyle{MainMatter}
+
+ \input{content/chapters/1_introduction/introduction.tex}
+ \input{content/chapters/2_background/background.tex}
+
+ \printbibliography[title=References]
+
+ \appendix{}
+
+ \input{content/appendices/appendix_a.tex}
+ \input{content/appendices/appendix_b.tex}
+
+\end{document}

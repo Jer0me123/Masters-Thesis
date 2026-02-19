@@ -1,0 +1,319 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,GEO,GEO_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,25.99
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,4.853
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,21.137
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,14.581
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,2.83
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,11.751
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,11.409
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,2.023
+AUT,Austria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,9.386
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,9.557
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,1.403
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,8.154
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,3.374
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,2.403
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,6.183
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,
+BEL,Belgium,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,5.751
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,18.493
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,2.506
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,15.987
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,6.196
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,1.174
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,5.023
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,12.297
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,1.332
+CHE,Switzerland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,10.965
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,202.768
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,26.281
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,176.487
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,108.82
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,13.255
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,95.564
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,93.949
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,13.026
+DEU,Germany,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,80.923
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,115.037
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,24.308
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,90.729
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,37.354
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,10.242
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,27.112
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,77.683
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,14.066
+ESP,Spain,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,63.617
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,140.276
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,14.482
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,125.794
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,69.309
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,7.467
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,61.842
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,70.967
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,7.014
+FRA,France,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,63.952
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2019,9.42
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2019,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2019,9.19
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2019,7.655
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2019,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2019,7.655
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2019,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2019,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2019,
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,125.939
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,16.912
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,109.026
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,42.377
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,5.261
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,37.116
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,83.562
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,11.651
+ITA,Italy,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,71.911
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,12.843
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,12.038
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,7.567
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,7.274
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,5.276
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,
+NLD,Netherlands,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,4.764
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,14.704
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,4.61
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,10.093
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,6.885
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,2.977
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,3.908
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,7.819
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,1.634
+SWE,Sweden,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,6.186
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2023,
+CZE,Czechia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,8.413
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,2.899
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,5.514
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,4.339
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,1.278
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,3.06
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,4.075
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,1.621
+DNK,Denmark,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,2.454
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,17.491
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,3.46
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,14.031
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,9.596
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,2.355
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,7.241
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,7.895
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,
+FIN,Finland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,6.79
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,22.05
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,5.34
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,16.71
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,7.689
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,2.693
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,4.997
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,14.361
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,2.648
+GRC,Greece,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,11.713
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,31.626
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,16.183
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,15.443
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,17.099
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,8.692
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,8.407
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,14.528
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,7.491
+HUN,Hungary,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,7.037
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,16.062
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,7.596
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,8.466
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,7.904
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,3.522
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,4.382
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,8.158
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,4.074
+IRL,Ireland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,4.084
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,8.892
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,2.152
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,6.739
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,5.964
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,1.907
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,4.057
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,2.928
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,
+NOR,Norway,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,2.682
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2020,84.318
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2020,40.449
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2020,43.869
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2020,44.684
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2020,19.623
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2020,25.061
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2020,39.634
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2020,20.827
+POL,Poland,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2020,18.808
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,15.754
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,5.147
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,10.607
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,7.024
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,2.394
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,4.63
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,8.73
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,2.753
+PRT,Portugal,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,5.977
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,150.059
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,96.66
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,53.399
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,56.761
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,42.809
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,13.952
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,93.298
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,53.851
+ROU,Romania,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,39.447
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,3179.14
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,1129.155
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,2049.985
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,1400.157
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,509.033
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,891.124
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,1778.984
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,620.122
+BRA,Brazil,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,1158.861
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,81.466
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,16.461
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,65.005
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,39.541
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,8.095
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,31.447
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,41.925
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,8.367
+CHL,Chile,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,33.559
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,128.991
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,28.191
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,100.801
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,37.012
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,5.8
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,31.212
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,91.98
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,22.391
+COL,Colombia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,69.589
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2021,10.506
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2021,2.644
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2021,7.862
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2021,7.727
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2021,2.255
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2021,5.473
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2021,2.778
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2021,
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2021,2.389
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_X,Not elsewhere classified,2023,6.548
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_X,Not elsewhere classified,2023,4.545
+PER,Peru,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_X,Not elsewhere classified,2023,2.003
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,13.462
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,0.688
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,12.773
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,4.267
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,0.146
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,4.121
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,9.194
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,0.542
+URY,Uruguay,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,8.652
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,200.756
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,25.88
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,174.877
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,130.734
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,17.556
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,113.178
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,70.022
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,8.324
+USA,United States of America,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,61.699
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2023,319.517
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2023,117.356
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2023,202.161
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2023,231.331
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2023,84.461
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2023,146.87
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2023,88.186
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2023,32.895
+IDN,Indonesia,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2023,55.291
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,928.969
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,121.511
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,807.458
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,536.578
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,72.172
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,464.407
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,392.391
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,49.34
+KOR,Republic of Korea,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,343.051
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2023,249.031
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2023,86.26
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2023,96.006
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2023,166.939
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2023,54.826
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2023,64.906
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2023,82.092
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2023,31.435
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2023,31.1
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_X,Not elsewhere classified,2023,66.765
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_X,Not elsewhere classified,2023,47.207
+PHL,Philippines,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_X,Not elsewhere classified,2023,19.558
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,5.069
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,2.15
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,2.919
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,3.885
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,1.712
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,2.173
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,1.184
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,0.745
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_X,Not elsewhere classified,2022,3.935
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_X,Not elsewhere classified,2022,2.323
+VNM,Viet Nam,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_X,Not elsewhere classified,2022,1.612
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,904.397
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,466.602
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,437.795
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,187.463
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,85.96
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,101.503
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,716.934
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,380.642
+EGY,Egypt,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,336.292
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2016,282.139
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2016,123.438
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2016,158.701
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2016,123.739
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2016,67.49
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2016,56.249
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2016,158.4
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2016,55.948
+KEN,Kenya,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2016,102.451
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2019,1334.037
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2019,699.493
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2019,634.544
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2019,530.581
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2019,246.892
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2019,283.688
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2019,803.456
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2019,452.601
+NGA,Nigeria,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2019,350.856
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_NAT,National,2024,3274.494
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_RUR,Rural,2024,386.876
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_URB,Urban,2024,377.025
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_NAT,National,2024,1501.031
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_RUR,Rural,2024,172.057
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_URB,Urban,2024,173.487
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_NAT,National,2024,1773.463
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_RUR,Rural,2024,214.819
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_URB,Urban,2024,203.538
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_T,Total,GEO_COV_X,Not elsewhere classified,2024,2510.593
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_M,Male,GEO_COV_X,Not elsewhere classified,2024,1155.488
+ZAF,South Africa,A,Annual,EIP_WDIS_NB,Discouraged jobseekers (previous ILO definition),SEX_F,Female,GEO_COV_X,Not elsewhere classified,2024,1355.106

@@ -1,0 +1,34 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[220] biber-MSWIN64:342> INFO - === 
+[286] Biber.pm:421> INFO - Reading 'main.bcf'
+[486] Biber.pm:1002> INFO - Found 56 citekeys in bib section 0
+[509] Biber.pm:4487> INFO - Processing section 0
+[524] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[633] bibtex.pm:1713> INFO - LaTeX decoding ...
+[726] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[1246] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1246] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1246] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1246] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1300] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1370] bbl.pm:779> INFO - Output to main.bbl
+[1371] Biber.pm:132> WARN - legacy month field '23--24 Feb' in entry 'Buolamwini_2018_BiasGenderClassification' is not an integer - this will probably not sort properly.
+[1371] Biber.pm:132> WARN - Possible typo (case mismatch) between citation and datasource keys: 'Schuhmann_2022_LAION5B' and 'Schuhmann_2022_Laion5b' in file 'references.bib'
+[1371] Biber.pm:132> WARN - legacy month field '23--24 Feb' in entry 'Buolamwini_2018_GenderShades' is not an integer - this will probably not sort properly.
+[1371] Biber.pm:132> WARN - I didn't find a database entry for 'Schuhmann_2022_LAION5B' (section 0)
+[1371] Biber.pm:132> WARN - I didn't find a database entry for 'laionAesthetics' (section 0)
+[1371] Biber.pm:132> WARN - I didn't find a database entry for 'sd15modelcard' (section 0)
+[1371] Biber.pm:132> WARN - I didn't find a database entry for 'Singh_2020_DontJudgeObject' (section 0)
+[1371] Biber.pm:132> WARN - I didn't find a database entry for 'Canny_1986_ComputationalApproachEdgeDetection' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Kirillov_2023_SegmentAnything' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Brendel_2019_BagNet' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Hendricks_2018_WomenAlsoSnowboard' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Wang_2019_BalancedDatasetsNotEnough' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Liu_2024_DecadeBattleDatasetBias' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Thomee_2016_YFCC100M' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Changpinyo_2021_CC12M' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Gadre_2023_DataComp' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'He_2016_DeepResidualLearning' (section 0)
+[1372] Biber.pm:132> WARN - I didn't find a database entry for 'Wang_2019_BalancedDatasets' (section 0)
+[1372] Biber.pm:134> INFO - WARNINGS: 18
