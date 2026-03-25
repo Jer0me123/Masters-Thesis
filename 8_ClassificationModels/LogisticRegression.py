@@ -162,7 +162,7 @@ def build_logistic_regression(feature_type, task_type, C=1.0, max_iter=1000, tol
         tol: Tolerance for stopping
     """
     
-    if feature_type == "mean_rgb":
+    if feature_type == "mean_rgb" or feature_type == "depth_at_pose":
         # Paper: L2 regularization, λ=1
         return LogisticRegression(
             penalty="l2",
@@ -174,7 +174,7 @@ def build_logistic_regression(feature_type, task_type, C=1.0, max_iter=1000, tol
             random_state=42
         )
 
-    elif feature_type == "objects":
+    elif feature_type == "objects": 
         # Paper: L1 regularization, λ=1, liblinear solver
         return LogisticRegression(
             penalty="l1",
@@ -257,9 +257,9 @@ def parse_args():
     p.add_argument("--splits_json", required=True, 
                    help="Path to JSON file with train/val/test splits")
     p.add_argument("--feature_type",
-                   choices=["mean_rgb", "objects"],
+                   choices=["mean_rgb", "objects", "depth_at_pose"],
                    required=True,
-                   help="Type of features: mean_rgb (3 features) or objects (binary vector)")
+                   help="Type of features: mean_rgb (3 features) / objects (binary vector) / depth_at_pose (depth values at pose)")
     
     p.add_argument("--task_name", type=str, default="classification",
                    help="Name for this classification task (for output files)")

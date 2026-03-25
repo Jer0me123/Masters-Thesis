@@ -1,25 +1,140 @@
 \contentsline {chapter}{Abstract}{i}{chapter*.1}%
 \contentsline {chapter}{Acknowledgements}{iii}{chapter*.2}%
-\contentsline {chapter}{Contents}{iv}{chapter*.2}%
-\contentsline {chapter}{List of Figures}{v}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{vi}{chapter*.2}%
-\contentsline {chapter}{List of Abbreviations}{vii}{chapter*.2}%
-\contentsline {chapter}{Glossary of Symbols}{viii}{chapter*.2}%
+\contentsline {chapter}{Contents}{vi}{chapter*.2}%
+\contentsline {chapter}{List of Figures}{ix}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{xii}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{xiv}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Problem Definition}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivation}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Aims and Objectives}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Document Structure}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.3}Aims and Objectives}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Document Structure}{3}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Background \& Literature Review}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Re-LAION-5B Dataset}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Spurious Features in Machine Learning}{7}{section.2.2}%
-\contentsline {paragraph}{Person appearance.}{16}{section.2.2}%
-\contentsline {paragraph}{Person shape and pose.}{16}{section.2.2}%
-\contentsline {paragraph}{Background as a gender artifact.}{17}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Demographic Annotation in Large-Scale Image Datasets}{19}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Human and Automated Annotation Practices}{19}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Measurement Bias and Label Uncertainty}{20}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Skin Tone Annotation Frameworks}{21}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Limitations of Visual Demographic Inference}{23}{subsection.2.3.4}%
-\contentsline {chapter}{\numberline {A}Sample A}{30}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Sample B}{31}{appendix.B}%
+\contentsline {section}{\numberline {2.2}Stable Diffusion: Architecture, Training, and Dataset Lineage}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Low-Rank Adaptation of Diffusion Models}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Aesthetic Quality Assessment in Large-Scale Image Datasets}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Face Detection Models and Evaluation Benchmarks}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Facial Landmark Estimation: MediaPipe FaceMesh}{10}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Similarity Search in High-Dimensional Embedding Spaces}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Spurious Features in Machine Learning}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Demographic Annotation in Large-Scale Image Datasets}{21}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Human and Automated Annotation Practices}{21}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Measurement Bias and Label Uncertainty}{22}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Skin Tone Annotation Frameworks}{23}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Limitations of Visual Demographic Inference}{24}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Inference-Time Debiasing of Text-to-Image Diffusion Models}{25}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Occupations as a Probe for Demographic Bias in Text-to-Image Generation}{29}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Occupational Stereotyping in Language and Vision Systems}{29}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Occupational Bias in Text-to-Image Models}{30}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Occupation Classification: The ISCO-08 Framework}{30}{subsection.2.7.3}%
+\contentsline {chapter}{\numberline {3}Methodology}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Image Retrieval}{32}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Data Acquisition and Subsetting}{32}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Image Source Distribution}{32}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Image Validity Criteria}{32}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Decay Rate}{33}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Image Preprocessing and Embedding Computation}{33}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Profession-Conditioned Image Retrieval}{34}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Profession-Conditioned Subset Construction}{34}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}FAISS Index Construction}{34}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Prompt Design}{34}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Negative Prompt Dominance Filtering}{35}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Embedding-Level Deduplication}{35}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Retrieval Parameters}{35}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Face Detection Model Selection}{36}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Human-Centric Structural Filtering}{36}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Filtering Outcomes and Acceptance Rate Distribution}{38}{subsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.2.10}Subset Design and Statistical Justification}{39}{subsection.3.2.10}%
+\contentsline {section}{\numberline {3.3}Image Generation Pipeline}{39}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Model Selection}{39}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Prompt Design and Justification}{40}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Guidance Scale and Its Methodological Implications}{42}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Structural Validation Criteria and Unfiltered Control Subset}{42}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Structural Acceptance Rates for Generated Images}{43}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Demographic Annotation}{45}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Pre-processing}{45}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Gender Annotation}{45}{subsection.3.4.2}%
+\contentsline {subsubsection}{Candidate Models}{45}{subsection.3.4.2}%
+\contentsline {subsubsection}{Evaluation Protocol}{46}{subsection.3.4.2}%
+\contentsline {subsubsection}{Results}{46}{subsection.3.4.2}%
+\contentsline {subsubsection}{Per-Skin-Tone Performance of the Selected Model}{47}{table.caption.12}%
+\contentsline {subsection}{\numberline {3.4.3}Skin Tone Annotation}{47}{subsection.3.4.3}%
+\contentsline {subsubsection}{Scale Selection}{47}{subsection.3.4.3}%
+\contentsline {subsubsection}{Candidate Models}{48}{subsection.3.4.3}%
+\contentsline {subsubsection}{Baseline Results}{48}{subsection.3.4.3}%
+\contentsline {subsubsection}{VGG-16 Ablation Study}{49}{table.caption.14}%
+\contentsline {subsubsection}{Model Selection}{49}{table.caption.16}%
+\contentsline {subsubsection}{Final Annotation Pipeline}{50}{table.caption.17}%
+\contentsline {subsection}{\numberline {3.4.4}Real-World Occupational Demographic Reference Data}{51}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Race-to-Skin-Tone Distribution Mapping}{51}{subsection.3.4.5}%
+\contentsline {section}{\numberline {3.5}Image Transformation Pipeline for Spurious Feature Analysis}{53}{section.3.5}%
+\contentsline {subsubsection}{Monocular Depth Estimation}{54}{section.3.5}%
+\contentsline {subsubsection}{Edge Detection}{55}{section.3.5}%
+\contentsline {subsubsection}{Frequency Domain Filtering}{56}{section.3.5}%
+\contentsline {subsubsection}{Pixel Shuffling, Patch Shuffling, and Mean RGB}{56}{figure.caption.18}%
+\contentsline {subsubsection}{Variational Autoencoder Reconstruction}{58}{figure.caption.19}%
+\contentsline {subsubsection}{Semantic Segmentation}{60}{figure.caption.19}%
+\contentsline {subsubsection}{Object Detection}{60}{figure.caption.20}%
+\contentsline {subsubsection}{Image Captioning}{63}{table.caption.23}%
+\contentsline {subsubsection}{Pose Estimation}{65}{figure.caption.27}%
+\contentsline {subsubsection}{Occlusion}{67}{figure.caption.29}%
+\contentsline {section}{\numberline {3.6}Inference-Time Debiasing of Stable Diffusion v1.5}{70}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Experimental Design}{71}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}ITI-GEN Demographic Conditioning}{71}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Pose Conditioning via ControlNet}{71}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Colour Alignment}{72}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Generation Configuration}{72}{subsection.3.6.5}%
+\contentsline {chapter}{\numberline {4}Evaluation}{74}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Demographic Distribution Analysis}{74}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Aggregate Gender and Skin Tone Distributions}{74}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Per-Profession and Per-ISCO-Group Analysis}{76}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Dataset Classification}{82}{section.4.2}%
+\contentsline {paragraph}{1. The three datasets are separable across every level of representation tested}{82}{table.caption.40}%
+\contentsline {paragraph}{2. Dataset separability cannot be explained by acquisition artefacts alone}{83}{table.caption.40}%
+\contentsline {paragraph}{3. Local spatial statistics are highly dataset-discriminative}{84}{table.caption.40}%
+\contentsline {paragraph}{4. Both frequency bands carry strong discriminating signal, with a modest advantage for high-frequency components}{84}{table.caption.40}%
+\contentsline {paragraph}{5. A hierarchy of dataset-discriminating signal exists across representational levels}{85}{table.caption.40}%
+\contentsline {paragraph}{6. Semantic dataset differences survive compression to natural language}{85}{table.caption.40}%
+\contentsline {paragraph}{7. Absolute accuracies exceed those reported in the reference framework}{86}{table.caption.40}%
+\contentsline {section}{\numberline {4.3}Demographic Attribute Separability}{86}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Gender Artifact Analysis}{87}{subsection.4.3.1}%
+\contentsline {paragraph}{Unmodified images establish a strong separability upper bound}{87}{table.caption.41}%
+\contentsline {paragraph}{Occlusion probes reveal a fundamental asymmetry between datasets}{87}{table.caption.41}%
+\contentsline {paragraph}{Global colour statistics carry modest but consistent signal in both datasets}{88}{table.caption.41}%
+\contentsline {paragraph}{Geometric probes reveal body configuration as an independent signal source}{89}{table.caption.41}%
+\contentsline {paragraph}{Semantic probes reveal scene composition and language as additional signal carriers}{89}{table.caption.41}%
+\contentsline {paragraph}{The two datasets exhibit qualitatively distinct spurious gender feature profiles}{90}{table.caption.41}%
+\contentsline {subsection}{\numberline {4.3.2}Skin Tone Artifact Analysis}{90}{subsection.4.3.2}%
+\contentsline {paragraph}{Unmodified images establish a strong separability upper bound}{90}{table.caption.43}%
+\contentsline {paragraph}{Occlusion probes reveal the same dataset asymmetry observed for gender, with per-class variation}{92}{table.caption.43}%
+\contentsline {paragraph}{Global colour statistics carry weaker photometric signal than for gender}{92}{table.caption.43}%
+\contentsline {paragraph}{Geometric probes produce comparable signal for skin tone and gender, with SD v1.5 showing stronger encoding}{93}{table.caption.43}%
+\contentsline {paragraph}{Object detection probes show that scene composition encodes skin tone in both datasets}{93}{table.caption.43}%
+\contentsline {paragraph}{Caption probing reveals a cross-dataset asymmetry absent from the visual probes}{93}{table.caption.43}%
+\contentsline {paragraph}{Per-class results reveal systematic difficulty for mid-range skin tones across all probes}{94}{table.caption.43}%
+\contentsline {paragraph}{Skin tone and gender exhibit analogous but not identical spurious feature profiles}{94}{table.caption.43}%
+\contentsline {subsection}{\numberline {4.3.3}Connections to Dataset Classification Results}{94}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Debiasing Evaluation}{96}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Demographic Distribution Shift}{97}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Probing Accuracy on the Debiased Corpus}{98}{subsection.4.4.2}%
+\contentsline {subsubsection}{Gender Probing Results}{98}{table.caption.46}%
+\contentsline {subsubsection}{Skin Tone Probing Results}{100}{table.caption.46}%
+\contentsline {subsubsection}{Summary}{101}{table.caption.46}%
+\contentsline {section}{\numberline {4.5}Limitations}{102}{section.4.5}%
+\contentsline {paragraph}{Scope of the Re-LAION-5B sample.}{102}{section.4.5}%
+\contentsline {paragraph}{Annotation as measurement instrument.}{102}{section.4.5}%
+\contentsline {paragraph}{Dataset classification and causation.}{102}{section.4.5}%
+\contentsline {paragraph}{Debiasing evaluation scope.}{102}{section.4.5}%
+\contentsline {paragraph}{Synthetic image annotation reliability.}{103}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Synthesis of Evaluation Findings}{103}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{105}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusions}{105}{section.5.1}%
+\contentsline {paragraph}{Objective 1: Dataset acquisition, preparation, and annotation.}{105}{section.5.1}%
+\contentsline {paragraph}{Objective 2: Spurious feature detection.}{105}{section.5.1}%
+\contentsline {paragraph}{Objective 3: Spurious feature correlations with demographics.}{105}{section.5.1}%
+\contentsline {paragraph}{Objective 4: Inference-time debiasing.}{106}{section.5.1}%
+\contentsline {paragraph}{Objective 5: Conclusions on bias mechanisms and mitigation.}{106}{section.5.1}%
+\contentsline {paragraph}{Impact on the field.}{107}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{107}{section.5.2}%
+\contentsline {chapter}{Appendix A: Occupation List}{121}{appendix*.48}%

@@ -44,7 +44,7 @@ from sklearn.metrics import (
     accuracy_score,
     precision_recall_fscore_support,
 )
-from sklearn.preprocessing import label_binarize
+from sklearn.preprocessing import label_binarize, StandardScaler
 
 # ============================================================
 # Reproducibility
@@ -533,6 +533,7 @@ def main():
     X_train, y_train, X_val, y_val, X_test, y_test, task, num_classes, is_binary, unique_labels = \
         load_dataset(args.splits_json)
     
+    
     tqdm.write(f"✓ Task detected: {task}")
     tqdm.write(f"✓ Number of unique labels: {unique_labels}")
     tqdm.write(f"✓ Classification type: {'Binary (2 classes)' if is_binary else f'Multi-class ({unique_labels} classes)'}")
@@ -547,7 +548,8 @@ def main():
         "task", "seed",
         "test_auc", "test_accuracy", "test_f1",
         "ci_low", "ci_high",
-        "class_0_auc", "class_1_auc", "class_2_auc",
+        *[f"class_{i}_auc" for i in range(unique_labels)]
+        # "class_0_auc", "class_1_auc", "class_2_auc",
     ]
 
     with open(csv_path, "w", newline="") as f:
@@ -601,10 +603,11 @@ def main():
                 "test_f1": f1,
                 "ci_low": ci_low,
                 "ci_high": ci_high,
-                "class_0_auc": None,
-                "class_1_auc": None,
-                "class_2_auc": None,
             }
+
+            # Initialize class AUC fields dynamically
+            for i in range(unique_labels):
+                row[f"class_{i}_auc"] = None
 
             if not is_binary and per_class is not None:
                 for k, v in per_class.items():

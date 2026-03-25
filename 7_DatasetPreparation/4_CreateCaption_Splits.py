@@ -147,9 +147,48 @@ def main():
 if __name__ == "__main__":
     main()
 
+##################################################################################### Stable Diffusion #####################################################################################
+
 # Add remapped captions to your splits
 # python 4_CreateCaption_Splits.py ^
-#   --splits "UniversalSplits\StableDiffusion\splits_gender_face_stratified.json" ^
+#   --splits "UniversalSplits\Base\StableDiffusion\splits_gender_face_stratified.json" ^
 #   --captions "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\ImageCaptioning\captions.jsonl" ^
 #   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ImageCaptioning\splits_gender_face_stratified_captions_remapped.json" ^
+#   --caption_type remapped
+
+# python 4_CreateCaption_Splits.py ^
+#   --splits "UniversalSplits\Base\StableDiffusion\splits_10mst_face_stratified.json" ^
+#   --captions "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\ImageCaptioning\captions.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ImageCaptioning\splits_10mst_face_stratified_captions_remapped.json" ^
+#   --caption_type remapped
+
+
+##################################################################################### Professions 125k ISCO Aligned 1k Subset #####################################################################################
+
+# Add remapped captions to your splits
+# python 4_CreateCaption_Splits.py ^
+#   --splits "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_gender_face_stratified.json" ^
+#   --captions "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ImageCaptioning\captions.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ImageCaptioning\splits_gender_face_stratified_captions_remapped.json" ^
+#   --caption_type remapped
+
+# python 4_CreateCaption_Splits.py ^
+#   --splits "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_10mst_face_stratified.json" ^
+#   --captions "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ImageCaptioning\captions.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ImageCaptioning\splits_10mst_face_stratified_captions_remapped.json" ^
+#   --caption_type remapped
+
+##################################################################################### Debiased Images #####################################################################################
+
+# Add remapped captions to your splits
+# python 4_CreateCaption_Splits.py ^
+#   --splits "UniversalSplits\Base\DebiasedImages\splits_gender_face_stratified.json" ^
+#   --captions "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\ImageCaptioning\captions.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ImageCaptioning\splits_gender_face_stratified_captions_remapped.json" ^
+#   --caption_type remapped
+
+# python 4_CreateCaption_Splits.py ^
+#   --splits "UniversalSplits\Base\DebiasedImages\splits_10mst_face_stratified.json" ^
+#   --captions "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\ImageCaptioning\captions.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ImageCaptioning\splits_10mst_face_stratified_captions_remapped.json" ^
 #   --caption_type remapped

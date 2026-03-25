@@ -468,7 +468,24 @@ A further methodological consideration for skin tone annotation is the choice of
 %Praesent vitae euismod nulla, eget vehicula turpis.
 %Duis quis tellus vitae nisi tempus tincidunt.
 %
+
+
+
+
+
 %\section{Literature Review}%
+
+
+\section{Stable Diffusion: Architecture, Training, and Dataset Lineage}
+Stable Diffusion is a family of open-source text-to-image generative models based on the latent diffusion model (LDM) framework introduced by Rombach et al. [1]. The central architectural innovation of LDMs is the decoupling of the generative process from the pixel space of the original image. A Variational Autoencoder (VAE) [43] is first trained to learn a compressed latent representation of images, with its encoder mapping high-resolution inputs into a lower-dimensional latent space and its decoder reconstructing images from latent codes. Once trained, the VAE encoder and decoder are frozen, and all subsequent generative modelling is performed within this learned latent space rather than at full pixel resolution. This compression dramatically reduces the computational cost of training and inference relative to pixel-space diffusion models such as DALL-E [44] or earlier score-based generative models, making high-resolution image synthesis tractable at scale.
+
+The diffusion process itself follows the denoising diffusion probabilistic model (DDPM) framework [45], in which a forward process incrementally corrupts a clean latent representation by adding Gaussian noise over a fixed number of timesteps, and a learned reverse process — implemented as a U-Net [46] — iteratively denoises a noisy latent to recover a clean sample. At inference time, generation begins from a sample of pure Gaussian noise and proceeds through repeated application of the denoising network over multiple timesteps to produce a coherent latent, which is then decoded into a full image by the VAE decoder.
+Conditioning on text prompts is achieved through cross-attention mechanisms integrated into the intermediate layers of the U-Net backbone. Text inputs are encoded using a pretrained CLIP text encoder [24], producing a sequence of text embeddings that are injected into the denoising network via cross-attention at multiple spatial resolutions. This conditioning mechanism enables the model to align generated image content with the semantic content of the input prompt. During inference, classifier-free guidance (CFG) [47] is typically applied, in which the denoising network is evaluated both with and without the text conditioning signal, and the final score estimate is computed as a weighted combination of the two. Higher CFG scale values produce outputs more strongly adherent to the prompt at the cost of reduced sample diversity and occasional visual artefacts.
+
+Stable Diffusion v1.5, the model examined in this thesis, was released by RunwayML and is a continuation of training from Stable Diffusion v1.2, itself initialised from v1.1 weights produced by CompVis. Training was conducted on the LAION-Aesthetics v2 5+ subset, comprising approximately 600 million image-text pairs selected from LAION-5B on the basis of a predicted aesthetic quality score [42]. This score was produced by a linear classifier trained on human preference ratings using CLIP embeddings as input features, filtering the broader LAION-2B-en corpus to retain only those pairs predicted to have high visual quality. The model was trained at 512×512 pixel resolution using the Adam optimiser and a linear noise schedule [48]. Critically, the training corpus is a direct derivative of the broader LAION-5B dataset, inheriting its web-scraped composition, demographic and representational imbalances, and the spurious statistical regularities documented in Section 2.1. The open-source availability of both model weights and the documented training data lineage makes Stable Diffusion v1.5 particularly well-suited for mechanistic bias analysis, as findings can be independently verified and directly linked to known properties of the training corpus.
+
+Subsequent iterations in the Stable Diffusion family have progressively diverged from this openly documented training data lineage. Stable Diffusion 2.0 and 2.1, developed by Stability AI, were trained on a subset of LAION-5B filtered using a more stringent NSFW classifier and employed a larger OpenCLIP text encoder [49] in place of the original CLIP encoder, but retained the LAION-scraped foundation. Stable Diffusion XL (SDXL) adopted an enlarged dual-encoder architecture and a multi-aspect ratio training procedure, but was trained on a proprietary dataset curated by Stability AI whose composition has not been publicly disclosed [50]. More recent releases including Stable Diffusion 3 and Stable Diffusion 3.5 introduce rectified flow transformers as the denoising backbone and similarly rely on undisclosed proprietary training corpora [51]. This progressive shift away from openly documented training data reduces external reproducibility and substantially limits the capacity for independent bias auditing in later models. The absence of training data transparency in newer systems reinforces the methodological value of focusing the present analysis on Stable Diffusion v1.5, where the training data lineage remains traceable and findings can be grounded in documented dataset properties.
+
 %\label{sec:literature_review}
 %
 %Vivamus sit amet orci erat.
@@ -676,3 +693,5 @@ A further methodological consideration for skin tone annotation is the choice of
 %        \EndFor
 %    \end{algorithmic}
 %\end{algorithm}
+
+

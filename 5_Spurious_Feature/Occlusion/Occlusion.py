@@ -151,8 +151,8 @@ def process_occlusions_and_save(person_mask, original_size, image_path, output_r
     mask_area = int(person_mask_resized.sum())
     mask_ratio = mask_area / img_area
     
-    if mask_ratio < MIN_MASK_AREA_RATIO or mask_ratio > MAX_MASK_AREA_RATIO:
-        return None
+    # if mask_ratio < MIN_MASK_AREA_RATIO or mask_ratio > MAX_MASK_AREA_RATIO:
+    #     return None
     
     ys, xs = np.where(person_mask_resized == 1)
     if len(xs) == 0:
@@ -163,8 +163,8 @@ def process_occlusions_and_save(person_mask, original_size, image_path, output_r
     bbox_area = (x2 - x1) * (y2 - y1)
     bbox_ratio = bbox_area / img_area
     
-    if bbox_ratio < MIN_BBOX_AREA_RATIO or bbox_ratio > MAX_BBOX_AREA_RATIO:
-        return None
+    # if bbox_ratio < MIN_BBOX_AREA_RATIO or bbox_ratio > MAX_BBOX_AREA_RATIO:
+    #     return None
     
     # Get relative path structure
     # rel_path = os.path.relpath(image_path, Path(image_path).parent.parent)
@@ -477,6 +477,6 @@ if __name__ == "__main__":
 # end-to-end throughput when processed in batches.
 
 
-# python Occlusion.py --model mask2former_coco --image_dir  "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\Occlusion"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs face_crops
+# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\5_Spurious_Feature\Occlusion\.venv\Scripts\python.exe" Occlusion.py --model mask2former_coco --image_dir  "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\Occlusion"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs face_crops
 
-# python Occlusion.py --model mask2former_coco --image_dir  "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\Occlusion"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs facemesh
+# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\5_Spurious_Feature\Occlusion\.venv\Scripts\python.exe" Occlusion.py --model mask2former_coco --image_dir  "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\Occlusion"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs facemesh

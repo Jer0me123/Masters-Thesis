@@ -1,0 +1,201 @@
+profession,normalized_profession,matched,bls_occupation,match_method,mapping_source,match_score,total_employed_2024,pct_women,pct_white,pct_black,pct_asian,pct_hispanic
+Accountant,Accountant,True,Accountants and auditors,exact,automatic,100,1778.0,57.2,75.6,9.8,11.8,11.1
+Actor,Actor,True,Actors,manual,manual,100,57.0,62.0,77.6,19.6,1.4,14.7
+Actuary,Actuary,True,Actuaries,manual,manual,100,36.0,,,,,
+Administrative Assistant,Administrative Assistant,True,Executive secretaries and executive administrative assistants,exact,automatic,100,234.0,95.6,70.2,19.3,5.7,18.7
+Administrator,Administrator,True,Administrative services managers,manual,manual,100,87.0,74.6,80.8,9.8,7.1,11.4
+Air Traffic Controller,Air Traffic Controller,True,Air traffic controllers and airfield operations specialists,exact,automatic,100,35.0,,,,,
+Animal Trainer,Animal Trainer,True,Animal trainers,exact,automatic,100,63.0,82.3,81.6,8.2,3.0,13.8
+Anthropologist,Anthropologist,True,Miscellaneous social scientists and related workers,manual,manual,100,38.0,,,,,
+Appraiser,Appraiser,True,"Claims adjusters, appraisers, examiners, and investigators",exact,automatic,100,382.0,57.1,72.8,20.9,4.3,10.0
+Archaeologist,Archaeologist,True,Miscellaneous social scientists and related workers,manual,manual,100,38.0,,,,,
+Architect,Architect,True,"Architects, except landscape and naval",manual,manual,100,209.0,27.4,79.2,6.0,9.6,10.4
+Archivist,Archivist,True,"Archivists, curators, and museum technicians",exact,automatic,100,77.0,55.6,90.2,5.7,2.3,8.8
+Art Director,Art Director,True,Artists and related workers,manual,manual,100,318.0,53.8,78.9,10.3,6.0,14.3
+Artist,Artist,True,Artists and related workers,manual,manual,100,318.0,53.8,78.9,10.3,6.0,14.3
+Astronaut,Astronaut,True,Aircraft pilots and flight engineers,manual,manual,100,213.0,9.6,88.3,4.4,2.7,8.3
+Astronomer,Astronomer,True,Astronomers and physicists,exact,automatic,100,23.0,,,,,
+Athlete,Athlete,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Audio Technician,Audio Technician,True,"Broadcast, sound, and lighting technicians",manual,manual,100,117.0,9.2,79.8,11.5,2.8,18.1
+Auditor,Auditor,True,Accountants and auditors,exact,automatic,100,1778.0,57.2,75.6,9.8,11.8,11.1
+Automotive Designer,Automotive Designer,True,Commercial and industrial designers,manual,manual,100,16.0,,,,,
+Baker,Baker,True,Bakers,exact,automatic,100,243.0,67.1,84.0,8.6,4.6,33.9
+Banker,Banker,True,Financial managers,manual,manual,100,1445.0,53.4,77.4,10.2,9.5,10.6
+Bankruptcy Specialist,Bankruptcy Specialist,True,Lawyers,manual,manual,100,1146.0,42.0,85.0,7.0,6.3,6.5
+Barber,Barber,True,Barbers,exact,automatic,100,144.0,21.1,62.2,32.1,4.5,36.6
+Barista,Barista,True,Fast food and counter workers,manual,manual,100,831.0,66.6,74.7,13.9,5.2,22.8
+Bartender,Bartender,True,Bartenders,exact,automatic,100,450.0,54.3,83.9,8.2,2.0,21.5
+Basketball player,athlete,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Biologist,Biologist,True,Biological scientists,manual,manual,100,105.0,54.7,80.8,3.3,10.7,5.4
+Biomedical Engineer,Biomedical Engineer,True,Bioengineers and biomedical engineers,exact,automatic,100,25.0,,,,,
+Blacksmith,Blacksmith,True,Other metal workers and plastic workers,manual,manual,100,305.0,20.3,76.1,11.9,7.6,22.4
+Bodyguard,Bodyguard,True,Other protective service workers,manual,manual,100,185.0,50.3,82.3,5.9,2.9,17.9
+Bounty Hunter,Bounty Hunter,True,Private detectives and investigators,manual,manual,100,126.0,42.9,71.9,21.8,2.7,12.1
+Boxer,Boxer,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Brand Manager,Brand Manager,True,Marketing managers,manual,manual,100,513.0,64.2,82.6,4.4,9.0,10.4
+Brewer,Brewer,True,"Food processing workers, all other",manual,manual,100,133.0,32.3,70.0,15.1,8.4,39.4
+Bricklayer,Bricklayer,True,"Brickmasons, blockmasons, and stonemasons",manual,manual,100,128.0,2.9,86.2,3.5,1.7,45.8
+Broker,Broker,True,"Securities, commodities, and financial services sales agents",manual,manual,100,242.0,28.1,75.3,11.0,12.7,11.6
+Builder,Builder,True,Construction managers,manual,manual,100,1251.0,10.5,89.4,4.8,2.8,17.6
+Butcher,Butcher,True,"Butchers and other meat, poultry, and fish processing workers",exact,automatic,100,239.0,20.0,65.5,21.4,6.3,30.1
+CEO,chief executive,True,Chief executives,exact,automatic,100,1728.0,33.0,86.0,6.1,6.4,6.1
+Carer,personal care aide,True,Personal care aides,exact,automatic,100,1667.0,81.0,58.7,28.5,7.5,22.1
+Carpenter,Carpenter,True,Carpenters,exact,automatic,100,1279.0,4.2,86.5,6.6,1.2,41.4
+Cartographer,Cartographer,True,"Surveyors, cartographers, and photogrammetrists",exact,automatic,100,48.0,,,,,
+Cashier,Cashier,True,Cashiers,exact,automatic,100,2569.0,68.9,70.3,16.1,7.9,23.6
+Chef,Chef,True,Chefs and head cooks,exact,automatic,100,515.0,21.6,57.2,17.7,18.3,25.1
+Chemical Engineer,Chemical Engineer,True,Chemical engineers,exact,automatic,100,79.0,20.8,83.2,2.0,12.0,4.6
+Chemist,Chemist,True,Chemists and materials scientists,exact,automatic,100,87.0,46.3,74.8,7.0,16.6,11.4
+Chiropractor,Chiropractor,True,Chiropractors,exact,automatic,100,55.0,31.2,88.5,1.8,6.8,1.8
+Civil Engineer,Civil Engineer,True,Civil engineers,exact,automatic,100,523.0,17.2,79.7,7.1,10.4,13.0
+Claims Adjuster,Claims Adjuster,True,"Claims adjusters, appraisers, examiners, and investigators",exact,automatic,100,382.0,57.1,72.8,20.9,4.3,10.0
+Cleaner,Cleaner,True,Janitors and building cleaners,exact,automatic,100,2304.0,35.9,75.6,16.7,3.0,35.7
+Clerk,Clerk,True,"Office clerks, general",manual,manual,100,1253.0,80.0,74.7,14.1,6.8,20.6
+Coach,Coach,True,Coaches and scouts,exact,automatic,100,340.0,48.5,76.8,13.7,3.7,13.3
+Comedian,Comedian,True,"Entertainers and performers, sports and related workers, all other",manual,manual,100,38.0,,,,,
+Compliance Officer,Compliance Officer,True,Compliance officers,exact,automatic,100,311.0,55.0,76.4,14.4,5.5,12.5
+Composer,Composer,True,Music directors and composers,exact,automatic,100,47.0,,,,,
+Conservation Officer,Conservation Officer,True,Conservation scientists and foresters,manual,manual,100,24.0,,,,,
+Construction Worker,Construction Worker,True,Construction laborers,manual,manual,100,2293.0,3.5,87.6,6.4,1.6,53.9
+Copywriter,Copywriter,True,Writers and authors,manual,manual,100,257.0,64.7,85.6,7.3,5.1,4.8
+Court Reporter,Court Reporter,True,Court reporters and simultaneous captioners,exact,automatic,100,24.0,,,,,
+Crime Scene Investigator,Crime Scene Investigator,True,Detectives and criminal investigators,manual,manual,100,151.0,32.9,80.6,10.7,1.7,9.8
+Customer Support Specialist,Customer Support Specialist,True,Customer service representatives,manual,manual,100,2632.0,65.7,72.2,18.0,5.7,21.4
+DJ,DJ,True,"Disc jockeys, except radio",manual,manual,100,24.0,,,,,
+Dancer,Dancer,True,Dancers and choreographers,exact,automatic,100,17.0,,,,,
+Data Scientist,data analyst,True,Computer and information research scientists,manual,manual,100,36.0,,,,,
+Database Administrator,Database Administrator,True,Database administrators and architects,exact,automatic,100,148.0,28.9,65.9,6.8,26.8,3.4
+Debt Counselor,Debt Counselor,True,Credit counselors and loan officers,manual,manual,100,313.0,52.8,83.5,10.3,2.3,10.7
+Dentist,Dentist,True,Dentists,exact,automatic,100,169.0,38.8,77.6,4.7,14.4,15.4
+Detective,Detective,True,Detectives and criminal investigators,manual,manual,100,151.0,32.9,80.6,10.7,1.7,9.8
+Development Officer,Development Officer,True,Fundraisers,manual,manual,100,76.0,66.9,87.3,8.9,3.2,7.1
+Dietitian,Dietitian,True,Dietitians and nutritionists,exact,automatic,100,142.0,92.1,76.3,14.8,2.5,13.7
+Director,Director,True,Producers and directors,manual,manual,100,175.0,39.7,81.1,12.5,3.2,11.3
+Doctor,physician,True,Other physicians,manual,manual,100,904.0,44.5,67.5,7.3,23.2,6.5
+Dog Walker,Dog Walker,True,Animal caretakers,manual,manual,100,334.0,73.7,83.8,8.8,2.8,12.3
+Draughtsperson,Draughtsperson,True,Architectural and civil drafters,manual,manual,100,38.0,,,,,
+Driver,Driver,True,Driver/sales workers and truck drivers,manual,manual,100,3578.0,7.9,70.9,21.3,4.5,24.3
+Economist,Economist,True,Economists,exact,automatic,100,28.0,,,,,
+Editor,Editor,True,Editors,exact,automatic,100,132.0,72.6,84.2,8.9,5.9,8.5
+Electrician,Electrician,True,Electricians,exact,automatic,100,992.0,2.9,82.8,9.2,1.8,26.2
+Emergency Management Specialist,Emergency Management Specialist,True,Emergency management directors,keyword,automatic,66,18.0,,,,,
+Entrepreneur,Entrepreneur,True,Chief executives,manual,manual,100,1728.0,33.0,86.0,6.1,6.4,6.1
+Environmental Engineer,Environmental Engineer,True,Environmental engineers,exact,automatic,100,33.0,,,,,
+Ergonomist,Ergonomist,True,"Industrial engineers, including health and safety",manual,manual,100,268.0,24.1,73.2,6.7,17.0,11.8
+Estate Planner,Estate Planner,True,Personal financial advisors,manual,manual,100,528.0,33.8,84.3,5.8,7.6,7.2
+Event Coordinator,Event Coordinator,True,"Meeting, convention, and event planners",manual,manual,100,145.0,75.3,84.0,8.0,5.5,11.6
+Executive Assistant,Executive Assistant,True,Executive secretaries and executive administrative assistants,manual,manual,100,234.0,95.6,70.2,19.3,5.7,18.7
+Exterminator,Exterminator,True,Pest control workers,manual,manual,100,100.0,8.7,81.1,13.2,0.0,22.0
+Facilities Manager,Facilities Manager,True,Facilities managers,exact,automatic,100,142.0,21.5,79.9,13.0,6.3,8.5
+Farmer,Farmer,True,"Farmers, ranchers, and other agricultural managers",exact,automatic,100,858.0,27.0,96.0,1.4,0.5,6.5
+Fashion Designer,Fashion Designer,True,Fashion designers,exact,automatic,100,38.0,,,,,
+Firefighter,Firefighter,True,Firefighters,exact,automatic,100,298.0,6.2,83.2,9.8,3.4,15.4
+Fishmonger,Fishmonger,True,"Butchers and other meat, poultry, and fish processing workers",manual,manual,100,239.0,20.0,65.5,21.4,6.3,30.1
+Flight Attendant,Flight Attendant,True,Flight attendants,exact,automatic,100,129.0,77.2,69.0,22.6,5.2,15.9
+Florist,Florist,True,Floral designers,manual,manual,100,45.0,,,,,
+Football player,athlete,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Forklift Operator,Forklift Operator,True,Industrial truck and tractor operators,manual,manual,100,602.0,10.4,71.5,21.6,2.2,35.8
+Gardener,Gardener,True,Landscaping and groundskeeping workers,manual,manual,100,1193.0,6.2,84.6,9.7,0.9,48.1
+Geologist,Geologist,True,"Geoscientists and hydrologists, except geographers",manual,manual,100,37.0,,,,,
+Graphic Designer,Graphic Designer,True,Graphic designers,exact,automatic,100,294.0,59.1,83.1,5.5,8.4,12.1
+Grocer,retail salesperson,True,Retail salespersons,exact,automatic,100,2734.0,47.5,79.9,11.1,4.9,21.1
+Hair dresser,hairdresser,True,"Hairdressers, hairstylists, and cosmetologists",exact,automatic,100,726.0,91.3,76.7,13.7,5.1,21.1
+Handyperson,maintenance worker,True,"Maintenance and repair workers, general",manual,manual,100,725.0,5.1,81.2,10.3,3.2,23.2
+Health Inspector,Health Inspector,True,Occupational health and safety specialists and technicians,manual,manual,100,67.0,35.1,74.2,17.3,5.5,22.0
+Historian,Historian,True,Miscellaneous social scientists and related workers,manual,manual,100,38.0,,,,,
+Hotel Concierge,Hotel Concierge,True,"Baggage porters, bellhops, and concierges",manual,manual,100,81.0,29.9,52.7,37.6,6.6,24.3
+Hotel Manager,Hotel Manager,True,Lodging managers,manual,manual,100,129.0,53.9,75.6,11.6,7.7,14.4
+Human Resources Specialist,Human Resources Specialist,True,Human resources workers,manual,manual,100,944.0,75.5,76.6,14.3,4.9,15.2
+IT Support Specialist,computer support specialist,True,Computer support specialists,exact,automatic,100,633.0,26.9,67.4,13.7,15.1,8.5
+Illustrator,Illustrator,True,Artists and related workers,manual,manual,100,318.0,53.8,78.9,10.3,6.0,14.3
+Industrial Designer,Industrial Designer,True,Commercial and industrial designers,exact,automatic,100,16.0,,,,,
+Insurance Underwriter,Insurance Underwriter,True,Insurance underwriters,exact,automatic,100,124.0,61.9,78.1,14.6,5.4,8.8
+Janitor,Janitor,True,Janitors and building cleaners,manual,manual,100,2304.0,35.9,75.6,16.7,3.0,35.7
+Jeweller,Jeweller,True,Jewelers and precious stone and metal workers,manual,manual,100,36.0,,,,,
+Journalist,Journalist,True,"News analysts, reporters, and journalists",exact,automatic,100,73.0,48.0,62.6,16.3,17.9,10.0
+Judge,Judge,True,"Judges, magistrates, and other judicial workers",exact,automatic,100,68.0,46.9,68.2,26.2,1.9,17.2
+Lawyer,Lawyer,True,Lawyers,exact,automatic,100,1146.0,42.0,85.0,7.0,6.3,6.5
+Librarian,Librarian,True,Librarians and media collections specialists,exact,automatic,100,180.0,89.2,84.2,6.7,4.0,13.1
+Lifeguard,Lifeguard,True,Other protective service workers,manual,manual,100,185.0,50.3,82.3,5.9,2.9,17.9
+Loan Officer,Loan Officer,True,Credit counselors and loan officers,exact,automatic,100,313.0,52.8,83.5,10.3,2.3,10.7
+Logger,Logger,True,Logging workers,manual,manual,100,48.0,,,,,
+Logistics Manager,Logistics Manager,True,"Transportation, storage, and distribution managers",manual,manual,100,380.0,21.8,77.2,13.5,6.2,14.8
+Magician,Magician,True,"Entertainers and performers, sports and related workers, all other",manual,manual,100,38.0,,,,,
+Makeup Artist,Makeup Artist,True,Other personal appearance workers,manual,manual,100,35.0,,,,,
+Marine Biologist,Marine Biologist,True,Biological scientists,manual,manual,100,105.0,54.7,80.8,3.3,10.7,5.4
+Marketing Manager,Marketing Manager,True,Marketing managers,exact,automatic,100,513.0,64.2,82.6,4.4,9.0,10.4
+Masseur,massage therapist,True,Massage therapists,exact,automatic,100,171.0,84.4,80.9,5.9,9.7,10.3
+Mathematician,Mathematician,True,Mathematicians,exact,automatic,100,5.0,,,,,
+Mayor,Mayor,True,Legislators,manual,manual,100,15.0,,,,,
+Mechanic,Mechanic,True,Automotive service technicians and mechanics,manual,manual,100,914.0,3.2,82.9,9.9,3.6,30.4
+Meteorologist,Meteorologist,True,Atmospheric and space scientists,manual,manual,100,8.0,,,,,
+Midwife,Midwife,True,Nurse midwives,manual,manual,100,18.0,,,,,
+Miner,Miner,True,Underground mining machine operators,manual,manual,100,29.0,,,,,
+Model,Model,True,"Models, demonstrators, and product promoters",exact,automatic,100,52.0,77.1,64.1,12.4,6.6,33.6
+Musician,Musician,True,Musicians and singers,exact,automatic,100,168.0,29.0,81.3,7.6,3.5,6.3
+News Reader,broadcast announcer,True,Broadcast announcers and radio disc jockeys,exact,automatic,100,20.0,,,,,
+Nurse,Nurse,True,Registered nurses,exact,automatic,100,3571.0,86.8,72.0,15.8,9.8,9.8
+Nutritionist,Nutritionist,True,Dietitians and nutritionists,exact,automatic,100,142.0,92.1,76.3,14.8,2.5,13.7
+Oceanographer,Oceanographer,True,"Geoscientists and hydrologists, except geographers",manual,manual,100,37.0,,,,,
+Office Assistant,Office Assistant,True,"Office clerks, general",manual,manual,100,1253.0,80.0,74.7,14.1,6.8,20.6
+Operations Manager,Operations Manager,True,General and operations managers,exact,automatic,100,1440.0,33.8,80.1,9.8,5.3,12.3
+Optician,Optician,True,"Opticians, dispensing",exact,automatic,100,49.0,,,,,
+Painter,Painter,True,Painters and paperhangers,exact,automatic,100,539.0,10.8,85.7,7.7,0.7,62.9
+Paralegal,Paralegal,True,Paralegals and legal assistants,exact,automatic,100,428.0,81.3,78.6,13.6,4.1,18.9
+Paramedic,Paramedic,True,Paramedics,exact,automatic,100,95.0,25.3,79.3,8.5,7.9,13.8
+Park Ranger,Park Ranger,True,Forest and conservation workers,manual,manual,100,11.0,,,,,
+Payroll Specialist,Payroll Specialist,True,Payroll and timekeeping clerks,manual,manual,100,130.0,91.2,79.2,12.0,6.0,18.0
+Personal Trainer,Personal Trainer,True,Exercise trainers and group fitness instructors,manual,manual,100,242.0,60.2,83.1,9.2,3.6,20.0
+Pharmacist,Pharmacist,True,Pharmacists,exact,automatic,100,326.0,59.7,70.1,7.5,21.0,5.1
+Photographer,Photographer,True,Photographers,exact,automatic,100,210.0,43.5,84.6,3.9,5.2,13.1
+Physicist,Physicist,True,Astronomers and physicists,exact,automatic,100,23.0,,,,,
+Pilot,Pilot,True,Aircraft pilots and flight engineers,exact,automatic,100,213.0,9.6,88.3,4.4,2.7,8.3
+Plumber,Plumber,True,"Plumbers, pipefitters, and steamfitters",exact,automatic,100,636.0,3.2,84.3,10.2,2.6,32.5
+Police Officer,Police Officer,True,Police officers,exact,automatic,100,678.0,14.2,79.4,14.4,3.2,19.6
+Politician,Politician,True,Legislators,manual,manual,100,15.0,,,,,
+Postal Worker,Postal Worker,True,Postal service mail carriers,manual,manual,100,309.0,33.9,66.3,21.2,8.5,9.0
+Priest,Priest,True,Clergy,manual,manual,100,395.0,23.7,76.1,12.2,6.3,6.4
+Procurement Officer,Procurement Officer,True,"Purchasing agents, except wholesale, retail, and farm products",manual,manual,100,278.0,47.6,78.2,10.6,7.5,9.1
+Professor,Professor,True,Postsecondary teachers,manual,manual,100,1072.0,49.9,75.7,8.1,13.6,7.6
+Property Manager,Property Manager,True,"Property, real estate, and community association managers",manual,manual,100,790.0,47.0,79.6,10.7,6.6,13.8
+Psychologist,Psychologist,True,Clinical and counseling psychologists,exact,automatic,100,16.0,,,,,
+Quality Assurance Inspector,Quality Assurance Inspector,True,"Inspectors, testers, sorters, samplers, and weighers",manual,manual,100,768.0,36.1,74.0,14.4,7.7,20.2
+Real Estate Agent,Real Estate Agent,True,Real estate brokers and sales agents,manual,manual,100,1016.0,56.7,82.3,9.7,6.0,12.7
+Receptionist,Receptionist,True,Receptionists and information clerks,exact,automatic,100,1201.0,88.4,77.7,13.7,4.7,22.2
+Researcher,Researcher,False,,manual_none,manual,0,,,,,,
+Roofer,Roofer,True,Roofers,exact,automatic,100,240.0,4.1,87.6,5.8,1.2,68.2
+Safety Inspector,Safety Inspector,True,Occupational health and safety specialists and technicians,manual,manual,100,67.0,35.1,74.2,17.3,5.5,22.0
+Sailor,water transportation worker,True,Sailors and marine oilers,manual,manual,100,21.0,,,,,
+Salesperson,Salesperson,True,Retail salespersons,manual,manual,100,2734.0,47.5,79.9,11.1,4.9,21.1
+Scientist,Scientist,False,,manual_none,manual,0,,,,,,
+Security Officer,Security Officer,True,Security guards and gambling surveillance officers,manual,manual,100,894.0,27.0,54.5,34.9,4.8,20.3
+Shopkeeper,Shopkeeper,True,Retail salespersons,manual,manual,100,2734.0,47.5,79.9,11.1,4.9,21.1
+Singer,Singer,True,Musicians and singers,exact,automatic,100,168.0,29.0,81.3,7.6,3.5,6.3
+Skier,Skier,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Social Worker,Social Worker,True,"Social workers, all other",manual,manual,100,732.0,83.4,65.6,24.7,4.7,17.0
+Software Engineer,software developer,True,Software developers,exact,automatic,100,2077.0,20.3,54.2,6.2,36.8,5.7
+Soldier,Soldier,False,,manual_none,manual,0,,,,,,
+Sound Engineer,Sound Engineer,True,"Broadcast, sound, and lighting technicians",manual,manual,100,117.0,9.2,79.8,11.5,2.8,18.1
+Statistician,Statistician,True,Statisticians,exact,automatic,100,70.0,41.1,73.9,10.9,13.3,4.5
+Street Vendor,Street Vendor,True,"Door-to-door sales workers, news and street vendors, and related workers",exact,automatic,100,62.0,45.4,80.0,17.5,1.4,25.4
+Surfer,Surfer,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Surgeon,Surgeon,True,Surgeons,exact,automatic,100,41.0,,,,,
+Swimmer,Swimmer,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Tailor,Tailor,True,"Tailors, dressmakers, and sewers",exact,automatic,100,65.0,77.0,73.3,15.0,10.0,25.9
+Tattoo Artist,Tattoo Artist,True,Other personal appearance workers,manual,manual,100,35.0,,,,,
+Teacher,Teacher,True,Elementary and middle school teachers,manual,manual,100,3632.0,77.7,82.5,11.0,4.2,11.6
+Technician,Technician,True,"Other engineering technologists and technicians, except drafters",manual,manual,100,355.0,21.3,76.5,12.7,6.1,16.8
+Tennis Player,athlete,True,Athletes and sports competitors,manual,manual,100,23.0,,,,,
+Therapist,Therapist,True,"Therapists, all other",manual,manual,100,385.0,80.6,77.5,14.5,4.2,14.2
+Translator,Translator,True,Interpreters and translators,exact,automatic,100,92.0,74.8,82.5,2.4,14.1,44.8
+Umpire,Umpire,True,"Umpires, referees, and other sports officials",exact,automatic,100,33.0,,,,,
+Urban Planner,Urban Planner,True,Urban and regional planners,manual,manual,100,45.0,,,,,
+Usher,Usher,True,"Ushers, lobby attendants, and ticket takers",exact,automatic,100,40.0,,,,,
+Veterinarian,Veterinarian,True,Veterinarians,exact,automatic,100,98.0,68.6,92.6,1.2,3.6,8.5
+Videographer,Videographer,True,"Television, video, and film camera operators and editors",manual,manual,100,133.0,26.1,71.4,11.5,10.3,11.8
+Waiter,waiter and waitress,True,Waiters and waitresses,manual,manual,100,1786.0,67.8,76.6,9.5,7.4,27.5
+Waste Collection Worker,Waste Collection Worker,True,Refuse and recyclable material collectors,manual,manual,100,104.0,11.3,73.1,21.1,5.1,26.1
+Welder,Welder,True,"Welding, soldering, and brazing workers",manual,manual,100,592.0,6.0,82.2,9.5,3.0,26.7
+Wholesaler,Wholesaler,True,"Sales representatives, wholesale and manufacturing",manual,manual,100,1116.0,25.1,87.8,6.2,3.8,14.2
+Writer,Writer,True,Writers and authors,manual,manual,100,257.0,64.7,85.6,7.3,5.1,4.8
+Zoologist,Zoologist,True,Biological scientists,manual,manual,100,105.0,54.7,80.8,3.3,10.7,5.4

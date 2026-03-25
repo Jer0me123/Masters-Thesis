@@ -109,6 +109,23 @@ print("\nPreview:")
 print(counts.head(10))
 
 
+
+
+# python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\MappingRaceToSkinTone\4_DeriveDistribution.py" ^
+#   --input "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\MappingRaceToSkinTone\annotations.jsonl" ^
+#   --label mst_label ^
+#   --output race_mst_distribution.csv
+
+
+
+
+
+
+
+
+
+
+
 # python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\MappingRaceToSkinTone\4_DeriveDistribution.py" ^
 #   --input "F:\Thesis\Segmented_FairFace\\annotations.jsonl" ^
 #   --label mst_label ^

@@ -1674,7 +1674,7 @@ def load_lab_stats(path: str):
 # ============================================================
 
 class UniversalSkinModel(nn.Module):
-    def __init__(self, arch, num_outputs, dropout=0.5):
+    def __init__(self, arch, num_outputs, hidden_dim=4096, dropout=0.5):
         super().__init__()
         self.arch = arch
 
@@ -1688,10 +1688,10 @@ class UniversalSkinModel(nn.Module):
                 nn.Linear(in_features, 4096),
                 nn.ReLU(True),
                 nn.Dropout(dropout),
-                nn.Linear(4096, 4096),
+                nn.Linear(4096, hidden_dim),   # uses detected hidden_dim
                 nn.ReLU(True),
                 nn.Dropout(dropout),
-                nn.Linear(4096, num_outputs),
+                nn.Linear(hidden_dim, num_outputs),
             )
 
         elif arch == "resnet18":
@@ -1731,21 +1731,22 @@ def inspect_checkpoint(path):
     if any(k.startswith("backbone.") for k in keys):
         arch = "resnet18"
         num_outputs = state_dict["head.weight"].shape[0]
+        hidden_dim = 4096  # not used for resnet18
     else:
         arch = "vgg16"
         last = [k for k in keys if "classifier" in k and "weight" in k][-1]
         num_outputs = state_dict[last].shape[0]
+        # detect the intermediate hidden dim from classifier.3.weight
+        hidden_dim = state_dict["classifier.3.weight"].shape[0]
 
-    if num_outputs == 1:
-        mode = "regression"
-    else:
-        mode = "classification"  # may be CORAL (handled later)
+    mode = "regression" if num_outputs == 1 else "classification"
 
     print(f"[Inspector] Arch: {arch}")
     print(f"[Inspector] Outputs: {num_outputs}")
+    print(f"[Inspector] Hidden dim: {hidden_dim}")
     print(f"[Inspector] Mode guess: {mode}")
 
-    return arch, num_outputs, mode
+    return arch, num_outputs, hidden_dim, mode
 
 
 # ============================================================
@@ -1791,7 +1792,7 @@ class SkinTonePredictor:
     def __init__(self, model_path, input_space, lab_mean=None, lab_std=None, device="cuda"):
         self.device = torch.device(device if torch.cuda.is_available() else "cpu")
 
-        arch, num_outputs, mode_guess = inspect_checkpoint(model_path)
+        arch, num_outputs, hidden_dim, mode_guess = inspect_checkpoint(model_path)
 
         self.arch = arch
         self.num_outputs = num_outputs
@@ -1799,7 +1800,8 @@ class SkinTonePredictor:
 
         self.model = UniversalSkinModel(
             arch=arch,
-            num_outputs=num_outputs
+            num_outputs=num_outputs,
+            hidden_dim=hidden_dim
         )
 
         ckpt = torch.load(model_path, map_location=self.device)
@@ -1985,3 +1987,10 @@ if __name__ == "__main__":
 # --input_space lab ^
 # --lab_stats_path "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\lab_statistics.json" ^
 # --batch_size 32
+
+# python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\annotation_test_flexible.py" ^
+#   --image_dir "F:\Thesis\Fairface_Dataset\Segmented_FairFace" ^
+#   --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\MappingRaceToSkinTone" ^
+#   --skin_model_path "F:\VGG_MST_Testing\Models\VGG16_10Regression_RGB\best_model.pth" ^
+#   --input_space rgb ^
+#   --batch_size 32

@@ -828,6 +828,11 @@ def main():
                     torch.cuda.manual_seed(seed)
                     torch.cuda.manual_seed_all(seed)
 
+                existing = [f for f in os.listdir(sample_path) if f"_{seed}.png" in f]
+                if existing:
+                    print(f"  Skipping seed {seed} (found {existing[0]})")
+                    continue
+
                 # Start from pure noise in latent space (x_T)
                 latents = torch.randn((opt.n_samples, 4, opt.H // 8, opt.W // 8), device=opt.device, dtype=dtype)
 
@@ -892,7 +897,7 @@ def main():
 
                 # Final decode and save
                 final_img = decode_to_image(latents)
-                final_img.save(os.path.join(sample_path, f"{base_count:05d}_ctrl{ci}.png"))
+                final_img.save(os.path.join(sample_path, f"{base_count:05d}_ctrl{ci}_{seed}.png"))
                 base_count += 1
 
                 gc.collect()
@@ -908,166 +913,23 @@ if __name__ == "__main__":
 # conda activate ITIGen_ControlNet_ColourDebias
 
 # python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/zeroshot_pred" ^
-#   --color-align-enabled ^
-#   --color-reference-image "./pastel.jpeg" ^
-#   --with-pred-sample-projection ^
-#   --projection-threshold 200 ^
-#   --projection-lr 0.3 ^
-#   --blur-factor 3 ^
-#   --attr-list "Male,MSTESkin_tone" ^
-#   --filters Male_Negative MSTESkin_tone_10 ^
-#   --prompt "a headshot of a person" ^
-#   --generate-image-prompt "A picture of a doctor" ^
-#   --num_inference_steps 50 ^
-#   --guidance_scale 7.5 ^
-#   --n_iter 3 ^
-#   --save-intermediate
-
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/zeroshot_pred" ^
-#   --control-type "pose" ^
-#   --control-image "./basic_pose.jpg" ^
-#   --controlnet-scale 1.0 ^
-#   --color-align-enabled ^
-#   --color-reference-image "./pastel.jpeg" ^
-#   --with-pred-sample-projection ^
-#   --projection-threshold 200 ^
-#   --projection-lr 0.3 ^
-#   --blur-factor 3 ^
-#   --attr-list "Male,MSTESkin_tone" ^
-#   --filters Male_Negative MSTESkin_tone_10 ^
-#   --prompt "a headshot of a person" ^
-#   --generate-image-prompt "A picture of a doctor" ^
-#   --num_inference_steps 50 ^
-#   --guidance_scale 7.5 ^
-#   --n_iter 3 ^
-#   --save-intermediate
-
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/zeroshot_pred" ^
-#   --control-type "pose" ^
-#   --control-image "./basic_pose.jpg" ^
-#   --controlnet-scale 1.0 ^
-#   --color-align-enabled ^
-#   --color-reference-image "./pastel.jpeg" ^
-#   --with-pred-sample-projection ^
-#   --projection-threshold 200 ^
-#   --projection-lr 0.3 ^
-#   --blur-factor 3 ^
-#   --attr-list "Male,MSTESkin_tone" ^
-#   --filters Male_Negative MSTESkin_tone_10 ^
-#   --prompt "a headshot of a person" ^
-#   --generate-image-prompt "A picture of a doctor" ^
-#   --num_inference_steps 50 ^
-#   --guidance_scale 7.5 ^
-#   --n_iter 3 ^
-#   --save-intermediate
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/zeroshot_pred" ^
-#   --control-type "pose" ^
-#   --control-image "./basic_pose.jpg" ^
-#   --controlnet-scale 1.0 ^
-#   --color-align-enabled ^
-#   --color-reference-image "./pastel.jpeg" ^
-#   --with-pred-sample-projection ^
-#   --projection-threshold 200 ^
-#   --projection-lr 0.3 ^
-#   --blur-factor 3 ^
-#   --attr-list "CCv2_Gender,CCv2_MSTE_SkinTone" ^
-#   --filters Female MSTESkin_tone_10 ^
-#   --prompt "a headshot of a person" ^
-#   --generate-image-prompt "A picture of a doctor" ^
-#   --num_inference_steps 50 ^
-#   --guidance_scale 7.5 ^
-#   --n_iter 3 ^
-#   --save-intermediate
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/test" ^
-#   --control-type "pose" ^
-#   --control-image "./basic_pose.jpg" ^
-#   --controlnet-scale 1.0 ^
-#   --color-align-enabled ^
-#   --color-reference-image "./pastel.jpeg" ^
-#   --with-pred-sample-projection ^
-#   --projection-threshold 200 ^
-#   --projection-lr 0.3 ^
-#   --blur-factor 3 ^
-#   --attr-list "Male,MSTESkin_tone" ^
-#   --filters MSTESkin_tone_2 ^
-#   --prompt "a headshot of a person" ^
-#   --generate-image-prompt "A picture of a doctor in a hospital" ^
-#   --num_inference_steps 50 ^
-#   --guidance_scale 7.5 ^
-#   --n_iter 3 ^
-#   --save-intermediate
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/test" ^
-#   --use-lora ^
-#   --control-type "pose" ^
-#   --control-image "./basic_pose.jpg" ^
-#   --controlnet-scale 1.0 ^
-#   --color-align-enabled ^
-#   --color-reference-image "./pastel.jpeg" ^
-#   --with-pred-sample-projection ^
-#   --projection-threshold 200 ^
-#   --projection-lr 0.3 ^
-#   --blur-factor 3 ^
-#   --attr-list "Male,MSTESkin_tone" ^
-#   --filters MSTESkin_tone_2 ^
-#   --prompt "a headshot of a person" ^
-#   --generate-image-prompt "A picture of a doctor in a hospital" ^
-#   --num_inference_steps 8 ^
-#   --guidance_scale 1 ^
-#   --n_iter 3 ^
-#   --save-intermediate
-
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/Chamfer_CCv2_ITIGEN" ^
-#   --n_iter 3 ^
+#   --outdir "F:\ImageRetrieval\DebiasedImages" ^
+#   --n_iter 500 ^
 #   --seed 42 ^
 #   --guidance_scale 7 ^
 #   --num_inference_steps 50 ^
 #   --attr-list "CCv2_Gender,CCv2_MSTE_SkinTone" ^
-#   --prompt "an image of a person" ^
-#   --generate-image-prompt "A picture of a doctor" ^
-#   --save-intermediate ^
-#   --load-model-epoch 19
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/Chamfer_CCv2_ITIGEN_POSE" ^
-#   --n_iter 3 ^
-#   --seed 42 ^
-#   --guidance_scale 7 ^
-#   --num_inference_steps 50 ^
-#   --attr-list "CCv2_Gender,CCv2_MSTE_SkinTone" ^
+#   --filters CCv2_Gender_Female CCv2_MSTE_SkinTone_10 ^
 #   --prompt "an image of a person" ^
 #   --generate-image-prompt "A picture of a doctor" ^
 #   --save-intermediate ^
 #   --load-model-epoch 19 ^
 #   --control-type pose ^
 #   --control-image "./basic_pose.jpg" ^
-#   --controlnet-scale 0.8
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "./outputs/Chamfer_CCv2_ITIGEN_COLOUR" ^
-#   --n_iter 3 ^
-#   --seed 42 ^
-#   --guidance_scale 7 ^
-#   --num_inference_steps 50 ^
-#   --attr-list "CCv2_Gender,CCv2_MSTE_SkinTone" ^
-#   --prompt "an image of a person" ^
-#   --generate-image-prompt "A picture of a doctor" ^
-#   --save-intermediate ^
+#   --controlnet-scale 0.6 ^
 #   --color-align-enabled ^
-#   --color-reference-image "./pastel.jpeg" ^
+#   --color-reference-image "./doctor_mean_rgb.png" ^
 #   --with-pred-sample-projection ^
-#   --projection-threshold 200 ^
-#   --projection-lr 0.3 ^
-#   --blur-factor 3
+#   --projection-threshold 600 ^
+#   --projection-lr 0.05 ^
+#   --blur-factor 5

@@ -423,8 +423,10 @@ def calculate_multiclass_auc(y_true: np.ndarray, y_probs: np.ndarray, n_classes:
             return roc_auc_score(y_true, y_probs[:, 1])
         else:
             # Multi-class case: use One-vs-Rest
-            y_true_bin = label_binarize(y_true, classes=range(n_classes))
-            return roc_auc_score(y_true_bin, y_probs, multi_class='ovr', average='macro')
+            # y_true_bin = label_binarize(y_true, classes=range(n_classes))
+            # return roc_auc_score(y_true_bin, y_probs, multi_class='ovr', average='macro')
+            # sklearn handles the binarization internally
+            return roc_auc_score(y_true, y_probs, multi_class='ovr', average='macro')
     except ValueError:
         # In case we don't have all classes in the batch
         return 0.0
@@ -1576,13 +1578,11 @@ if __name__ == "__main__":
 
 # python DatasetClassification_gradient_accum.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified_vae.json" --batch_size 16 --early_stopping --patience 2 --bootstrap_ci --output_dir "outputs_dataset_classification\\CocoReLaionSDVAE" --seeds 0
 
-
-
-# PENDING
 # python DatasetClassification_gradient_accum.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified_patchShufflePS4.json" --batch_size 16 --early_stopping --patience 2 --bootstrap_ci --output_dir "outputs_dataset_classification\\CocoReLaionSDPS4" --seeds 0
 
 # python DatasetClassification_gradient_accum.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified_patchShufflePS8.json" --batch_size 16 --early_stopping --patience 2 --bootstrap_ci --output_dir "outputs_dataset_classification\\CocoReLaionSDPS8" --seeds 0
 
+# python DatasetClassification_gradient_accum.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified_patchShufflePS16.json" --batch_size 16 --early_stopping --patience 2 --bootstrap_ci --output_dir "outputs_dataset_classification\\CocoReLaionSDPS16" --seeds 0
 
 # python DatasetClassification_gradient_accum.py --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\TestingOutLaion5BSourceImagesBias\domain_splits_stratified.json" --batch_size 16 --early_stopping --patience 2 --bootstrap_ci --output_dir "outputs_dataset_classification\\ReLaion5BSourceImagesBias" --seeds 0
 

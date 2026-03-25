@@ -15,11 +15,15 @@ from tqdm import tqdm
 # INPUT_DIR = Path(r"G:\Thesis\MonkSkinTone_Dataset\Segmented_MSTE")
 # OUTPUT_DIR = Path(r"G:\Thesis\MonkSkinTone_Dataset\Segmented_MSTE_BGFixed")
 
-INPUT_DIR = Path(r"F:\Thesis\Segmented_FairFace\train")
-OUTPUT_DIR = Path(r"F:\Thesis\Segmented_FairFace_BGFixed\train")
+# INPUT_DIR = Path(r"F:\Thesis\Segmented_FairFace\train")
+# OUTPUT_DIR = Path(r"F:\Thesis\Segmented_FairFace_BGFixed\train")
 
 # INPUT_DIR = Path(r"F:\Thesis\Segmented_FairFace\validation")
 # OUTPUT_DIR = Path(r"F:\Thesis\Segmented_FairFace_BGFixed\validation")
+
+
+INPUT_DIR = Path(r"G:\Thesis\FACET_Dataset\Segmented_FACET_0.2_fixed_label")
+OUTPUT_DIR = Path(r"G:\Thesis\FACET_Dataset\Segmented_FACET_0.2_fixed_label_BGFixed")
 
 BLACK_THRESHOLD = 10  # pixels with RGB <= this are considered background
 NUM_WORKERS = 8

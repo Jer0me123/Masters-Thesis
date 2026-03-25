@@ -216,6 +216,8 @@ def main():
 if __name__ == "__main__":
     main()
 
+##################################################################################### Stable Diffusion #####################################################################################
+
 # # Extract one-hot encoded object presence (normalized)
 # python 2_CreateObject_OHE_Splits.py ^
 #   --detections "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\ObjectDetection\detections.jsonl" ^
@@ -225,14 +227,19 @@ if __name__ == "__main__":
 
 # # Then enrich your splits
 # python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
-#   --splits "UniversalSplits\StableDiffusion\splits_gender_face_stratified.json" ^
+#   --splits "UniversalSplits\Base\StableDiffusion\splits_gender_face_stratified.json" ^
 #   --features "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
 #   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection\splits_gender_face_stratified_objects_OHE.json" ^
 #   --feature_keys object_encoding ^
 #   --output_key features
 
-
-
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\StableDiffusion\splits_10mst_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection\splits_10mst_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
 
 
 # # Extract one-hot encoded object presence (normalized)
@@ -244,8 +251,114 @@ if __name__ == "__main__":
 
 # # Then enrich your splits
 # python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
-#   --splits "UniversalSplits\StableDiffusion\splits_gender_face_stratified.json" ^
+#   --splits "UniversalSplits\Base\StableDiffusion\splits_gender_face_stratified.json" ^
 #   --features "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
 #   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection_LabelRestricted\splits_gender_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\StableDiffusion\splits_10mst_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\ObjectDetection_LabelRestricted\splits_10mst_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+##################################################################################### Professions 125k ISCO Aligned 1k Subset #####################################################################################
+
+# # Extract one-hot encoded object presence (normalized)
+# python 2_CreateObject_OHE_Splits.py ^
+#   --detections "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ObjectDetection\detections.jsonl" ^
+#   --out_jsonl "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
+#   --encoding_type binary ^
+#   --class_list "openimagesv7_classes_raw.json"
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_gender_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection\splits_gender_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_10mst_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection\splits_10mst_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+
+# # Extract one-hot encoded object presence (normalized)
+# python 2_CreateObject_OHE_Splits.py ^
+#   --detections "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ObjectDetection_LabelRestricted\detections.jsonl" ^
+#   --out_jsonl "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
+#   --encoding_type binary ^
+#   --class_list "openimagesv7_classes_raw.json"
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_gender_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection_LabelRestricted\splits_gender_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_10mst_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\ObjectDetection_LabelRestricted\splits_10mst_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+##################################################################################### Debiased Images #####################################################################################
+
+# # Extract one-hot encoded object presence (normalized)
+# python 2_CreateObject_OHE_Splits.py ^
+#   --detections "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\ObjectDetection\detections.jsonl" ^
+#   --out_jsonl "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
+#   --encoding_type binary ^
+#   --class_list "openimagesv7_classes_raw.json"
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\DebiasedImages\splits_gender_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection\splits_gender_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\DebiasedImages\splits_10mst_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection\splits_10mst_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+
+# # Extract one-hot encoded object presence (normalized)
+# python 2_CreateObject_OHE_Splits.py ^
+#   --detections "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\ObjectDetection_LabelRestricted\detections.jsonl" ^
+#   --out_jsonl "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
+#   --encoding_type binary ^
+#   --class_list "openimagesv7_classes_raw.json"
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\DebiasedImages\splits_gender_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection_LabelRestricted\splits_gender_face_stratified_objects_OHE.json" ^
+#   --feature_keys object_encoding ^
+#   --output_key features
+
+# # Then enrich your splits
+# python 3_CreatePoses_MeanRGB_OHE_Splits.py ^
+#   --splits "UniversalSplits\Base\DebiasedImages\splits_10mst_face_stratified.json" ^
+#   --features "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection_LabelRestricted\binary_objects_detected.jsonl" ^
+#   --out_json "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\_SPLITS\ObjectDetection_LabelRestricted\splits_10mst_face_stratified_objects_OHE.json" ^
 #   --feature_keys object_encoding ^
 #   --output_key features

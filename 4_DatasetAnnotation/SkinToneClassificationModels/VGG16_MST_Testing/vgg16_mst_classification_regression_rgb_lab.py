@@ -597,12 +597,13 @@ class VGG16MSTModel(nn.Module):
         else:  # regression
             out_dim = 1
 
-        vgg16 = models.vgg16(weights='IMAGENET1K_V1' if pretrained else None)
+
+        vgg16 = (
+            models.vgg16_bn(weights='IMAGENET1K_V1' if pretrained else None)
+            if use_bn
+            else models.vgg16(weights='IMAGENET1K_V1' if pretrained else None)
+        )
         self.features = vgg16.features
-        
-        if use_bn:
-            # Add batch norm after each conv block (optional)
-            pass  # Can be implemented if needed
         
         self.avgpool = nn.AdaptiveAvgPool2d((7, 7))
         
@@ -644,7 +645,10 @@ class VGG16MSTModel(nn.Module):
         
         logits = self.classifier(features)
         
-        if self.mode == 'regression':
+        # if self.mode == 'regression':
+        #     logits = torch.clamp(logits, 0.0, 10.0)
+
+        if self.mode == 'regression' and not self.training:
             logits = torch.clamp(logits, 0.0, 10.0)
         
         if return_features:
@@ -702,7 +706,10 @@ class ResNet18MSTModel(nn.Module):
 
         logits = self.head(features)
 
-        if self.mode == 'regression':
+        # if self.mode == 'regression':
+        #     logits = torch.clamp(logits, 0.0, 10.0)
+
+        if self.mode == 'regression' and not self.training:
             logits = torch.clamp(logits, 0.0, 10.0)
 
         if return_features:
@@ -1275,8 +1282,10 @@ def main(args):
         mst_criterion = CORALLoss()
     
     else:  # regression
-        print(f"[Loss] MAE (L1)")
-        mst_criterion = nn.L1Loss()
+        # print(f"[Loss] MAE (L1)")
+        # mst_criterion = nn.L1Loss()
+        print(f"[Loss] Huber (delta=1.0)")
+        mst_criterion = nn.HuberLoss(delta=1.0)
     
     # Contrastive loss
     contrastive_criterion = SupervisedContrastiveLoss(temperature=0.07)

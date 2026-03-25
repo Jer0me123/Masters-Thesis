@@ -1,0 +1,5 @@
+{
+    "0": "Professions_125k_ISCO_Aligned_1k_Subset\\ImageCaptioning\\captions.jsonl",
+    "1": "StableDiffusionImages\\ImageCaptioning\\captions.jsonl",
+    "2": "Coco\\ImageCaptioning\\captions.jsonl"
+}

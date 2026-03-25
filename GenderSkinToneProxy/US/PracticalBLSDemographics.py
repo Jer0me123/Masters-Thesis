@@ -6,10 +6,10 @@ This script improves upon the basic matching by using multiple fuzzy matching st
 to find the best BLS occupation for each profession.
 
 Usage:
-    python enhanced_fuzzy_matcher.py <path_to_bls_excel_file>
+    python PracticalBLSDemographics.py <path_to_bls_excel_file>
     
 Or if the file is named cpsaat11.xlsx or cpsaat11_2024.xlsx in the current directory:
-    python enhanced_fuzzy_matcher.py
+    python PracticalBLSDemographics.py
 """
 
 import pandas as pd
@@ -157,45 +157,37 @@ MAPPINGS = {
     "Welder": "Welding, soldering, and brazing workers",
     "Wholesaler": "Sales representatives, wholesale and manufacturing",
     "Zoologist": "Biological scientists",
+    "Actor": "Actors",
+    "Artist": "Artists and related workers",
+    "Builder": "Construction managers",
+    "Clerk": "Office clerks, general",
+    "DJ": "Disc jockeys, except radio",
+    "Director": "Producers and directors",
+    "Driver": "Driver/sales workers and truck drivers",
+    "Doctor": "Other physicians",
+    "Janitor": "Janitors and building cleaners",
+    "Mechanic": "Automotive service technicians and mechanics",
+    "Miner": "Underground mining machine operators",
+    "Salesperson": "Retail salespersons",
+    "Writer": "Writers and authors",
+    "Athlete": "Athletes and sports competitors",
+    "Basketball player": "Athletes and sports competitors",
+    "Football player": "Athletes and sports competitors",
+    "Tennis player": "Athletes and sports competitors",
+    "Administrator": "Administrative services managers",
+    "Architect": "Architects, except landscape and naval",
+    "Detective": "Detectives and criminal investigators",
+    "Human Resources Specialist": "Human resources workers",
+    "Social Worker": "Social workers, all other",
+    "Teacher": "Elementary and middle school teachers",
+    "Researcher": None,   # "Survey researchers" (1k workers) is wrong; no clean BLS equivalent
+    "Scientist": None,    # Too broad; BLS splits by domain
+    "Therapist": "Therapists, all other",
+    "Technician": "Other engineering technologists and technicians, except drafters",
+    "Handyperson": "Maintenance and repair workers, general",
+    "Broker": "Securities, commodities, and financial services sales agents",
+    "Tennis Player": "Athletes and sports competitors",
 }
-
-# def parse_bls_excel(file_path: str) -> pd.DataFrame:
-#     """Parse the BLS Excel file"""
-#     print(f"Reading: {file_path}")
-    
-#     df = pd.read_excel(file_path)
-    
-#     # Find header row
-#     header_row = None
-#     for idx in range(min(20, len(df))):
-#         row_values = df.iloc[idx].astype(str)
-#         if any('occupation' in str(val).lower() for val in row_values):
-#             header_row = idx
-#             break
-    
-#     if header_row is None:
-#         header_row = 0
-    
-#     df.columns = df.iloc[header_row]
-#     df = df.iloc[header_row + 1:].reset_index(drop=True)
-    
-#     # Clean
-#     df.columns = [str(col).strip() for col in df.columns]
-#     # --------------------------------------------------
-#     # FIX: sanitize column names
-#     # --------------------------------------------------
-#     df.columns = [
-#         f"col_{i}" if pd.isna(c) else str(c).strip()
-#         for i, c in enumerate(df.columns)
-#     ]
-
-#     occupation_col = df.columns[0]
-#     df = df[df[occupation_col].notna()]
-#     df = df[~df[occupation_col].astype(str).str.lower().str.contains('total|note:', na=False)]
-    
-#     print(f"✓ Loaded {len(df)} occupations")
-#     return df
-
 
 def parse_bls_excel(file_path: str) -> pd.DataFrame:
     """
@@ -250,9 +242,6 @@ def parse_bls_excel(file_path: str) -> pd.DataFrame:
     df = df[["occupation"] + numeric_cols]
 
     return df
-
-
-
 
 def find_exact_match(profession: str, occupation_list: List[str]) -> Optional[str]:
     """Try exact matching (case-insensitive)"""
@@ -526,7 +515,7 @@ def main():
     if not bls_file or not Path(bls_file).exists():
         print("\n✗ No BLS data file found!")
         print("\nPlease provide the file as an argument:")
-        print("  python enhanced_fuzzy_matcher.py <path_to_file.xlsx>")
+        print("  python PracticalBLSDemographics.py <path_to_file.xlsx>")
         print("\nOr place one of these files in the current directory:")
         for f in possible_files:
             print(f"  - {f}")
@@ -629,3 +618,6 @@ if __name__ == "__main__":
 
 
 # https://www.bls.gov/cps/cpsaat11.htm
+
+
+# python "US\PracticalBLSDemographics.py" "US\USBureauOfLaborStatistics\cpsaat11_2024.xlsx" 

@@ -374,7 +374,7 @@ def main():
     fieldnames = [
         "seed", "lr", "weight_decay", "warmup_epochs",
         "test_auc", "test_accuracy", "test_f1",
-        "ci_low", "ci_high",
+        "ci_low", "ci_high", "mst3_auc",
     ]
     if num_classes > 2:
         fieldnames += [f"class_{i}_auc" for i in range(num_classes)]
@@ -445,6 +445,15 @@ if __name__ == "__main__":
 #
 # Optional probe-only ablation:
 # python SentenceT5_Probe_PaperAligned.py.py --splits_json splits_gender_captions.json --task gender --freeze_backbone --out_dir out_sentence_t5_gender_frozen
+
+
+# python SentenceT5_Probe_PaperAligned.py ^
+#     --splits_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified_captions.json" ^
+#     --seeds 0 ^
+#     --bootstrap ^
+#     --out_dir outputs_dataset_classification\\CocoReLaionSDCaptions ^
+#     --lr 2e-5 ^
+#     --weight_decay 0.01
 
 
 

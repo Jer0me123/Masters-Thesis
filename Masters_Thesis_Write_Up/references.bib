@@ -19,6 +19,17 @@
 	url={https://arxiv.org/abs/2210.08402}
 }
 
+@article{Klein_2014_LinkRot,
+	author = {Klein, Martin and Sompel, Herbert and Sanderson, Rob and Shankar, Harihar and Balakireva, Lyudmila and Zhou, Ke and Tobin, Richard},
+	year = {2014},
+	month = {12},
+	pages = {e115253},
+	title = {Scholarly Context Not Found: One in Five Articles Suffers from Reference Rot},
+	volume = {9},
+	journal = {PloS one},
+	doi = {10.1371/journal.pone.0115253}
+}
+
 % Ethical issues paper
 @misc{Birhane_2021_MultiModalDatasetsMisogynyPornography,
 	title={Multimodal datasets: misogyny, pornography, and malignant stereotypes}, 
@@ -50,22 +61,6 @@
 	archivePrefix={arXiv},
 	primaryClass={cs.LG},
 	url={https://arxiv.org/abs/1908.09635}
-}
-
-% Bias in Gender Classification
-@InProceedings{Buolamwini_2018_BiasGenderClassification,
-	title = 	 {Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification},
-	author = 	 {Buolamwini, Joy and Gebru, Timnit},
-	booktitle = 	 {Proceedings of the 1st Conference on Fairness, Accountability and Transparency},
-	pages = 	 {77--91},
-	year = 	 {2018},
-	editor = 	 {Friedler, Sorelle A. and Wilson, Christo},
-	volume = 	 {81},
-	series = 	 {Proceedings of Machine Learning Research},
-	month = 	 {23--24 Feb},
-	publisher =    {PMLR},
-	pdf = 	 {http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf},
-	url = 	 {https://proceedings.mlr.press/v81/buolamwini18a.html}
 }
 
 % Bias in SD Model
@@ -403,19 +398,6 @@
 	eprint = {https://jamanetwork.com/journals/jamadermatology/articlepdf/549509/archderm_124_6_008.pdf}
 }
 
-
-@article{Heldreth_2024_WhichSkinToneMeasures,
-	author = {Heldreth, Courtney and Monk, Ellis and Clark, Alan and Ricco, Susanna and Schumann, Candice and Eyee, X.},
-	year = {2023},
-	month = {11},
-	pages = {},
-	title = {Which Skin Tone Measures Are the Most Inclusive? An Investigation of Skin Tone Measures for Artificial Intelligence},
-	volume = {1},
-	journal = {ACM Journal on Responsible Computing},
-	doi = {10.1145/3632120}
-}
-
-
 @Article{Mbatha_2024_SkinToneLighting,
 	AUTHOR = {Mbatha, Success K. and Booysen, Marthinus J. and Theart, Rensu P.},
 	TITLE = {Skin Tone Estimation under Diverse Lighting Conditions},
@@ -486,4 +468,926 @@
 	title        = {Stable Diffusion v1-5 Model Card},
 	howpublished = {\url{https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5}},
 	year         = {2022},
+}
+
+@misc{Ho_2022_CFG,
+	title={Classifier-Free Diffusion Guidance}, 
+	author={Jonathan Ho and Tim Salimans},
+	year={2022},
+	eprint={2207.12598},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2207.12598}, 
+}
+
+@misc{Ronneberger_2015_UNet,
+	title={U-Net: Convolutional Networks for Biomedical Image Segmentation}, 
+	author={Olaf Ronneberger and Philipp Fischer and Thomas Brox},
+	year={2015},
+	eprint={1505.04597},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1505.04597}, 
+}
+
+@misc{Ho_2020_DDPM,
+	title={Denoising Diffusion Probabilistic Models}, 
+	author={Jonathan Ho and Ajay Jain and Pieter Abbeel},
+	year={2020},
+	eprint={2006.11239},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2006.11239}, 
+}
+
+@misc{Ramesh_2021_DALLE,
+	title={Zero-Shot Text-to-Image Generation}, 
+	author={Aditya Ramesh and Mikhail Pavlov and Gabriel Goh and Scott Gray and Chelsea Voss and Alec Radford and Mark Chen and Ilya Sutskever},
+	year={2021},
+	eprint={2102.12092},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2102.12092}, 
+}
+
+@misc{Kingma_2013_VAE,
+	title={Auto-Encoding Variational Bayes}, 
+	author={Diederik P Kingma and Max Welling},
+	year={2022},
+	eprint={1312.6114},
+	archivePrefix={arXiv},
+	primaryClass={stat.ML},
+	url={https://arxiv.org/abs/1312.6114}, 
+}
+
+@misc{Goodfellow_2014_GAN,
+	title={Generative Adversarial Networks}, 
+	author={Ian J. Goodfellow and Jean Pouget-Abadie and Mehdi Mirza and Bing Xu and David Warde-Farley and Sherjil Ozair and Aaron Courville and Yoshua Bengio},
+	year={2014},
+	eprint={1406.2661},
+	archivePrefix={arXiv},
+	primaryClass={stat.ML},
+	url={https://arxiv.org/abs/1406.2661}, 
+}
+
+@misc{Dhariwal_2021_DiffusionBeatGANs,
+	title={Diffusion Models Beat GANs on Image Synthesis}, 
+	author={Prafulla Dhariwal and Alex Nichol},
+	year={2021},
+	eprint={2105.05233},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2105.05233}, 
+}
+
+@misc{Song_2020_ScoreMatching,
+	title={Improved Techniques for Training Score-Based Generative Models}, 
+	author={Yang Song and Stefano Ermon},
+	year={2020},
+	eprint={2006.09011},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2006.09011}, 
+}
+
+@misc{Podell_2023_SDXL,
+	title={SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis}, 
+	author={Dustin Podell and Zion English and Kyle Lacey and Andreas Blattmann and Tim Dockhorn and Jonas Müller and Joe Penna and Robin Rombach},
+	year={2023},
+	eprint={2307.01952},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2307.01952}, 
+}
+
+@misc{Esser_2024_SD3,
+	title={Scaling Rectified Flow Transformers for High-Resolution Image Synthesis}, 
+	author={Patrick Esser and Sumith Kulal and Andreas Blattmann and Rahim Entezari and Jonas Müller and Harry Saini and Yam Levi and Dominik Lorenz and Axel Sauer and Frederic Boesel and Dustin Podell and Tim Dockhorn and Zion English and Kyle Lacey and Alex Goodwin and Yannik Marek and Robin Rombach},
+	year={2024},
+	eprint={2403.03206},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2403.03206}, 
+}
+
+
+@misc{Douze_2024_FAISS,
+	title={The Faiss library}, 
+	author={Matthijs Douze and Alexandr Guzhva and Chengqi Deng and Jeff Johnson and Gergely Szilvasy and Pierre-Emmanuel Mazaré and Maria Lomeli and Lucas Hosseini and Hervé Jégou},
+	year={2025},
+	eprint={2401.08281},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2401.08281}, 
+}
+
+@misc{Malkov_2020_HNSW,
+	title={Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs}, 
+	author={Yu. A. Malkov and D. A. Yashunin},
+	year={2018},
+	eprint={1603.09320},
+	archivePrefix={arXiv},
+	primaryClass={cs.DS},
+	url={https://arxiv.org/abs/1603.09320}, 
+}
+
+@article{Jegou_2011_PQ,
+	TITLE = {{Product Quantization for Nearest Neighbor Search}},
+	AUTHOR = {J{\'e}gou, Herv{\'e} and Douze, Matthijs and Schmid, Cordelia},
+	URL = {https://inria.hal.science/inria-00514462},
+	JOURNAL = {{IEEE Transactions on Pattern Analysis and Machine Intelligence}},
+	PUBLISHER = {{Institute of Electrical and Electronics Engineers}},
+	VOLUME = {33},
+	NUMBER = {1},
+	PAGES = {117-128},
+	YEAR = {2011},
+	MONTH = Jan,
+	DOI = {10.1109/TPAMI.2010.57},
+	KEYWORDS = {Sorting and searching ; Computer vision ; Representations ; data structures ; transforms},
+	PDF = {https://inria.hal.science/inria-00514462v2/file/jegou_pq_postprint.pdf},
+	HAL_ID = {inria-00514462},
+	HAL_VERSION = {v2},
+}
+
+@misc{Naik_2023_SocialBiasesThroughTheTextToImageGenerationLens,
+	title={Social Biases through the Text-to-Image Generation Lens}, 
+	author={Ranjita Naik and Besmira Nushi},
+	year={2023},
+	eprint={2304.06034},
+	archivePrefix={arXiv},
+	primaryClass={cs.CY},
+	url={https://arxiv.org/abs/2304.06034}, 
+}
+
+@misc{Harrison_2023_RunLikeAGirl,
+	title={Run Like a Girl! Sports-Related Gender Bias in Language and Vision}, 
+	author={Sophia Harrison and Eleonora Gualdoni and Gemma Boleda},
+	year={2023},
+	eprint={2305.14468},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2305.14468}, 
+}
+
+@misc{Chuang_2023_DebiasingVisionLanguageModelsViaBiasedPrompts,
+	title={Debiasing Vision-Language Models via Biased Prompts}, 
+	author={Ching-Yao Chuang and Varun Jampani and Yuanzhen Li and Antonio Torralba and Stefanie Jegelka},
+	year={2023},
+	eprint={2302.00070},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2302.00070}, 
+}
+
+@misc{Nadeem_2020_StereoSet,
+	title={StereoSet: Measuring stereotypical bias in pretrained language models}, 
+	author={Moin Nadeem and Anna Bethke and Siva Reddy},
+	year={2020},
+	eprint={2004.09456},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL},
+	url={https://arxiv.org/abs/2004.09456}, 
+}
+
+@misc{ILO_ISCO08,
+	author       = {{International Labour Organization}},
+	title        = {International Standard Classification of Occupations ({ISCO-08})},
+	year         = {2012},
+	url          = {https://ilostat.ilo.org/methods/concepts-and-definitions/classification-occupation/},
+	note         = {Accessed: 2025}
+}
+
+@misc{Hu_2021_LoRA,
+	title={LoRA: Low-Rank Adaptation of Large Language Models}, 
+	author={Edward J. Hu and Yelong Shen and Phillip Wallis and Zeyuan Allen-Zhu and Yuanzhi Li and Shean Wang and Lu Wang and Weizhu Chen},
+	year={2021},
+	eprint={2106.09685},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL},
+	url={https://arxiv.org/abs/2106.09685}, 
+}
+
+@misc{Song_2023_LCM,
+	title={Latent Consistency Models: Synthesizing High-Resolution Images with Few-Step Inference}, 
+	author={Simian Luo and Yiqin Tan and Longbo Huang and Jian Li and Hang Zhao},
+	year={2023},
+	eprint={2310.04378},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2310.04378}, 
+}
+
+@misc{Luo_2023_LCMLoRA,
+	title={LCM-LoRA: A Universal Stable-Diffusion Acceleration Module}, 
+	author={Simian Luo and Yiqin Tan and Suraj Patil and Daniel Gu and Patrick von Platen and Apolinário Passos and Longbo Huang and Jian Li and Hang Zhao},
+	year={2023},
+	eprint={2311.05556},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2311.05556}, 
+}
+
+@misc{Ruiz_2023_DreamBooth,
+	title={DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation}, 
+	author={Nataniel Ruiz and Yuanzhen Li and Varun Jampani and Yael Pritch and Michael Rubinstein and Kfir Aberman},
+	year={2023},
+	eprint={2208.12242},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2208.12242}, 
+}
+
+@misc{Kartynnik_2019_FaceMesh,
+	title={Real-time Facial Surface Geometry from Monocular Video on Mobile GPUs}, 
+	author={Yury Kartynnik and Artsiom Ablavatski and Ivan Grishchenko and Matthias Grundmann},
+	year={2019},
+	eprint={1907.06724},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1907.06724}, 
+}
+
+@misc{Yang_2016_WIDERFace,
+	title={WIDER FACE: A Face Detection Benchmark}, 
+	author={Shuo Yang and Ping Luo and Chen Change Loy and Xiaoou Tang},
+	year={2015},
+	eprint={1511.06523},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1511.06523}, 
+}
+
+@misc{Deng_2020_RetinaFace,
+	title={RetinaFace: Single-stage Dense Face Localisation in the Wild}, 
+	author={Jiankang Deng and Jia Guo and Yuxiang Zhou and Jinke Yu and Irene Kotsia and Stefanos Zafeiriou},
+	year={2019},
+	eprint={1905.00641},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1905.00641}, 
+}
+
+@misc{Guo_2021_SCRFD,
+	title={Sample and Computation Redistribution for Efficient Face Detection}, 
+	author={Jia Guo and Jiankang Deng and Alexandros Lattas and Stefanos Zafeiriou},
+	year={2021},
+	eprint={2105.04714},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2105.04714}, 
+}
+
+@software{Jocher_2023_YOLOv8,
+	author  = {Jocher, Glenn and Chaurasia, Ayush and Qiu, Jing},
+	title   = {Ultralytics {YOLO}},
+	version = {8.0.0},
+	year    = {2023},
+	url     = {https://github.com/ultralytics/ultralytics},
+	license = {AGPL-3.0}
+}
+
+@misc{SD12_ModelCard,
+	author       = {{CompVis}},
+	title        = {Stable Diffusion v1-2 Model Card},
+	year         = {2022},
+	howpublished = {\url{https://huggingface.co/CompVis/stable-diffusion-v1-2}}
+}
+
+@misc{LCMLoRA_SDv15,
+	author       = {{Latent Consistency}},
+	title        = {{LCM-LoRA} for Stable Diffusion v1-5},
+	year         = {2023},
+	howpublished = {\url{https://huggingface.co/latent-consistency/lcm-lora-sdv1-5}}
+}
+
+@misc{SSD1B_ModelCard,
+	author       = {{Segmind}},
+	title        = {{SSD-1B} Model Card},
+	year         = {2023},
+	howpublished = {\url{https://huggingface.co/segmind/SSD-1B}}
+}
+
+@misc{PixArtAlpha_ModelCard,
+	author       = {{PixArt-alpha}},
+	title        = {{PixArt-XL-2} 1024 Model Card},
+	year         = {2023},
+	howpublished = {\url{https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS}}
+}
+
+@misc{SegmindVega_ModelCard,
+	author       = {{Segmind}},
+	title        = {Segmind-Vega Model Card},
+	year         = {2023},
+	howpublished = {\url{https://huggingface.co/segmind/Segmind-Vega}}
+}
+
+
+@misc{Porgali_2023_CCv2,
+	title={The Casual Conversations v2 Dataset}, 
+	author={Bilal Porgali and Vítor Albiero and Jordan Ryda and Cristian Canton Ferrer and Caner Hazirbas},
+	year={2023},
+	eprint={2303.04838},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2303.04838}, 
+}
+
+@misc{Gustafson_2023_FACET,
+	title={FACET: Fairness in Computer Vision Evaluation Benchmark}, 
+	author={Laura Gustafson and Chloe Rolland and Nikhila Ravi and Quentin Duval and Aaron Adcock and Cheng-Yang Fu and Melissa Hall and Candace Ross},
+	year={2023},
+	eprint={2309.00035},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2309.00035}, 
+}
+
+
+@INPROCEEDINGS{Serengil_2021_HyperExtendedLightFace_DeepFace,
+	author={Serengil, Sefik Ilkin and Ozpinar, Alper},
+	booktitle={2021 International Conference on Engineering and Emerging Technologies (ICEET)}, 
+	title={HyperExtended LightFace: A Facial Attribute Analysis Framework}, 
+	year={2021},
+	volume={},
+	number={},
+	pages={1-4},
+	keywords={Training;Face recognition;Buildings;Machine learning;Predictive models;Data models;Task analysis;age prediction;gender prediction;emotion prediction;race prediction},
+	doi={10.1109/ICEET53442.2021.9659697}}
+
+@article{Deng_2022_ArcFace_InsightFace,
+	title={ArcFace: Additive Angular Margin Loss for Deep Face Recognition},
+	volume={44},
+	ISSN={1939-3539},
+	url={http://dx.doi.org/10.1109/TPAMI.2021.3087709},
+	DOI={10.1109/tpami.2021.3087709},
+	number={10},
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+	author={Deng, Jiankang and Guo, Jia and Yang, Jing and Xue, Niannan and Kotsia, Irene and Zafeiriou, Stefanos},
+	year={2022},
+	month=oct, pages={5962–5979} }
+
+@misc{Tschannen_2025_SigLIP2_RealisticGenderClassifier,
+	title={SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features}, 
+	author={Michael Tschannen and Alexey Gritsenko and Xiao Wang and Muhammad Ferjad Naeem and Ibrahim Alabdulmohsin and Nikhil Parthasarathy and Talfan Evans and Lucas Beyer and Ye Xia and Basil Mustafa and Olivier Hénaff and Jeremiah Harmsen and Andreas Steiner and Xiaohua Zhai},
+	year={2025},
+	eprint={2502.14786},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2502.14786}, 
+}
+
+@misc{Rizvandwiki_2023_HuggingFaceGenderClassification,
+	author       = {rizvandwiki},
+	title        = {gender-classification},
+	year         = {2023},
+	howpublished = {Hugging Face model repository},
+	url          = {https://huggingface.co/rizvandwiki/gender-classification},
+	note         = {Accessed: 2026-03-06}
+}
+
+
+
+
+@inproceedings{Matias_2024_RandomForest_DenseNet121,
+	author = {Vitor Matias and João Batista Neto},
+	title = { Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale},
+	booktitle = {Anais Estendidos da XXXVII Conference on Graphics, Patterns and Images},
+	location = {Manaus/AM},
+	year = {2024},
+	keywords = {},
+	issn = {0000-0000},
+	pages = {76--81},
+	publisher = {SBC},
+	address = {Porto Alegre, RS, Brasil},
+	doi = {10.5753/sibgrapi.est.2024.31648},
+	url = {https://sol.sbc.org.br/index.php/sibgrapi_estendido/article/view/31648}
+}
+
+@article{Pina_2023_SkinToneClassificationLibrary,
+	author = {Rejón Piña, René Alejandro and Ma, Chenglong},
+	title = {Classification Algorithm for Skin Color (CASCo): A new tool to measure skin color in social science research},
+	journal = {Social Science Quarterly},
+	volume = {104},
+	number = {2},
+	pages = {168-179},
+	keywords = {colorism, measurement, photo elicitation, racism, skin color, spectrometers},
+	doi = {https://doi.org/10.1111/ssqu.13242},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.13242},
+	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/ssqu.13242},
+	year = {2023}
+}
+
+@article{Heldreth_2024_WhichSkinToneMeasures,
+	author = {Heldreth, Courtney M. and Monk, Ellis P. and Clark, Alan T. and Schumann, Candice and Eyee, Xango and Ricco, Susanna},
+	title = {Which Skin Tone Measures Are the Most Inclusive? An Investigation of Skin Tone Measures for Artificial Intelligence},
+	year = {2024},
+	issue_date = {March 2024},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {1},
+	number = {1},
+	url = {https://doi.org/10.1145/3632120},
+	doi = {10.1145/3632120},
+	journal = {ACM J. Responsib. Comput.},
+	month = mar,
+	articleno = {7},
+	numpages = {21},
+	keywords = {Responsible innovation, skin tone measurement, artificial intelligence, machine learning fairness, visual perception}
+}
+
+@misc{Yang_2024_DepthAnythingV2,
+	title={Depth Anything V2}, 
+	author={Lihe Yang and Bingyi Kang and Zilong Huang and Zhen Zhao and Xiaogang Xu and Jiashi Feng and Hengshuang Zhao},
+	year={2024},
+	eprint={2406.09414},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2406.09414}, 
+}
+
+@misc{Kirillov_2023_SAM,
+	title={Segment Anything}, 
+	author={Alexander Kirillov and Eric Mintun and Nikhila Ravi and Hanzi Mao and Chloe Rolland and Laura Gustafson and Tete Xiao and Spencer Whitehead and Alexander C. Berg and Wan-Yen Lo and Piotr Dollár and Ross Girshick},
+	year={2023},
+	eprint={2304.02643},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2304.02643}, 
+}
+
+@ARTICLE{Canny_1986_CannyEdgeDetection,
+	author={Canny, John},
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+	title={A Computational Approach to Edge Detection}, 
+	year={1986},
+	volume={PAMI-8},
+	number={6},
+	pages={679-698},
+	keywords={Image edge detection;Detectors;Machine vision;Shape measurement;Performance analysis;Uncertainty;Gaussian approximation;Signal to noise ratio;Signal synthesis;Feature extraction;Edge detection;feature extraction;image processing;machine vision;multiscale image analysis},
+	doi={10.1109/TPAMI.1986.4767851}
+}
+
+
+@misc{Cheng_2022_Mask2Former,
+	title={Masked-attention Mask Transformer for Universal Image Segmentation}, 
+	author={Bowen Cheng and Ishan Misra and Alexander G. Schwing and Alexander Kirillov and Rohit Girdhar},
+	year={2022},
+	eprint={2112.01527},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2112.01527}, 
+}
+
+@INPROCEEDINGS{Zhou_2017_ADE20K,
+	author={Zhou, Bolei and Zhao, Hang and Puig, Xavier and Fidler, Sanja and Barriuso, Adela and Torralba, Antonio},
+	booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+	title={Scene Parsing through ADE20K Dataset}, 
+	year={2017},
+	volume={},
+	number={},
+	pages={5122-5130},
+	keywords={Image segmentation;Semantics;Sun;Labeling;Visualization;Neural networks;Computer vision},
+	doi={10.1109/CVPR.2017.544}
+}
+
+
+@misc{Gupta_2019_LVIS,
+	title={LVIS: A Dataset for Large Vocabulary Instance Segmentation}, 
+	author={Agrim Gupta and Piotr Dollár and Ross Girshick},
+	year={2019},
+	eprint={1908.03195},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1908.03195}, 
+}
+
+@INPROCEEDINGS{Shao_2019_Object365,
+	author={Shao, Shuai and Li, Zeming and Zhang, Tianyuan and Peng, Chao and Yu, Gang and Zhang, Xiangyu and Li, Jing and Sun, Jian},
+	booktitle={2019 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+	title={Objects365: A Large-Scale, High-Quality Dataset for Object Detection}, 
+	year={2019},
+	volume={},
+	number={},
+	pages={8429-8438},
+	keywords={Object detection;Benchmark testing;Pipelines;Training;Task analysis;Detectors;Clocks},
+	doi={10.1109/ICCV.2019.00852}
+}
+
+@misc{Li_2022_ViTDet,
+	title={Exploring Plain Vision Transformer Backbones for Object Detection}, 
+	author={Yanghao Li and Hanzi Mao and Ross Girshick and Kaiming He},
+	year={2022},
+	eprint={2203.16527},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2203.16527}, 
+}
+
+@misc{Liu_2024_GroundingDINO,
+	title={Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection}, 
+	author={Shilong Liu and Zhaoyang Zeng and Tianhe Ren and Feng Li and Hao Zhang and Jie Yang and Qing Jiang and Chunyuan Li and Jianwei Yang and Hang Su and Jun Zhu and Lei Zhang},
+	year={2024},
+	eprint={2303.05499},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2303.05499}, 
+}
+
+@misc{Zhao_2024_RTDETR,
+	title={DETRs Beat YOLOs on Real-time Object Detection}, 
+	author={Yian Zhao and Wenyu Lv and Shangliang Xu and Jinman Wei and Guanzhong Wang and Qingqing Dang and Yi Liu and Jie Chen},
+	year={2024},
+	eprint={2304.08069},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2304.08069}, 
+}
+
+@misc{Liu_2023_LLaVA,
+	title={Visual Instruction Tuning}, 
+	author={Haotian Liu and Chunyuan Li and Qingyang Wu and Yong Jae Lee},
+	year={2023},
+	eprint={2304.08485},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2304.08485}, 
+}
+
+@misc{Li_2022_BLIP,
+	title={BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation}, 
+	author={Junnan Li and Dongxu Li and Caiming Xiong and Steven Hoi},
+	year={2022},
+	eprint={2201.12086},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2201.12086}, 
+}
+
+@misc{Li_2023_BLIP2,
+	title={BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models}, 
+	author={Junnan Li and Dongxu Li and Silvio Savarese and Steven Hoi},
+	year={2023},
+	eprint={2301.12597},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2301.12597}, 
+}
+
+@article{Young_2014_Flickr30k,
+	author = {Young, Peter and Lai, Alice and Hodosh, Micah and Hockenmaier, Julia},
+	year = {2014},
+	month = {12},
+	pages = {67-78},
+	title = {From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions},
+	volume = {2},
+	journal = {TACL},
+	doi = {10.1162/tacl_a_00166}
+}
+
+@inproceedings{Papineni_2002_BLEU,
+	title = "{B}leu: a Method for Automatic Evaluation of Machine Translation",
+	author = "Papineni, Kishore  and
+	Roukos, Salim  and
+	Ward, Todd  and
+	Zhu, Wei-Jing",
+	editor = "Isabelle, Pierre  and
+	Charniak, Eugene  and
+	Lin, Dekang",
+	booktitle = "Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics",
+	month = jul,
+	year = "2002",
+	address = "Philadelphia, Pennsylvania, USA",
+	publisher = "Association for Computational Linguistics",
+	url = "https://aclanthology.org/P02-1040/",
+	doi = "10.3115/1073083.1073135",
+	pages = "311--318"
+}
+
+@inproceedings{Banerjee_2005_METEOR,
+	title = "{METEOR}: An Automatic Metric for {MT} Evaluation with Improved Correlation with Human Judgments",
+	author = "Banerjee, Satanjeev  and
+	Lavie, Alon",
+	editor = "Goldstein, Jade  and
+	Lavie, Alon  and
+	Lin, Chin-Yew  and
+	Voss, Clare",
+	booktitle = "Proceedings of the {ACL} Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization",
+	month = jun,
+	year = "2005",
+	address = "Ann Arbor, Michigan",
+	publisher = "Association for Computational Linguistics",
+	url = "https://aclanthology.org/W05-0909/",
+	pages = "65--72"
+}
+
+@misc{Vedantam_2015_CIDEr,
+	title={CIDEr: Consensus-based Image Description Evaluation}, 
+	author={Ramakrishna Vedantam and C. Lawrence Zitnick and Devi Parikh},
+	year={2015},
+	eprint={1411.5726},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1411.5726}, 
+}
+
+@misc{Reimers_2019_SBERT,
+	title={Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks}, 
+	author={Nils Reimers and Iryna Gurevych},
+	year={2019},
+	eprint={1908.10084},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL},
+	url={https://arxiv.org/abs/1908.10084}, 
+}
+
+@misc{Hessel_2021_CLIPScore,
+	title={CLIPScore: A Reference-free Evaluation Metric for Image Captioning}, 
+	author={Jack Hessel and Ari Holtzman and Maxwell Forbes and Ronan Le Bras and Yejin Choi},
+	year={2022},
+	eprint={2104.08718},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2104.08718}, 
+}
+
+@misc{Bazarevsky_2020_MoveNet,
+	title={BlazePose: On-device Real-time Body Pose tracking}, 
+	author={Valentin Bazarevsky and Ivan Grishchenko and Karthik Raveendran and Tyler Zhu and Fan Zhang and Matthias Grundmann},
+	year={2020},
+	eprint={2006.10204},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2006.10204}, 
+}
+
+@misc{Lugaresi_2019_MediaPipe,
+	title={MediaPipe: A Framework for Building Perception Pipelines}, 
+	author={Camillo Lugaresi and Jiuqiang Tang and Hadon Nash and Chris McClanahan and Esha Uboweja and Michael Hays and Fan Zhang and Chuo-Ling Chang and Ming Guang Yong and Juhyun Lee and Wan-Teh Chang and Wei Hua and Manfred Georg and Matthias Grundmann},
+	year={2019},
+	eprint={1906.08172},
+	archivePrefix={arXiv},
+	primaryClass={cs.DC},
+	url={https://arxiv.org/abs/1906.08172}, 
+}
+
+@misc{Wang_2020_HRNet,
+	title={Deep High-Resolution Representation Learning for Visual Recognition}, 
+	author={Jingdong Wang and Ke Sun and Tianheng Cheng and Borui Jiang and Chaorui Deng and Yang Zhao and Dong Liu and Yadong Mu and Mingkui Tan and Xinggang Wang and Wenyu Liu and Bin Xiao},
+	year={2020},
+	eprint={1908.07919},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1908.07919}, 
+}
+
+@techreport {Pressman_2022_SAC,
+	author = { John David Pressman and Katherine Crowson and Simulacra Captions Contributors } ,
+	year = 2022 ,
+	title = { Simulacra Aesthetic Captions } ,
+	institution = { Stability AI } ,
+	type = {} ,
+	number = { Version 1.0 } ,
+	note = {\ url { https://github.com/JD-P/simulacra-aesthetic-captions }}
+}
+
+@misc{Singh_2020_DontJudgeObjectContext,
+	title={Don't Judge an Object by Its Context: Learning to Overcome Contextual Bias}, 
+	author={Krishna Kumar Singh and Dhruv Mahajan and Kristen Grauman and Yong Jae Lee and Matt Feiszli and Deepti Ghadiyaram},
+	year={2020},
+	eprint={2001.03152},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2001.03152}, 
+}
+
+@misc{Brendel_2019_BagNet,
+	title={Approximating CNNs with Bag-of-local-Features models works surprisingly well on ImageNet}, 
+	author={Wieland Brendel and Matthias Bethge},
+	year={2019},
+	eprint={1904.00760},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1904.00760}, 
+}
+
+@misc{Burns_2018_WomenAlsoSnowboard,
+	title={Women also Snowboard: Overcoming Bias in Captioning Models}, 
+	author={Kaylee Burns and Lisa Anne Hendricks and Kate Saenko and Trevor Darrell and Anna Rohrbach},
+	year={2019},
+	eprint={1803.09797},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1803.09797}, 
+}
+
+@misc{Wang_2019_BalancedDatasetsNotEnough,
+	title={Balanced Datasets Are Not Enough: Estimating and Mitigating Gender Bias in Deep Image Representations}, 
+	author={Tianlu Wang and Jieyu Zhao and Mark Yatskar and Kai-Wei Chang and Vicente Ordonez},
+	year={2019},
+	eprint={1811.08489},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1811.08489}, 
+}
+
+@article{Thomee_2016_YFCC100M,
+	title={YFCC100M: the new data in multimedia research},
+	volume={59},
+	ISSN={1557-7317},
+	url={http://dx.doi.org/10.1145/2812802},
+	DOI={10.1145/2812802},
+	number={2},
+	journal={Communications of the ACM},
+	publisher={Association for Computing Machinery (ACM)},
+	author={Thomee, Bart and Shamma, David A. and Friedland, Gerald and Elizalde, Benjamin and Ni, Karl and Poland, Douglas and Borth, Damian and Li, Li-Jia},
+	year={2016},
+	month=jan, pages={64–73} 
+}
+
+@misc{Changpinyo_2021_CC12M,
+	title={Conceptual 12M: Pushing Web-Scale Image-Text Pre-Training To Recognize Long-Tail Visual Concepts}, 
+	author={Soravit Changpinyo and Piyush Sharma and Nan Ding and Radu Soricut},
+	year={2021},
+	eprint={2102.08981},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2102.08981}, 
+}
+
+@misc{Gadre_2023_DataComp,
+	title={DataComp: In search of the next generation of multimodal datasets}, 
+	author={Samir Yitzhak Gadre and Gabriel Ilharco and Alex Fang and Jonathan Hayase and Georgios Smyrnis and Thao Nguyen and Ryan Marten and Mitchell Wortsman and Dhruba Ghosh and Jieyu Zhang and Eyal Orgad and Rahim Entezari and Giannis Daras and Sarah Pratt and Vivek Ramanujan and Yonatan Bitton and Kalyani Marathe and Stephen Mussmann and Richard Vencu and Mehdi Cherti and Ranjay Krishna and Pang Wei Koh and Olga Saukh and Alexander Ratner and Shuran Song and Hannaneh Hajishirzi and Ali Farhadi and Romain Beaumont and Sewoong Oh and Alex Dimakis and Jenia Jitsev and Yair Carmon and Vaishaal Shankar and Ludwig Schmidt},
+	year={2023},
+	eprint={2304.14108},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2304.14108}, 
+}
+
+@misc{Li_2016_DiversityNMT,
+	title={A Diversity-Promoting Objective Function for Neural Conversation Models}, 
+	author={Jiwei Li and Michel Galley and Chris Brockett and Jianfeng Gao and Bill Dolan},
+	year={2016},
+	eprint={1510.03055},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL},
+	url={https://arxiv.org/abs/1510.03055}, 
+}
+
+@misc{He_2016_DeepResidualLearning,
+	title={Deep Residual Learning for Image Recognition}, 
+	author={Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+	year={2015},
+	eprint={1512.03385},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/1512.03385}, 
+}
+
+@misc{Jiang_2025_FairGen,
+	title={FairGen: Enhancing Fairness in Text-to-Image Diffusion Models via Self-Discovering Latent Directions}, 
+	author={Yilei Jiang and Weihong Li and Yiyuan Zhang and Minghong Cai and Xiangyu Yue},
+	year={2025},
+	eprint={2412.18810},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2412.18810}, 
+}
+
+@misc{Gandikota_2024_UCE,
+	title={Unified Concept Editing in Diffusion Models}, 
+	author={Rohit Gandikota and Hadas Orgad and Yonatan Belinkov and Joanna Materzyńska and David Bau},
+	year={2024},
+	eprint={2308.14761},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2308.14761}, 
+}
+
+@misc{Zhang_2023_ITIGEN,
+	title={ITI-GEN: Inclusive Text-to-Image Generation}, 
+	author={Cheng Zhang and Xuanbai Chen and Siqi Chai and Chen Henry Wu and Dmitry Lagun and Thabo Beeler and Fernando De la Torre},
+	year={2023},
+	eprint={2309.05569},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2309.05569}, 
+}
+
+@misc{GalloFernandez_2024_ITIGENRepro,
+	title={Reproducibility Study of "ITI-GEN: Inclusive Text-to-Image Generation"}, 
+	author={Daniel Gallo Fernández and Răzvan-Andrei Matisan and Alejandro Monroy Muñoz and Janusz Partyka},
+	year={2024},
+	eprint={2407.19996},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2407.19996}, 
+}
+
+@misc{LZhang_2023_ControlNet,
+	title={Adding Conditional Control to Text-to-Image Diffusion Models}, 
+	author={Lvmin Zhang and Anyi Rao and Maneesh Agrawala},
+	year={2023},
+	eprint={2302.05543},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2302.05543}, 
+}
+
+@misc{Lobashev_2025_SWGuidance,
+	title={Color Conditional Generation with Sliced Wasserstein Guidance}, 
+	author={Alexander Lobashev and Maria Larchenko and Dmitry Guskov},
+	year={2025},
+	eprint={2503.19034},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2503.19034}, 
+}
+
+@misc{Shum_2025_ColorAlignment,
+	title={Color Alignment in Diffusion}, 
+	author={Ka Chun Shum and Binh-Son Hua and Duc Thanh Nguyen and Sai-Kit Yeung},
+	year={2025},
+	eprint={2503.06746},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2503.06746}, 
+}
+
+@misc{Liu_2024_DecadeBattleDatasetBias,
+	title={A Decade's Battle on Dataset Bias: Are We There Yet?}, 
+	author={Zhuang Liu and Kaiming He},
+	year={2025},
+	eprint={2403.08632},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2403.08632}, 
+}
+
+@misc{Xiao_2024_Florence2,
+	title={Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks}, 
+	author={Bin Xiao and Haiping Wu and Weijian Xu and Xiyang Dai and Houdong Hu and Yumao Lu and Michael Zeng and Ce Liu and Lu Yuan},
+	year={2023},
+	eprint={2311.06242},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2311.06242}, 
+}
+
+@misc{Peng_2023_Kosmos2,
+	title={Kosmos-2: Grounding Multimodal Large Language Models to the World}, 
+	author={Zhiliang Peng and Wenhui Wang and Li Dong and Yaru Hao and Shaohan Huang and Shuming Ma and Furu Wei},
+	year={2023},
+	eprint={2306.14824},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL},
+	url={https://arxiv.org/abs/2306.14824}, 
+}
+
+@misc{Nichol_2022_GLIDE,
+	title={GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models}, 
+	author={Alex Nichol and Prafulla Dhariwal and Aditya Ramesh and Pranav Shyam and Pamela Mishkin and Bob McGrew and Ilya Sutskever and Mark Chen},
+	year={2022},
+	eprint={2112.10741},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2112.10741}, 
+}
+
+@misc{Chen_2023_T2ICompBench,
+	title={T2I-CompBench++: An Enhanced and Comprehensive Benchmark for Compositional Text-to-image Generation}, 
+	author={Kaiyi Huang and Chengqi Duan and Kaiyue Sun and Enze Xie and Zhenguo Li and Xihui Liu},
+	year={2025},
+	eprint={2307.06350},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2307.06350}, 
+}
+
+@inproceedings{Fang_2024_CameraTokens,
+	author = {Fang, I-Sheng and Han, Yue-Hua and Chen, Jun-Cheng},
+	title = {Camera Settings as Tokens: Modeling Photography on Latent Diffusion Models},
+	year = {2024},
+	isbn = {9798400711312},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3680528.3687635},
+	doi = {10.1145/3680528.3687635},
+	booktitle = {SIGGRAPH Asia 2024 Conference Papers},
+	articleno = {62},
+	numpages = {11},
+	keywords = {Image \& Video Generative AI, Computational Photography, Neural Rendering, Perception, Image-based Modeling, Diffusion models},
+	location = {Tokyo, Japan},
+	series = {SA '24}
+}
+
+@article{WageIndicator_WISCO,
+	author  = {Tijdens, Kea G.},
+	title   = {Measuring Occupations in Web-Surveys: The {WISCO} Database of Occupations},
+	journal = {AIAS Working Paper},
+	year    = {2010},
+	number  = {10-108},
+	institution = {Amsterdam Institute for Advanced Labour Studies},
+	url     = {https://www.researchgate.net/publication/241752024}
 }

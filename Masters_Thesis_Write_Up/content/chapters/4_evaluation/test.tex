@@ -1,0 +1,492 @@
+\section{Dataset Classification}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Dataset classification results per image transformation (three-class:
+		Re-LAION-5B, Stable Diffusion v1.5, COCO). All models trained with ConvNeXt-Tiny,
+		early stopping (patience = 2), seed = 0.}
+	\label{tab:dataset_classification_results}
+	\small
+	\begin{tabular}{p{4cm}cccc}
+		\toprule
+		\textbf{Transformation} &
+		\textbf{Val Acc (\%)} & \textbf{Val AUC} &
+		\textbf{Test Acc (\%)} & \textbf{Test AUC} \\
+		\midrule
+		Base (unmodified)          & 99.56 & 0.9996 & 99.42 & 0.9996 \\
+		VAE reconstruction         & 99.15 & 0.9992 & 99.15 & 0.9992 \\
+		High-pass filter           & 98.65 & 0.9991 & 98.64 & 0.9988 \\
+		Patch shuffle $8\times8$   & 98.41 & 0.9989 & 97.91 & 0.9983 \\
+		Patch shuffle $16\times16$ & 98.60 & 0.9986 & 97.69 & 0.9983 \\
+		Low-pass filter            & 97.30 & 0.9977 & 96.99 & 0.9969 \\
+		Depth                      & 96.41 & 0.9968 & 96.78 & 0.9965 \\
+		Patch shuffle $4\times4$   & 97.20 & 0.9968 & 94.38 & 0.9949 \\
+		Edge                       & 95.17 & 0.9934 & 93.62 & 0.9905 \\
+		Semantic segmentation      & 90.47 & 0.9814 & 91.36 & 0.9837 \\
+		Captions$^\dagger$         & ---   & ---    & 90.99 & 0.9820 \\
+		Patch shuffle $2\times2$   & 88.97 & 0.9839 & 89.91 & 0.9766 \\
+		Object detection           & 85.88 & 0.9617 & 88.62 & 0.9728 \\
+		Pixel shuffle              & 86.01 & 0.9574 & 80.67 & 0.9430 \\
+		Mean RGB                   & 70.80 & 0.8443 & 64.19 & 0.8207 \\
+		\midrule
+		\multicolumn{5}{l}{\footnotesize $^\dagger$ Logistic regression probe on BLIP Large
+			captions encoded via SentenceT5-Base; all other rows use ConvNeXt-Tiny on rendered images.} \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\paragraph{1. The three datasets are separable across every level of representation tested}
+
+Every transformation achieves well above the chance level of 33.3\%, with even the most aggressive information compression — mean RGB at 64.19\% — retaining substantial discriminating signal. This demonstrates that dataset-level differences between Re-LAION-5B, Stable Diffusion v1.5, and COCO persist even under extreme reduction of image content. Even when spatial structure, semantics, and most visual detail are removed, the classifier can still attribute images to their source dataset significantly better than chance.
+
+The persistence of separability across such compressed representations suggests that dataset identity is encoded in multiple correlated visual cues rather than a single isolated artefact. These cues may include colour statistics, spatial patterns, semantic composition, or other structural regularities that differ systematically between datasets. Because these signals remain detectable even after large portions of the visual information are removed, they likely reflect broad statistical regularities rather than isolated features.
+
+Importantly, these experiments demonstrate separability rather than its causal origins. The observed differences may arise from a combination of dataset curation practices, object distribution differences, scene composition biases, or visual statistics introduced by generative models. Consequently, the results indicate that the datasets possess distinct statistical signatures without directly identifying the specific factors responsible for those differences.
+
+\paragraph{2. Dataset separability cannot be explained by acquisition artefacts alone}
+
+The VAE result (99.15\%) is virtually identical to the unmodified base (99.42\%), a reduction of only 0.27 percentage points. Variational autoencoder reconstruction compresses each image through a latent bottleneck before reconstructing it, which typically suppresses certain low-level acquisition artefacts such as compression noise or encoding irregularities while preserving perceptually meaningful image structure.
+
+Because VAE reconstruction largely preserves colour distributions, texture statistics, and spatial structure while reducing some superficial artefacts associated with file encoding or compression, the near-identical classification performance suggests that simple acquisition artefacts are unlikely to be the dominant source of discriminating signal. If dataset separability were primarily driven by compression differences, file-format characteristics, or other encoding artefacts, the VAE reconstruction process would be expected to reduce classification accuracy more substantially.
+
+Instead, the results suggest that dataset differences arise primarily from content and structural properties of the images themselves. These may include differences in scene composition, object arrangement, photographic style, or statistical regularities introduced during dataset creation. However, it should be noted that VAE reconstruction does not eliminate all low-level image statistics, and therefore the results indicate that acquisition artefacts are unlikely to dominate rather than definitively ruling out all low-level contributions.
+
+\paragraph{3. Local spatial statistics are highly dataset-discriminative}
+
+Even $2\times2$ patch shuffling — which destroys global layout while preserving local spatial structure including texture patterns, gradient relationships, and colour correlations within each patch — achieves 89.91\% test accuracy. Increasing patch size substantially improves performance, with $8\times8$ patch shuffling reaching 97.91\% and $16\times16$ achieving 97.69\%.
+
+Patch shuffling disrupts global object arrangement and scene layout while preserving local spatial statistics within each patch. These statistics include short-range correlations between neighbouring pixels, micro-texture patterns, and small-scale colour gradients that often characterise the visual appearance of images. Because these local structures remain intact even when global spatial coherence is removed, classifiers trained on shuffled images must rely primarily on these fine-scale statistical cues.
+
+The strong performance under patch shuffling therefore indicates that dataset-specific signatures are embedded in local spatial statistics rather than solely in high-level scene composition. Such statistics may arise from differences in photographic style, image processing pipelines, or generative model priors that produce consistent patterns at fine spatial scales. However, the experiment does not isolate the origin of these statistics, and the observed separability may reflect a combination of generative artefacts, dataset curation biases, or inherent distributional differences between the source corpora.
+
+\paragraph{4. Both frequency bands carry strong discriminating signal, with a modest advantage for high-frequency components}
+
+High-pass filtering achieves 98.64\% test accuracy, outperforming low-pass filtering at 96.99\% by 1.65 percentage points. High-frequency components correspond primarily to edges, fine textures, and small-scale spatial variations, whereas low-frequency components capture coarse illumination gradients and large-scale structural information.
+
+The strong performance under both filtering operations indicates that dataset-level differences are distributed across multiple spatial scales. High-frequency signals such as edge patterns and texture statistics appear to carry slightly more discriminating information than low-frequency signals, suggesting that fine-grained visual details contribute strongly to dataset identity. At the same time, the high performance under low-pass filtering indicates that broader structural cues such as global shape patterns or scene layouts also play an important role.
+
+The relatively small difference between the two results suggests that dataset bias is not concentrated exclusively in either frequency band but instead permeates the entire frequency spectrum.
+
+\paragraph{5. A hierarchy of dataset-discriminating signal exists across representational levels}
+
+Results reveal a consistent ordering from strongest to weakest discriminating signal:
+
+unmodified and VAE-reconstructed images ($\geq$99\%)  
+$\rightarrow$ frequency and fine spatial statistics (97–99\%)  
+$\rightarrow$ structural geometry — depth and edge (93–97\%)  
+$\rightarrow$ dense semantic representations — segmentation (91\%)  
+$\rightarrow$ semantic content probes — captions and object detection (88–91\%)  
+$\rightarrow$ global colour statistics — pixel shuffle and mean RGB (64–81\%).
+
+This hierarchy indicates that structural and low-level statistical differences between the datasets are more pronounced than semantic content differences. Representations that preserve fine spatial statistics or geometric structure allow classifiers to distinguish datasets with near-perfect accuracy, whereas representations that compress images into coarser semantic abstractions retain slightly less discriminative information.
+
+The existence of this hierarchy suggests that dataset bias is distributed across multiple correlated visual attributes rather than concentrated in a single representation level.
+
+\paragraph{6. Semantic dataset differences survive compression to natural language}
+
+Caption-based classification using SentenceT5 embeddings achieves 90.99\% test accuracy. Because the classifier receives only textual descriptions rather than visual input, this result indicates that systematic differences between the datasets are sufficiently consistent to be reflected in natural language descriptions of the images.
+
+Differences in object co-occurrence patterns, scene composition, and contextual relationships between objects may therefore manifest in textual representations as well as in visual statistics. The persistence of dataset separability under this modality shift suggests that dataset identity is not solely encoded in low-level visual patterns but also in semantic content that can be described linguistically.
+
+\paragraph{7. Absolute accuracies exceed those reported in the reference framework}
+
+Across comparable transformations, the obtained accuracies exceed those reported by Zeng et al. by approximately 15–25 percentage points. This discrepancy is most likely attributable to dataset composition rather than methodological differences.
+
+The reference framework analyses separability between multiple web-scraped image datasets, which aggregate images from a wide range of photographic sources and therefore exhibit considerable internal diversity. In contrast, the dataset combination studied here includes Stable Diffusion v1.5 generated images, which are produced through a consistent generative pipeline that imposes shared priors over visual structure, texture statistics, and colour distributions.
+
+The presence of a generative dataset therefore introduces a class whose visual statistics are influenced by the generative process, potentially producing more pronounced dataset-level signatures than those observed in purely web-scraped corpora. Consequently, the results reported here should be interpreted in the context of this specific three-dataset configuration rather than as a direct replication of the reference-paper findings.
+
+\section{Demographic Attribute Separability}
+
+To investigate whether demographic attributes are encoded in non-appearance visual
+features, a series of probe experiments were conducted using transformations designed to
+isolate distinct information channels: spatial structure, semantic content, body geometry,
+and global colour statistics. These probes follow the same methodological framework
+applied in the dataset classification experiments, substituting demographic labels for
+dataset identity as the classification target. Crucially, the occlusion family of probes
+directly tests whether demographic signal persists in the scene context once the person
+region is removed, providing evidence about spurious correlations between demographic
+attributes and non-person visual features. Results are reported as AUC, with chance level
+at 0.500 for binary gender classification and 0.500 macro-averaged AUC for eight-class
+skin tone classification.
+
+%-----------------------------------------------------------------------
+\subsection{Gender Artifact Analysis}
+%-----------------------------------------------------------------------
+
+\begin{table}[htbp]
+	\centering
+	\caption{Gender separability results per image transformation and dataset.
+		All probes trained with seed 0 unless otherwise noted. AUC is the primary metric; chance level
+		is 0.500 for binary classification.}
+	\label{tab:gender_separability}
+	\small
+	\begin{tabular}{llcc}
+		\toprule
+		\textbf{Transformation} & \textbf{Probe} &
+		\textbf{Re-LAION-5B AUC} & \textbf{SD v1.5 AUC} \\
+		\midrule
+		Occlusion (full, no background)             & ResNet-50           & 0.499$^\dagger$ & 0.948 \\
+		Occlusion (masked rectangle)                & ResNet-50           & 0.501$^\dagger$ & 0.747 \\
+		Occlusion (masked rectangle, no background) & ResNet-50           & 0.499$^\dagger$ & 0.587$^\ddagger$ \\
+		Occlusion (masked segmentation)             & ResNet-50           & 0.501$^\dagger$ & 0.852 \\
+		Occlusion (masked segmentation, no bg.)     & ResNet-50           & 0.501$^\dagger$ & 0.834 \\
+		Depth at pose keypoints                     & Logistic Regression & 0.559           & 0.592 \\
+		Mean RGB                                    & Logistic Regression & 0.600           & 0.579 \\
+		Object detection (restricted)               & Logistic Regression & 0.615           & 0.608 \\
+		Object detection                            & Logistic Regression & 0.692           & 0.608 \\
+		Pose keypoints                              & MLP (seed 4)        & 0.697           & 0.680 \\
+		Base (unmodified)                           & ResNet-50           & 0.986           & 0.946 \\
+		Captions									& SentenceT5          & ---				& 0.771 \\
+		\bottomrule
+		\multicolumn{4}{l}{\footnotesize $^\dagger$ AUC at chance level; model collapsed to majority-class prediction.} \\
+		\multicolumn{4}{l}{\footnotesize $^\ddagger$ Near-chance AUC; recall $\approx 1.0$ indicates near-complete majority-class prediction.} \\
+	\end{tabular}
+\end{table}
+
+\paragraph{1. Unmodified images establish a strong separability upper bound}
+
+The base ResNet-50 probe achieves AUC 0.986 on Re-LAION-5B and 0.946 on SD v1.5,
+confirming that gender-correlated visual signal is encoded at high levels in both datasets
+before any transformation is applied. The slightly higher value on Re-LAION-5B likely
+reflects the greater photographic diversity of a web-scraped corpus, which produces a
+wider variety of appearance cues correlated with gender labels, such as facial structure,
+body morphology, hairstyle, and clothing. These results establish an upper bound against
+which all reduced representations are compared and confirm that the annotation pipeline
+produces labels sufficiently consistent to support downstream probing.
+
+\paragraph{2. Occlusion probes reveal a fundamental asymmetry between datasets}
+
+The occlusion family of probes constitutes the most consequential set of results in this
+analysis, as it directly tests whether gender information is localised within the person
+or distributed across the broader scene context.
+
+On Re-LAION-5B, every occlusion variant collapses performance to chance (AUC
+$\approx$ 0.500), regardless of whether masking uses a bounding rectangle or a tight
+segmentation contour, and regardless of whether the background is retained or removed.
+This uniform collapse establishes that gender-correlated signal in Re-LAION-5B resides
+exclusively within the visible appearance of the depicted person. No residual signal is
+recoverable from background objects, spatial layout, or any other contextual feature once
+the person region is occluded.
+
+The pattern for SD v1.5 is qualitatively different and constitutes the central finding of
+this analysis. The primary carrier of gender signal is the scene background: when the
+person is masked with a rectangle and the background is retained, the probe achieves
+AUC~0.747 from background context alone. However, the person-shaped silhouette is also
+independently informative. When the segmentation mask is applied without any background
+--- leaving the classifier with only the person-shaped occluded region and no surrounding
+scene --- performance rises to AUC~0.834, a 8.7 percentage-point increase over the
+rectangle-with-background condition. The silhouette outline itself therefore encodes
+gender signal beyond what background context alone provides, likely through the body
+shape and spatial proportions preserved by the tight contour. When both silhouette and
+background are simultaneously available under segmentation masking, performance reaches
+0.852, confirming that both sources contribute additively.
+
+The strongest evidence for the background as the dominant signal source comes from
+the sharpest drop in the table: rectangle masking with background removal, which
+eliminates both the person region and the immediately surrounding context while
+retaining only the distal image periphery, reduces performance to AUC~0.587. Removing
+the background is therefore far more damaging to classification performance than
+any other single intervention, directly demonstrating that the scene context is the
+primary carrier of gender information in SD v1.5 images. This finding directly replicates
+the contextual gender artifact identified by Meister et al.\ and demonstrates that the
+effect is substantially more pronounced in generatively produced images than in
+web-scraped corpora.
+
+\paragraph{3. Global colour statistics carry modest but consistent signal in both datasets}
+
+Mean RGB classification achieves AUC 0.600 on Re-LAION-5B and 0.579 on SD v1.5. Both
+values are in close agreement with the AUC of 0.580 reported by Meister et al.\ for mean
+RGB gender probing on COCO, providing a useful external reference point for the magnitude
+of this signal. Both datasets therefore exhibit gender-correlated photometric statistics
+at a level consistent with a general-purpose image benchmark, indicating that systematic
+differences in clothing colour or other photometric properties associated with gender
+labels produce detectable signal even under compression to three global scalars. The
+near-identical performance across datasets further suggests that this source of signal
+reflects how occupational images are composed generally, rather than a characteristic
+specific to either corpus.
+
+\paragraph{4. Geometric probes reveal body configuration as an independent signal source}
+
+Pose keypoints achieve AUC 0.697 on Re-LAION-5B and 0.680 on SD v1.5, indicating that
+normalised skeletal geometry correlates measurably with gender labels in both datasets.
+Because pose keypoints encode body proportions, posture, and limb arrangement without
+conveying colour or texture information, this result demonstrates that systematic
+differences in depicted body configurations contribute to gender separability
+independently of photometric properties.
+
+Depth values sampled at pose keypoint locations yield AUC 0.559 on Re-LAION-5B and 0.592
+on SD v1.5 --- the lowest values recorded for any probe that produces above-chance
+predictions. Although both exceed chance, the magnitude of separation is small, indicating
+that 3D geometric structure at skeletal locations contributes only weak gender-correlated
+signal. This positions depth at keypoints as a substantially less informative probe than
+skeletal geometry alone, and suggests that the dominant spurious features in these
+datasets are photometric and contextual in nature rather than geometric.
+
+\paragraph{5. Semantic probes reveal scene composition and language as additional signal carriers}
+
+Object detection probes show that scene composition carries gender-correlated information
+beyond what body geometry alone explains. On Re-LAION-5B, the unrestricted object
+detection probe achieves AUC 0.692, compared to 0.615 for the person-category-restricted
+variant. This gap of 7.7 percentage points demonstrates that the objects appearing
+alongside people in Re-LAION-5B reflect gender-stereotyped scene compositions
+independently of the person's appearance. On SD v1.5, both variants converge at AUC
+0.608, indicating that the generative model does not amplify this form of object-level
+contextual stereotyping to the same degree as is observed for spatial background signal.
+
+Caption-based classification using SentenceT5 embeddings achieves AUC 0.771 on SD v1.5,
+demonstrating that gender-correlated signal survives compression to natural language.
+Because the probe receives only textual input, this result indicates that the generative
+pipeline systematically produces scene descriptions whose semantic content co-varies with
+the gender of the depicted person: occupational contexts, object references, and activity
+settings described in captions differ systematically across gender categories. The
+persistence of this signal through a complete modality shift suggests that the stereotyping
+identified through visual probes is coherent and cross-modal rather than confined to
+low-level image statistics. Caption probing was not conducted on Re-LAION-5B as text
+metadata was not retained for this subset.
+
+\paragraph{6. The two datasets exhibit qualitatively distinct spurious gender feature profiles}
+
+Considered jointly, the results reveal a structural divergence between the two datasets.
+In Re-LAION-5B, gender separability is driven almost entirely by the person's own
+appearance: occlusion collapses performance to chance, and the residual contributions
+of colour statistics, object co-occurrence, and skeletal geometry are modest. In SD v1.5,
+gender information is distributed across the full image: background context alone
+reproduces near-complete classification performance, every region of the image contributes
+demographic signal, and stereotyping is recoverable even from natural language
+descriptions. This profile is consistent with the hypothesis that SD v1.5 amplifies the
+demographic priors of its Re-LAION-based training corpus, projecting them not only onto
+the generated person but onto the surrounding scene, the spatial layout, and the textual
+register of the generated content.
+
+%-----------------------------------------------------------------------
+\subsection{Skin Tone Artifact Analysis}
+%-----------------------------------------------------------------------
+
+\begin{table}[htbp]
+	\centering
+	\caption{Skin tone separability results per image transformation and dataset
+		(MST 1--8). All probes trained with seed 0 unless otherwise noted.
+		Macro-averaged AUC is the primary metric; chance level is 0.500.}
+	\label{tab:skintone_separability_overall}
+	\small
+	\begin{tabular}{llcc}
+		\toprule
+		\textbf{Transformation} & \textbf{Probe} &
+		\textbf{Re-LAION-5B AUC} & \textbf{SD v1.5 AUC} \\
+		\midrule
+		Occlusion (masked rectangle)                & ResNet-50           & 0.514$^\dagger$ & 0.728 \\
+		Occlusion (masked rectangle, no background) & ResNet-50           & 0.515$^\dagger$ & 0.660 \\
+		Occlusion (masked segmentation)             & ResNet-50           & 0.514$^\dagger$ & 0.774 \\
+		Occlusion (masked segmentation, no bg.)     & ResNet-50           & 0.515$^\dagger$ & 0.704 \\
+		Mean RGB                                    & Logistic Regression & 0.563           & 0.543 \\
+		Object detection (restricted)               & Logistic Regression & 0.591           & 0.626 \\
+		Pose keypoints                              & MLP (seed 4)        & 0.596           & 0.666 \\
+		Depth at pose keypoints                     & Logistic Regression & 0.598           & 0.655 \\
+		Object detection                            & Logistic Regression & 0.611           & 0.663 \\
+		Captions$^\ddagger$                         & SentenceT5          & 0.749           & 0.673 \\
+		Base (unmodified)                           & ResNet-50           & 0.968           & 0.900 \\
+		\bottomrule
+		\multicolumn{4}{l}{\footnotesize $^\dagger$ Near-chance macro AUC; per-class AUCs at chance except MST8 (small-sample artefact).} \\
+		\multicolumn{4}{l}{\footnotesize $^\ddagger$ Probe operates on BLIP Large captions encoded via SentenceT5-Base.} \\
+	\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Per-class skin tone AUC per image transformation and dataset
+		(MST 1--8). MST~9 and MST~10 are absent from both datasets and left blank.
+		All probes trained with seed 0 unless otherwise noted.}
+	\label{tab:skintone_separability_perclass}
+	\small
+	\begin{tabular}{llcccccccccc}
+		\toprule
+		\textbf{Transf.} & \textbf{Dataset} &
+		\textbf{MST1} & \textbf{MST2} & \textbf{MST3} & \textbf{MST4} &
+		\textbf{MST5} & \textbf{MST6} & \textbf{MST7} & \textbf{MST8} &
+		\textbf{MST9} & \textbf{MST10} \\
+		\midrule
+		Occ.\ (rect.)         & Re-LAION-5B & 0.499 & 0.499 & 0.499 & 0.499 & 0.501 & 0.501 & 0.499 & 0.614 & --- & --- \\
+		Occ.\ (rect.)         & SD v1.5     & 0.837 & 0.777 & 0.715 & 0.594 & 0.625 & 0.685 & 0.741 & 0.853 & --- & --- \\
+		Occ.\ (rect., no bg.) & Re-LAION-5B & 0.499 & 0.501 & 0.501 & 0.501 & 0.501 & 0.499 & 0.501 & 0.614 & --- & --- \\
+		Occ.\ (rect., no bg.) & SD v1.5     & 0.783 & 0.679 & 0.631 & 0.538 & 0.586 & 0.595 & 0.618 & 0.846 & --- & --- \\
+		Occ.\ (seg.)          & Re-LAION-5B & 0.499 & 0.499 & 0.499 & 0.501 & 0.499 & 0.501 & 0.499 & 0.614 & --- & --- \\
+		Occ.\ (seg.)          & SD v1.5     & 0.876 & 0.821 & 0.751 & 0.625 & 0.645 & 0.738 & 0.815 & 0.921 & --- & --- \\
+		Occ.\ (seg., no bg.)  & Re-LAION-5B & 0.501 & 0.501 & 0.499 & 0.501 & 0.501 & 0.499 & 0.501 & 0.614 & --- & --- \\
+		Occ.\ (seg., no bg.)  & SD v1.5     & 0.817 & 0.719 & 0.669 & 0.581 & 0.596 & 0.655 & 0.712 & 0.883 & --- & --- \\
+		Mean RGB              & Re-LAION-5B & 0.546 & 0.586 & 0.570 & 0.576 & 0.518 & 0.563 & 0.583 & 0.558 & --- & --- \\
+		Mean RGB              & SD v1.5     & 0.585 & 0.594 & 0.525 & 0.520 & 0.529 & 0.538 & 0.551 & 0.499 & --- & --- \\
+		Obj.\ det.\ (restr.)  & Re-LAION-5B & 0.682 & 0.596 & 0.578 & 0.550 & 0.540 & 0.548 & 0.577 & 0.653 & --- & --- \\
+		Obj.\ det.\ (restr.)  & SD v1.5     & 0.691 & 0.648 & 0.630 & 0.538 & 0.579 & 0.599 & 0.627 & 0.692 & --- & --- \\
+		Pose keypoints        & Re-LAION-5B & 0.691 & 0.633 & 0.576 & 0.565 & 0.554 & 0.543 & 0.573 & 0.630 & --- & --- \\
+		Pose keypoints        & SD v1.5     & 0.770 & 0.668 & 0.640 & 0.539 & 0.588 & 0.610 & 0.638 & 0.875 & --- & --- \\
+		Depth at pose         & Re-LAION-5B & 0.730 & 0.638 & 0.581 & 0.560 & 0.541 & 0.541 & 0.565 & 0.624 & --- & --- \\
+		Depth at pose         & SD v1.5     & 0.756 & 0.657 & 0.630 & 0.536 & 0.583 & 0.602 & 0.615 & 0.859 & --- & --- \\
+		Obj.\ det.            & Re-LAION-5B & 0.705 & 0.639 & 0.586 & 0.564 & 0.550 & 0.564 & 0.588 & 0.691 & --- & --- \\
+		Obj.\ det.            & SD v1.5     & 0.735 & 0.683 & 0.649 & 0.566 & 0.589 & 0.637 & 0.672 & 0.775 & --- & --- \\
+		Captions$^\ddagger$   & Re-LAION-5B & 0.784 & 0.732 & 0.719 & 0.760 & 0.734 & 0.751 & 0.745 & 0.769 & --- & --- \\
+		Captions$^\ddagger$   & SD v1.5     & 0.772 & 0.688 & 0.653 & 0.582 & 0.594 & 0.653 & 0.692 & 0.747 & --- & --- \\
+		Base                  & Re-LAION-5B & 0.976 & 0.976 & 0.969 & 0.961 & 0.948 & 0.959 & 0.973 & 0.980 & --- & --- \\
+		Base                  & SD v1.5     & 0.966 & 0.935 & 0.883 & 0.779 & 0.783 & 0.895 & 0.964 & 0.996 & --- & --- \\
+		\bottomrule
+		\multicolumn{12}{l}{\footnotesize $^\ddagger$ Probe operates on BLIP Large captions encoded via SentenceT5-Base.} \\
+	\end{tabular}
+\end{table}
+
+\paragraph{1. Unmodified images establish a strong separability upper bound}
+
+The base ResNet-50 probe achieves macro-AUC 0.968 on Re-LAION-5B and 0.900 on SD v1.5,
+confirming that skin tone information is strongly encoded in person appearance within both
+datasets. The per-class results are notably consistent across MST categories for
+Re-LAION-5B (range 0.948--0.980), whereas SD v1.5 exhibits considerably wider variation
+(0.779--0.996), with the lowest values in the mid-range tones MST4 and MST5. This
+disparity indicates that the generative model renders skin tone signal less uniformly
+across the tonal spectrum than is observed in real imagery, a tendency that becomes more
+pronounced under reduced representations.
+
+\paragraph{2. Occlusion probes reveal the same dataset asymmetry observed for gender,
+	with per-class variation}
+
+All occlusion variants on Re-LAION-5B produce macro-AUC values at chance (0.514--0.515).
+The per-class breakdown confirms this is not an artefact of cancellation: individual
+AUCs for MST1 through MST7 are uniformly at chance (0.499--0.501) under every masking
+strategy. The exception is MST8, which registers AUC 0.614 consistently across all
+variants including those where the background is fully removed; given that this value
+is stable across masking strategies, it most plausibly reflects a small-sample artefact
+in this category rather than genuine contextual signal. The results establish that skin
+tone information in Re-LAION-5B is localised entirely within the visible person region,
+replicating the finding observed for gender in this dataset.
+
+On SD v1.5, occlusion probes retain substantial above-chance performance across all
+masking strategies, with macro-AUC ranging from 0.660 to 0.774. The per-class results
+reveal that this contextual signal is concentrated at the extremes of the tonal
+distribution: MST1 and MST8 achieve the highest per-class AUCs across all variants
+(e.g., 0.876 and 0.921 under segmentation masking), while mid-range tones MST4 and MST5
+remain substantially lower. This indicates that the generative model encodes the strongest
+contextual skin tone priors at the tonal extremes, where stereotypical scene associations
+may be most pronounced in the training data.
+
+The same occlusion gradient observed for gender is present here: segmentation masking
+consistently outperforms rectangle masking, and retaining the background alongside person
+occlusion consistently outperforms background removal. Both patterns confirm that the
+immediately surrounding scene is the primary carrier of contextual skin tone signal in
+SD v1.5.
+
+\paragraph{3. Global colour statistics carry weaker photometric signal than for gender}
+
+Mean RGB achieves macro-AUC 0.563 on Re-LAION-5B and 0.543 on SD v1.5, noticeably lower
+than the corresponding gender values of 0.600 and 0.579. This reduction is consistent
+with the expectation that global colour statistics carry stronger signal for an attribute
+whose visual correlates include clothing and hairstyle than for one whose primary cue is a
+specific tissue-level photometric property: averaging colour across the entire image
+dilutes the localised skin tone signal more severely than it dilutes the broader
+gender-correlated colour variation. Per-class mean RGB AUCs are broadly distributed
+across all MST categories for Re-LAION-5B (range 0.518--0.586), with no clear
+concentration at tonal extremes, suggesting that colour-based skin tone stereotyping at
+the global level is diffuse rather than category-specific.
+
+\paragraph{4. Geometric probes produce comparable signal for skin tone and gender, with
+	SD v1.5 showing stronger encoding}
+
+Pose keypoints and depth at pose keypoints yield macro-AUC values of 0.596 and 0.598
+respectively on Re-LAION-5B, and 0.666 and 0.655 on SD v1.5. These values are slightly
+higher than the corresponding gender results and, notably, close to one another within
+each dataset, indicating that skeletal geometry and 3D keypoint depth carry roughly
+equivalent amounts of skin tone information. The consistently higher SD v1.5 figures
+across both probes reinforce the pattern that the generative model encodes demographic
+attributes more pervasively into structural representations than the web-scraped corpus.
+
+The per-class breakdown for pose keypoints reveals that, as with the occlusion probes,
+the strongest signal in SD v1.5 is concentrated in MST1 and MST8 (AUC 0.770 and 0.875
+respectively), while MST4 remains close to 0.539. This convergent finding across multiple
+probe types suggests that the systematic scene stereotyping identified under occlusion
+propagates through body configuration priors as well as background context.
+
+\paragraph{5. Object detection probes show that scene composition encodes skin tone in
+	both datasets}
+
+Both object detection variants achieve moderate macro-AUC values across datasets:
+the restricted probe yields 0.591 on Re-LAION-5B and 0.626 on SD v1.5, while the
+unrestricted probe achieves 0.611 and 0.663 respectively. Unlike the gender case, where
+the unrestricted probe on Re-LAION-5B substantially outperformed the restricted variant
+(0.692 vs.\ 0.615), the gap here is modest on both datasets (approximately 2 percentage
+points for Re-LAION-5B, 3.7 for SD v1.5), indicating that beyond-person object
+co-occurrence contributes less additional skin tone signal than it does for gender. The
+consistently higher SD v1.5 values, however, confirm that the generative model encodes
+skin tone more strongly in scene-level object distributions than the web-scraped corpus,
+consistent with the pattern across all non-appearance probes.
+
+\paragraph{6. Caption probing reveals a cross-dataset asymmetry absent from the visual
+	probes}
+
+Caption-based classification produces a striking reversal of the pattern observed for
+all visual probes: Re-LAION-5B achieves macro-AUC 0.749, substantially higher than SD
+v1.5 at 0.673. This asymmetry --- where the real dataset exhibits stronger linguistic
+skin tone signal than the generated dataset --- directly contrasts with the visual
+occlusion results, where SD v1.5 substantially outperformed Re-LAION-5B.
+
+The Re-LAION-5B per-class caption AUCs are notably consistent across tones
+(range 0.719--0.784), indicating that skin tone stereotyping at the linguistic level is
+distributed broadly across the full tonal spectrum rather than concentrated at the
+extremes. For SD v1.5, per-class caption AUCs show the familiar concentration at MST1
+and MST8, while mid-range tones produce lower values, mirroring the pattern seen in the
+visual probes. Together, these results suggest that while SD v1.5 embeds skin tone priors
+more pervasively into visual scene statistics than Re-LAION-5B, the corresponding
+linguistic stereotyping in the captions of real images is no weaker --- and for mid-range
+tones, stronger --- than in the generated dataset. Skin tone stereotyping in web-scraped
+data may therefore be more evenly distributed across the tonal spectrum at the semantic
+level than the visual probe results alone would suggest.
+
+\paragraph{7. Per-class results reveal systematic difficulty for mid-range skin tones
+	across all probes}
+
+Across all non-appearance probes and both datasets, a consistent ordering emerges: MST1
+and MST8 achieve the highest per-class AUCs while MST4 and MST5 produce the lowest,
+with the disparity most pronounced in SD v1.5. This pattern reflects the greater visual
+similarity of mid-range tones to neighbouring categories, which reduces the distinctiveness
+of any indirect correlates. It also raises a methodological concern: audit methods relying
+solely on macro-averaged metrics may mask substantially weaker separability for the
+categories that are simultaneously most visually ambiguous and most likely to be
+underrepresented in training data, potentially understating bias for mid-range skin tones.
+
+\paragraph{8. Skin tone and gender exhibit analogous but not identical spurious feature
+	profiles}
+
+The skin tone results largely recapitulate the structural pattern observed for gender:
+Re-LAION-5B localises demographic signal within the person region, while SD v1.5
+distributes it throughout the image. The principal differences are quantitative rather
+than qualitative --- skin tone contextual AUCs under occlusion are somewhat lower than
+those for gender, mean RGB is a weaker probe for skin tone, and the caption asymmetry
+reverses direction --- but the fundamental finding holds for both attributes: SD v1.5
+systematically projects demographic priors into scene context, object composition, body
+geometry, and linguistic register in a manner that is not observed in the web-scraped
+corpus.
+
+%-----------------------------------------------------------------------
+\subsection{Connections to Dataset Classification Results}
+%-----------------------------------------------------------------------
+
+Several structural parallels link the demographic probe experiments to the earlier
+dataset classification findings. Most directly, both analyses confirm that statistical
+signal is distributed across multiple representation levels rather than concentrated in a
+single cue: in the dataset classification experiments, separability persisted from pixel
+statistics through to natural language; gender and skin tone similarly remain above chance
+across photometric, geometric, semantic, and linguistic probes.
+
+The contrast between Re-LAION-5B and SD v1.5 in the demographic experiments also mirrors
+the role of the generative class in the dataset classification task, where the presence
+of SD v1.5 images was proposed as the explanation for classification accuracies
+exceeding those reported by Zeng et al. The occlusion results here reinforce this
+interpretation: SD v1.5 embeds demographic attributes pervasively into scene statistics
+in a manner absent from the web-scraped corpus, suggesting that its generative process
+imposes coherent distributional priors that propagate through spatial layout, object
+composition, and linguistic register.
+
+Finally, the caption results across both experiments demonstrate that semantic
+stereotyping extends beyond the visual domain. Dataset identity survived compression
+to natural language at 90.99\% accuracy in the classification task; gender and skin tone
+show comparable persistence at AUC 0.771 and 0.749 respectively. Together, these findings
+indicate that the statistical regularities distinguishing these datasets --- and the
+demographic biases embedded within them --- are coherent enough to be recoverable from
+text alone, pointing to systematic patterns in scene semantics rather than purely visual
+or generative artefacts.
