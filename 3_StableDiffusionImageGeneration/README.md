@@ -1,12 +1,71 @@
-This text file outlines the purpose of each .ipynb & .py file in this directory. 
+# Image Generation Pipeline
 
-ImageGenerationTesting.ipynb - This notebook performs comparison across several models / models + speed LoRa trained on the Re-Laion5B datasets to identify the best overall model
-ImageGeneration.py - This python script performs image generation using the best performing model derived in ImageGenerationTesting.ipynb and the prompts defined in prompts.json. Generated images are split into valid / invalid being filtered in accordance with fac & pose detection. 
-ImageGeneration_NoValidation.py - This python script performs image generation using the best performing model derived in ImageGenerationTesting.ipynb and the prompts defined in prompts.json. This does not have the validation logic of the other script and is aimed at generating arbitrary images to use a test set for ensuring the dataset classifiaction models work on generic non-person depicting images. 
-Setup.ipynb - This file outlines the Environment setup & Model Downloads
+## Overview
 
-The code in the above.ipynb & .py has been re-teseted and confirmed to be working. 
+This directory contains the pipeline for generating synthetic profession-conditioned images using Stable Diffusion v1.5.
 
-Furthermore running the relevant notebooks produces the following: 
+The pipeline consists of:
 
-1. Generates synthetic images aligned with the provided prompts -> E:\ImageRetrieval\StableDiffusionGeneratedImages
+1. Model comparison and selection across SD variants
+2. Profession-conditioned image generation with face/person validation
+3. Unconditioned image generation for dataset classification testing
+
+The scripts and notebooks in this directory have been re-tested and verified to be functioning correctly.
+
+---
+
+## Files
+
+### `ImageGenerationTesting.ipynb`
+
+Compares multiple text-to-image models and configurations to identify the best balance of speed and quality.
+
+Models evaluated:
+- Stable Diffusion v1.5 (baseline)
+- Stable Diffusion v1.5 + LCM LoRA
+- Stable Diffusion v1.2
+- SDXL / SDXL + LoRA / SDXL-Turbo
+- SSD-1B / SSD-1B + LoRA
+- PixArt-Alpha / PixArt-Alpha LCM
+- Segmind Vega / Vega RT
+
+Conclusion: SD v1.5 + LCM LoRA selected as the production model.
+
+---
+
+### `ImageGeneration.py`
+
+Generates profession-conditioned images using SD v1.5 + LCM LoRA with post-generation validation.
+
+Validation pipeline:
+- YOLO person detection
+- YOLO face detection (exactly one face required)
+- MediaPipe FaceMesh segmentation
+- Spatial consistency between face and person bounding boxes
+- Aesthetic quality scoring via CLIP embeddings
+
+Output:
+E:\ImageRetrieval\StableDiffusionGeneratedImages\valid\{profession}\
+E:\ImageRetrieval\StableDiffusionGeneratedImages\invalid\{profession}\
+E:\ImageRetrieval\StableDiffusionGeneratedImages\ImageGenMetadata.csv
+
+---
+
+### `prompts.json`
+
+Defines the profession list, prompt template, and negative prompt used by `ImageGeneration.py`.
+
+Prompt template:
+`full-body realistic photo of a {profession}, standing, in a professional setting appropriate for their occupation, sharp focus, 35mm lens, natural professional lighting`
+
+---
+
+### `Setup.ipynb`
+
+Documents and performs environment setup required for:
+- Stable Diffusion / Diffusers
+- LCM LoRA weights
+- Ultralytics YOLO
+- MediaPipe
+- OpenCLIP (aesthetic scoring)
+- Supporting dependencies

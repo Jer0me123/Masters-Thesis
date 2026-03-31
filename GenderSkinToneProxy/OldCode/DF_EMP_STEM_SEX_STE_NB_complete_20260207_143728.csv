@@ -1,0 +1,292 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,STE,STE_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,834.712
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,711.08
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,122.877
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,529.083
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,449.671
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,78.72
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,305.63
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,261.409
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,44.157
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2024,0.755
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2024,0.692
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,1149.068
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,980.048
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,169.02
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,661.742
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,561.018
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,100.724
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,487.326
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,419.03
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,68.296
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,5431.92
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,4573.295
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,857.277
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,3190.894
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,2767.668
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,421.877
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,2241.027
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,1805.627
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,435.4
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2024,1.348
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2024,1.348
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,5705.457
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,5217.602
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,487.856
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2023,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,3295.264
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,2979.399
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,315.865
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2023,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,2410.194
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,2238.203
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,171.991
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2023,
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2020,3157.062
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2020,2362.393
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2020,794.669
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2020,2039.138
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2020,1480.82
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2020,558.318
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2020,1117.924
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2020,881.573
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2020,236.351
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,879.566
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,767.251
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,112.113
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,545.989
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,459.431
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,86.356
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,333.577
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,307.82
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,25.757
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,490.744
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,353.027
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,137.717
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,301.965
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,201.078
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,100.887
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,188.778
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,151.949
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,36.83
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,807.461
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,724.263
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,83.198
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,458.141
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,406.57
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,51.572
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,349.32
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,317.694
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,31.626
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,1223.672
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,941.171
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,282.501
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,646.355
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,506.144
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,140.21
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,577.317
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,435.027
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,142.291
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,9405.903
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,7627.758
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,1778.146
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,4997.278
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,3967.235
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,1030.043
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,4408.625
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,3660.522
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,748.103
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2020,971.389
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2020,816.891
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2020,154.498
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2020,550.3
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2020,459.071
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2020,91.229
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2020,421.089
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2020,357.82
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2020,63.269
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2017,1546.792
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2017,912.11
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2017,630.351
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2017,4.332
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2017,1075.705
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2017,614.161
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2017,457.848
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2017,3.696
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2017,471.087
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2017,297.949
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2017,172.503
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2017,0.636
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2022,7331.446
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2022,6910.524
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2022,420.923
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2022,4279.018
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2022,3938.535
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2022,340.483
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2022,3052.428
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2022,2971.988
+JPN,Japan,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2022,80.44
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,3923.341
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,3119.688
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,803.653
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,2452.281
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,1908.142
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,544.139
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,1471.06
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,1211.546
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,259.514
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,1033.7
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,850.869
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,182.832
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,632.96
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,495.02
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,137.94
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,400.74
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,355.848
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,44.892
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,158.53
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,121.943
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,36.573
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,86.165
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,65.466
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,20.685
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,72.365
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,56.477
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,15.888
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2024,
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,30465.909
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,29417.865
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,1048.044
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,14420.397
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,13903.362
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,517.035
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,16045.512
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,15514.502
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,531.009
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,2290.85
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,2008.335
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,282.516
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,1224.041
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,1046.152
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,177.889
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,1066.81
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,962.182
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,104.627
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2023,4277.58
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2023,3390.266
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2023,887.314
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2023,2625.652
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2023,2037.053
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2023,588.599
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2023,1651.928
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2023,1353.213
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2023,298.715
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,15756.387
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,13794.283
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,1757.81
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2024,204.294
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,11206.652
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,9544.337
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,1530.169
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2024,132.146
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,4549.735
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,4249.947
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,227.641
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2024,72.148
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2023,1917.351
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2023,1821.441
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2023,95.91
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2023,975.548
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2023,937.558
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2023,37.989
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2023,941.804
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2023,883.883
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2023,57.921
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,116.809
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,113.343
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,3.466
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,74.986
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,72.726
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,2.26
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,41.823
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,40.617
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,1.206
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,1489.139
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,1387.3
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,101.839
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,790.234
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,739.065
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,51.17
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,698.905
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,648.235
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,50.67
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,1933.067
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,1794.368
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,138.699
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2016,0.526
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,1153.114
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,1061.491
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,91.623
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2016,
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,779.953
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,732.878
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,47.075
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2016,
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,2011.299
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,1893.302
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,117.997
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2015,
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,1427.567
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,1322.95
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,104.618
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2015,
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,583.732
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,570.352
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,13.379
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2015,
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,769.536
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,689.996
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,79.539
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,444.088
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,401.304
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,42.784
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,325.447
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,288.693
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,36.755
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2022,569.127
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2022,395.435
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2022,172.581
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_X,Workers not classifiable by status,2022,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2022,398.6
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2022,270.852
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2022,127.066
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_X,Workers not classifiable by status,2022,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2022,170.527
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2022,124.583
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2022,45.515
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_X,Workers not classifiable by status,2022,
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2019,1939.316
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2019,1027.905
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2019,911.412
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2019,1264.26
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2019,577.576
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2019,686.684
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2019,675.057
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2019,450.329
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2019,224.728
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_TOTAL,Total,2024,2591.414
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_EES,Employees,2024,2336.886
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,STE_AGGREGATE_SLF,Self-employed,2024,254.528
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_TOTAL,Total,2024,1612.634
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_EES,Employees,2024,1425.848
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,STE_AGGREGATE_SLF,Self-employed,2024,186.786
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_TOTAL,Total,2024,978.78
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_EES,Employees,2024,911.038
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,STE_AGGREGATE_SLF,Self-employed,2024,67.742

@@ -21,6 +21,72 @@ import json
 import concurrent.futures
 from collections import deque
 
+"""
+==============================================================================
+PROGRAM OVERVIEW
+==============================================================================
+
+This program implements an automated pipeline for generating and validating
+synthetic images of people in various professions using Stable Diffusion.
+
+KEY COMPONENTS:
+
+1. IMAGE GENERATION
+   - Uses Stable Diffusion v1.5 with LCM LoRA for fast generation (4 steps)
+   - Generates images based on profession-specific prompts from JSON config
+   - Supports batch generation with configurable batch sizes
+
+2. MULTI-THREADED VALIDATION
+   - Asynchronous validation using a worker thread pool
+   - Each image is validated against multiple criteria:
+     * Person detection (YOLO)
+     * Face detection (YOLO) - must detect exactly one face
+     * Face segmentation (MediaPipe FaceMesh)
+     * Spatial consistency between face and person bounding boxes
+     * Aesthetic quality score using CLIP embeddings
+
+3. VALIDATION CRITERIA
+   - Person must be detected with sufficient confidence
+   - Exactly one face must be present
+   - Face must be spatially consistent with person (centroid-based association)
+   - Face should be in upper half of person box (anatomical constraint)
+   - Face-to-person size ratio must exceed minimum threshold
+   - Aesthetic score must meet minimum quality threshold
+
+4. OUTPUT STRUCTURE
+   - valid/[profession]/: Valid images organized by profession
+   - valid/[profession]/face_crops/: Segmented face crops
+   - invalid/[profession]/: Invalid images with rejection reason in filename
+   - ImageGenMetadata.csv: Metadata including boxes and aesthetic scores
+
+5. PERFORMANCE OPTIMIZATIONS
+   - Pipelined generation and validation (GPU generates while CPU validates)
+   - Async I/O using thread pools for non-blocking file saves
+   - Image caching to avoid redundant operations
+   - Buffered CSV writing
+
+WORKFLOW:
+1. Load prompt configuration and model weights
+2. For each profession:
+   a. Generate images in batches
+   b. Submit each image for async validation
+   c. Compute aesthetic scores for valid detections
+   d. Save valid images and face crops
+   e. Log metadata to CSV
+3. Continue until target number of valid images reached per profession
+
+USAGE EXAMPLE:
+python ImageGeneration.py \
+    --output_dir "./output" \
+    --yolo_person_path "models/yolo12s.pt" \
+    --yolo_face_path "models/yolov12l-face.pt" \
+    --prompt_config "prompts.json" \
+    --total_images_per_label 1000 \
+    --batch_size 2 \
+    --device "cuda"
+==============================================================================
+"""
+
 # ============================================================
 # GEOMETRIC UTILITIES
 # ============================================================
@@ -680,73 +746,3 @@ if __name__ == "__main__":
     validator.shutdown()
 
 # .\.venv\Scripts\python.exe ImageGeneration.py --output_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages" --yolo_person_path "models\yolo12s.pt" --yolo_face_path "models\yolov12l-face.pt" --total_images_per_label 1000 --batch_size 2 --device "cuda" --prompt_config "prompts.json"
-
-
-
-# .\.venv\Scripts\python.exe ImageGeneration.py --output_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages" --yolo_person_path "models\yolo12s.pt" --yolo_face_path "models\yolov12l-face.pt" --total_images_per_label 1000 --batch_size 2 --device "cuda" --prompt_config "prompts.json"
-
-"""
-==============================================================================
-PROGRAM OVERVIEW
-==============================================================================
-
-This program implements an automated pipeline for generating and validating
-synthetic images of people in various professions using Stable Diffusion.
-
-KEY COMPONENTS:
-
-1. IMAGE GENERATION
-   - Uses Stable Diffusion v1.5 with LCM LoRA for fast generation (4 steps)
-   - Generates images based on profession-specific prompts from JSON config
-   - Supports batch generation with configurable batch sizes
-
-2. MULTI-THREADED VALIDATION
-   - Asynchronous validation using a worker thread pool
-   - Each image is validated against multiple criteria:
-     * Person detection (YOLO)
-     * Face detection (YOLO) - must detect exactly one face
-     * Face segmentation (MediaPipe FaceMesh)
-     * Spatial consistency between face and person bounding boxes
-     * Aesthetic quality score using CLIP embeddings
-
-3. VALIDATION CRITERIA
-   - Person must be detected with sufficient confidence
-   - Exactly one face must be present
-   - Face must be spatially consistent with person (centroid-based association)
-   - Face should be in upper half of person box (anatomical constraint)
-   - Face-to-person size ratio must exceed minimum threshold
-   - Aesthetic score must meet minimum quality threshold
-
-4. OUTPUT STRUCTURE
-   - valid/[profession]/: Valid images organized by profession
-   - valid/[profession]/face_crops/: Segmented face crops
-   - invalid/[profession]/: Invalid images with rejection reason in filename
-   - ImageGenMetadata.csv: Metadata including boxes and aesthetic scores
-
-5. PERFORMANCE OPTIMIZATIONS
-   - Pipelined generation and validation (GPU generates while CPU validates)
-   - Async I/O using thread pools for non-blocking file saves
-   - Image caching to avoid redundant operations
-   - Buffered CSV writing
-
-WORKFLOW:
-1. Load prompt configuration and model weights
-2. For each profession:
-   a. Generate images in batches
-   b. Submit each image for async validation
-   c. Compute aesthetic scores for valid detections
-   d. Save valid images and face crops
-   e. Log metadata to CSV
-3. Continue until target number of valid images reached per profession
-
-USAGE EXAMPLE:
-python ImageGeneration.py \
-    --output_dir "./output" \
-    --yolo_person_path "models/yolo12s.pt" \
-    --yolo_face_path "models/yolov12l-face.pt" \
-    --prompt_config "prompts.json" \
-    --total_images_per_label 1000 \
-    --batch_size 2 \
-    --device "cuda"
-==============================================================================
-"""

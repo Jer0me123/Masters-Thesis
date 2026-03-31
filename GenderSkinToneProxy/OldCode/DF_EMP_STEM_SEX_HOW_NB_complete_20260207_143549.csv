@@ -1,0 +1,619 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,HOW,HOW_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,834.712
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,109.887
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,48.839
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,133.58
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,101.087
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,171.485
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,220.178
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,49.657
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,529.083
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,57.278
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,23.322
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,57.386
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,58.864
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,126.316
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,167.857
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,38.06
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,305.63
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,52.608
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,25.517
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,76.195
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,42.223
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,45.169
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,52.321
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,11.597
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,1149.068
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,14.199
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,65.662
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,165.004
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,103.133
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,86.466
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,538.201
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,95.083
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2024,81.32
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,661.742
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,6.859
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,26.089
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,53.922
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,46.899
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,42.467
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,379.037
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,67.24
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2024,39.229
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,487.326
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,7.339
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,39.573
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,111.081
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,56.234
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,43.999
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,159.164
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,27.844
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2024,42.091
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,5431.92
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,705.767
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,149.483
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,625.873
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,450.773
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,1743.898
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,1317.322
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,438.805
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2020,8.202
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,3190.894
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,368.502
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,70.56
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,293.982
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,228.578
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,1059.319
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,888.747
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,281.205
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2020,7.511
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,2241.027
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,337.265
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,78.922
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,331.89
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,222.195
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,684.579
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,428.576
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,157.6
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2020,0.691
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,5705.457
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,510.962
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,163.849
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,681.156
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,461.491
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,1758.64
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,1656.385
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,414.96
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2024,58.016
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,3295.264
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,223.449
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,67.877
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,231.76
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,217.501
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,1065.617
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,1140.551
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,310.121
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2024,38.388
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,2410.194
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,287.513
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,95.972
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,449.396
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,243.99
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,693.023
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,515.834
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,104.839
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2024,19.628
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2020,3157.062
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2020,367.767
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2020,98.516
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2020,300.705
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2020,236.063
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2020,599.478
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2020,1324.017
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2020,211.984
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2020,18.531
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2020,2039.138
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2020,219.543
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2020,51.262
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2020,145.186
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2020,130.522
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2020,288.095
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2020,1027.061
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2020,165.122
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2020,12.347
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2020,1117.924
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2020,148.224
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2020,47.254
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2020,155.519
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2020,105.542
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2020,311.383
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2020,296.955
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2020,46.863
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2020,6.185
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,879.566
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,56.151
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,24.658
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,76.694
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,87.074
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,80.207
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,487.247
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,67.535
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2021,0.494
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,545.989
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,31.619
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,12.636
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,35.242
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,52.045
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,44.214
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,323.061
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,47.173
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2021,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,333.577
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,24.532
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,12.023
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,41.452
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,35.029
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,35.993
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,164.186
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,20.361
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2021,0.378
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,490.744
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,18.805
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,2.749
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,27.22
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,29.025
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,8.408
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,336.067
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,45.284
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,301.965
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,10.512
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,1.559
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,15.113
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,14.589
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,3.943
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,202.444
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,36.567
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,188.778
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,8.292
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,1.19
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,12.108
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,14.436
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,4.464
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,133.624
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,8.717
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2024,23.186
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2024,17.239
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2024,5.946
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,807.461
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,87.56
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,14.948
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,67.659
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,81.244
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,106.413
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,353.456
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,56.495
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2024,39.686
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,458.141
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,37.241
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,7.94
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,33.959
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,46.677
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,48.957
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,221.97
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,38.158
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2024,23.24
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,349.32
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,50.319
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,7.009
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,33.7
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,34.568
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,57.456
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,131.486
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,18.337
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2024,16.446
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,1223.672
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,60.304
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,63.428
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,211.928
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,141.4
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,109.622
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,496.722
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,134.577
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2024,5.692
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,646.355
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,25.835
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,20.94
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,76.185
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,64.956
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,52.908
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,310.104
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,93.293
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2024,
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,577.317
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,34.469
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,42.488
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,135.743
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,76.444
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,56.714
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,186.619
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,41.284
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2024,3.557
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,9405.903
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,261.74
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,199.534
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,731.093
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,787.397
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,542.415
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,6115.564
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,768.16
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,4997.278
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,112.093
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,81.175
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,305.741
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,338.191
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,179.272
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,3493.962
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,486.845
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,4408.625
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,149.647
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,118.36
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,425.353
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,449.206
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,363.143
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,2621.601
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,281.315
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2017,1546.792
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2017,25.514
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2017,73.757
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2017,99.037
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2017,62.414
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2017,41.594
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2017,801.134
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2017,443.343
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2017,1075.705
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2017,17.294
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2017,41.737
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2017,56.861
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2017,41.1
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2017,26.103
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2017,549.017
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2017,343.595
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2017,471.087
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2017,8.22
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2017,32.02
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2017,42.176
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2017,21.314
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2017,15.491
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2017,252.117
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2017,99.749
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,3923.341
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,84.503
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,116.73
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,280.698
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,233.091
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,240.441
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,2161.337
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,764.742
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,2452.281
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,45.795
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,67.799
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,144.679
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,123.384
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,118.781
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,1348.39
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,573.267
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,1471.06
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,38.708
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,48.931
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,136.019
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,109.707
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,121.661
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,812.947
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,191.475
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2024,41.799
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2024,30.186
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2024,11.613
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,1033.7
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,42.028
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,54.339
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,89.622
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,74.788
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,138.666
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,469.56
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,164.698
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,632.96
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,21.062
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,32.173
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,51.618
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,37.136
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,50.691
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,319.017
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,121.264
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,400.74
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,20.966
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,22.165
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,38.005
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,37.652
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,87.975
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,150.544
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,43.434
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2023,515.264
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2023,317.239
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2023,198.025
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,158.53
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,12.089
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,5.225
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,18.857
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,25.506
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,23.318
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,64.213
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,9.322
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2020,21.64
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,86.165
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,5.488
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,2.03
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,7.469
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,10.124
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,9.381
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,45.008
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,6.664
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2020,11.868
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,72.365
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,6.601
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,3.195
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,11.388
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,15.382
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,13.937
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,19.204
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,2.657
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2020,9.773
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,30465.909
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,1060.699
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,1095.033
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,2987.892
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,2086.654
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,2300.969
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,17953.139
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,2981.523
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,14420.397
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,415.626
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,351.511
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,873.006
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,769.519
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,655.743
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,9430.979
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,1924.012
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,16045.512
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,645.073
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,743.522
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,2114.886
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,1317.135
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,1645.225
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,8522.16
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,1057.511
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2023,4277.58
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2023,80.838
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2023,303.197
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2023,366.6
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2023,221.113
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2023,419.12
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2023,2212.129
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2023,674.585
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2023,2625.652
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2023,48.041
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2023,121.307
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2023,212.944
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2023,112.879
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2023,214.596
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2023,1422.389
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2023,493.497
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2023,1651.928
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2023,32.798
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2023,181.89
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2023,153.656
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2023,108.234
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2023,204.524
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2023,789.74
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2023,181.088
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,15756.387
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,8.624
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,195.033
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,117.122
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,323.1
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,846.933
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,14265.577
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,11206.652
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,36.931
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,46.383
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,85.265
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,350.464
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,10684.262
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,4549.735
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,158.102
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,70.739
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,237.835
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,496.469
+IND,India,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,3581.315
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2023,1917.351
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2023,16.617
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2023,134.113
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2023,189.792
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2023,54.134
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2023,19.448
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2023,1314.232
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2023,189.014
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2023,975.548
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2023,7.038
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2023,24.232
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2023,67.056
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2023,23.942
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2023,9.339
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2023,744.598
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2023,99.344
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2023,941.804
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2023,9.579
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2023,109.881
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2023,122.737
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2023,30.193
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2023,10.109
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2023,569.634
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2023,89.671
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,1489.139
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,2.571
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,5.058
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,62.355
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,41.532
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,275.676
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,923.649
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,178.299
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,790.234
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,0.792
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,3.403
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,31.625
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,25.691
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,120.658
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,530.188
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,77.878
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,698.905
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,1.779
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,1.655
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,30.73
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,15.841
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,155.018
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,393.461
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,100.421
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,1933.067
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,10.623
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,10.194
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,50.367
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,62.774
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,32.941
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,1410.712
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,355.457
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2020,
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,1153.114
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,1.261
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,3.804
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,22.878
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,34.52
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,20.178
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,839.754
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,230.719
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2020,
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,779.953
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,9.362
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,6.39
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,27.489
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,28.254
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,12.763
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,570.958
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,124.738
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2020,
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,2011.299
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,61.916
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,48.917
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,60.308
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,230.99
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,999.425
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,594.883
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,1427.567
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,46.22
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,35.511
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,41.368
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,123.334
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,705.121
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,465.999
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,583.732
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,15.696
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,13.406
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,18.939
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,107.656
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,294.304
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,128.885
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,14.86
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,10.014
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,4.846
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2022,6.944
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2022,3.873
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2022,3.071
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,769.536
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,58.329
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,26.493
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,101.73
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,41.889
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,39.451
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,404.45
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,97.193
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,444.088
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,29.82
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,10.182
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,46.412
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,16.691
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,17.709
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,250.284
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,72.99
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,325.447
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,28.509
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,16.312
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,55.317
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,25.199
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,21.742
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,154.166
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,24.203
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2022,569.127
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2022,22.336
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2022,36.406
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2022,34.394
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2022,21.97
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2022,24.026
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2022,294.15
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2022,135.548
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2022,398.6
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2022,13.939
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2022,17.984
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2022,20.287
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2022,13.441
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2022,18.356
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2022,200.711
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2022,113.585
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2022,170.527
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2022,8.397
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2022,18.421
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2022,14.108
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2022,8.529
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2022,5.67
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2022,93.439
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2022,21.963
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2022,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2022,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2022,
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_TOTAL,Total,2024,2591.414
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H00,No hours actually worked,2024,
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H01-14,1-14,2024,45.831
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H15-29,15-29,2024,136.217
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H30-34,30-34,2024,145.187
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H35-39,35-39,2024,101.432
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_H40-48,40-48,2024,1502.03
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_HGE49,49+,2024,469.462
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_TOTAL,Total,2024,1612.634
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H00,No hours actually worked,2024,
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H01-14,1-14,2024,26.541
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H15-29,15-29,2024,74.334
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H30-34,30-34,2024,88.812
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H35-39,35-39,2024,60.829
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_H40-48,40-48,2024,942.214
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_HGE49,49+,2024,314.059
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_TOTAL,Total,2024,978.78
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H00,No hours actually worked,2024,
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H01-14,1-14,2024,19.291
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H15-29,15-29,2024,61.883
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H30-34,30-34,2024,56.375
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H35-39,35-39,2024,40.604
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_H40-48,40-48,2024,559.816
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_HGE49,49+,2024,155.404
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,HOW_BANDS_X,Not elsewhere classified,2024,190.383
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,HOW_BANDS_X,Not elsewhere classified,2024,104.975
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,HOW_BANDS_X,Not elsewhere classified,2024,85.408

@@ -1,0 +1,244 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,JOB,JOB_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,834.712
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,220.453
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,614.259
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,529.083
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,68.817
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,460.265
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,305.63
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,151.636
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,153.993
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,1149.068
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,500.336
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,648.732
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,661.742
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,194.463
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,467.279
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,487.326
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,305.872
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,181.453
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,5431.92
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,594.375
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,4837.545
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,3190.894
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,186.195
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,3004.699
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,2241.027
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,408.181
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,1832.846
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,5705.457
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,851.569
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,4851.372
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_X,Unknown,2024,2.517
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,3295.264
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,214.224
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,3079.574
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_X,Unknown,2024,1.466
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,2410.194
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,637.345
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,1771.798
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_X,Unknown,2024,
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2020,3157.062
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2020,374.812
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2020,2782.249
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2020,2039.138
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2020,120.527
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2020,1918.611
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2020,1117.924
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2020,254.286
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2020,863.638
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,879.566
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,79.349
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,799.337
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,545.989
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,25.939
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,519.682
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,333.577
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,53.411
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,279.655
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_X,Unknown,2024,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_X,Unknown,2024,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_X,Unknown,2024,
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,490.744
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,10.132
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,480.611
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,301.965
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,4.328
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,297.637
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,188.778
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,5.804
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,182.975
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,807.461
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,37.231
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,770.23
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,458.141
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,17.524
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,440.617
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,349.32
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,19.707
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,329.613
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,1223.672
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,477.059
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,740.921
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_X,Unknown,2024,5.692
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,646.355
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,187.915
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,456.304
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_X,Unknown,2024,
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,577.317
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,289.144
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,284.617
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_X,Unknown,2024,3.557
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,9405.903
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,2104.172
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,7301.731
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,4997.278
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,789.449
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,4207.829
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,4408.625
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,1314.723
+BRA,Brazil,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,3093.902
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2017,1546.792
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2017,547.763
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2017,999.029
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2017,1075.705
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2017,340.28
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2017,735.425
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2017,471.087
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2017,207.484
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2017,263.604
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,3923.341
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,337.565
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,3585.775
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,2452.281
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,143.403
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,2308.878
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,1471.06
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,194.163
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,1276.897
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_X,Unknown,2020,49.437
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_X,Unknown,2020,36.934
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_X,Unknown,2020,12.503
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,1033.7
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,599.247
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,434.453
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,632.96
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,338.907
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,294.053
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,400.74
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,260.34
+PER,Peru,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,140.4
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,158.53
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,57.492
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,101.038
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,86.165
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,21.254
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,64.911
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,72.365
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,36.238
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,36.127
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,30465.909
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,4343.846
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,26122.062
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,14420.397
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,1039.066
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,13381.331
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,16045.512
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,3304.78
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,12740.731
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2023,4277.58
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2023,902.017
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2023,3375.563
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2023,2625.652
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2023,453.499
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2023,2172.153
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2023,1651.928
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2023,448.518
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2023,1203.41
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2023,1917.351
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2023,414.105
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2023,1503.246
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2023,975.548
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2023,131.606
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2023,843.941
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2023,941.804
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2023,282.499
+PHL,Philippines,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2023,659.305
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,116.809
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,3.009
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,113.801
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,74.986
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,1.471
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,73.515
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,41.823
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,1.538
+SGP,Singapore,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,40.286
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,1489.139
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,729.786
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,759.353
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,790.234
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,368.083
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,422.151
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,698.905
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,361.703
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,337.202
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,1933.067
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,126.869
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,1806.198
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_X,Unknown,2020,1773.601
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,1153.114
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,58.765
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,1094.349
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_X,Unknown,2020,1053.917
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,779.953
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,68.104
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,711.849
+VNM,Viet Nam,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_X,Unknown,2020,719.685
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2023,1902.146
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2023,363.087
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2023,1539.059
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_X,Unknown,2019,399.736
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2023,1338.335
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2023,208.718
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2023,1129.616
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_X,Unknown,2019,333.538
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2023,563.811
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2023,154.368
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2023,409.443
+EGY,Egypt,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_X,Unknown,2019,66.198
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,769.536
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,88.952
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,680.584
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,444.088
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,25.452
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,418.636
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,325.447
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,63.5
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,261.948
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2022,569.127
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2022,75.197
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2022,493.929
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2022,398.6
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2022,44.661
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2022,353.938
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2022,170.527
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2022,30.536
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2022,139.991
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2019,1939.316
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2019,372.734
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2019,1566.583
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2019,1264.26
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2019,231.923
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2019,1032.336
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2019,675.057
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2019,140.81
+NGA,Nigeria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2019,534.246
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_TOTAL,Total,2024,2591.414
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_PART,Part-time,2024,93.966
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,JOB_TIME_FULL,Full-time,2024,2497.448
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_TOTAL,Total,2024,1612.634
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_PART,Part-time,2024,48.733
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,JOB_TIME_FULL,Full-time,2024,1563.902
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_TOTAL,Total,2024,978.78
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_PART,Part-time,2024,45.233
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,JOB_TIME_FULL,Full-time,2024,933.547

@@ -1,0 +1,178 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,CBR,CBR_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,834.712
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,665.954
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,168.758
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,529.083
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,430.91
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,98.173
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,305.63
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,235.044
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,70.586
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,1149.068
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,738.577
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,410.491
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,661.742
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,427.119
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,234.623
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,487.326
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,311.458
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,175.868
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2023,
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2023,
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2023,
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,5431.92
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,4821.37
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,610.551
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2021,1.237
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,3190.894
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,2803.406
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,387.488
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2021,1.237
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,2241.027
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,2017.964
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,223.063
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2021,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,5705.457
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,4245.19
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,1459.184
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,3295.264
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,2516.198
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,779.066
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,2410.194
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,1728.992
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,680.118
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2024,
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2020,3157.062
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2020,2985.096
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2020,171.966
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2020,2039.138
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2020,1938.034
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2020,101.103
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2020,1117.924
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2020,1047.061
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2020,70.862
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,879.566
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,835.659
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,43.907
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,545.989
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,519.635
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,26.354
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,333.577
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,316.024
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,17.553
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2022,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2022,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2022,
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,490.744
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,473.895
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,16.848
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,301.965
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,292.993
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,8.972
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,188.778
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,180.902
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,7.876
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,807.461
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,704.209
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,103.252
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,458.141
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,396.38
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,61.762
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,349.32
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,307.829
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,41.49
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,1223.672
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,1123.68
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,99.992
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,646.355
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,589.617
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,56.737
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,577.317
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,534.063
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,43.255
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2023,
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2023,
+ARG,Argentina,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2023,
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2022,606.993
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2022,581.833
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2022,25.16
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2022,414.243
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2022,397.684
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2022,16.559
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2022,192.75
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2022,184.149
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2022,8.602
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,3923.341
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,3891.644
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,31.082
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,2452.281
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,2430.433
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,21.249
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,1471.06
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,1461.211
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,9.833
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2024,0.616
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2024,0.6
+MEX,Mexico,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2024,
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,146.97
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,137.611
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,9.359
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,79.385
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,74.19
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,5.195
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,67.585
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,63.421
+URY,Uruguay,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,4.164
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,30465.909
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,23888.163
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,6577.746
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,14420.397
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,11102.298
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,3318.099
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,16045.512
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,12785.865
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,3259.647
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,2290.85
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,1288.416
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,1002.328
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,1224.041
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,672.426
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,551.546
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,1066.81
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,615.99
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,450.782
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2024,0.106
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2024,0.069
+AUS,Australia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2024,0.038
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,769.536
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,570.186
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,199.349
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,444.088
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,336.854
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,107.234
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,325.447
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,233.332
+ISR,Israel,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,92.115
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2022,569.127
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2022,568.035
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2022,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_X,Status unknown,2019,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2022,398.6
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2022,397.759
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2022,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_X,Status unknown,2019,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2022,170.527
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2022,170.276
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2022,
+KEN,Kenya,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_X,Status unknown,2019,
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_TOTAL,Total,2024,2591.414
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_NATIVE,Native-born,2024,2524.255
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CBR_BIR_FOREIGN,Foreign-born,2024,67.159
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_TOTAL,Total,2024,1612.634
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_NATIVE,Native-born,2024,1566.747
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CBR_BIR_FOREIGN,Foreign-born,2024,45.887
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_TOTAL,Total,2024,978.78
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_NATIVE,Native-born,2024,957.507
+TUR,Türkiye,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CBR_BIR_FOREIGN,Foreign-born,2024,21.272

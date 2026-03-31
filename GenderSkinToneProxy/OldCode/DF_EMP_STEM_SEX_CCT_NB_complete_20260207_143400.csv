@@ -1,0 +1,130 @@
+REF_AREA,REF_AREA_LABEL,FREQ,FREQ_LABEL,MEASURE,MEASURE_LABEL,SEX,SEX_LABEL,CCT,CCT_LABEL,TIME_PERIOD,VALUE
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,834.712
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,698.827
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,135.885
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,529.083
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,447.407
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,81.675
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,305.63
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,251.42
+AUT,Austria,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,54.21
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,1149.068
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,821.649
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,327.419
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_X,Status unknown,2015,
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,661.742
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,468.626
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,193.116
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_X,Status unknown,2015,
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,487.326
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,353.023
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,134.303
+CHE,Switzerland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_X,Status unknown,2015,
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2020,4941.368
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2020,4687.958
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2020,253.41
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2020,3067.716
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2020,2885.585
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2020,182.131
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2020,1873.652
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2020,1802.373
+FRA,France,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2020,71.279
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,5705.457
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,4633.708
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,1071.492
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_X,Status unknown,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,3295.264
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,2729.024
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,566.24
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_X,Status unknown,2024,
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,2410.194
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,1904.684
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,505.252
+GBR,United Kingdom of Great Britain and Northern Ireland,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_X,Status unknown,2024,
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2020,3157.062
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2020,3071.214
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2020,85.848
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2020,2039.138
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2020,1989.42
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2020,49.718
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2020,1117.924
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2020,1081.794
+ITA,Italy,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2020,36.13
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,879.566
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,846.982
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,31.621
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,545.989
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,525.77
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,19.257
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,333.577
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,321.212
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,12.364
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_X,Status unknown,2024,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_X,Status unknown,2024,
+CZE,Czechia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_X,Status unknown,2024,
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,490.744
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,486.664
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,4.08
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,301.965
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,300.049
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,1.916
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,188.778
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,186.615
+GRC,Greece,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,2.164
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,807.461
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,767.957
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,39.504
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,458.141
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,432.598
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,25.544
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,349.32
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,335.359
+PRT,Portugal,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,13.96
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2020,971.389
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2020,878.699
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2020,74.346
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_X,Status unknown,2020,18.344
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2020,550.3
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2020,495.509
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2020,42.479
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_X,Status unknown,2020,12.312
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2020,421.089
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2020,383.19
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2020,31.867
+CHL,Chile,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_X,Status unknown,2020,6.032
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,1475.859
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,1447.197
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,28.661
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,961.82
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,939.931
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,21.889
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,514.039
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,507.266
+COL,Colombia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,6.773
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,30465.909
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,27996.911
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,2468.998
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,14420.397
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,13059.018
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,1361.379
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,16045.512
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,14937.893
+USA,United States of America,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,1107.619
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2023,4277.58
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2023,4277.026
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2023,
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2023,2625.652
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2023,2625.098
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2023,
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2023,1651.928
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2023,1651.928
+IDN,Indonesia,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2023,
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_TOTAL,Total,2024,1454.109
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_CITIZEN,National citizens,2024,1445.846
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_T,Total,CCT_CIT_NONCIT,Foreign citizens,2024,8.263
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_TOTAL,Total,2024,740.513
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_CITIZEN,National citizens,2024,733.774
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_M,Male,CCT_CIT_NONCIT,Foreign citizens,2024,6.739
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_TOTAL,Total,2024,713.596
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_CITIZEN,National citizens,2024,712.072
+THA,Thailand,A,Annual,EMP_STEM_NB,Employment in STEM occupations (previous ILO definition),SEX_F,Female,CCT_CIT_NONCIT,Foreign citizens,2024,1.524

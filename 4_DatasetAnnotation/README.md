@@ -1,41 +1,152 @@
-This text file outlines the purpose of each .ipynb & .py file in this directory. 
+# Dataset Annotation Pipeline
 
-Setup.ipynb - This file outlines the Environment setup
+## Overview
 
-<!-- Gender Classification -->
-GenderClassificationModels\GenderClassificationTesting.ipynb - This notebook serves as a testing ground for evaluating the performance of various gender classification models:
-    1. Hugging Face Gender Classification
-    2. Realistic Gender Classifier
-    3. DeepFace
-    4. InsightFace
-    5. FairFace
+This directory contains the pipeline for annotating profession-conditioned images with gender and skin tone labels.
 
-<!-- SkinTone Classification -->
-SkinToneClassificationModels\SkinToneDetectionTesting.ipynb - This notebook serves as a testing ground for evaluating the performance of various skin tone classification models:
-    1. SkinTone Classifier Library 
-    2. RandomForest
-    3. DenseNet 121
-    4. VGG16
+The pipeline consists of:
 
-GenderSkinToneAnnotation.py - This python script performs gender & skintone image annotation using the  Realistic Gender Classifier & VGG16 Trained Models
+1. Training data preparation (CCv2, MST-E, FACET datasets)
+2. Face detector evaluation and selection
+3. Gender classification model evaluation and selection
+4. Skin tone classification model training and evaluation
+5. Gender and skin tone annotation of Re-LAION-5B and SD datasets
+6. Annotation distribution assessment
 
-AnnotationDistributionAssessment.ipynb - This notebook serves to visualise the gender and skin tone label distribution across Re-Laion5B & SD generated images.
+The scripts and notebooks in this directory have been re-tested and verified to be functioning correctly.
 
-FacialDetectionEvaluation.ipynv - This notebook serves as a testing ground for evaluating the performance of various face detector models:
-    1. Retina Face
-    2. SCRFD
-    3. Yolo-Face
-    4. Mediapipe Face Detection
+---
 
-RELAion5B_Subset_Image_Retrieval.py - This python script serves to curate a high-quality subset of images from a larger dataset (LAION-5B), based on similarity scores.
+## Files
 
-DatasetPreperation.ipynb - This notebook outlines how to download the CCv2, FACET & MST-E datasets and processes via face segmentations needed for gender & skin tone model training / testing.
+### `DatasetPreperation.ipynb`
 
-The code in the above.ipynb & .py has been re-teseted and confirmed to be working. 
+Downloads and processes the training datasets required for gender and skin tone model development.
 
-Furthermore running the relevant notebooks produces the following: 
+Datasets:
+- CasualConversations v2 (CCv2)
+- Monk Skin Tone E (MST-E)
+- FACET
 
-1. Download and segments the CCv2, FACET & MST-E datasets -> G:\Thesis\MonkSkinTone_Dataset | G:\Thesis\FACET_Dataset | G:\Thesis\CasualConversationv2_Dataset
-2. Train various SkinTone annotaion models
-3. Test various gender & skin tone annotation models
-4. Annotate datasets using gender & skin tone models -> E:\ImageRetrieval\Professions_125k_ISCO_Aligned_Annotations\annotations.jsonl | E:\ImageRetrieval\StableDiffusionGeneratedImages_Annotations\annotations.jsonl
+Functionality:
+- Applies MediaPipe FaceMesh segmentation to each dataset
+- Converts MST labels to 3-bin groupings (Light/Mid/Dark)
+
+```
+
+---
+
+### `FacialDetectionEvaluation.ipynb`
+
+Evaluates face detection models on the WIDER Face validation set to select the best detector for the annotation pipeline.
+
+Models evaluated:
+- RetinaFace
+- SCRFD
+- YOLO-Face
+- MediaPipe Face Detection
+
+Conclusion: YOLO-Face selected as the production detector.
+
+---
+
+### `GenderClassificationModels/GenderClassificationTesting.ipynb`
+
+Evaluates gender classification models on CCv2 and FACET datasets.
+
+Models evaluated:
+- HuggingFace Gender Classification
+- Realistic Gender Classifier
+- DeepFace
+- InsightFace
+- FairFace
+
+Conclusion: Realistic Gender Classifier selected as the production model.
+
+---
+
+### `SkinToneClassificationModels/SkinToneDetectionTesting.ipynb`
+
+Evaluates skin tone classification models on CCv2, MST-E, and FACET datasets.
+
+Models evaluated:
+- SkinTone Classifier Library
+- Random Forest
+- DenseNet121
+- VGG16
+
+Conclusion: VGG16 (regression, RGB, 10-class) selected as the production model.
+
+---
+
+### `SkinToneClassificationModels/DenseNet121_SkinTone_Training.py`
+
+Training script for DenseNet121-based MST skin tone classification.
+
+---
+
+### `SkinToneClassificationModels/RandomForest_SkinTone_Training.py`
+
+Training script for Random Forest MST skin tone classification using histogram-based colour features.
+
+---
+
+### `SkinToneClassificationModels/vgg16_mst_classification_regression_rgb_lab.py`
+
+Primary training script supporting VGG16 and ResNet18 across multiple configurations.
+
+Supports:
+- Architecture: `vgg16` | `resnet18`
+- Mode: `classification` | `regression` | `coral`
+- Input space: `rgb` | `lab`
+- Class counts: 3, 4, 10
+
+---
+
+### `SkinToneClassificationModels/RunVGG16Training.bat`
+### `SkinToneClassificationModels/RunResnet18Training.bat`
+
+Batch runners executing the full experiment suite for VGG16 and ResNet18 respectively across all mode, input space, and class count combinations.
+
+---
+
+### `create_background_corrected_dataset.py`
+
+Replaces black background pixels in segmented face images with the mean face colour. Used to generate `_BGFixed` dataset variants for training.
+
+---
+
+### `GenderSkinToneAnnotation.py`
+
+Annotates images with gender and skin tone predictions using the selected production models.
+
+- Gender: Realistic Gender Classifier
+- Skin tone: VGG16 (configurable via CLI)
+
+```
+
+---
+
+### `RELaion5B_Subset_Image_Retrieval.py`
+
+Selects the top-N images per profession from the full Re-LAION-5B retrieval results based on CLIP similarity score encoded in the filename. Copies selected images, facemesh crops, and truncates the annotations JSONL to the selected subset.
+
+```
+
+---
+
+### `AnnotationDistributionAssessment.ipynb`
+
+Visualises gender and skin tone label distributions across the Re-LAION-5B and SD datasets for the full retrieval set and the 1k subset.
+
+---
+
+### `Setup.ipynb`
+
+Documents and performs environment setup required for:
+- PyTorch / torchvision
+- Ultralytics YOLO
+- MediaPipe
+- InsightFace / ONNX Runtime
+- Skin tone classifier dependencies
+- Supporting packages

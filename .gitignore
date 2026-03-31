@@ -210,3 +210,9 @@ Spurious_Feature/VitDet_base_LVIS.pkl
 /7_DatasetPreparation/UniversalSplits/DatasetClassification
 /7_DatasetPreparation/UniversalSplits/StableDiffusion
 /7_DatasetPreparation/UniversalSplits/DatasetClassificationCoco
+/2_ImageRetrieval/OldCode
+/2_ImageRetrieval/Utilities
+/2_ImageRetrieval/Utilities
+/4_DatasetAnnotation/OldCode
+/4_DatasetAnnotation/SkinToneClassificationModels/OldCode
+/6_SDModelDebiasing/OldCode

@@ -1,0 +1,200 @@
+job_title,matched_title,isco_code,isco_1,isco_1_name,isco_2,isco_3,isco_4,similarity_score,match_type,alt_1_title,alt_1_code,alt_1_score
+Actor,Actor,2655,2,Professionals,26,265,2655,1.0,exact,,,
+Actuary,Actuary,2120,2,Professionals,21,212,2120,1.0,exact,,,
+Administrative Assistant,Administrative legal assistant,3342,3,Technicians and associate professionals,33,334,3342,0.889,fuzzy,Administrative medical office assistant,3344,0.762
+Administrator,Wan administrator,2522,2,Professionals,25,252,2522,0.867,fuzzy,City administrator,1112,0.839
+Air Traffic Controller,Air traffic controller,3154,3,Technicians and associate professionals,31,315,3154,1.0,exact,,,
+Animal Trainer,Animal trainer,5164,5,Service and sales workers,51,516,5164,1.0,exact,,,
+Anthropologist,Anthropologist,2632,2,Professionals,26,263,2632,1.0,exact,,,
+Appraiser,Appraiser damage,3315,3,Technicians and associate professionals,33,331,3315,0.72,fuzzy,Barrister,2611,0.667
+Archaeologist,Archaeologist,2632,2,Professionals,26,263,2632,1.0,exact,,,
+Architect,Architect,2161,2,Professionals,21,216,2161,1.0,exact,,,
+Archivist,Archivist,2621,2,Professionals,26,262,2621,1.0,exact,,,
+Art Director,Artistic director,2654,2,Professionals,26,265,2654,0.828,fuzzy,Casting director,2654,0.786
+Artist,Artist,2655,2,Professionals,26,265,2655,1.0,exact,,,
+Astronaut,Astronaut,3153,3,Technicians and associate professionals,31,315,3153,1.0,exact,,,
+Astronomer,Astronomer,2111,2,Professionals,21,211,2111,1.0,exact,,,
+Athlete,Athlete,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Audio Technician,Dairy technician,3142,3,Technicians and associate professionals,31,314,3142,0.812,fuzzy,Video technician,3521,0.812
+Auditor,Auditor,2411,2,Professionals,24,241,2411,1.0,exact,,,
+Automotive Designer,Automotive engineer,2144,2,Professionals,21,214,2144,0.842,fuzzy,Automotive body repairer,7213,0.744
+Baker,Baker,7512,7,Craft and related trades workers,75,751,7512,1.0,exact,,,
+Banker,Baker,7512,7,Craft and related trades workers,75,751,7512,0.909,fuzzy,Bank clerk,4110,0.75
+Bankruptcy Specialist,Optical specialist,2212,2,Professionals,22,221,2212,0.718,fuzzy,Skin specialist,2212,0.667
+Barber,Barber,5141,5,Service and sales workers,51,514,5141,1.0,exact,,,
+Barista,Barista,5246,5,Service and sales workers,52,524,5246,1.0,exact,,,
+Bartender,Bartender,5132,5,Service and sales workers,51,513,5132,1.0,exact,,,
+Basketball player,Basketball player,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Biologist,Biologist,2131,2,Professionals,21,213,2131,1.0,exact,,,
+Biomedical Engineer,Biomedical engineer,2149,2,Professionals,21,214,2149,1.0,exact,,,
+Blacksmith,Blacksmith,7221,7,Craft and related trades workers,72,722,7221,1.0,exact,,,
+Bodyguard,Body guard,5414,5,Service and sales workers,54,541,5414,0.947,fuzzy,Border guard,3351,0.762
+Bounty Hunter,Money changer,4211,4,Clerical support workers,42,421,4211,0.615,fuzzy,Butcher,7511,0.6
+Boxer,Boxer,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Brand Manager,Braid maker,7318,7,Craft and related trades workers,73,731,7318,0.75,fuzzy,Garage manager,5221,0.741
+Brewer,Brewer,8160,8,"Plant and machine operators, and assemblers",81,816,8160,1.0,exact,,,
+Bricklayer,Firebrick layer,7112,7,Craft and related trades workers,71,711,7112,0.8,fuzzy,Block layer,7112,0.762
+Broker,Pawnbroker,4213,4,Clerical support workers,42,421,4213,0.75,fuzzy,Baker,7512,0.727
+Builder,Butler,5152,5,Service and sales workers,51,515,5152,0.769,fuzzy,Ship builder,7214,0.737
+Butcher,Butcher,7511,7,Craft and related trades workers,75,751,7511,1.0,exact,,,
+CEO,CEO,1120,1,Managers,11,112,1120,1.0,exact,,,
+Carer,Barber,5141,5,Service and sales workers,51,514,5141,0.727,fuzzy,Carpenter,7115,0.714
+Carpenter,Carpenter,7115,7,Craft and related trades workers,71,711,7115,1.0,exact,,,
+Cartographer,Cartographer,2165,2,Professionals,21,216,2165,1.0,exact,,,
+Cashier,Bank cashier,4211,4,Clerical support workers,42,421,4211,0.737,fuzzy,Store cashier,5230,0.7
+Chef,Head chef,3434,3,Technicians and associate professionals,34,343,3434,0.615,fuzzy,Sous chef,3434,0.615
+Chemical Engineer,Chemical engineer,2145,2,Professionals,21,214,2145,1.0,exact,,,
+Chemist,Chemist,2113,2,Professionals,21,211,2113,1.0,exact,,,
+Chiropractor,Chiropractor,2269,2,Professionals,22,226,2269,1.0,exact,,,
+Civil Engineer,Civil engineer,2142,2,Professionals,21,214,2142,1.0,exact,,,
+Claims Adjuster,Claims adjuster,4312,4,Clerical support workers,43,431,4312,1.0,exact,,,
+Cleaner,Metal cleaner,7224,7,Craft and related trades workers,72,722,7224,0.7,fuzzy,Water cleaner,9129,0.7
+Clerk,Clerk,4311,4,Clerical support workers,43,431,4311,1.0,exact,,,
+Coach,Vocal coach,2354,2,Professionals,23,235,2354,0.625,fuzzy,Games coach,3422,0.625
+Comedian,Comedian,2659,2,Professionals,26,265,2659,1.0,exact,,,
+Compliance Officer,Compliance officer,2411,2,Professionals,24,241,2411,1.0,exact,,,
+Composer,Music composer,2652,2,Professionals,26,265,2652,0.727,fuzzy,Choirmaster,2652,0.632
+Conservation Officer,Conservation officer,2133,2,Professionals,21,213,2133,1.0,exact,,,
+Construction Worker,Construction shorer,7119,7,Craft and related trades workers,71,711,7119,0.895,fuzzy,Construction bracer,7119,0.842
+Copywriter,Writer,2641,2,Professionals,26,264,2641,0.75,fuzzy,Printer,7322,0.706
+Court Reporter,Court reporter,3343,3,Technicians and associate professionals,33,334,3343,1.0,exact,,,
+Crime Scene Investigator,Fire investigator,3119,3,Technicians and associate professionals,31,311,3119,0.732,fuzzy,Police investigator,3355,0.698
+Customer Support Specialist,IT user support technician,3512,3,Technicians and associate professionals,35,351,3512,0.642,fuzzy,Personnel specialist,2423,0.638
+DJ,NO_MATCH,,,,,,,,none,,,
+Dancer,Dancer,2653,2,Professionals,26,265,2653,1.0,exact,,,
+Data Scientist,Data scientist,2521,2,Professionals,25,252,2521,1.0,exact,,,
+Database Administrator,Data administrator,2521,2,Professionals,25,252,2521,0.9,fuzzy,Database administrator (dba),2521,0.88
+Debt Counselor,Student counsellor,2359,2,Professionals,23,235,2359,0.812,fuzzy,Credit counsellor,2635,0.774
+Dentist,Dentist,2261,2,Professionals,22,226,2261,1.0,exact,,,
+Detective,Store detective,3411,3,Technicians and associate professionals,34,341,3411,0.75,fuzzy,Police detective,3355,0.72
+Development Officer,Web development officer,3514,3,Technicians and associate professionals,35,351,3514,0.905,fuzzy,Staff development officer,2424,0.864
+Dietitian,Dietician,2265,2,Professionals,22,226,2265,0.889,fuzzy,Biometrician,2120,0.667
+Director,Editor,2641,2,Professionals,26,264,2641,0.714,fuzzy,Inspector,3359,0.706
+Doctor,Actor,2655,2,Professionals,26,265,2655,0.727,fuzzy,Editor,2641,0.667
+Dog Walker,Dog walker,9629,9,Elementary occupations,96,962,9629,1.0,exact,,,
+Draughtsperson,Draughtsperson,3118,3,Technicians and associate professionals,31,311,3118,1.0,exact,,,
+Driver,Riveter,7214,7,Craft and related trades workers,72,721,7214,0.769,fuzzy,Car driver,8322,0.75
+Economist,Economist,2631,2,Professionals,26,263,2631,1.0,exact,,,
+Editor,Editor,2641,2,Professionals,26,264,2641,1.0,exact,,,
+Electrician,Electrician,7411,7,Craft and related trades workers,74,741,7411,1.0,exact,,,
+Emergency Management Specialist,Emergency medicine specialist,2212,2,Professionals,22,221,2212,0.8,fuzzy,Medical imaging specialist,2212,0.667
+Entrepreneur,Entrepeneur,1120,1,Managers,11,112,1120,0.957,fuzzy,Interpreter,2643,0.696
+Environmental Engineer,Environmental engineer,2143,2,Professionals,21,214,2143,1.0,exact,,,
+Ergonomist,Economist,2631,2,Professionals,26,263,2631,0.842,fuzzy,Agronomist,2132,0.8
+Estate Planner,Estate planner,2412,2,Professionals,24,241,2412,1.0,exact,,,
+Event Coordinator,Stunt coordinator,3435,3,Technicians and associate professionals,34,343,3435,0.824,fuzzy,Exterminator,7544,0.621
+Executive Assistant,Executive assistant,3343,3,Technicians and associate professionals,33,334,3343,1.0,exact,,,
+Exterminator,Exterminator,7544,7,Craft and related trades workers,75,754,7544,1.0,exact,,,
+Facilities Manager,Facilities manager,1219,1,Managers,12,121,1219,1.0,exact,,,
+Farmer,Framer,7115,7,Craft and related trades workers,71,711,7115,0.833,fuzzy,Farrier,7221,0.769
+Fashion Designer,Fashion designer,2163,2,Professionals,21,216,2163,1.0,exact,,,
+Firefighter,Firefighter,5411,5,Service and sales workers,54,541,5411,1.0,exact,,,
+Fishmonger,Fishmonger,7511,7,Craft and related trades workers,75,751,7511,1.0,exact,,,
+Flight Attendant,Flight attendant,5111,5,Service and sales workers,51,511,5111,1.0,exact,,,
+Florist,Organist,2652,2,Professionals,26,265,2652,0.667,fuzzy,Forester,6210,0.667
+Football player,Football player,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Forklift Operator,Forklift operator,8344,8,"Plant and machine operators, and assemblers",83,834,8344,1.0,exact,,,
+Gardener,Gardener,6113,6,"Skilled agricultural, forestry and fishery workers",61,611,6113,1.0,exact,,,
+Geologist,Ecologist,2133,2,Professionals,21,213,2133,0.889,fuzzy,Gynaecologist,2212,0.818
+Graphic Designer,Graphic designer,2166,2,Professionals,21,216,2166,1.0,exact,,,
+Grocer,Grocer,5221,5,Service and sales workers,52,522,5221,1.0,exact,,,
+Hair dresser,Hair dresser,5141,5,Service and sales workers,51,514,5141,1.0,exact,,,
+Handyperson,Handyperson,9622,9,Elementary occupations,96,962,9622,1.0,exact,,,
+Health Inspector,Health inspector,3257,3,Technicians and associate professionals,32,325,3257,1.0,exact,,,
+Historian,Historian,2633,2,Professionals,26,263,2633,1.0,exact,,,
+Hotel Concierge,Shopping centre concierge,4225,4,Clerical support workers,42,422,4225,0.7,fuzzy,Hotel manager,1411,0.643
+Hotel Manager,Hotel manager,1411,1,Managers,14,141,1411,1.0,exact,,,
+Human Resources Specialist,Human resources expert,2423,2,Professionals,24,242,2423,0.792,fuzzy,Human resources consultant,2423,0.731
+IT Support Specialist,IT security specialist,2529,2,Professionals,25,252,2529,0.837,fuzzy,Internal specialist,2212,0.7
+Illustrator,Illustrator,2166,2,Professionals,21,216,2166,1.0,exact,,,
+Industrial Designer,Industrial designer,2163,2,Professionals,21,216,2163,1.0,exact,,,
+Insurance Underwriter,Insurance underwriter,3321,3,Technicians and associate professionals,33,332,3321,1.0,exact,,,
+Janitor,Janitor,5153,5,Service and sales workers,51,515,5153,1.0,exact,,,
+Jeweller,Jeweller,7313,7,Craft and related trades workers,73,731,7313,1.0,exact,,,
+Journalist,Journalist,2642,2,Professionals,26,264,2642,1.0,exact,,,
+Judge,Judge,2612,2,Professionals,26,261,2612,1.0,exact,,,
+Lawyer,Lawyer,2611,2,Professionals,26,261,2611,1.0,exact,,,
+Librarian,Librarian,2622,2,Professionals,26,262,2622,1.0,exact,,,
+Lifeguard,Lifeguard,5419,5,Service and sales workers,54,541,5419,1.0,exact,,,
+Loan Officer,Loans officer,3312,3,Technicians and associate professionals,33,331,3312,0.96,fuzzy,Land officer,4110,0.917
+Logger,Blogger,2642,2,Professionals,26,264,2642,0.923,fuzzy,Log grader,7523,0.75
+Logistics Manager,Logistics manager,1324,1,Managers,13,132,1324,1.0,exact,,,
+Magician,Musician,2652,2,Professionals,26,265,2652,0.75,fuzzy,Mathematician,2120,0.667
+Makeup Artist,Make-up artist,5142,5,Service and sales workers,51,514,5142,0.963,fuzzy,Graphic artist,2651,0.667
+Marine Biologist,Marine biologist,2131,2,Professionals,21,213,2131,1.0,exact,,,
+Marketing Manager,Marketing manager,1221,1,Managers,12,122,1221,1.0,exact,,,
+Masseur,Masseur,3255,3,Technicians and associate professionals,32,325,3255,1.0,exact,,,
+Mathematician,Mathematician,2120,2,Professionals,21,212,2120,1.0,exact,,,
+Mayor,Mayor,1111,1,Managers,11,111,1111,1.0,exact,,,
+Mechanic,Mechatronic,2144,2,Professionals,21,214,2144,0.842,fuzzy,Car mechanic,7231,0.8
+Meteorologist,Meteorologist,2112,2,Professionals,21,211,2112,1.0,exact,,,
+Midwife,Lay midwife,3222,3,Technicians and associate professionals,32,322,3222,0.778,fuzzy,Midwife educator,2222,0.609
+Miner,Miner,8111,8,"Plant and machine operators, and assemblers",81,811,8111,1.0,exact,,,
+Model,Fashion model,5241,5,Service and sales workers,52,524,5241,0.556,fuzzy,Artist's model,5241,0.526
+Musician,Musician,2652,2,Professionals,26,265,2652,1.0,exact,,,
+News Reader,University reader,2310,2,Professionals,23,231,2310,0.714,fuzzy,News reader tv/radio,2656,0.71
+Nurse,Charge nurse,2221,2,Professionals,22,222,2221,0.588,fuzzy,School nurse,3221,0.588
+Nutritionist,Nutritionist,2265,2,Professionals,22,226,2265,1.0,exact,,,
+Oceanographer,Sonographer,3211,3,Technicians and associate professionals,32,321,3211,0.833,fuzzy,Cartographer,2165,0.8
+Office Assistant,Housing Assistant,4229,4,Clerical support workers,42,422,4229,0.727,fuzzy,Medical assistant,3256,0.727
+Operations Manager,Airport operations manager,1324,1,Managers,13,132,1324,0.818,fuzzy,Prison manager,1349,0.812
+Optician,Politician,1111,1,Managers,11,111,1111,0.778,fuzzy,Dietician,2265,0.706
+Painter,Printer,7322,7,Craft and related trades workers,73,732,7322,0.857,fuzzy,Paint mixer,7131,0.778
+Paralegal,Paralegal,3411,3,Technicians and associate professionals,34,341,3411,1.0,exact,,,
+Paramedic,Emergency paramedic,3258,3,Technicians and associate professionals,32,325,3258,0.643,fuzzy,Garage mechanic,7231,0.583
+Park Ranger,Paperhanger,7131,7,Craft and related trades workers,71,713,7131,0.727,fuzzy,Port manager,1324,0.696
+Payroll Specialist,Personnel specialist,2423,2,Professionals,24,242,2423,0.789,fuzzy,Optical specialist,2212,0.778
+Personal Trainer,Personal trainer,3423,3,Technicians and associate professionals,34,342,3423,1.0,exact,,,
+Pharmacist,Pharmacist,2262,2,Professionals,22,226,2262,1.0,exact,,,
+Photographer,Photographer,3431,3,Technicians and associate professionals,34,343,3431,1.0,exact,,,
+Physicist,Physicist,2111,2,Professionals,21,211,2111,1.0,exact,,,
+Pilot,Poet,2641,2,Professionals,26,264,2641,0.667,fuzzy,Ship pilot,3152,0.667
+Plumber,Plumber,7126,7,Craft and related trades workers,71,712,7126,1.0,exact,,,
+Police Officer,Police officer,5412,5,Service and sales workers,54,541,5412,1.0,exact,,,
+Politician,Politician,1111,1,Managers,11,111,1111,1.0,exact,,,
+Postal Worker,Social worker,3412,3,Technicians and associate professionals,34,341,3412,0.769,fuzzy,Project worker,4229,0.741
+Priest,Priest,2636,2,Professionals,26,263,2636,1.0,exact,,,
+Procurement Officer,Procurement officer,3323,3,Technicians and associate professionals,33,332,3323,1.0,exact,,,
+Professor,Professor,2310,2,Professionals,23,231,2310,1.0,exact,,,
+Property Manager,Port manager,1324,1,Managers,13,132,1324,0.857,fuzzy,Property agent,3334,0.8
+Psychologist,Psychologist,2634,2,Professionals,26,263,2634,1.0,exact,,,
+Quality Assurance Inspector,Quality inspector,7543,7,Craft and related trades workers,75,754,7543,0.773,fuzzy,Agricultural inspector,3359,0.653
+Real Estate Agent,Real estate agent,3334,3,Technicians and associate professionals,33,333,3334,1.0,exact,,,
+Receptionist,Receptionist,4226,4,Clerical support workers,42,422,4226,1.0,exact,,,
+Researcher,Crop researcher,2132,2,Professionals,21,213,2132,0.8,fuzzy,Peace researcher,2633,0.769
+Roofer,Roofer,7121,7,Craft and related trades workers,71,712,7121,1.0,exact,,,
+Safety Inspector,Safety inspector,3257,3,Technicians and associate professionals,32,325,3257,1.0,exact,,,
+Sailor,Sailor,8350,8,"Plant and machine operators, and assemblers",83,835,8350,1.0,exact,,,
+Salesperson,IT salesperson,2434,2,Professionals,24,243,2434,0.88,fuzzy,Car salesperson,5223,0.846
+Scientist,Food scientist,2145,2,Professionals,21,214,2145,0.783,fuzzy,Soil scientist,2132,0.783
+Security Officer,Private security officer,5414,5,Service and sales workers,54,541,5414,0.8,fuzzy,Recovery Officer,4229,0.75
+Shopkeeper,Shop keeper,5221,5,Service and sales workers,52,522,5221,0.952,fuzzy,Storekeeper,4321,0.762
+Singer,Singer,2652,2,Professionals,26,265,2652,1.0,exact,,,
+Skier,Skier,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Social Worker,Social worker,3412,3,Technicians and associate professionals,34,341,3412,1.0,exact,,,
+Software Engineer,IT software engineer,2512,2,Professionals,25,251,2512,0.919,fuzzy,Sales engineer,2433,0.774
+Soldier,Soldier,0300,0,Armed forces occupations,03,03,0300,1.0,exact,,,
+Sound Engineer,Production engineer,2141,2,Professionals,21,214,2141,0.727,fuzzy,Work study engineer,2141,0.727
+Statistician,Statistician,2120,2,Professionals,21,212,2120,1.0,exact,,,
+Street Vendor,Street vendor,9520,9,Elementary occupations,95,952,9520,1.0,exact,,,
+Surfer,Surfer,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Surgeon,Surgeon,2212,2,Professionals,22,221,2212,1.0,exact,,,
+Swimmer,Swimmer,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Tailor,Tailor,7531,7,Craft and related trades workers,75,753,7531,1.0,exact,,,
+Tattoo Artist,Tattooist,3435,3,Technicians and associate professionals,34,343,3435,0.818,fuzzy,Stunt artist,3435,0.72
+Teacher,Butcher,7511,7,Craft and related trades workers,75,751,7511,0.714,fuzzy,Drama teacher,2355,0.7
+Technician,Geotechnician,3111,3,Technicians and associate professionals,31,311,3111,0.87,fuzzy,MRI technician,3211,0.833
+Tennis Player,Tennis player,3421,3,Technicians and associate professionals,34,342,3421,1.0,exact,,,
+Therapist,Hypnotherapist,2230,2,Professionals,22,223,2230,0.783,fuzzy,Hydrotherapist,3255,0.783
+Translator,Translator,2643,2,Professionals,26,264,2643,1.0,exact,,,
+Umpire,Sports umpire,3422,3,Technicians and associate professionals,34,342,3422,0.632,fuzzy,Au-pair,5311,0.615
+Urban Planner,Urban planner,2164,2,Professionals,21,216,2164,1.0,exact,,,
+Usher,Usher,9629,9,Elementary occupations,96,962,9629,1.0,exact,,,
+Veterinarian,Veterinarian,2250,2,Professionals,22,225,2250,1.0,exact,,,
+Videographer,Demographer,2120,2,Professionals,21,212,2120,0.87,fuzzy,Biographer,2641,0.818
+Waiter,Waiter,5131,5,Service and sales workers,51,513,5131,1.0,exact,,,
+Waste Collection Worker,Water well worker,9312,9,Elementary occupations,93,931,9312,0.7,fuzzy,Acoustic insulation worker,7124,0.653
+Welder,Welder,7212,7,Craft and related trades workers,72,721,7212,1.0,exact,,,
+Wholesaler,Wholesaler,1420,1,Managers,14,142,1420,1.0,exact,,,
+Writer,Writer,2641,2,Professionals,26,264,2641,1.0,exact,,,
+Zoologist,Zoologist,2131,2,Professionals,21,213,2131,1.0,exact,,,
