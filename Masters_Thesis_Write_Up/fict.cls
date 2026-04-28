@@ -121,7 +121,7 @@
 %% Remove the bold font when listing abbreviations and glossary terms.
 \renewcommand*{\glsnamefont}[1]{\textmd{#1}}
 %% Command required to generate glossaries.
- \makeglossaries{}
+% \makeglossaries{}
 
 % Header & Footer configuration.
 \RequirePackage{fancyhdr}

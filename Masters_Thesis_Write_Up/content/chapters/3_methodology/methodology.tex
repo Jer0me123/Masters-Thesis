@@ -416,7 +416,7 @@ improvement. Generation was performed in half-precision (FP16) on GPU.
 The prompt template used for all profession-conditioned generation was:
 
 \begin{quote}
-	\texttt{full-body realistic photo of a \{profession\}, standing, centered,
+	\texttt{full-body realistic photo of a \{profession\}, standing, centred,
 		in a professional setting appropriate for their occupation, sharp focus,
 		35mm lens, natural professional lighting}
 \end{quote}
@@ -972,7 +972,7 @@ datasets, confirming that spatial geometry constitutes a meaningful axis of data
 bias. Depth maps were produced using Depth-Anything-V2 \cite{Yang_2024_DepthAnythingV2},
 resizing each image to 384$\times$384 pixels prior to inference. The predicted depth
 tensor was upsampled to original image dimensions via bicubic interpolation, normalised
-to $[0, 255]$, and saved as a three-channel PNG by replicating the grayscale channel
+to $[0, 255]$, and saved as a three-channel PNG by replicating the greyscale channel
 across all colour channels for compatibility with the ConvNeXt-Tiny classifier. A final
 resize to 224$\times$224 pixels was applied after depth computation. The ViT-S variant of
 Depth-Anything-V2 was used in place of the larger variant employed by Zeng et al.; their
@@ -1257,6 +1257,7 @@ summarises both configurations.
 	\centering
 	\caption{Label remapping configurations applied during object detection.}
 	\label{tab:label_remap}
+	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{llll}
 		\hline
 		\textbf{Original Label} & \textbf{Standard Remap} &
@@ -1275,7 +1276,7 @@ summarises both configurations.
 		Perfume, Hair spray & --- & Personal care & Personal care \\
 		Earrings, Necklace, Tiara, Handbag & --- & Fashion accessory & Fashion accessory \\
 		\hline
-	\end{tabular}
+	\end{tabular}}
 \end{table}
 
 \subsubsection{Image Captioning}

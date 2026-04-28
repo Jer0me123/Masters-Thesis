@@ -1,0 +1,46 @@
+\documentclass{fict}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{nicefrac}
+\usepackage{threeparttable}
+
+\input{content/glossary}
+\input{content/acronyms}
+
+\title{Evaluating the Quality of the LAION-2B Dataset:
+	Insights into Large-Scale Image Dataset Assessment}
+\author{Jerome Agius}
+\supervisor{Dr Dylan Seychell}
+\degreename{Master of Science in Artificial Intelligence [Taught and Research (Mainly by Research)] (M.Sc.(Melit.))}
+\titledate{May 2026}
+
+\begin{document}
+	\frontmatter{}
+	\pagestyle{pageNumbersOnly}
+	
+	\input{content/title.tex}
+	\input{content/abstract.tex}
+	\input{content/acknowledgements.tex}
+	\clearpage{}
+	
+	\tableofcontents{}
+	\addcontentsline{toc}{chapter}{Contents}
+	\clearpage{}
+	
+	\mainmatter{}
+	\pagestyle{MainMatter}
+	
+	\input{content/chapters/1_introduction/rp_introduction.tex}
+	\input{content/chapters/2_background/rp_background.tex}
+	\input{content/chapters/3_methodology/rp_methodology.tex}
+	\input{content/chapters/4_evaluation/rp_evaluation.tex}
+	\input{content/chapters/5_conclusion_future_work/rp_future_work.tex}
+	
+	\printbibliography[title=References]
+	
+\end{document}

@@ -18,7 +18,7 @@ in online content \cite{Birhane_2021_MultiModalDatasetsMisogynyPornography}.
 Demographic bias in AI is well-documented across natural language processing
 \cite{Bolukbasi_2016_ManComputerProgrammerWoman}, machine learning
 \cite{Mehrabi_2022_SurveyBiasFairnessMachine}, and computer vision
-\cite{Buolamwini_2018_BiasGenderClassification}, yet a gap remains between detecting bias
+\cite{Buolamwini_2018_GenderShades}, yet a gap remains between detecting bias
 in generative outputs and understanding the specific low-level image features that cause and
 perpetuate it. Current research predominantly adopts an outcome-focused perspective,
 measuring demographic distributions in generated images against desired benchmarks
@@ -60,16 +60,16 @@ comprehensive analysis of spurious features in Re-LAION-5B and their propagation
 Stable Diffusion v1.5 remains limited, making understanding bias mechanisms in these systems
 directly relevant to fairness at scale.
 
-Computational Accessibility: Training or fine-tuning large-scale diffusion models is beyond
+\noindent Computational Accessibility: Training or fine-tuning large-scale diffusion models is beyond
 reach for most researchers and practitioners. By focusing on inference-time methods
 applicable to frozen models, this research demonstrates fairness interventions accessible to
 smaller groups and organisations with limited computational budgets.
 
-Reproducibility and Transparency: The open-source nature of Stable Diffusion v1.5 and the
+\noindent Reproducibility and Transparency: The open-source nature of Stable Diffusion v1.5 and the
 research availability of Re-LAION-5B enable findings to be independently verified,
 replicated, and extended, strengthening the credibility and impact of this work.
 
-Beyond Outcome Measurement: Understanding why biases emerge, and specifically which
+\noindent Beyond Outcome Measurement: Understanding why biases emerge, and specifically which
 low-level features enable biased shortcuts, supports interventions that address root causes
 rather than symptoms, enabling solutions that generalise rather than superficially correct
 specific evaluation metrics.
@@ -106,8 +106,7 @@ model retraining. Evaluate their effectiveness across demographic representation
 Objective 5: Conclusions on Bias Mechanisms and Mitigation.
 Synthesise findings to characterise how spurious features manifest in Re-LAION-5B and
 propagate through Stable Diffusion v1.5, determining whether the generative process
-preserves, amplifies, or mitigates training data biases. Provide evidence-based
-recommendations for practitioners deploying fairer text-to-image systems.
+preserves, amplifies, or mitigates training data biases.
 
 \section{Document Structure}
 The remainder of this dissertation is structured as follows.

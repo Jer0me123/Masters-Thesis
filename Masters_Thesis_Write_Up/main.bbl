@@ -327,6 +327,68 @@
       \verb https://arxiv.org/abs/1908.09635
       \endverb
     \endentry
+    \entry{Buolamwini_2018_GenderShades}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=694238e772e190a6c1c2e0c1e68ee000}{%
+           family={Buolamwini},
+           familyi={B\bibinitperiod},
+           given={Joy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f2b0ffb56c5d1e4220c16c0258e02eae}{%
+           family={Gebru},
+           familyi={G\bibinitperiod},
+           given={Timnit},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b2b40e7a0fdfbdbcf9af2da7c8e59417}{%
+           family={Friedler},
+           familyi={F\bibinitperiod},
+           given={Sorelle\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=74e7d878b09bbacd81917f355904ac86}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Christo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{fullhash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{fullhashraw}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{bibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authorbibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authornamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authorfullhash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authorfullhashraw}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{editorbibnamehash}{fc436d4f91615ad727cf64a1b3179072}
+      \strng{editornamehash}{fc436d4f91615ad727cf64a1b3179072}
+      \strng{editorfullhash}{fc436d4f91615ad727cf64a1b3179072}
+      \strng{editorfullhashraw}{fc436d4f91615ad727cf64a1b3179072}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1st Conference on Fairness, Accountability and Transparency}
+      \field{month}{23--24 Feb}
+      \field{series}{Proceedings of Machine Learning Research}
+      \field{title}{Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification}
+      \field{volume}{81}
+      \field{year}{2018}
+      \field{pages}{77\bibrangedash 91}
+      \range{pages}{15}
+      \verb{file}
+      \verb http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v81/buolamwini18a.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v81/buolamwini18a.html
+      \endverb
+    \endentry
     \entry{Luccioni_2023_AnalyzingSocietalRepresentationsDiffusionModels}{misc}{}{}
       \name{author}{4}{}{%
         {{hash=99e76cfbcf273c6493ef4ebf46d4a452}{%
@@ -3000,68 +3062,6 @@
       \endverb
       \verb{url}
       \verb https://arxiv.org/abs/1811.08489
-      \endverb
-    \endentry
-    \entry{Buolamwini_2018_GenderShades}{inproceedings}{}{}
-      \name{author}{2}{}{%
-        {{hash=694238e772e190a6c1c2e0c1e68ee000}{%
-           family={Buolamwini},
-           familyi={B\bibinitperiod},
-           given={Joy},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f2b0ffb56c5d1e4220c16c0258e02eae}{%
-           family={Gebru},
-           familyi={G\bibinitperiod},
-           given={Timnit},
-           giveni={T\bibinitperiod}}}%
-      }
-      \name{editor}{2}{}{%
-        {{hash=b2b40e7a0fdfbdbcf9af2da7c8e59417}{%
-           family={Friedler},
-           familyi={F\bibinitperiod},
-           given={Sorelle\bibnamedelima A.},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=74e7d878b09bbacd81917f355904ac86}{%
-           family={Wilson},
-           familyi={W\bibinitperiod},
-           given={Christo},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {PMLR}%
-      }
-      \strng{namehash}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{fullhash}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{fullhashraw}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{bibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{authorbibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{authornamehash}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{authorfullhash}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{authorfullhashraw}{1d3df5a4e120235c82cc5c5428e6a913}
-      \strng{editorbibnamehash}{fc436d4f91615ad727cf64a1b3179072}
-      \strng{editornamehash}{fc436d4f91615ad727cf64a1b3179072}
-      \strng{editorfullhash}{fc436d4f91615ad727cf64a1b3179072}
-      \strng{editorfullhashraw}{fc436d4f91615ad727cf64a1b3179072}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 1st Conference on Fairness, Accountability and Transparency}
-      \field{month}{23--24 Feb}
-      \field{series}{Proceedings of Machine Learning Research}
-      \field{title}{Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification}
-      \field{volume}{81}
-      \field{year}{2018}
-      \field{pages}{77\bibrangedash 91}
-      \range{pages}{15}
-      \verb{file}
-      \verb http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://proceedings.mlr.press/v81/buolamwini18a.html
-      \endverb
-      \verb{url}
-      \verb https://proceedings.mlr.press/v81/buolamwini18a.html
       \endverb
     \endentry
     \entry{Liu_2024_DecadeBattleDatasetBias}{misc}{}{}
@@ -6478,8 +6478,8 @@
       \strng{authorfullhash}{b3a8e231d9cb4040f3e46c2c87cc12a8}
       \strng{authorfullhashraw}{b3a8e231d9cb4040f3e46c2c87cc12a8}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.CV}
@@ -6732,7 +6732,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Buolamwini_2018_BiasGenderClassification}
 \endrefsection
 \endinput
 

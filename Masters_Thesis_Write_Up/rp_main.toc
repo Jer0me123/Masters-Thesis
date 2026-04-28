@@ -1,0 +1,16 @@
+\contentsline {chapter}{Abstract}{i}{chapter*.1}%
+\contentsline {chapter}{Acknowledgements}{iii}{chapter*.2}%
+\contentsline {chapter}{Contents}{iv}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Background \& Literature Review}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Methodology}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Image Retrieval and Dataset Construction}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Demographic Annotation}{3}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Image Transformation Pipeline}{4}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Inference-Time Debiasing Pipeline}{4}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Evaluation}{5}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Demographic Distribution Analysis}{5}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Dataset Classification}{5}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Demographic Artifact Probing}{6}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Debiasing Evaluation}{6}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{8}{chapter.5}%

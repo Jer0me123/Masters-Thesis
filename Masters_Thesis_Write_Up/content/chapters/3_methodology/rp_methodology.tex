@@ -1,0 +1,70 @@
+\chapter{Methodology}
+
+\section{Image Retrieval and Dataset Construction}
+
+Re-LAION-2B-en-research-safe was processed across four uniformly sampled shards,
+yielding 65,552,809 URL-caption pairs of which 43,491,938 images were successfully
+retrieved (link decay rate 33.7\%). CLIP ViT-L/14 embeddings were computed, L2-normalised,
+and indexed per shard using FAISS IndexFlatIP for exact cosine similarity retrieval. A
+set of 200 ISCO-08-aligned occupations was retrieved using the template
+\texttt{"A photo of a/an \{profession\}"} with gender-neutral phrasing, filtered via a
+negative prompt dominance criterion, and passed through a multi-stage structural
+validation pipeline requiring exactly one detected face and person with verified spatial
+association and successful MediaPipe FaceMesh landmark extraction. YOLOv12l-Face was
+selected as face detector (AP@0.5 0.905, highest small-face recall of four candidates).
+The top 1,000 structurally valid images per occupation were retained, yielding 200,000
+images at a mean acceptance rate of 33.51\%. A corresponding 200,000-image generation
+corpus was produced using SDv1.5 with LCM-LoRA acceleration, selected for throughput
+(1.5\,s/image versus 5.6\,s for standard SDv1.5) from three LAION-traceable
+configurations. A full-body profession-conditioned prompt with neutral professional
+framing was used throughout; classifier-free guidance was fixed at $s{=}1.0$ to
+establish a conservative lower bound on bias free from inference-time amplification.
+Generated images passed through the same structural validation pipeline, achieving a mean
+acceptance rate of 66.38\%.
+
+\section{Demographic Annotation}
+
+All images underwent FaceMesh face segmentation producing background-removed crops to
+prevent background shortcut learning. Gender was annotated using the Realistic Gender
+Classifier, selected from five candidates for its highest CCv2 face-only accuracy
+(88.6\%) and smallest male-female gap (6.2\,pp versus up to 40.2\,pp for alternatives).
+Skin tone was estimated using a VGG-16 MST10 regression model selected via factorial
+ablation across output formulation, colour space, label granularity, and background
+treatment, with predictions collapsed into Light (MST~1--3), Mid (MST~4--7), and Dark
+(MST~8--10) bins. All labels are treated as perceived-attribute proxies. Distributions
+were contextualised against BLS and ILOSTAT reference statistics; a race-to-skin-tone
+mapping via FairFace was abandoned due to mid-bin collapse.
+
+\section{Image Transformation Pipeline}
+
+The pipeline serves two objectives: dataset classification (ConvNeXt-Tiny distinguishing
+Re-LAION-5B, SDv1.5, and COCO per transformation) and demographic artifact probing
+(predicting gender and skin tone from isolated visual channels). Adding COCO as a third
+class enables per-class accuracy attribution, localising which dataset carries each
+spurious signal. Demographic probes use deliberately simple models: logistic regression
+for low-dimensional inputs and ResNet-50 for spatial inputs, following Meister et al.
+
+Transformations span three levels. \textit{Structural:} monocular depth (Depth-Anything-V2
+ViT-S), Canny edge detection, low-pass and high-pass frequency filtering (hard circular
+FFT mask, $r{=}40$), and YOLOv8l-Pose keypoints (34-dimensional normalised vector).
+\textit{Spatial-statistical:} pixel shuffle, patch shuffle at four scales
+($2{\times}2$--$16{\times}16$), and mean RGB. \textit{Semantic:} Mask2Former
+segmentation (Swin-Large, ADE20K), YOLOv8x object detection (OpenImages V7, demographic
+categories remapped), BLIP Large captions (gender-neutral remapped), and SDv1.5 VAE
+reconstruction. Occlusion variants follow Meister et al.'s five-condition protocol: Full
+NoBg, MaskSegm, MaskSegm NoBg, MaskRect, and MaskRect NoBg, with person masks from
+Mask2Former COCO (96.5\% detection rate, highest of five candidates).
+
+\section{Inference-Time Debiasing Pipeline}
+
+A 10,000-image debiased corpus was generated for the doctor profession at $s{=}7.0$,
+fully activating the model's demographic prior as a demanding test of the debiasing
+interventions. ITI-GEN~\cite{Zhang_2023_ITIGEN} inclusive tokens were trained on CCv2
+across gender and skin tone (MST~1--10), producing 20 demographic combinations of 500
+images each, applied via the \texttt{prompt\_prepend} mechanism. ControlNet
+OpenPose~\cite{LZhang_2023_ControlNet} (scale 0.6, fixed canonical skeleton) enforced
+structural consistency and eliminated pose-correlated annotation confounds.
+Chamfer-based colour alignment~\cite{Shum_2025_ColorAlignment} steered the predicted
+clean sample $\hat{x}_0$ at timesteps $t{>}600$ toward a skin-tone-neutral mean RGB
+reference. LCM-LoRA was excluded due to incoherent outputs under per-step Chamfer
+modification; SW-Guidance was excluded on throughput grounds.
