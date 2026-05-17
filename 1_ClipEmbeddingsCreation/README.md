@@ -18,8 +18,8 @@ Contains HuggingFace token used in Setup.ipynb.
 - Environment setup
 - Downloads Re-Laion5B .parquet files
 
-Output:
-F:\Thesis\RE-LAION-5B_Dataset\relaion2B-en-research-safe
+Output: 
+- {OUTPUT_DIR}\RE-LAION-5B_Dataset\relaion2B-en-research-safe
 
 ---
 
@@ -35,5 +35,5 @@ Performs:
 - CLIP embedding extraction
 
 Outputs:
-- Images → F:\Thesis\{0000-0003}_images
-- Embeddings → D:\ThesisFiles\all_images_openai_clip_vit_large_patch14
+- Images → {OUTPUT_DIR}\{0000-0003}_images
+- Embeddings → {OUTPUT_DIR}\all_images_openai_clip_vit_large_patch14

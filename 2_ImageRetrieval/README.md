@@ -32,8 +32,8 @@ Functionality:
 - Retrieves top-k matches per prompt
 - Outputs retrieval results to `.jsonl`
 
-Output:
-E:\ImageRetrieval\Professions_125k_ISCO_Aligned\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl
+Output: 
+- {OUTPUT_DIR}\Professions_125k_ISCO_Aligned\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl
 
 This file contains:
 - Prompt
@@ -62,8 +62,8 @@ Functionality:
 - Logs valid/invalid images
 - Writes cleaned images to structured profession directories
 
-Output:
-E:\ImageRetrieval\Professions_125k_ISCO_Aligned\
+Output: 
+- {OUTPUT_DIR}\Professions_125k_ISCO_Aligned\
 
 Contains:
 - Profession-grouped directories
@@ -98,8 +98,8 @@ Generates `.jsonl` file containing:
 - Similarity scores
 - FAISS-based similarity search outputs
 
-Location:
-E:\ImageRetrieval\Professions_125k_ISCO_Aligned\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl
+Output: 
+- {OUTPUT_DIR}\Professions_125k_ISCO_Aligned\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl
 
 ---
 
@@ -111,8 +111,8 @@ Using the generated `.jsonl` file:
 - FaceMesh segmentation is derived
 - Clean images are organised into profession-specific folders
 
-Location:
-E:\ImageRetrieval\Professions_125k_ISCO_Aligned\
+Output: 
+- {OUTPUT_DIR}\Professions_125k_ISCO_Aligned\
 
 ---
 
@@ -122,22 +122,3 @@ E:\ImageRetrieval\Professions_125k_ISCO_Aligned\
 - The non-FAISS approach in `ImageRetrieval.ipynb` is retained for testing and validation.
 - YOLO + FaceMesh filtering ensures structural consistency of human subjects prior to downstream demographic and fairness analysis.
 - Resume-safe processing enables large-scale profession subsets (e.g., 125k per group) to be processed reliably.
-
-
-<!-- This text file outlines the purpose of each .ipynb & .py file in this directory. 
-
-ImageRetrieval.ipynb - This notebook performs Non-Faiss / Faiss CLIP embedding search over the precomputed RE-LAION embeddings and retrieves similar images for text prompts (Non-Faiss approach only used for testing)
-YoloFilteringImageRetrieval.py - This python script performs post-retrieval filtering and cleaning of the CLIP-retrieved profession images using:
-    1. YOLO face detection
-    2. Optional YOLO person detection
-    3. MediaPipe FaceMesh segmentation
-    4. Batch processing
-    5. Resume-safe group tracking
-Setup.ipynb - This file outlines the Environment setup
-
-The code in the above.ipynb & .py has been re-teseted and confirmed to be working. 
-
-Furthermore running the relevant notebook produces the following: 
-
-1. Generates a .jsonl files with the list of images retrieved according to the specified prompts along with their similarity score using FAISS image similarity search -> E:\ImageRetrieval\Professions_125k_ISCO_Aligned\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl
-2. Retrieves images using the generated.jsonl file filtered out via facedetection & posedetection, alongside deriving facemeshs of retrieved images -> E:\ImageRetrieval\Professions_125k_ISCO_Aligned -->

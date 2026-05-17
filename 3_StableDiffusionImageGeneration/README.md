@@ -45,9 +45,9 @@ Validation pipeline:
 - Aesthetic quality scoring via CLIP embeddings
 
 Output:
-E:\ImageRetrieval\StableDiffusionGeneratedImages\valid\{profession}\
-E:\ImageRetrieval\StableDiffusionGeneratedImages\invalid\{profession}\
-E:\ImageRetrieval\StableDiffusionGeneratedImages\ImageGenMetadata.csv
+- {OUTPUT_DIR}\StableDiffusionGeneratedImages\valid\{profession}\
+- {OUTPUT_DIR}\StableDiffusionGeneratedImages\invalid\{profession}\
+- {OUTPUT_DIR}\StableDiffusionGeneratedImages\ImageGenMetadata.csv
 
 ---
 
