@@ -14,8 +14,6 @@ The pipeline consists of:
 
 The scripts and notebooks in this directory have been re-tested and verified to be functioning correctly.
 
----
-
 ## Files
 
 ### `ImageRetrieval.ipynb`
@@ -40,8 +38,6 @@ This file contains:
 - Retrieved image identifiers
 - Similarity scores
 - Shard/group information
-
----
 
 ### `YoloFilteringImageRetrieval.py`
 
@@ -71,8 +67,6 @@ Contains:
 - FaceMesh crops
 - Valid / invalid tracking files
 
----
-
 ### `Setup.ipynb`
 
 Documents and performs environment setup required for:
@@ -84,8 +78,6 @@ Documents and performs environment setup required for:
 - Supporting dependencies
 
 Ensures reproducibility of the retrieval and filtering pipeline.
-
----
 
 ## Pipeline Outputs
 
@@ -101,8 +93,6 @@ Generates `.jsonl` file containing:
 Output: 
 - {OUTPUT_DIR}\Professions_125k_ISCO_Aligned\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl
 
----
-
 ### 2. Filtered & Structured Profession Dataset
 
 Using the generated `.jsonl` file:
@@ -113,8 +103,6 @@ Using the generated `.jsonl` file:
 
 Output: 
 - {OUTPUT_DIR}\Professions_125k_ISCO_Aligned\
-
----
 
 ## Notes
 

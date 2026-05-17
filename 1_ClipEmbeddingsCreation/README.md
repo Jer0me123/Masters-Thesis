@@ -7,29 +7,25 @@ This directory contains the pipeline for:
 2. Downloading corresponding images
 3. Deriving CLIP embeddings
 
----
-
 ## Files
 
-### hf_token.txt
-Contains HuggingFace token used in Setup.ipynb.
+### `hf_token.txt`
+Contains:
+- HuggingFace token used in Setup.ipynb.
 
-### Setup.ipynb
+### `Setup.ipynb`
+Performs:
 - Environment setup
-- Downloads Re-Laion5B .parquet files
+- Downloads Re-LAION5B .parquet files
 
 Output: 
 - {OUTPUT_DIR}\RE-LAION-5B_Dataset\relaion2B-en-research-safe
 
----
-
-### Utilities.ipynb
+### `Utilities.ipynb`
 Contains:
 - create_symlink() utility function
 
----
-
-### ImageDownloadAndEmbeddings.ipynb
+### `ImageDownloadAndEmbeddings.ipynb`
 Performs:
 - Image download from parquet
 - CLIP embedding extraction

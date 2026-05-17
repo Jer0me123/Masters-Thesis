@@ -15,8 +15,6 @@ The pipeline consists of:
 
 The scripts and notebooks in this directory have been re-tested and verified to be functioning correctly.
 
----
-
 ## Files
 
 ### `DatasetPreperation.ipynb`
@@ -32,8 +30,6 @@ Functionality:
 - Applies MediaPipe FaceMesh segmentation to each dataset
 - Converts MST labels to 3-bin groupings (Light/Mid/Dark)
 
----
-
 ### `FacialDetectionEvaluation.ipynb`
 
 Evaluates face detection models on the WIDER Face validation set to select the best detector for the annotation pipeline.
@@ -45,8 +41,6 @@ Models evaluated:
 - MediaPipe Face Detection
 
 Conclusion: YOLO-Face selected as the production detector.
-
----
 
 ### `GenderClassificationModels/GenderClassificationTesting.ipynb`
 
@@ -61,8 +55,6 @@ Models evaluated:
 
 Conclusion: Realistic Gender Classifier selected as the production model.
 
----
-
 ### `SkinToneClassificationModels/SkinToneDetectionTesting.ipynb`
 
 Evaluates skin tone classification models on CCv2, MST-E, and FACET datasets.
@@ -75,21 +67,15 @@ Models evaluated:
 
 Conclusion: VGG16 (regression, RGB, 10-class) selected as the production model.
 
----
-
 ### `SkinToneClassificationModels/DenseNet121_SkinTone_Training.py`
 
 Training script for DenseNet121-based MST skin tone classification.
-
----
 
 ### `SkinToneClassificationModels/RandomForest_SkinTone_Training.py`
 
 Training script for Random Forest MST skin tone classification using histogram-based colour features.
 
----
-
-### `SkinToneClassificationModels/vgg16_mst_classification_regression_rgb_lab.py`
+### `SkinToneClassificationModels/VGG16_MST_Testing/vgg16_mst_classification_regression_rgb_lab.py`
 
 Primary training script supporting VGG16 and ResNet18 across multiple configurations.
 
@@ -99,20 +85,9 @@ Supports:
 - Input space: `rgb` | `lab`
 - Class counts: 3, 4, 10
 
----
-
-### `SkinToneClassificationModels/RunVGG16Training.bat`
-### `SkinToneClassificationModels/RunResnet18Training.bat`
-
-Batch runners executing the full experiment suite for VGG16 and ResNet18 respectively across all mode, input space, and class count combinations.
-
----
-
-### `create_background_corrected_dataset.py`
+### `SkinToneClassificationModels/VGG16_MST_Testing/create_background_corrected_dataset.py`
 
 Replaces black background pixels in segmented face images with the mean face colour. Used to generate `_BGFixed` dataset variants for training.
-
----
 
 ### `GenderSkinToneAnnotation.py`
 
@@ -121,19 +96,13 @@ Annotates images with gender and skin tone predictions using the selected produc
 - Gender: Realistic Gender Classifier
 - Skin tone: VGG16 (configurable via CLI)
 
----
-
 ### `RELaion5B_Subset_Image_Retrieval.py`
 
 Selects the top-N images per profession from the full Re-LAION-5B retrieval results based on CLIP similarity score encoded in the filename. Copies selected images, facemesh crops, and truncates the annotations JSONL to the selected subset.
 
----
-
 ### `AnnotationDistributionAssessment.ipynb`
 
 Visualises gender and skin tone label distributions across the Re-LAION-5B and SD datasets for the full retrieval set and the 1k subset.
-
----
 
 ### `Setup.ipynb`
 

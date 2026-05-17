@@ -12,8 +12,6 @@ The pipeline consists of:
 
 The scripts and notebooks in this directory have been re-tested and verified to be functioning correctly.
 
----
-
 ## Files
 
 ### `ImageGenerationTesting.ipynb`
@@ -31,8 +29,6 @@ Models evaluated:
 
 Conclusion: SD v1.5 + LCM LoRA selected as the production model.
 
----
-
 ### `ImageGeneration.py`
 
 Generates profession-conditioned images using SD v1.5 + LCM LoRA with post-generation validation.
@@ -49,16 +45,12 @@ Output:
 - {OUTPUT_DIR}\StableDiffusionGeneratedImages\invalid\{profession}\
 - {OUTPUT_DIR}\StableDiffusionGeneratedImages\ImageGenMetadata.csv
 
----
-
 ### `prompts.json`
 
 Defines the profession list, prompt template, and negative prompt used by `ImageGeneration.py`.
 
 Prompt template:
 `full-body realistic photo of a {profession}, standing, in a professional setting appropriate for their occupation, sharp focus, 35mm lens, natural professional lighting`
-
----
 
 ### `Setup.ipynb`
 

@@ -6,8 +6,6 @@ This directory contains the pipeline for generating spurious feature image varia
 
 Each subdirectory corresponds to a distinct image transformation type. The scripts in this directory have been re-tested and verified to be functioning correctly.
 
----
-
 ## Directory Structure
 ```
 5_Spurious_Feature/
@@ -23,8 +21,6 @@ Each subdirectory corresponds to a distinct image transformation type. The scrip
 └── VAE/
 ```
 
----
-
 ## `Depth/`
 
 ### `Depth.py`
@@ -35,23 +31,17 @@ Generates depth map images using Depth-Anything-V2. Depth is normalised to 0–2
 
 Combines YOLO pose estimation with Depth-Anything-V2 to extract depth values at each of the 17 COCO skeleton keypoints per person. Outputs a JSONL file with raw and normalised joint depth vectors alongside keypoint coordinates and visibility flags.
 
----
-
 ## `EdgeDetection/`
 
 ### `EdgeDetection.py`
 
 Generates edge detection images using Canny edge detection and optionally SAM (Segment Anything Model). SAM was evaluated but not used in production due to runtime cost; Canny edges were used as the final transformation.
 
----
-
 ## `HighLowPassFiltering/`
 
 ### `HighLowPassFiltering.py`
 
 Applies frequency-domain high-pass and low-pass filtering via 2D FFT following the protocol from the reference paper. Used to measure classifier reliance on low- vs high-frequency visual cues.
-
----
 
 ## `ImageCaptioning/`
 
@@ -67,23 +57,15 @@ Generates image captions using BLIP-image-captioning-large. Applies word remappi
 
 Word-level remapping rules applied during caption generation to neutralise gender-explicit language (e.g. `woman → person`, `she → they`).
 
----
-
 ## `ObjectDetection/`
 
-### `object_detection_testing.ipynb`
+### `ObjectDetectionTesting.ipynb`
 
 Evaluates object detection models across COCO, OpenImages v7, and LVIS label sets to select the best model for large-scale annotation. YOLOv8x-OIV7 was selected as the production model.
 
 ### `ObjectDetection.py`
 
 Detects objects in images using YOLOv8x-OIV7 and produces annotated images (bounding boxes on original or white background). Supports label remapping and class exclusion to remove gender-explicit or human body-part classes.
-
-### `run.bat`
-
-Batch runner executing `ObjectDetection.py` across the SD and Re-LAION-5B datasets with the restricted label configuration.
-
----
 
 ## `Occlusion/`
 
@@ -99,8 +81,6 @@ Helper module containing occlusion model classes (Mask2Former, YOLACT) and share
 
 Evaluation script used to assess occlusion model quality and inference speed to select the most appropriate model.
 
----
-
 ## `PoseEstimation/`
 
 ### `PoseModelEvaluation.py`
@@ -115,23 +95,17 @@ Grid search hyperparameter tuning suite for YOLOv8 pose estimation, optimising c
 
 Detects poses using YOLOv8 within the specified images, producing COCO-format keypoints and visualised pose overlays. Requires images containing people; COCO is excluded.
 
----
-
 ## `SemanticSegmentation/`
 
 ### `SemanticSegmentation.py`
 
 Generates semantic segmentation images using Mask2Former (ADE20K, 150 classes). Segments are coloured using the ADE20K palette and saved as RGB PNGs. Supports resumable processing and optional output resizing.
 
----
-
 ## `ShufflingAndColour/`
 
 ### `PixelPatchShufflingMeanRGB.py`
 
 Generates pixel-shuffled images, patch-shuffled images, and mean RGB images. Also extracts per-image mean RGB values. Used to measure classifier reliance on colour and spatial arrangement cues.
-
----
 
 ## `VAE/`
 
@@ -140,8 +114,6 @@ Generates pixel-shuffled images, patch-shuffled images, and mean RGB images. Als
 Reconstructs images through the KL-regularised VAE from the latent-diffusion repository, isolating low-level texture and colour information while discarding high-level semantic content. Uses the same VAE and config as the reference paper.
 
 > **Note:** Requires the `latent-diffusion` and `taming-transformers` repositories. `VAE.py` clones them automatically on first run. The `kl-f4` model checkpoint must be downloaded separately via `Setup.ipynb`.
-
----
 
 ## `Setup.ipynb`
 
