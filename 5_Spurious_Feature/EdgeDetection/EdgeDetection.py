@@ -383,27 +383,3 @@ if __name__ == "__main__":
 # ===========================================================
 # EXAMPLE USAGE
 # python EdgeDetection.py --image_dir "path/to/input" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "path/to/output" --exclude_dirs facemesh --edge_method "canny"
-
-# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --edge_method canny -> This is done as the canny edge detection method along with the SAM method was the primary method used in the paper, however the SAM methods performed slightly better but was much more computationally expensive. Hence canny is preferred.
-
-# OTHER EXAMPLE USAGE
-# python EdgeDetection.py --image_dir "path/to/input" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "path/to/output" --exclude_dirs facemesh --edge_method "sam" --sam_model_type "vit_l"
-
-# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --edge_method sam -> This is the other model used in the paper
-# --sam_model_type vit_l -> This is the model type used in the paper which provided a good balance between performance and computational cost.
-# NOTE: This model is quite costly time wise and additionally in the paper it was noted that The classification accuracy on SAM contours (73.2%) is slightly higher than that on Canny edge (71.0%), thus its better to use Canny Edge as opposed to this.
-
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\.venv-Copy-Copy\Scripts\python.exe" "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\EdgeDetection\canny_sam_test.py" --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned" --batch_size 8 --num_workers 8 --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\EdgeDetection\test" --edge_method "canny" --resize 224 224
-
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\.venv-Copy-Copy\Scripts\python.exe" "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\EdgeDetection\canny_sam_test.py" --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned" --batch_size 8 --num_workers 8 --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\EdgeDetection\test" --sam_model_type "vit_l" --edge_method "sam" --resize 224 224
-
-
-# python EdgeDetection.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --edge_method canny --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\EdgeDetection" --exclude_dirs face_crops --device cuda
-
-# python EdgeDetection.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --edge_method canny --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\EdgeDetection" --exclude_dirs facemesh --device cuda
-
-# python EdgeDetection.py --image_dir "F:\ImageRetrieval\Coco" --edge_method canny --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Coco\EdgeDetection" --exclude_dirs facemesh --device cuda

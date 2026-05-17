@@ -4,7 +4,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 # Where images will be saved
-OUT_DIR = Path("F:\Thesis\\Fairface_Dataset")
+OUT_DIR = Path("Fairface_Dataset")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Load dataset

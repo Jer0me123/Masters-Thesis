@@ -4,10 +4,10 @@ from pathlib import Path
 # ==========================
 # CONFIG
 # ==========================
-BASE_SPLITS_JSON = r"C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassification\splits_face_combined_stratified_patchShufflePS16.json"
-OUTPUT_SPLITS_JSON = r"C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\7_DatasetPreparation\UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified_patchShufflePS16.json"
+BASE_SPLITS_JSON = r"splits_face_combined_stratified_patchShufflePS16.json"
+OUTPUT_SPLITS_JSON = r"coco_splits_face_combined_stratified_patchShufflePS16.json"
 
-COCO_ROOT = Path(r"F:\ImageRetrieval\SpuriousFeatureImages\Coco\Shuffling&Colour\patch_shuffle_ps16")
+COCO_ROOT = Path(r"FCoco\Shuffling&Colour\patch_shuffle_ps16")
 COCO_SPLITS = {
     "train": COCO_ROOT / "train2017",
     "val":   COCO_ROOT / "val2017",
@@ -54,4 +54,4 @@ for split_name, split_dir in COCO_SPLITS.items():
 with open(OUTPUT_SPLITS_JSON, "w", encoding="utf-8") as f:
     json.dump(splits, f, indent=2)
 
-print(f"\n✅ Saved merged splits to:\n{OUTPUT_SPLITS_JSON}")
+print(f"\n Saved merged splits to:\n{OUTPUT_SPLITS_JSON}")

@@ -256,8 +256,8 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python New_4_CreateCaption_Splits.py ^
-#   --splits "UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified.json" ^
-#   --captions_dir "F:\ImageRetrieval\SpuriousFeatureImages" ^
+# python 4_CreateCaption_Splits.py ^
+#   --splits "" ^
+#   --captions_dir "" ^
 #   --captions_map_file "captions_map.json" ^
-#   --out_json "UniversalSplits\DatasetClassificationCoco\coco_splits_face_combined_stratified_captions.json"
+#   --out_json ""

@@ -615,9 +615,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# https://www.bls.gov/cps/cpsaat11.htm
-
-
-# python "US\PracticalBLSDemographics.py" "US\USBureauOfLaborStatistics\cpsaat11_2024.xlsx" 

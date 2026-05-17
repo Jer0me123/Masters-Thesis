@@ -420,27 +420,3 @@ if __name__ == "__main__":
 # ===========================================================
 # EXAMPLE USAGE
 # python PixelPatchShufflingMeanRGB.py --image_dir "path/to/input" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "path/to/output" --exclude_dirs facemesh --patch_sizes 1 2 4 8 16 --do_pixel_shuffle --do_patch_shuffle --do_mean_rgb
-
-# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-# --patch_sizes 1 2 4 8 16 -> This is done as in the paper "Understanding Bias in Large-Scale Visual Datasets" in Fig 5 they denote that these patch sizes where used for patch shuffling.  
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-
-
-# NOTE: Pixel and Patch Shuffling are randomized independently per image.
-# The random seed is deterministically derived from the image content
-# (specifically, the RGB sum of a reference pixel), ensuring that each
-# image is shuffled in a reproducible way across runs, provided the
-# preprocessing pipeline (decoding, resizing, color ordering) is unchanged.
-
-
-# python PixelPatchShufflingMeanRGB.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\Shuffling&Colour" --exclude_dirs face_crops --patch_sizes 2 4 8 16 --do_pixel_shuffle --do_patch_shuffle --do_mean_rgb
-
-# python PixelPatchShufflingMeanRGB.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\Shuffling&Colour" --exclude_dirs facemesh --patch_sizes 2 4 8 16 --do_pixel_shuffle --do_patch_shuffle --do_mean_rgb
-
-# python PixelPatchShufflingMeanRGB.py --image_dir "F:\ImageRetrieval\Coco" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Coco\Shuffling&Colour" --exclude_dirs facemesh --patch_sizes 2 4 8 16 --do_pixel_shuffle --do_patch_shuffle --do_mean_rgb
-
-
-
-
-
-# python PixelPatchShufflingMeanRGB.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset\A_photo_of_a_florist" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\Shuffling&Colour\pixel_shuffle\A_photo_of_a_florist" --exclude_dirs facemesh --do_pixel_shuffle

@@ -909,27 +909,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# conda activate ITIGen_ControlNet_ColourDebias
-
-# python ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py ^
-#   --outdir "F:\ImageRetrieval\DebiasedImages" ^
-#   --n_iter 500 ^
-#   --seed 42 ^
-#   --guidance_scale 7 ^
-#   --num_inference_steps 50 ^
-#   --attr-list "CCv2_Gender,CCv2_MSTE_SkinTone" ^
-#   --filters CCv2_Gender_Female CCv2_MSTE_SkinTone_10 ^
-#   --prompt "an image of a person" ^
-#   --generate-image-prompt "A picture of a doctor" ^
-#   --save-intermediate ^
-#   --load-model-epoch 19 ^
-#   --control-type pose ^
-#   --control-image "./basic_pose.jpg" ^
-#   --controlnet-scale 0.6 ^
-#   --color-align-enabled ^
-#   --color-reference-image "./doctor_mean_rgb.png" ^
-#   --with-pred-sample-projection ^
-#   --projection-threshold 600 ^
-#   --projection-lr 0.05 ^
-#   --blur-factor 5

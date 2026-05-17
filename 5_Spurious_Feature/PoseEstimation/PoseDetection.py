@@ -565,25 +565,3 @@ if __name__ == "__main__":
 # EXAMPLE USAGE
 # ============================================================
 # python PoseDetection.py --image_dir "path/to/images" --batch_size 16 --num_workers 8 ---output-dir "path/to/images" --exclude_dirs facemesh --model_size l --conf 0.25 --kp-conf-thr 0.5
-
-# python PoseDetection.py --image_dir "path/to/images" --batch_size 16 --num_workers 8 ---output-dir "path/to/images" --exclude_dirs facemesh --model_size l --conf 0.25 --kp-conf-thr 0.5 --draw --resize 224 224
-
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --model_size l -> Yolo was the best performing model overall in terms of speed and accuracy, with the l variant achieving the best balance
-# --conf 0.25 -> Controls the minimum confidence required for a person bounding box to be considered a valid detection.
-# --kp-conf-thr 0.5 -> Controls whether an individual keypoint is considered visible.
-# --draw -> This signals to the program to draw the pose points onto the image and store the results
-# --resize 224 224 -> Only works with --draw. This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-
-
-# python yolov8_pose_final.py --input-dir "E:\ImageRetrieval\Professions_125k_Cleaned\Female_Actuarial_Analyst" --output-dir "E:\Test" --model-size l --device cuda --batch-size 16 --num-workers 8 --conf 0.25
-
-# .venv_test\Scripts\python.exe yolov8_pose_final.py --input-dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output-dir "E:\Test" --model-size l --device cuda --batch-size 16 --num-workers 8 --conf 0.25 --draw
-
-
-# .venv_test\Scripts\python.exe PoseDetection.py --input_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir "E:\Test3" --model_size l --device cuda --batch_size 16 --num_workers 8 --conf 0.25
-
-
-# python PoseDetection.py --input_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir "E:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\PoseDetection" --model_size l --exclude_dirs face_crops --batch_size 16 --num_workers 8 --conf 0.25 --kp-conf-thr 0.5 --draw --resize 224 224
-
-# python PoseDetection.py --input_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\PoseDetection" --model_size l --exclude_dirs facemesh --batch_size 16 --num_workers 8 --conf 0.25 --kp-conf-thr 0.5 --draw --resize 224 224

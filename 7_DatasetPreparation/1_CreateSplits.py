@@ -248,9 +248,4 @@ if __name__ == "__main__":
     main()
 
 # Creating the initial splits
-# python 1_CreateSplits.py --annotations "E:\ImageRetrieval\StableDiffusionGeneratedImages_Annotations\annotations.jsonl" --out_json "UniversalSplits\Base\StableDiffusion\splits_gender_face_stratified.json" --label_key gender --annotation_source face --face_path_hint face_crop --split_mode stratified --seed 42
-# python 1_CreateSplits.py --annotations "E:\ImageRetrieval\StableDiffusionGeneratedImages_Annotations\annotations.jsonl" --out_json "UniversalSplits\Base\StableDiffusion\splits_10mst_face_stratified.json" --label_key mst_label --annotation_source face --face_path_hint face_crop --split_mode stratified --seed 42
-# python 1_CreateSplits.py --annotations "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset\annotations.jsonl" --out_json "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_gender_face_stratified.json" --label_key gender --annotation_source face --face_path_hint facemesh --split_mode stratified --seed 42
-# python 1_CreateSplits.py --annotations "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset\annotations.jsonl" --out_json "UniversalSplits\Base\Professions_125k_ISCO_Aligned_1k_Subset\splits_10mst_face_stratified.json" --label_key mst_label --annotation_source face --face_path_hint facemesh --split_mode stratified --seed 42
-# python 1_CreateSplits.py --annotations "F:\ImageRetrieval\DebiasedImages\annotations.jsonl" --out_json "UniversalSplits\Base\DebiasedImages\splits_gender_face_stratified.json" --label_key gender  --annotation_source nonface --split_mode stratified --seed 42
-# python 1_CreateSplits.py --annotations "F:\ImageRetrieval\DebiasedImages\annotations.jsonl" --out_json "UniversalSplits\Base\DebiasedImages\splits_10mst_face_stratified.json" --label_key mst_label --annotation_source nonface --split_mode stratified --seed 42
+# python 1_CreateSplits.py --annotations "annotations.jsonl" --out_json "splits_gender_face_stratified.json" --label_key gender --annotation_source face --face_path_hint face_crop --split_mode stratified --seed 42

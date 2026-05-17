@@ -619,23 +619,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# =============================================================================
-# Example Usage (simplified - no --task argument needed!)
-# =============================================================================
-
-# Before (old version):
-# python MLP.py --splits_json test_mlp_gender.json --task gender --seeds 0 --out_dir test_mlp_gender 
-
-# After (new version):
-# python MLP.py --splits_json test_mlp_gender.json --seeds 0 --out_dir test_mlp_gender 
-# python MLP.py --splits_json test_mlp_skintone.json --seeds 0 --out_dir test_mlp_skintone
-
-# Multi-seed with bootstrapping:
-# python MLP.py --splits_json keypoints_gender.json --seeds 0 1 2 3 4 --bootstrap --out_dir outputs_mlp_gender
-
-# With early stopping:
-# python MLP.py --splits_json keypoints_skintone.json --seeds 0 --patience 10 --out_dir outputs_mlp_skintone
-
-# python MLP.py --splits_json test_mlp_gender.json --task gender --seeds 0 --out_dir test_mlp_gender 
-# python MLP.py --splits_json test_mlp_skintone.json --task skintone --seeds 0 --out_dir test_mlp_skintone

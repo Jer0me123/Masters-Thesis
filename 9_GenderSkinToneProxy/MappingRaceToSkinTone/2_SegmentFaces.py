@@ -173,8 +173,3 @@ def process_fairface():
 
 if __name__ == "__main__":
     process_fairface()
-
-
-# C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\DatasetAnnotation\.facemesh_env\Scripts\activate
-
-# python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\MappingRaceToSkinTone\2_SegmentFaces.py"

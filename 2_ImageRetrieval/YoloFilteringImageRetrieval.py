@@ -507,4 +507,4 @@ if __name__ == "__main__":
         jsonl_path=args.jsonl_path,
     )
 
-# .\.venv\Scripts\python.exe YoloFilteringImageRetrieval.py --input_root "F:\Thesis" --output_root "E:\ImageRetrieval\Professions_125k_ISCO_Aligned" --jsonl_path "D:\ISCO_aligned_125k_retrieval_results_batchsize_10.jsonl" --yolo_face_model_path "models/yolov8n-face.pt" --yolo_person_model_path "models/yolov8n.pt" --mode "copy" --batch_size 128
+# python.exe YoloFilteringImageRetrieval.py --input_root "" --output_root "" --jsonl_path "l" --yolo_face_model_path "" --yolo_person_model_path "" --mode "copy" --batch_size 128

@@ -248,21 +248,3 @@ if __name__ == "__main__":
 # ===========================================================
 # EXAMPLE USAGE
 # python VAE.py --image_dir  "path/to/input" --output_dir  "path/to/output"  --batch_size 8 --fixed_size 224 224 --resize 224 224 --exclude_dirs facemesh
-
-# --fixed_size 224 224 -> This can be ommited or set to 224 224, if ommitted the default 256 256 size will be used.
-# --resize 224 224 -> IF fixed_size is set to 224 224 this can be ommited as images are saved according to fixed_size by default. This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-
-#NOTE: --config_path & --ckpt_path are derived from the latent-diffusion git repo https://github.com/CompVis/latent-diffusion
-# these are the same ones used in the papers gitrepo https://github.com/boyazeng/understand_bias/blob/main/transformations/vae/transform.py 
-
-# python "C:\MastersRepos\ARI5902-Research-To5B Testing\Spurious_Feature\VAE\VAE.py" --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\VAE\test3" --batch_size 8
-
-# python VAE.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\VAE\test3" --batch_size 8
-
-
-# python VAE.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --resize 224 224 --batch_size 16 --output_dir "VAE_MoveToEDrive" --exclude_dirs face_crops
-
-# python VAE.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --resize 224 224 --batch_size 16 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\VAE" --exclude_dirs facemesh
-
-# python VAE.py --image_dir "F:\ImageRetrieval\Coco" --resize 224 224 --batch_size 16 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Coco\VAE" --exclude_dirs facemesh

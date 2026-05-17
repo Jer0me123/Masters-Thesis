@@ -183,19 +183,9 @@ if __name__ == "__main__":
     main()
 
 # python 7_PseudoDatasetSplitsForDatasetClassification.py ^
-# --splits "UniversalSplits\Professions_125k_ISCO_Aligned_1k_Subset\splits_gender_face_stratified.json" ^
-# --out_json "UniversalSplits\PseudoDatasetClassification\ISCO_splits_face_combined_stratified.json" ^
-# --image_root "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" ^
-# --balanced ^
-# --seed 42 ^
-# --label_a "PseudoDatase1" ^
-# --label_b "PseudoDatase2"
-
-
-# python 7_PseudoDatasetSplitsForDatasetClassification.py ^
-# --splits "UniversalSplits\StableDiffusion\splits_gender_face_stratified.json" ^
-# --out_json "UniversalSplits\PseudoDatasetClassification\SD_splits_face_combined_stratified.json" ^
-# --image_root "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" ^
+# --splits "" ^
+# --out_json "" ^
+# --image_root "" ^
 # --balanced ^
 # --seed 42 ^
 # --label_a "PseudoDatase1" ^

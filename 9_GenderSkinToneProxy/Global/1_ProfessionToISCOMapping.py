@@ -56,8 +56,8 @@ def download_wisco_if_needed(filepath: Path) -> Path:
     if filepath.exists():
         return filepath
 
-    print(f"⬇️  WISCO file not found — downloading...")
-    print(f"   Source: {WISCO_DOWNLOAD_URL}")
+    print(f"WISCO file not found — downloading...")
+    print(f"Source: {WISCO_DOWNLOAD_URL}")
 
     response = requests.get(WISCO_DOWNLOAD_URL, stream=True)
     response.raise_for_status()
@@ -67,7 +67,7 @@ def download_wisco_if_needed(filepath: Path) -> Path:
             if chunk:
                 f.write(chunk)
 
-    print(f"✅ Downloaded WISCO file to: {filepath.resolve()}")
+    print(f"Downloaded WISCO file to: {filepath.resolve()}")
     return filepath
 
 
@@ -89,7 +89,7 @@ class ISCOMapperWISCO:
         if not self.wisco_file.exists():
             raise FileNotFoundError(self.wisco_file)
 
-        print(f"📂 Loading WISCO database: {self.wisco_file}")
+        print(f"Loading WISCO database: {self.wisco_file}")
         df = pd.read_excel(self.wisco_file, sheet_name="CODESET")
 
         records = []
@@ -118,8 +118,8 @@ class ISCOMapperWISCO:
         self.job_index = pd.DataFrame(records).drop_duplicates("job_title")
         self.loaded = True
 
-        print(f"✅ Loaded {len(self.job_index):,} job titles")
-        print(f"   Unique ISCO-4 codes: {self.job_index['isco_code'].nunique()}")
+        print(f"Loaded {len(self.job_index):,} job titles")
+        print(f"Unique ISCO-4 codes: {self.job_index['isco_code'].nunique()}")
 
     # --------------------------------------------------------
 
@@ -244,11 +244,9 @@ def main():
     df.to_csv(args.output, index=False)
 
     matched = (df["match_type"] != "none").sum()
-    print(f"✅ Done — matched {matched}/{len(df)} ({matched/len(df)*100:.1f}%)")
-    print(f"💾 Saved to: {args.output}")
+    print(f"Done — matched {matched}/{len(df)} ({matched/len(df)*100:.1f}%)")
+    print(f"Saved to: {args.output}")
 
 
 if __name__ == "__main__":
     main()
-
-# python 1_ProfessionToISCOMapping.py --job-list "job_list.csv" --output "job_list_isco_mapped.csv"

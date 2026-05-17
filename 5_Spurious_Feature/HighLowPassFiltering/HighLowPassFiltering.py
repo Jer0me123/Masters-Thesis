@@ -433,18 +433,3 @@ if __name__ == "__main__":
 # ===========================================================
 # EXAMPLE USAGE
 # python HighLowPassFiltering.py --image_dir "path/to/input" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "path/to/output" --exclude_dirs facemesh --radius 40 --do_low --do_high --filter_type ideal
-
-# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --filter_type ideal -> This is done as the ideal filter type was the primary filter used in the paper, however the butterworth filter was mentioned & tested in the Appendix, hence its inclusion
-#  --radius 40 -> This is the primary radius value used in the paper for both high and low pass filtering with ideal filter, however other radius values were tested in the Appendix.
-
-# NOTE: Radius 40 was used in the paper: "We then apply an ideal filter [22] with a hard threshold radius of 40 in the frequency domain, so as to only keep either high (i.e., high-pass filter) or low (i.e., low-pass filter) frequencies"
-
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\.venv-Copy-Copy\Scripts\python.exe" "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\HighLowPassFiltering\test2.py" --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned" --batch_size 8 --num_workers 8 --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\HighLowPassFiltering\test" --radius 40 --do_low --do_high --filter_type ideal
-
-# python HighLowPassFiltering.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\High&LowPassFilter" --exclude_dirs face_crops --radius 40 --do_low --do_high --filter_type ideal
-
-# python HighLowPassFiltering.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\High&LowPassFilter" --exclude_dirs facemesh --radius 40 --do_low --do_high --filter_type ideal
-
-# python HighLowPassFiltering.py --image_dir "F:\ImageRetrieval\Coco" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Coco\High&LowPassFilter" --exclude_dirs facemesh --radius 40 --do_low --do_high --filter_type ideal

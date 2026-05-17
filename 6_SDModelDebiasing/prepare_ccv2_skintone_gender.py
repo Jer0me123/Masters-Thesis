@@ -7,8 +7,8 @@ from tqdm import tqdm
 # CONFIG
 # ============================================================
 
-CCV2_IMAGES_ROOT = Path(r"F:\Thesis\CasualConversationv2_Dataset\Images")
-CCV2_JSON = Path(r"F:\Thesis\CasualConversationv2_Dataset\Annotations\CasualConversationsV2.json")
+CCV2_IMAGES_ROOT = Path(r"CasualConversationv2_Dataset\Images")
+CCV2_JSON = Path(r"CasualConversationv2_Dataset\Annotations\CasualConversationsV2.json")
 
 OUT_SKINTONE_ROOT = Path(r"ITI-GEN\data\CCv2_MSTE_SkinTone_benchmark\CCv2_MSTE_SkinTone")
 OUT_GENDER_ROOT   = Path(r"ITI-GEN\data\CCv2_Gender_benchmark\CCv2_Gender")

@@ -324,17 +324,6 @@ def hyperparam_search_clf(X_train, y_train, train_groups,
     print("[INFO] Using GroupKFold(n_splits=3) for CLASSIFIER hyperparameter tuning.")
     print(f"[INFO] Number of unique persons in training: {len(np.unique(train_groups))}")
 
-    # search = RandomizedSearchCV(
-    #     estimator=base,
-    #     param_distributions=param_dist,
-    #     n_iter=n_iter,
-    #     scoring="accuracy",
-    #     cv=cv,
-    #     verbose=3,
-    #     n_jobs=n_jobs,
-    #     random_state=random_state
-    # )
-
     search = HalvingRandomSearchCV(
         estimator=base,
         param_distributions=param_dist,
@@ -382,17 +371,6 @@ def hyperparam_search_reg(X_train, y_train, train_groups,
     cv = GroupKFold(n_splits=3)
     print("[INFO] Using GroupKFold(n_splits=3) for REGRESSOR hyperparameter tuning.")
     print(f"[INFO] Number of unique persons in training: {len(np.unique(train_groups))}")
-
-    # search = RandomizedSearchCV(
-    #     estimator=base,
-    #     param_distributions=param_dist,
-    #     n_iter=n_iter,
-    #     scoring="neg_mean_squared_error",
-    #     cv=cv,
-    #     verbose=2,
-    #     n_jobs=n_jobs,
-    #     random_state=random_state
-    # )
 
     search = HalvingRandomSearchCV(
         estimator=base,
@@ -661,52 +639,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-# Paper faithful model training example:
-# python RandomForest_SkinTone_Training.py --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --model-out "G:\Thesis\Models\RandomForest" --mode clf --n-estimators 300 --max-depth none --min-samples-split 2 --min-samples-leaf 1 --max-features sqrt --n-jobs -1 --val-ratio 0.35 --class-weight balanced_subsample --bins 256
-
-# Classification Model + Hyperparameter Search
-# python RandomForest_SkinTone_Training.py --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --model-out "G:\Thesis\Models\RandomForest" --mode clf --val-ratio 0.35 --hparam-search --search-iter 50 --n-jobs -1
-
-# Paper faithful model training example (changed from classification to regression model):
-# python RandomForest_SkinTone_Training.py --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --model-out "G:\Thesis\Models\RandomForest" --mode reg --n-estimators 300 --max-depth none --min-samples-split 2 --min-samples-leaf 1 --max-features sqrt --n-jobs -1 --val-ratio 0.35 --class-weight balanced_subsample --bins 256
-
-# Regression Model + Hyperparameter Search
-# python RandomForest_SkinTone_Training.py --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --model-out "G:\Thesis\Models\RandomForest" --mode reg --val-ratio 0.35 --hparam-search --search-iter 50 --n-jobs -1
-
-
-
-# python RandomForest_SkinTone_Training.py --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --model-out "G:\Thesis\Models\RandomForest" --mode reg --val-ratio 0.35 --hparam-search --search-iter 50 --n-jobs 2
-
-
-
-
-
-
-
-
-
-
-
-
-# # Regression model with all regression metrics
-# python RandomForest_SkinTone_Training.py \
-#   --csv-path "..." \
-#   --image-dir "..." \
-#   --model-out "G:\Thesis\Models\RandomForest" \
-#   --mode reg \
-#   --n-estimators 400 \
-#   --max-depth 20 \
-#   --bins 256 \
-#   --n-jobs -1
-
-# # Ablation with fewer histogram bins (e.g., 64)
-# python RandomForest_SkinTone_Training.py \
-#   --csv-path "..." \
-#   --image-dir "..." \
-#   --model-out "G:\Thesis\Models\RandomForest" \
-#   --mode clf \
-#   --bins 64
-
-
-# # python RandomForest_SkinTone_Training.py --model-out "G:\Thesis\Models\RandomForest\rf_mst.joblib" --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --val-ratio 0.35 --n_estimators=300 --n_jobs=-1 --class-weight=none
+# python RandomForest_SkinTone_Training.py --model-out "" --csv-path "" --image-dir "" --val-ratio 0.35 --n_estimators=300 --n_jobs=-1 --class-weight=none

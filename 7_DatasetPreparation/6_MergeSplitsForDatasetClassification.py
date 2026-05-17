@@ -240,50 +240,12 @@ if __name__ == "__main__":
     main()
 
 # python 6_MergeSplitsForDatasetClassification.py ^
-# --splits_a "UniversalSplits\Professions_125k_ISCO_Aligned_1k_Subset\splits_gender_face_stratified.json" ^
-# --splits_b "UniversalSplits\StableDiffusion\splits_gender_face_stratified.json" ^
-# --image_root_a "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" ^
-# --image_root_b "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" ^
+# --splits_a "" ^
+# --splits_b "" ^
+# --image_root_a "F" ^
+# --image_root_b "" ^
 # --suffix_a "" ^
 # --suffix_b "" ^
-# --label_a "Professions_125k_ISCO_Aligned_1k_Subset" ^
-# --label_b "StableDiffusion" ^
-# --out_json "UniversalSplits\DatasetClassification\splits_face_combined_stratified.json"
-
-# python 6_MergeSplitsForDatasetClassification.py ^
-# --splits_a "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\Shuffling&Colour\mean_rgb\splits_gender_face_stratified_meanrgb_normalized.json" ^
-# --splits_b "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\Shuffling&Colour\mean_rgb\splits_gender_face_stratified_meanrgb_normalized.json" ^
-# --image_root_a "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" ^
-# --image_root_b "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" ^
-# --suffix_a "" ^
-# --suffix_b "" ^
-# --label_a "Professions_125k_ISCO_Aligned_1k_Subset_MeanRGB" ^
-# --label_b "StableDiffusion_MeanRGB" ^
-# --out_json "UniversalSplits\DatasetClassification\splits_face_combined_stratified_meanrgb.json" ^
-# --split_reference "UniversalSplits\DatasetClassification\splits_face_combined_stratified.json"
-
-
-# python 6_MergeSplitsForDatasetClassification.py ^
-# --splits_a "UniversalSplits\Professions_125k_ISCO_Aligned_1k_Subset\splits_gender_face_stratified.json" ^
-# --splits_b "UniversalSplits\StableDiffusion\splits_gender_face_stratified.json" ^
-# --image_root_a "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" ^
-# --image_root_b "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" ^
-# --suffix_a "" ^
-# --suffix_b "" ^
-# --label_a "Professions_125k_ISCO_Aligned_1k_Subset" ^
-# --label_b "StableDiffusion" ^
-# --out_json "UniversalSplits\DatasetClassification\splits_face_combined_stratified_10k.json" ^
-# --downsample 10_000 ^
-# --seed 42
-
-# python 6_MergeSplitsForDatasetClassification.py ^
-# --splits_a "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\_SPLITS\Shuffling&Colour\mean_rgb\splits_gender_face_stratified_meanrgb_normalized.json" ^
-# --splits_b "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\_SPLITS\Shuffling&Colour\mean_rgb\splits_gender_face_stratified_meanrgb_normalized.json" ^
-# --image_root_a "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" ^
-# --image_root_b "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" ^
-# --suffix_a "" ^
-# --suffix_b "" ^
-# --label_a "Professions_125k_ISCO_Aligned_1k_Subset_MeanRGB" ^
-# --label_b "StableDiffusion_MeanRGB" ^
-# --out_json "UniversalSplits\DatasetClassification\splits_face_combined_stratified_meanrgb_10k.json" ^
-# --split_reference "UniversalSplits\DatasetClassification\splits_face_combined_stratified_10k.json"
+# --label_a "" ^
+# --label_b "" ^
+# --out_json ""

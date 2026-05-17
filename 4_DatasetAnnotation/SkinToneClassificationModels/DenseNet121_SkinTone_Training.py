@@ -993,17 +993,10 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Paper-style classification (default config):
-# python DenseNet121_SkinTone_Training.py --csv-path "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2\annotations.csv" --image-dir "G:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2" --save-dir "G:\Thesis\Models\DenseNet_LAB" --epochs 32 --batch-size 32 --val-ratio 0.35 --lr 1e-4 --weight-decay 1e-4 --threshold 0.5 --gpu 0 --mode classification --loss oce --finetune last
-
-
-# python VGG16_Model_SkinTone_Training.py --save-dir "G:\Thesis\CasualConversationv2_Dataset\Models" --csv-path "" --image-dir "" --epochs 32 --lr 1e-4 --weight-decay 1e-4 --threshold 0.5 --val-ratio 0.35 --use-bn --gpu 0 --compute-lab-stats
-
-# # Regression mode (VGG16-style continuous MST):
 # python DenseNet121_SkinTone_Training.py ^
-#   --csv-path "G:\Thesis\MonkSkinTone_Dataset\Segmented_MSTE\annotations.csv" ^
-#   --image-dir "G:\Thesis\MonkSkinTone_Dataset\Segmented_MSTE" ^
-#   --save-dir "G:\Thesis\Models\DenseNet_LAB_MSTE_reg" ^
+#   --csv-path "" ^
+#   --image-dir "" ^
+#   --save-dir "" ^
 #   --epochs 32 --batch-size 32 ^
 #   --val-ratio 0.35 --lr 1e-4 --weight-decay 1e-4 ^
 #   --mode regression --loss mse --finetune all --gpu 0

@@ -745,4 +745,4 @@ if __name__ == "__main__":
 
     validator.shutdown()
 
-# .\.venv\Scripts\python.exe ImageGeneration.py --output_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages" --yolo_person_path "models\yolo12s.pt" --yolo_face_path "models\yolov12l-face.pt" --total_images_per_label 1000 --batch_size 2 --device "cuda" --prompt_config "prompts.json"
+# python.exe ImageGeneration.py --output_dir "" --yolo_person_path "" --yolo_face_path "" --total_images_per_label 1000 --batch_size 2 --device "cuda" --prompt_config "prompts.json"

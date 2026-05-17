@@ -203,7 +203,7 @@ def print_results(results):
     print(f"Results for {results['model_name']}")
     print(f"{'='*60}\n")
     
-    print(f"📊 Detection Statistics:")
+    print(f" Detection Statistics:")
     print(f"  Total images:           {results['total_images']}")
     print(f"  Successful detections:  {results['successful_detections']} ({results['success_rate']*100:.1f}%)")
     print(f"  Quality filtered:       {results['quality_filtered']}")
@@ -211,23 +211,23 @@ def print_results(results):
     print(f"  Detection rate:         {results['detection_rate']*100:.1f}%")
     
     if results.get('avg_time_per_image') is not None and results.get('images_per_second') is not None:
-        print(f"\n⏱️ Speed Metrics (Model Inference Only):")
+        print(f"\n Speed Metrics (Model Inference Only):")
         print(f"  Total inference time:   {results['total_inference_time']:.3f}s")
         print(f"  Avg time per image:     {results['avg_time_per_image']*1000:.2f} ms")
         print(f"  Images per second:      {results['images_per_second']:.2f} img/s")
     
     if 'mean_mask_ratio' in results:
-        print(f"\n📏 Size Metrics:")
+        print(f"\n Size Metrics:")
         print(f"  Mask area ratio:  {results['mean_mask_ratio']:.3f} ± {results['std_mask_ratio']:.3f}")
         print(f"  BBox area ratio:  {results['mean_bbox_ratio']:.3f} ± {results['std_bbox_ratio']:.3f}")
     
     if 'mean_iou' in results:
-        print(f"\n🎯 Segmentation Quality (vs Ground Truth):")
+        print(f"\n Segmentation Quality (vs Ground Truth):")
         print(f"  Mean IoU:         {results['mean_iou']:.3f} ± {results['std_iou']:.3f}")
         print(f"  Mean Precision:   {results['mean_precision']:.3f} ± {results['std_precision']:.3f}")
         print(f"  Mean Recall:      {results['mean_recall']:.3f} ± {results['std_recall']:.3f}")
     
-    print(f"\n✅ Quality Thresholds Applied:")
+    print(f"\n Quality Thresholds Applied:")
     print(f"  Mask area: {MIN_MASK_AREA_RATIO:.2f} - {MAX_MASK_AREA_RATIO:.2f}")
     print(f"  BBox area: {MIN_BBOX_AREA_RATIO:.2f} - {MAX_BBOX_AREA_RATIO:.2f}")
 
@@ -273,7 +273,7 @@ def plot_execution_time(results_list, output_dir="plots"):
     out_path = output_dir / 'execution_time_comparison.png'
     plt.tight_layout()
     plt.savefig(out_path, dpi=300, bbox_inches='tight')
-    print(f"\n⏱️ Execution time plot saved to {out_path}")
+    print(f"\n Execution time plot saved to {out_path}")
     plt.close()
 
 
@@ -309,7 +309,7 @@ def plot_precision_recall(results_list, output_dir="plots"):
     out_path = output_dir / 'precision_recall_comparison.png'
     plt.tight_layout()
     plt.savefig(out_path, dpi=300, bbox_inches='tight')
-    print(f"\n🎯 Precision/Recall plot saved to {out_path}")
+    print(f"\n Precision/Recall plot saved to {out_path}")
     plt.close()
 
 
@@ -340,7 +340,7 @@ def plot_comparison(results_list, output_dir="plots"):
     out_path = output_dir / 'success_detection_rates.png'
     plt.tight_layout()
     plt.savefig(out_path, dpi=300, bbox_inches='tight')
-    print(f"\n📊 Success/Detection plot saved to {out_path}")
+    print(f"\n Success/Detection plot saved to {out_path}")
     plt.close()
     
     # ---- Standalone: Mask Area Distribution ----
@@ -358,7 +358,7 @@ def plot_comparison(results_list, output_dir="plots"):
     out_path = output_dir / 'mask_area_distribution.png'
     plt.tight_layout()
     plt.savefig(out_path, dpi=300, bbox_inches='tight')
-    print(f"\n📊 Mask area distribution plot saved to {out_path}")
+    print(f"\n Mask area distribution plot saved to {out_path}")
     plt.close()
     
     # ---- Standalone: IoU Distribution ----
@@ -382,7 +382,7 @@ def plot_comparison(results_list, output_dir="plots"):
     out_path = output_dir / 'iou_distribution.png'
     plt.tight_layout()
     plt.savefig(out_path, dpi=300, bbox_inches='tight')
-    print(f"\n📊 IoU distribution plot saved to {out_path}")
+    print(f"\n IoU distribution plot saved to {out_path}")
     plt.close()
     
     # ---- Standalone: Breakdown Plot ----
@@ -407,7 +407,7 @@ def plot_comparison(results_list, output_dir="plots"):
     out_path = output_dir / 'breakdown_by_model.png'
     plt.tight_layout()
     plt.savefig(out_path, dpi=300, bbox_inches='tight')
-    print(f"\n📊 Breakdown plot saved to {out_path}")
+    print(f"\n Breakdown plot saved to {out_path}")
     plt.close()
     
     # 1. Success Rate Comparison (COMBINED)
@@ -523,7 +523,7 @@ def plot_comparison(results_list, output_dir="plots"):
     
     plt.tight_layout()
     plt.savefig(output_dir / 'model_comparison.png', dpi=300, bbox_inches='tight')
-    print(f"\n📊 Comparison plots saved to {output_dir / 'model_comparison.png'}")
+    print(f"\n Comparison plots saved to {output_dir / 'model_comparison.png'}")
     plt.close()
 
 
@@ -588,7 +588,7 @@ def extract_coco_ground_truth_masks(annotation_file, image_dir):
         mask = maskUtils.decode(rle).astype(np.uint8)
         ground_truth_masks[img_path] = mask
     
-    print(f"✅ Loaded {len(ground_truth_masks)} ground truth masks")
+    print(f" Loaded {len(ground_truth_masks)} ground truth masks")
     return ground_truth_masks
 
 
@@ -661,14 +661,14 @@ def main():
             results_to_save = {k: v for k, v in results.items() 
                               if not isinstance(v, list) or k == 'detection_details'}
             json.dump(results_to_save, f, indent=2)
-        print(f"\n💾 Results saved to {results_file}")
+        print(f"\n Results saved to {results_file}")
         
         # Save detailed per-image results if requested
         if args.save_details:
             details_file = output_dir / f"{model_name}_details.json"
             with open(details_file, 'w') as f:
                 json.dump(results['detection_details'], f, indent=2)
-            print(f"💾 Detailed results saved to {details_file}")
+            print(f" Detailed results saved to {details_file}")
         
         all_results.append(results)
     
@@ -699,107 +699,9 @@ def main():
         json.dump(summary, f, indent=2)
     
     print(f"\n{'='*60}")
-    print(f"✅ Evaluation complete! Results saved to {output_dir}")
+    print(f" Evaluation complete! Results saved to {output_dir}")
     print(f"{'='*60}")
 
 
 if __name__ == "__main__":
     main()
-
-
-# NOTE: Evalauted on coco images contained a single person only.
-
-
-# python evaluation.py --test_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\Occlusion\Coco2017\val2017\val2017_single_person" --models mask2former_ade20k mask2former_coco maskrcnn yolact lang_sam --batch_size 8 --coco_annotations "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\Occlusion\Coco2017\annotations_trainval2017\annotations\instances_val2017.json" --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\Occlusion\Coco2017ResultsTest" --save_details
-
-# # Segmentation Model Summary: Benefits & Negatives
-
-# ## 🥇 Mask2Former COCO - The Balanced Champion
-
-# **Best For:** Production deployments and large-scale datasets where missing people is unacceptable.
-
-# **Benefits:**
-# Mask2Former COCO achieves the highest detection rate at 96.5%, meaning it misses fewer people than any other model—a critical advantage when processing large datasets where every detection counts. Its IoU of 0.829 places it just behind Lang-SAM in quality, making it an excellent balance between accuracy and reliability. The model's precision (0.899) and recall (0.906) are both strong, and it processes images at a reasonable 1.28 iterations per second. Built on modern transformer architecture, it's actively maintained and benefits from Facebook's ongoing research investments. As a COCO-trained instance segmentation model, it's specifically designed for separating individual objects, making it ideal for person detection tasks.
-
-# **Negatives:**
-# Despite its strengths, Mask2Former COCO has a slightly lower success rate (69.8%) compared to MaskRCNN (70.7%), meaning marginally more images fail quality filters. It's moderately slower than MaskRCNN and requires more GPU memory due to its transformer architecture. The model can be more complex to debug when issues arise, and while detection rate is excellent, some detected masks may be lower quality, explaining why fewer pass the strict quality thresholds. Installation can also be tricky, particularly getting the correct versions of transformers and torch to work together seamlessly.
-
-# ---
-
-# ## 🥈 MaskRCNN - The Research Standard
-
-# **Best For:** Academic research, paper replication, and scenarios requiring maximum throughput of high-quality results.
-
-# **Benefits:**
-# MaskRCNN boasts the highest success rate at 70.7%, meaning more detected people pass the quality filters and make it into your final dataset—crucial when you need maximum usable output. It's the fastest among high-quality models at 1.63 iterations per second, making it ideal for processing large datasets quickly. The model is incredibly stable and well-maintained through Detectron2, with extensive documentation and a large community for troubleshooting. Its architecture is the de facto standard in computer vision research, making it the best choice for reproducibility and comparison with other studies. MaskRCNN offers excellent mask quality (IoU 0.813) while using moderate GPU memory, and it's easier to customize and debug than newer transformer-based models.
-
-# **Negatives:**
-# MaskRCNN has a slightly lower detection rate (94.1%) compared to Mask2Former COCO, meaning it misses about 2% more people in the dataset. Its IoU (0.813) is good but trails both Mask2Former COCO (0.829) and Lang-SAM (0.846) in raw segmentation quality. The architecture is older, based on ResNet-50 and FPN from 2017, which means it may not benefit from the latest advances in computer vision. Installation of Detectron2 can be problematic on some systems, particularly Windows, and the model may struggle more with challenging cases like partial occlusions or unusual poses compared to newer architectures.
-
-# ---
-
-# ## 🥉 Lang-SAM - The Quality Specialist
-
-# **Best For:** Small datasets or applications where segmentation quality is paramount and processing time is not a constraint.
-
-# **Benefits:**
-# Lang-SAM delivers the best segmentation quality with an IoU of 0.846, significantly outperforming all other models. Its precision of 0.931 is exceptional, meaning when it detects a person, the mask boundaries are extremely accurate—ideal for applications requiring fine-grained segmentation. The text-prompted approach ("person") makes it flexible and interpretable, and it handles difficult cases better than traditional models, including unusual poses, partial occlusions, and crowded scenes. Built on SAM's foundation, it benefits from massive pretraining and state-of-the-art architecture. The model excels at edge cases that trip up other models and produces masks with superior boundary precision.
-
-# **Negatives:**
-# Lang-SAM is dramatically slower at 2.85 seconds per iteration—nearly 5x slower than MaskRCNN—making it impractical for large datasets (6+ hours for 10,000 images vs. 17 minutes for MaskRCNN). Despite superior quality, it has the lowest success rate among top models at 63.7%, meaning many high-quality detections still fail quality filters. Its detection rate of 89.1% is the second-lowest, missing more people than the top two models. The model requires significantly more GPU memory (8GB+ recommended), has a complex setup with multiple dependencies (GroundingDINO + SAM), and the text-prompt approach, while flexible, adds another parameter to tune. For production use, the speed penalty is simply too severe unless quality is the only consideration.
-
-# ---
-
-# ## 📉 Mask2Former ADE20K - The Adequate Alternative
-
-# **Best For:** Quick prototyping when you already have it set up, or when semantic segmentation is sufficient.
-
-# **Benefits:**
-# Mask2Former ADE20K offers good overall performance with an IoU of 0.785 and the second-highest detection rate at 94.6%. It processes images reasonably fast at 1.86 iterations per second and is easy to set up with a single Hugging Face model download. The model works well enough for most use cases and requires moderate computational resources. If you already have this model running (as in your original implementation), it's perfectly adequate for many applications and requires no additional setup.
-
-# **Negatives:**
-# The fundamental issue is that Mask2Former ADE20K performs semantic segmentation rather than instance segmentation, making it less suitable for person detection tasks where you need to distinguish between multiple individuals. Its success rate of 67.6% is the second-lowest among the top four models, and the IoU of 0.785 trails the leaders by 6-8 percentage points—a significant quality gap. The model struggles with multiple people in close proximity, as it treats "person" as a single semantic class rather than separating individuals. Its recall of 0.896 is good but not exceptional, and overall it's outperformed by both Mask2Former COCO and MaskRCNN in nearly every metric. It's a compromise solution rather than an optimal choice.
-
-# ---
-
-# ## 🚀 YOLACT - The Speed Demon
-
-# **Best For:** Real-time applications or processing millions of images where speed trumps quality.
-
-# **Benefits:**
-# YOLACT is the fastest model by far at 3.00 iterations per second—nearly 2x faster than MaskRCNN—making it ideal for massive-scale processing or real-time applications. It achieves this speed while maintaining acceptable quality (IoU 0.789), which is impressive for such a lightweight model. YOLACT uses minimal GPU memory, can run on older hardware, and has simple installation. For datasets of millions of images where processing time is measured in days rather than hours, YOLACT becomes the practical choice despite its quality trade-offs.
-
-# **Negatives:**
-# YOLACT has the worst performance across almost all quality metrics: lowest success rate (61.3%), lowest detection rate (79.5%), and lowest IoU among serious contenders (0.789). It misses approximately 20% of people in images—a critical failure for comprehensive dataset processing. The success rate of 61.3% means nearly 40% of images are discarded, resulting in significant data loss. Mask quality is noticeably inferior with less precise boundaries, and the model struggles more with difficult cases like small people, partial occlusions, or crowded scenes. While speed is impressive, the quality sacrifice is too severe for most research applications where accuracy matters more than raw throughput.
-
-# ---
-
-# ## ✅ Final Recommendation
-
-# **For your paper replication: Use MaskRCNN**
-# - Best success rate (70.7%) maximizes usable data
-# - Industry standard for reproducibility
-# - Fast enough (1.63 it/s) for reasonable processing times
-# - Excellent balance of all metrics
-
-# **For production systems: Use Mask2Former COCO**
-# - Highest detection rate (96.5%) minimizes missed people
-# - Best overall balance of speed and quality
-# - Modern architecture with ongoing support
-# - Nearly best-in-class performance across all metrics
-
-# The choice between these two is marginal—both are excellent. Pick MaskRCNN for research/reproducibility, or Mask2Former COCO for production/completeness.
-
-# ---
-
-# ## 📊 Quick Comparison Table
-
-# | Model | Success Rate | Detection Rate | Mean IoU | Speed (it/s) | Best Use Case |
-# |-------|--------------|----------------|----------|--------------|---------------|
-# | **Mask2Former COCO** | 69.8% | **96.5%** ⭐ | **0.829** | 1.28 | Production/Large datasets |
-# | **MaskRCNN** | **70.7%** ⭐ | 94.1% | 0.813 | **1.63** | Research/Paper replication |
-# | **Lang-SAM** | 63.7% | 89.1% | **0.846** ⭐ | 0.35 | Quality-critical (small datasets) |
-# | **Mask2Former ADE20K** | 67.6% | 94.6% | 0.785 | 1.86 | Quick prototyping |
-# | **YOLACT** | 61.3% | 79.5% | 0.789 | **3.00** ⭐ | Real-time/Millions of images |
-
-# ⭐ = Best in category

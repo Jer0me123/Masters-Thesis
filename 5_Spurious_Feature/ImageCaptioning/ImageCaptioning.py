@@ -413,34 +413,3 @@ if __name__ == "__main__":
 # EXAMPLE USAGE
 # ============================================================
 # python ImageCaptioning.py --image_dir "path/to/images" --batch_size 8 --num_workers 8 --output_file "output/captions.jsonl" --prompt "An image of" --max_length 30 --exclude_dirs facemesh --word_mapping_file "path/to/mappings.txt"
-
-# --prompt "An image of" -> This is required for the BLIP model to generate a description of the image. Should be left as is.
-# --max_lenght 30 -> This dictates the maximum legnth in tokens of the generated caption. 30 tokens (Aprox 30 word sentence) are sufficient, increasing this is not guaranteed to generate longer captions.
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --word_mapping_file "mappings.txt" -> This is a file that dictates what gendered words should be remapped to ex: woman -> person (The original & updated caption are saved as output)
-
-# python ImageCaptioning.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --batch_size 8 --num_workers 8 --output_file "test_captions.jsonl" --prompt "An image of" --max_length 15 --exclude_dirs facemesh --word_mapping_file "mappings.txt"
-
-# NOTE: The mappings.txt file is not finished but should be mostly sufficient for general use
-
-# ============================================================
-# WORD MAPPING FILE FORMAT (mappings.txt)
-# ============================================================
-# woman:person
-# man:person
-# boy:child
-# girl:child
-# he:they
-# she:they
-# his:their
-# her:their
-# himself:themselves
-# herself:themselves
-# ============================================================
-
-
-# python ImageCaptioning.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --batch_size 8 --num_workers 8 --output_file "E:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\ImageCaptioning\captions.jsonl" --prompt "An image of" --max_length 30 --exclude_dirs face_crops --word_mapping_file "mappings.txt"
-
-# python ImageCaptioning.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --batch_size 8 --num_workers 8 --output_file "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ImageCaptioning\captions.jsonl" --prompt "An image of" --max_length 30 --exclude_dirs facemesh --word_mapping_file "mappings.txt"
-
-# python ImageCaptioning.py --image_dir "F:\ImageRetrieval\Coco" --batch_size 8 --num_workers 8 --output_file "F:\ImageRetrieval\SpuriousFeatureImages\Coco\ImageCaptioning\captions.jsonl" --prompt "An image of" --max_length 30 --exclude_dirs facemesh --word_mapping_file "mappings.txt"

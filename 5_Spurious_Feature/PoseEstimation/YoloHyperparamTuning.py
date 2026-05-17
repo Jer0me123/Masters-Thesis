@@ -383,7 +383,3 @@ if __name__ == "__main__":
     print("HYPERPARAMETER TUNING COMPLETE")
     print(f"{'='*80}")
     print(f"Results saved to: {args.output_dir}")
-
-
-# # Basic usage with default settings
-# .venv_test\Scripts\python.exe YoloHyperparamTuning.py --model_size l

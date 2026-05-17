@@ -4,7 +4,7 @@ from pathlib import Path
 # =========================
 # CONFIG
 # =========================
-ROOT_DIR = Path(r"F:\ImageRetrieval\DebiasedImages")
+ROOT_DIR = Path(r"DebiasedImages")
 OUTPUT_PATH = ROOT_DIR / "annotations.jsonl"
 
 VALID_EXTS = {".png", ".jpg", ".jpeg", ".webp"}

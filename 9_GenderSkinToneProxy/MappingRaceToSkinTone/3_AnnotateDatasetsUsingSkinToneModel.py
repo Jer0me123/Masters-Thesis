@@ -360,36 +360,3 @@ if __name__ == "__main__":
         parser.error("--lab_stats_path required for LAB mode")
 
     main(args)
-
-# C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\DatasetAnnotation\.venv\Scripts\activate
-
-# python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\3_AnnotateDatasetsUsingSkinToneModel.py" ^
-# --image_dir "G:\Thesis\MonkSkinTone_Dataset\Segmented_MSTE_BGFixed" ^
-# --output_dir "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\Segmented_MSTE_BGFixed" ^
-# --skin_model_path "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\best_model.pth" ^
-# --input_space lab ^
-# --lab_stats_path "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\lab_statistics.json" ^
-# --batch_size 32
-
-# python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\3_AnnotateDatasetsUsingSkinToneModel.py" ^
-# --image_dir "F:\Thesis\CasualConversationv2_Dataset\Segmented_CCV2_BGFixed" ^
-# --output_dir "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\Segmented_CCV2_BGFixed" ^
-# --skin_model_path "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\best_model.pth" ^
-# --input_space lab ^
-# --lab_stats_path "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\lab_statistics.json" ^
-# --batch_size 32
-
-# python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\3_AnnotateDatasetsUsingSkinToneModel.py" ^
-# --image_dir "F:\Thesis\Segmented_FairFace_BGFixed" ^
-# --output_dir "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\Segmented_FairFace_BGFixed" ^
-# --skin_model_path "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\best_model.pth" ^
-# --input_space lab ^
-# --lab_stats_path "F:\VGG_MST_Testing\Models\ResNet18_4CCoral_LAB_FixedBG\lab_statistics.json" ^
-# --batch_size 32
-
-# python "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\3_AnnotateDatasetsUsingSkinToneModel.py" ^
-#   --image_dir "F:\Thesis\Fairface_Dataset\Segmented_FairFace" ^
-#   --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\GenderSkinToneProxy\MappingRaceToSkinTone" ^
-#   --skin_model_path "F:\VGG_MST_Testing\Models\VGG16_10Regression_RGB\best_model.pth" ^
-#   --input_space rgb ^
-#   --batch_size 32

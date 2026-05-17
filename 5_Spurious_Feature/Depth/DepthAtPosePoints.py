@@ -272,18 +272,3 @@ if __name__ == "__main__":
 # ===========================================================
 # EXAMPLE USAGE
 # python DepthAtPosePoints.py --image_dir "path/to/input" --output_jsonl "path/to/jsonloutput" --pose_model l --depth_model Small --conf 0.25 --kp_conf 0.5 --draw --viz_resize 224 --viz_dir "path/to/output" --batch_size 1 --num_workers 8 --exclude_dirs facemesh
-
-# --output_jsonl -> This denotes where the jsonl file is to be saved
-# --pose_model -> This denotes the pose model to use to detect the person pose
-# --depth_model -> This denotes the depth model to use to derive the depth image
-# --conf / kp_conf -> This denots the person detection and confidence of each keypoint to keep or ignore
-# --draw -> This denotes if the detected pose should be draw on the depth image or not
-# --viz_dir -> This dicates the directory in which the visualised image will be stored
-# --viz_resize 224 224 -> This is done to resize the vizualisations to reduce on space
-# --batch_size 1 -> Used as different size images are not handled well in depth model batching, and would required padding whcich might affect depth results.
-
-# python DepthAtPosePoints.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_jsonl "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\DepthAtPose\depthPoses.jsonl" --pose_model l --depth_model Small --conf 0.25 --kp_conf 0.5 --draw --viz_resize 224 --viz_dir "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\DepthAtPose" --exclude_dirs face_crops --batch_size 16 --num_workers 8
-
-# python DepthAtPosePoints.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_jsonl "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\DepthAtPose\depthPoses.jsonl" --pose_model l --depth_model Small --conf 0.25 --kp_conf 0.5 --draw --viz_resize 224 --viz_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\DepthAtPose" --exclude_dirs facemesh --batch_size 1 --num_workers 8
-
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\5_Spurious_Feature\ObjectDetection\.venv\Scripts\python.exe" DepthAtPosePoints.py --image_dir "F:\ImageRetrieval\DebiasedImages" --output_jsonl "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\DepthAtPose\depthPoses.jsonl" --pose_model l --depth_model Small --conf 0.25 --kp_conf 0.5 --draw --viz_resize 224 --viz_dir "F:\ImageRetrieval\SpuriousFeatureImages\DebiasedImages\DepthAtPose" --exclude_dirs facemesh --batch_size 1 --num_workers 8

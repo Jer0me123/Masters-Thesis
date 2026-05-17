@@ -311,8 +311,3 @@ if __name__ == "__main__":
         json.dump(results, f, indent=2)
 
     print("Evaluation complete.")
-
-
-# .venv_test\Scripts\python.exe PoseModelEvaluation.py --output_dir "EvaluationDatasets\Coco2017"
-
-# NOTE: Evaluation is carried out on images containing people only

@@ -242,16 +242,3 @@ if __name__ == "__main__":
 # ===========================================================
 # EXAMPLE USAGE
 # python SemanticSegmentation.py --image_dir "path/to/input" --resize 224 224 --batch_size 16 --num_workers 8 --output_dir "path/to/output" --exclude_dirs facemesh
-
-# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --fixed_size 512 512 -> This is done as the fixed size is used for the model input, and 512x512 is the expected size for semantic segmentation models.
-# --model_name facebook/mask2former-swin-large-ade-semantic -> This is the model used for semantic segmentation in the paper, the difference is that this is derived from huggigface transformers library whilst the paper doesn't do that.
-
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\.venv-Copy-Copy\Scripts\python.exe" "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\SemanticSegmentation\test.py" --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned"  --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\SemanticSegmentation\test_2" --batch_size 8 --fixed_size 512 512
-
-# python SemanticSegmentation.py --image_dir  "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\SemanticSegmentation" --resize 224 224 --batch_size 16 --num_workers 8 --exclude_dirs face_crops --fixed_size 512 512
-
-# python SemanticSegmentation.py --image_dir  "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\SemanticSegmentation" --resize 224 224 --batch_size 16 --num_workers 8 --exclude_dirs facemesh --fixed_size 512 512
-
-# python SemanticSegmentation.py --image_dir  "F:\ImageRetrieval\Coco" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\Coco\SemanticSegmentation" --resize 224 224 --batch_size 16 --num_workers 8 --exclude_dirs facemesh --fixed_size 512 512

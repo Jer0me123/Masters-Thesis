@@ -219,4 +219,4 @@ if __name__ == "__main__":
     main()
 
 
-# python RELaion5B_Subset_Image_Retrieval.py --source-root "E:\ImageRetrieval\Professions_125k_ISCO_Aligned" --annotations "E:\ImageRetrieval\Professions_125k_ISCO_Aligned_Annotations\annotations.jsonl" --target-root "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --top-n 1000
+# python RELaion5B_Subset_Image_Retrieval.py --source-root "" --annotations "" --target-root "" --top-n 1000

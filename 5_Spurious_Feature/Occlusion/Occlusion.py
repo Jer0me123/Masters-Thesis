@@ -163,14 +163,10 @@ def process_occlusions_and_save(person_mask, original_size, image_path, output_r
     bbox_area = (x2 - x1) * (y2 - y1)
     bbox_ratio = bbox_area / img_area
     
-    # if bbox_ratio < MIN_BBOX_AREA_RATIO or bbox_ratio > MAX_BBOX_AREA_RATIO:
-    #     return None
+    if bbox_ratio < MIN_BBOX_AREA_RATIO or bbox_ratio > MAX_BBOX_AREA_RATIO:
+        return None
     
     # Get relative path structure
-    # rel_path = os.path.relpath(image_path, Path(image_path).parent.parent)
-    # stem = Path(rel_path).stem
-    # subdir = Path(rel_path).parent
-
     rel_path = os.path.relpath(image_path, args.image_dir).replace("\\", "/")
     stem = Path(rel_path).stem
     subdir = Path(rel_path).parent
@@ -230,12 +226,7 @@ def process_occlusions_and_save(person_mask, original_size, image_path, output_r
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"{stem}.png"
         Image.fromarray(img).save(out_path, compress_level=1)
-    
-    # return {
-    #     "image": str(Path(rel_path).with_suffix("")),
-    #     "mask_ratio": round(mask_ratio, 4),
-    #     "bbox_ratio": round(bbox_ratio, 4)
-    # }
+
 
     completed_ops = list(outputs.keys())
 
@@ -447,36 +438,6 @@ if __name__ == "__main__":
     
     main(args)
 
-# Example usage:
-# python Occlusion.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir test --model mask2former_coco --batch_size 8 --resize 224 224 --operations Full MaskSegm --exclude_dirs facemesh
-
-# python Occlusion.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir test_ade20k --model mask2former_ade20k --batch_size 8 --resize 224 224 --exclude_dirs facemesh
-
-# python Occlusion.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir test_mrcnn --model maskrcnn --batch_size 8 --resize 224 224 --exclude_dirs facemesh
-
-# python Occlusion.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir test_y --model yolact --batch_size 8 --resize 224 224 --exclude_dirs facemesh
-
-# python Occlusion.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir test_s --model sam --batch_size 8 --resize 224 224 --exclude_dirs facemesh
-
-# python Occlusion.py --image_dir "G:\Thesis\ImageRetrieval\Professions_125k_Cleaned" --output_dir test_ls --model lang_sam --batch_size 8 --resize 224 224 --exclude_dirs facemesh
-
 # ===========================================================
 # EXAMPLE USAGE
 # python Occlusion.py --model mask2former_coco --image_dir  "path/to/input" --output_dir  "path/to/output"  --batch_size 8 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs facemesh
-
-# --model mask2former_coco -> This is done as X was the best performing model overall in terms or speed, accuracy and output quality.
-# --fixed_size 224 224 -> This can be ommited or set to 224 224, if ommitted the model preferred size will be used however it will slow down exectuion. With model mask2former_coco using 224 224 didn't appear to affect output quality.
-# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-# --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg -> Full is ommited from the list as this simply copies the image over creating and unneeded duplicate.
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-
-#NOTE: Mask2Former-COCO is used as the primary segmentation model because,
-# despite being slightly slower per image than Mask R-CNN, it yields
-# higher detection rates, more consistent IoU, and fewer low-quality
-# masks that fail QC. This leads to more usable outputs and comparable
-# end-to-end throughput when processed in batches.
-
-
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\5_Spurious_Feature\Occlusion\.venv\Scripts\python.exe" Occlusion.py --model mask2former_coco --image_dir  "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\Occlusion"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs face_crops
-
-# "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\5_Spurious_Feature\Occlusion\.venv\Scripts\python.exe" Occlusion.py --model mask2former_coco --image_dir  "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir  "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\Occlusion"  --batch_size 4 --fixed_size 224 224 --resize 224 224 --operations Full_NoBg MaskSegm MaskSegm_NoBg MaskRect MaskRect_NoBg --exclude_dirs facemesh

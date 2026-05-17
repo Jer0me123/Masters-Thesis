@@ -260,7 +260,7 @@ class YOLACTModel(BaseSegmentationModel):
 
         from data import cfg, set_cfg
 
-        # ✅ Match your downloaded checkpoint
+        #  Match your downloaded checkpoint
         set_cfg("yolact_resnet50_config")
 
         cfg.use_fast_nms = True
@@ -269,7 +269,7 @@ class YOLACTModel(BaseSegmentationModel):
         from yolact import Yolact
         from utils.augmentations import FastBaseTransform
 
-        # ✅ Build absolute path to weights
+        #  Build absolute path to weights
         yolact_root = Path(__file__).resolve().parent / "yolact"
         weights_path = yolact_root / "weights" / "yolact_resnet50_54_800000.pth"
 
@@ -286,7 +286,7 @@ class YOLACTModel(BaseSegmentationModel):
 
         self.transform = FastBaseTransform()
 
-        print("✅ YOLACT loaded successfully from:")
+        print(" YOLACT loaded successfully from:")
         print(weights_path)
 
     def predict(self, images_tensor: torch.Tensor) -> list:
@@ -301,17 +301,17 @@ class YOLACTModel(BaseSegmentationModel):
                 img_np = (img_np * 255).astype(np.uint8)
                 h, w = img_np.shape[:2]
 
-                # ✅ Convert to tensor and ADD BATCH DIMENSION [1, H, W, 3]
+                #  Convert to tensor and ADD BATCH DIMENSION [1, H, W, 3]
                 frame = torch.from_numpy(img_np).float().to(self.device)
                 frame = frame.unsqueeze(0)  # [1, H, W, 3]
 
-                # ✅ Apply YOLACT transform (expects 4D input)
+                #  Apply YOLACT transform (expects 4D input)
                 frame = self.transform(frame)
 
                 # Forward through YOLACT
                 preds = self.model(frame)
 
-                # ✅ Correct call to postprocess:
+                #  Correct call to postprocess:
                 #    - keep default batch_idx=0
                 #    - pass score_threshold as a keyword
                 classes, scores, boxes, masks = postprocess(
@@ -431,7 +431,7 @@ class SAMModel(BaseSegmentationModel):
 
                     mask = masks_np[i]
 
-                    # ✅ FORCE ANY POSSIBLE SHAPE INTO A SINGLE 2D MASK
+                    #  FORCE ANY POSSIBLE SHAPE INTO A SINGLE 2D MASK
                     if mask.ndim == 2:
                         pass  # already HxW
                     elif mask.ndim == 3:
@@ -455,7 +455,7 @@ class SAMModel(BaseSegmentationModel):
                     if area == 0:
                         continue
 
-                    # ✅ SAFE CENTER CHECK (ALWAYS SCALAR NOW)
+                    #  SAFE CENTER CHECK (ALWAYS SCALAR NOW)
                     center_val = mask[center_y, center_x]
                     contains_center = int(center_val) > 0
 
@@ -504,9 +504,9 @@ class LangSAMPersonModel(BaseSegmentationModel):
                 "pip install git+https://github.com/luca-medeiros/lang-segment-anything.git"
             )
 
-        # ✅ Do NOT pass device here — repo handles it internally via DEVICE
+        #  Do NOT pass device here — repo handles it internally via DEVICE
         self.model = LangSAM()
-        print(f"✅ Lang-SAM loaded with prompt: '{self.prompt}'")
+        print(f" Lang-SAM loaded with prompt: '{self.prompt}'")
 
     def predict(self, images_tensor: torch.Tensor) -> list:
         """
@@ -517,12 +517,12 @@ class LangSAMPersonModel(BaseSegmentationModel):
         person_masks = []
 
         for img_tensor in images_tensor:
-            # ✅ Convert CHW tensor → HWC uint8
+            #  Convert CHW tensor → HWC uint8
             img_np = img_tensor.cpu().numpy().transpose(1, 2, 0)
             img_np = (img_np * 255).astype(np.uint8)
             pil_img = PILImage.fromarray(img_np)
 
-            # ✅ Lang-SAM expects LISTS
+            #  Lang-SAM expects LISTS
             with suppress_stdout():
                 results = self.model.predict(
                     images_pil=[pil_img],
@@ -536,13 +536,13 @@ class LangSAMPersonModel(BaseSegmentationModel):
             masks = result.get("masks", None)
 
             if masks is None or len(masks) == 0:
-                # ❌ No person detected → return empty mask
+                #  No person detected → return empty mask
                 h, w = img_np.shape[:2]
                 empty = np.zeros((h, w), dtype=np.uint8)
                 person_masks.append(empty)
                 continue
 
-            # ✅ masks shape: (N, H, W)
+            #  masks shape: (N, H, W)
             # Combine all detected "person" regions
             combined_mask = np.any(masks, axis=0).astype(np.uint8)
 
