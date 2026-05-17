@@ -215,8 +215,7 @@ def process_occlusions_and_save(person_mask, original_size, image_path, output_r
         elif img.ndim == 3 and img.shape[2] == 1:
             img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
         elif img.ndim == 3 and img.shape[2] == 3:
-            # Assume OpenCV-style BGR -> RGB
-            # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
             pass  # already RGB
         else:
             raise ValueError(f"Unexpected image shape: {img.shape}")
@@ -394,9 +393,6 @@ def main(args):
                     res = future.result()
                     if res:
                         with write_lock:
-                            # writer.writerow(res)
-                            # for op in operations:
-                            #     manifest.record(res["image"], op)
 
                             csv_row = {
                                 "image": res["image"],

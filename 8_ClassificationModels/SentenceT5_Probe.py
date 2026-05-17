@@ -347,8 +347,8 @@ def main():
     train_s, val_s, test_s = load_splits(args.splits_json)
     num_classes, label_to_id = infer_num_classes(train_s)
 
-    tqdm.write(f"🧠 Detected {num_classes} classes")
-    tqdm.write(f"🔖 Label mapping: {label_to_id}")
+    tqdm.write(f"Detected {num_classes} classes")
+    tqdm.write(f"Label mapping: {label_to_id}")
 
     train_loader = DataLoader(
         CaptionLabelDataset(train_s, label_to_id),
@@ -434,7 +434,7 @@ def main():
                 Path(args.out_dir) / f"sentence_t5_seed_{seed}.pt",
             )
 
-    tqdm.write(f"✓ Results saved to {csv_path}")
+    tqdm.write(f"Results saved to {csv_path}")
 
 if __name__ == "__main__":
     main()

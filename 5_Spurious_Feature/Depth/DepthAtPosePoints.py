@@ -117,8 +117,6 @@ def main(args):
                 except Exception:
                     pass
 
-    # images = [p for p in Path(args.image_dir).rglob("*") if p.suffix.lower() in {".jpg",".png",".jpeg"}]
-
     exclude = {d.lower() for d in args.exclude_dirs}
 
     images = []
@@ -136,7 +134,6 @@ def main(args):
     print(f"[Resume] Found {len(processed)} already processed images")
     print(f"[Resume] Remaining images: {len(images)}")
 
-    # with open(out_jsonl, "w", encoding="utf-8") as out:
     with open(out_jsonl, "a", encoding="utf-8") as out:
         for i in tqdm(range(0, len(images), args.batch_size), desc="Pose+Depth extraction"):
             batch_paths = images[i:i + args.batch_size]

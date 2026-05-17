@@ -433,11 +433,11 @@ def train_and_eval_mlp(
                 best_val_auc = val_auc
                 best_state = {k: v.cpu().clone() for k, v in model.state_dict().items()}
                 patience_ctr = 0
-                tqdm.write(f"✓ New best model (val AUC = {val_auc:.4f})")
+                tqdm.write(f"New best model (val AUC = {val_auc:.4f})")
             else:
                 patience_ctr += 1
                 tqdm.write(
-                    "✗ No improvement "
+                    "No improvement "
                     + ("(val AUC undefined)" if np.isnan(val_auc)
                        else f"(patience {patience_ctr}/{patience})")
                 )
@@ -449,9 +449,9 @@ def train_and_eval_mlp(
             model.train()
 
     # Restore best model if early stopping was used
-    # if patience is not None and best_state is not None:
-    #     model.load_state_dict(best_state)
-    #     tqdm.write("✓ Restored best validation model")
+    if patience is not None and best_state is not None:
+        model.load_state_dict(best_state)
+        tqdm.write("Restored best validation model")
 
     # --------------------------------------------------------
     # Evaluation
@@ -463,7 +463,7 @@ def train_and_eval_mlp(
     between probing and evaluation.
     """
 
-    tqdm.write("▶ Evaluating on test set")
+    tqdm.write("Evaluating on test set")
     model.eval()
     with torch.no_grad():
         logits = model(Xte)
@@ -529,18 +529,18 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Load data and auto-detect task configuration
-    tqdm.write("▶ Loading data and detecting task configuration...")
+    tqdm.write("Loading data and detecting task configuration...")
     X_train, y_train, X_val, y_val, X_test, y_test, task, num_classes, is_binary, unique_labels = \
         load_dataset(args.splits_json)
     
     
-    tqdm.write(f"✓ Task detected: {task}")
-    tqdm.write(f"✓ Number of unique labels: {unique_labels}")
-    tqdm.write(f"✓ Classification type: {'Binary (2 classes)' if is_binary else f'Multi-class ({unique_labels} classes)'}")
-    tqdm.write(f"✓ Network output neurons: {num_classes}")
-    tqdm.write(f"✓ Loss function: {'BCEWithLogitsLoss' if is_binary else 'CrossEntropyLoss'}")
-    tqdm.write(f"✓ Feature dimension: {X_train.shape[1]}")
-    tqdm.write(f"✓ Train samples: {len(X_train)}, Val: {len(X_val)}, Test: {len(X_test)}")
+    tqdm.write(f"Task detected: {task}")
+    tqdm.write(f"Number of unique labels: {unique_labels}")
+    tqdm.write(f"Classification type: {'Binary (2 classes)' if is_binary else f'Multi-class ({unique_labels} classes)'}")
+    tqdm.write(f"Network output neurons: {num_classes}")
+    tqdm.write(f"Loss function: {'BCEWithLogitsLoss' if is_binary else 'CrossEntropyLoss'}")
+    tqdm.write(f"Feature dimension: {X_train.shape[1]}")
+    tqdm.write(f"Train samples: {len(X_train)}, Val: {len(X_val)}, Test: {len(X_test)}")
 
     csv_path = Path(args.out_dir) / f"mlp_results_{task}.csv"
 
@@ -578,7 +578,7 @@ def main():
 
             ci_low = ci_high = None
             if args.bootstrap:
-                tqdm.write("▶ Computing bootstrap confidence intervals...")
+                tqdm.write("Computing bootstrap confidence intervals...")
                 if is_binary:
                     _, ci_low, ci_high = bootstrap_auc_binary(
                         y_test, scores_or_probs, seed=seed
@@ -593,7 +593,7 @@ def main():
                 / f"mlp_{task}_seed_{seed}.pt"
             )
             torch.save(model.state_dict(), model_path)
-            tqdm.write(f"✓ Saved model to {model_path}")
+            tqdm.write(f"Saved model to {model_path}")
 
             row = {
                 "task": task,
@@ -615,7 +615,7 @@ def main():
 
             writer.writerow(row)
 
-    tqdm.write(f"\n✓ Results saved to {csv_path}")
+    tqdm.write(f"\nResults saved to {csv_path}")
 
 if __name__ == "__main__":
     main()

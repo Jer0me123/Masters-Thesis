@@ -636,7 +636,7 @@ def train_one_model(
     best_state: Optional[dict] = None
 
     if checkpoint_path is not None and checkpoint_path.exists():
-        print(f"  ⚠ Found checkpoint — resuming combo {combo_idx} from {checkpoint_path.name}")
+        print(f"  Found checkpoint — resuming combo {combo_idx} from {checkpoint_path.name}")
         start_epoch, history, best_metric, best_state = load_checkpoint(
             checkpoint_path, model, optimizer, early_stopper, device, epochs
         )
@@ -716,7 +716,7 @@ def train_one_model(
         if val_auc > best_metric:
             best_metric = val_auc
             best_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
-            print(f"  ✓ New best val AUC: {best_metric:.4f}")
+            print(f"  New best val AUC: {best_metric:.4f}")
 
         # ---------- checkpoint ----------
         if checkpoint_path is not None:
@@ -736,7 +736,7 @@ def train_one_model(
             should_stop = early_stopper(val_auc, epoch + 1)
             if should_stop:
                 print(
-                    f"  ⚠ Early stopping at epoch {epoch + 1} "
+                    f"  Early stopping at epoch {epoch + 1} "
                     f"(best epoch was {early_stopper.best_epoch}, "
                     f"auc={early_stopper.best_value:.4f})"
                 )
@@ -852,7 +852,7 @@ def grid_search(
         # interrupted after this combo but before a later combo finishes.
         combo_model_path = out_dir / f"model_seed{seed}_combo{idx}_best.pt"
         torch.save(model.state_dict(), combo_model_path)
-        print(f"  ✓ Combo {idx} best model saved → {combo_model_path.name}")
+        print(f"  Combo {idx} best model saved → {combo_model_path.name}")
 
         # ── Save combo-level history ───────────────────────
         combo_history_path = out_dir / f"history_seed{seed}_combo{idx}.json"
@@ -870,7 +870,7 @@ def grid_search(
         }
         with open(grid_state_path, "w") as f:
             json.dump(completed, f, indent=2)
-        print(f"  ✓ Combo {idx} complete — val_auc={val_score:.4f} — state saved")
+        print(f"  Combo {idx} complete — val_auc={val_score:.4f} — state saved")
 
         # ── Delete epoch-level checkpoint (no longer needed) ──
         if checkpoint_path.exists():
@@ -926,7 +926,7 @@ def grid_search(
     # Save best model weights separately for easy reloading
     best_model_pt = out_dir / f"model_seed{seed}_best.pt"
     torch.save(best_model.state_dict(), best_model_pt)
-    print(f"  ✓ Best model weights saved → {best_model_pt.name}")
+    print(f"  Best model weights saved → {best_model_pt.name}")
 
     return best_model, best_cfg, best_history
 
@@ -1098,7 +1098,7 @@ def main():
         )
 
         best_lr, best_wd = best_cfg
-        print(f"\n✓ Best config — lr={best_lr} | wd={best_wd}")
+        print(f"\nBest config — lr={best_lr} | wd={best_wd}")
 
         # ── Test evaluation (once, on held-out set) ──────────
         test_metrics = evaluate(best_model, test_loader, num_classes, device, split_name="Test")
@@ -1148,13 +1148,13 @@ def main():
         metrics_path = out_dir / f"metrics_seed{seed}.json"
         with open(metrics_path, "w") as f:
             json.dump(metrics_dict, f, indent=2)
-        print(f"  ✓ Saved {metrics_path.name}")
+        print(f"  Saved {metrics_path.name}")
 
         # 2. history_seed_{seed}.json  (best combo's epoch history)
         history_path = out_dir / f"history_seed{seed}.json"
         with open(history_path, "w") as f:
             json.dump(best_history, f, indent=2)
-        print(f"  ✓ Saved {history_path.name}")
+        print(f"  Saved {history_path.name}")
 
         # 3. model_seed_{seed}.pt  (full save dict)
         model_path = out_dir / f"model_seed{seed}.pt"
@@ -1179,7 +1179,7 @@ def main():
             },
             model_path,
         )
-        print(f"  ✓ Saved {model_path.name}")
+        print(f"  Saved {model_path.name}")
 
         # 4. CSV row (original behaviour preserved)
         row = {
@@ -1206,7 +1206,7 @@ def main():
         all_results.append(metrics_dict)
 
     csv_file.close()
-    print(f"\n✓ CSV results saved → {csv_path}")
+    print(f"\nCSV results saved → {csv_path}")
 
     # ── Summary JSON (cross-seed aggregation) ─────────────
     test_aucs = [r["test_auc"]      for r in all_results]

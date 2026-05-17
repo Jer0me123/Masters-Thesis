@@ -462,7 +462,7 @@ def main():
         controlnet_id = CONTROLNET_MODELS[opt.control_type]
         print(f"Loading ControlNet ({opt.control_type})...")
         controlnet = ControlNetModel.from_pretrained(controlnet_id, torch_dtype=dtype).to(opt.device)
-        print("✓ ControlNet loaded")
+        print("ControlNet loaded")
 
     # SW-guidance specific setup
     transform_net = None
@@ -488,7 +488,7 @@ def main():
         pixels_ref = pixels_ref.to(dtype)
         ref_mean = ref_mean.to(dtype)
         ref_cov = ref_cov.to(dtype)
-        print("✓ Reference image loaded")
+        print("Reference image loaded")
 
     # ----- Build ControlNet conditioning image -----
     control_maps = None
@@ -539,7 +539,7 @@ def main():
         prepend_embeddings = iti_gen.prompt_prepend(opt.generate_image_prompt)
         emb = prepend_embeddings.to(opt.device, dtype=dtype)
 
-    print("✓ ITI-GEN embeddings loaded")
+    print("ITI-GEN embeddings loaded")
 
     del iti_gen, prepend_embeddings
     gc.collect()
@@ -846,7 +846,7 @@ def main():
                 gc.collect()
                 torch.cuda.empty_cache()
 
-    print(f"\n✓ Generation complete! Images saved to: {opt.outdir}")
+    print(f"\nGeneration complete! Images saved to: {opt.outdir}")
 
 
 if __name__ == "__main__":

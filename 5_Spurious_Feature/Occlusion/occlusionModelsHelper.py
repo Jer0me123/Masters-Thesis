@@ -366,7 +366,7 @@ class SAMModel(BaseSegmentationModel):
 
         self.model = SamModel.from_pretrained(model_name).to(self.device).eval()
         self.processor = SamProcessor.from_pretrained(model_name)
-        print("⚠️  SAM is designed for interactive use, not batch processing.")
+        print("  SAM is designed for interactive use, not batch processing.")
         print("   This will be VERY SLOW. Consider using Mask2Former or MaskRCNN instead.")
 
     def predict(self, images_tensor: torch.Tensor) -> list:
@@ -420,18 +420,9 @@ class SAMModel(BaseSegmentationModel):
 
                 # Check up to top 3 masks
                 for i in range(min(num_masks, 3)):
-                    # mask = masks_np[i].astype(np.uint8)  # (H, W)
-
-                    # area = float(mask.sum())
-                    # if area == 0:
-                    #     continue
-
-                    # # Safe center access in mask coords
-                    # contains_center = bool(mask[center_y, center_x] > 0)
 
                     mask = masks_np[i]
 
-                    #  FORCE ANY POSSIBLE SHAPE INTO A SINGLE 2D MASK
                     if mask.ndim == 2:
                         pass  # already HxW
                     elif mask.ndim == 3:
@@ -458,8 +449,6 @@ class SAMModel(BaseSegmentationModel):
                     #  SAFE CENTER CHECK (ALWAYS SCALAR NOW)
                     center_val = mask[center_y, center_x]
                     contains_center = int(center_val) > 0
-
-
 
                     # Simple heuristic: area * centrality bonus
                     score = area * (2.0 if contains_center else 1.0)

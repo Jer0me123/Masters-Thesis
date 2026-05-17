@@ -84,7 +84,6 @@ class DatasetClassificationDataset(Dataset):
             print(f"Couldn't load image: {path}")
             img = Image.new("RGB", (224, 224), (0, 0, 0))
             return self.transform(img), label
-        # img = Image.open(path).convert("RGB")
         
         # Paper preprocessing (Section A.1):
         # "the shorter side of each image is resized to 500 pixels if the 
@@ -807,7 +806,7 @@ def train_model(
     best_model_state = None
 
     if checkpoint_path.exists():
-        print("⚠ Found existing checkpoint — resuming training")
+        print("Found existing checkpoint — resuming training")
         start_epoch, history, best_val_acc, best_val_auc, best_model_state = load_checkpoint(
             checkpoint_path,
             model,
@@ -858,7 +857,7 @@ def train_model(
             best_val_auc = val_metrics['auc']
             # best_model_state = model.state_dict().copy()
             best_model_state = copy.deepcopy(model.state_dict())
-            print(f"✓ New best validation - Acc: {best_val_acc:.2f}%, AUC: {best_val_auc:.4f}")
+            print(f"New best validation - Acc: {best_val_acc:.2f}%, AUC: {best_val_auc:.4f}")
 
         save_checkpoint(
             checkpoint_path,
@@ -877,17 +876,17 @@ def train_model(
         if early_stopper is not None:
             should_stop = early_stopper(val_metrics['accuracy'], epoch + 1)
             if should_stop:
-                print(f"\n⚠ Early stopping triggered at epoch {epoch + 1}")
+                print(f"\nEarly stopping triggered at epoch {epoch + 1}")
                 print(f"   Best epoch was {early_stopper.best_epoch} with accuracy {early_stopper.best_value:.2f}%")
                 print(f"   No improvement for {early_stopping_patience} epochs")
                 break
 
-        print(f"✓ Saved epoch checkpoint (epoch {epoch+1})")
+        print(f"Saved epoch checkpoint (epoch {epoch+1})")
 
     # Load best model
     if best_model_state is not None:
         model.load_state_dict(best_model_state)
-    print(f"\n✓ Loaded best model from training (Acc: {best_val_acc:.2f}%, AUC: {best_val_auc:.4f})")
+    print(f"\nLoaded best model from training (Acc: {best_val_acc:.2f}%, AUC: {best_val_auc:.4f})")
     
     return model, history
 
@@ -1063,7 +1062,7 @@ def run_experiment(
     print(f"  Accumulation steps: {accumulation_steps}")
     print(f"  Effective batch size: {effective_batch_size}")
     if effective_batch_size == 4096:
-        print(f"  ✓ Matches paper's batch size of 4096")
+        print(f"  Matches paper's batch size of 4096")
     
     # Results storage
     all_results = []
@@ -1079,17 +1078,6 @@ def run_experiment(
         # Create datasets
         train_dataset = DatasetClassificationDataset(train_samples, train_transform())
         val_dataset = DatasetClassificationDataset(val_samples, eval_transform())
-
-        # from torch.utils.data import Subset
-
-        # DEBUG_N = 128  # number of images to test
-
-        # train_dataset = DatasetClassificationDataset(train_samples, train_transform())
-        # val_dataset   = DatasetClassificationDataset(val_samples, eval_transform())
-
-        # # DEBUG LIMIT
-        # train_dataset = Subset(train_dataset, range(min(DEBUG_N, len(train_dataset))))
-        # val_dataset   = Subset(val_dataset, range(min(DEBUG_N, len(val_dataset))))
         
         # Create dataloaders
         train_loader = DataLoader(
@@ -1224,7 +1212,7 @@ def run_experiment(
         }
 
         torch.save(save_dict, model_path)
-        print(f"✓ Saved checkpoint: {model_path}")
+        print(f"Saved checkpoint: {model_path}")
 
         # ---------------------------
         # ALSO save metrics-only JSON
@@ -1249,7 +1237,7 @@ def run_experiment(
         with open(metrics_path, "w", encoding="utf-8") as f:
             json.dump(metrics_dict, f, indent=2)
 
-        print(f"✓ Saved metrics: {metrics_path}")
+        print(f"Saved metrics: {metrics_path}")
 
         # Store for summary
         all_results.append(metrics_dict)
@@ -1478,11 +1466,11 @@ def main():
     print(f"  Accumulation Steps: {args.accumulation_steps}")
     print(f"  Effective Batch Size: {effective_batch_size}")
     if effective_batch_size == 4096:
-        print(f"  ✓ Matches paper's batch size of 4096")
+        print(f"  Matches paper's batch size of 4096")
     elif effective_batch_size < 4096:
-        print(f"  ⚠ Smaller than paper's batch size (4096)")
+        print(f"  Smaller than paper's batch size (4096)")
     else:
-        print(f"  ⚠ Larger than paper's batch size (4096)")
+        print(f"  Larger than paper's batch size (4096)")
     
     print(f"\nTraining Hyperparameters:")
     print(f"  Epochs: {args.epochs}")

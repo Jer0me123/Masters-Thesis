@@ -140,8 +140,7 @@ def validate_image_fast(
     iou_thresh=0.3,
     min_face_person_ratio=0.02
 ):
-    # # ---------- PERSON FILTER ----------
-    # if person_boxes != None:
+    # ---------- PERSON FILTER ----------
     persons = person_boxes[
         (person_boxes[:, 5] == 0) &
         (person_boxes[:, 4] >= min_person_conf)
@@ -163,8 +162,7 @@ def validate_image_fast(
     if face_roi.size == 0:
         return None
 
-    # # ---------- PERSON–FACE RELATION ----------
-    # if person_boxes != None:
+    # ---------- PERSON–FACE RELATION ----------
     for pb in persons:
         px1, py1, px2, py2, _, _ = pb
         px1, py1, px2, py2 = map(int, [px1, py1, px2, py2])
@@ -324,10 +322,8 @@ def process_groups(
                 it for it in items[i:i + batch_size]
                 if format_name(it[0], it[1], it[2]) not in processed
             ]
-            # print(f"Batch Length: {len(batch_items)}")
 
             if not batch_items:
-                # print("Batch Skipped as its already fully processed")
                 group_pbar.update(min(batch_size, len(items) - i))
                 continue
             

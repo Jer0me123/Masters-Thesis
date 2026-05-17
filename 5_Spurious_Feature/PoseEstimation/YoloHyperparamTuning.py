@@ -254,38 +254,38 @@ class YOLOv8HyperparameterTuner:
         """
         Create comprehensive visualization plots
         """
-        # # 1. Heatmap for each max_det value
-        # for max_det in df['max_det'].unique():
-        #     df_subset = df[df['max_det'] == max_det]
+        # 1. Heatmap for each max_det value
+        for max_det in df['max_det'].unique():
+            df_subset = df[df['max_det'] == max_det]
             
-        #     fig, axes = plt.subplots(2, 2, figsize=(15, 12))
-        #     fig.suptitle(f'{model_name} - Hyperparameter Impact (max_det={int(max_det)})', 
-        #                 fontsize=16, fontweight='bold')
+            fig, axes = plt.subplots(2, 2, figsize=(15, 12))
+            fig.suptitle(f'{model_name} - Hyperparameter Impact (max_det={int(max_det)})', 
+                        fontsize=16, fontweight='bold')
 
-        #     metrics = ['AP', 'AP_50', 'AR', 'image_detection_rate']
-        #     titles = ['Average Precision (AP)', 'AP @ IoU=0.50', 
-        #              'Average Recall (AR)', 'Image Detection Rate']
+            metrics = ['AP', 'AP_50', 'AR', 'image_detection_rate']
+            titles = ['Average Precision (AP)', 'AP @ IoU=0.50', 
+                     'Average Recall (AR)', 'Image Detection Rate']
 
-        #     for idx, (metric, title) in enumerate(zip(metrics, titles)):
-        #         ax = axes[idx // 2, idx % 2]
-        #         pivot = df_subset.pivot(index='conf_thresh', 
-        #                                columns='iou_thresh', 
-        #                                values=metric)
+            for idx, (metric, title) in enumerate(zip(metrics, titles)):
+                ax = axes[idx // 2, idx % 2]
+                pivot = df_subset.pivot(index='conf_thresh', 
+                                       columns='iou_thresh', 
+                                       values=metric)
                 
-        #         sns.heatmap(pivot, annot=True, fmt='.3f', cmap='YlOrRd', 
-        #                    ax=ax, cbar_kws={'label': metric})
-        #         ax.set_title(title)
-        #         ax.set_xlabel('IOU Threshold')
-        #         ax.set_ylabel('Confidence Threshold')
+                sns.heatmap(pivot, annot=True, fmt='.3f', cmap='YlOrRd', 
+                           ax=ax, cbar_kws={'label': metric})
+                ax.set_title(title)
+                ax.set_xlabel('IOU Threshold')
+                ax.set_ylabel('Confidence Threshold')
 
-        #     plt.tight_layout()
-        #     output_path = os.path.join(output_dir, 
-        #                               f'{model_name}_heatmap_maxdet_{int(max_det)}.png')
-        #     plt.savefig(output_path, dpi=150, bbox_inches='tight')
-        #     plt.close()
-        #     print(f"Heatmap saved: {output_path}")
+            plt.tight_layout()
+            output_path = os.path.join(output_dir, 
+                                      f'{model_name}_heatmap_maxdet_{int(max_det)}.png')
+            plt.savefig(output_path, dpi=150, bbox_inches='tight')
+            plt.close()
+            print(f"Heatmap saved: {output_path}")
 
-        # 1. Line plots showing metric trends
+        # 2. Line plots showing metric trends
         fig, axes = plt.subplots(2, 2, figsize=(15, 10))
         fig.suptitle(f'{model_name} - Metric Trends by Confidence Threshold', 
                     fontsize=16, fontweight='bold')

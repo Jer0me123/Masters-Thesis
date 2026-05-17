@@ -704,7 +704,7 @@ def main():
         controlnet_id = CONTROLNET_MODELS[opt.control_type]
         print(f"Loading ControlNet ({opt.control_type})...")
         controlnet = ControlNetModel.from_pretrained(controlnet_id, torch_dtype=dtype).to(opt.device)
-        print("✓ ControlNet loaded")
+        print("ControlNet loaded")
 
     # Build the aligned sampler (zero-shot placement)
     sampler = AlignedDDPMSampler(
@@ -730,7 +730,7 @@ def main():
         with torch.no_grad():
             ref_blurred_latents = vae.encode(ref_image).latent_dist.sample()
             ref_blurred_latents = ref_blurred_latents * vae.config.scaling_factor
-        print("✓ Reference loaded and encoded to latent space")
+        print("Reference loaded and encoded to latent space")
 
     # Build ControlNet conditioning image(s)
     control_maps = None
@@ -774,7 +774,7 @@ def main():
         prepend_embeddings = iti_gen.prompt_prepend(opt.generate_image_prompt)
         emb = prepend_embeddings.to(opt.device, dtype=dtype)
 
-    print("✓ ITI-GEN embeddings loaded")
+    print("ITI-GEN embeddings loaded")
 
     del iti_gen, prepend_embeddings
     gc.collect()
@@ -904,7 +904,7 @@ def main():
                 if "cuda" in opt.device:
                     torch.cuda.empty_cache()
 
-    print(f"\n✓ Generation complete! Images saved to: {opt.outdir}")
+    print(f"\nGeneration complete! Images saved to: {opt.outdir}")
 
 
 if __name__ == "__main__":

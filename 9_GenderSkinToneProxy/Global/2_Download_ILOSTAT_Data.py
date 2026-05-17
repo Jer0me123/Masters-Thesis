@@ -27,7 +27,7 @@ BASE_URL = "https://sdmx.ilo.org/rest"
 # ============================================================
 
 def discover_dataflows():
-    print("🔍 Discovering available dataflows from ILOSTAT...")
+    print(" Discovering available dataflows from ILOSTAT...")
     r = requests.get(f"{BASE_URL}/dataflow/ILO", timeout=30)
     r.raise_for_status()
 
@@ -44,14 +44,14 @@ def discover_dataflows():
             "name": (df.find(".//com:Name", ns).text or "").strip(),
         })
 
-    print(f"✅ Found {len(dataflows)} dataflows")
+    print(f" Found {len(dataflows)} dataflows")
     return dataflows
 
 
 def find_occupation_dataflows(dataflows):
     keywords = ["OCU", "ISCO", "OCCUPATION"]
     occ = [df for df in dataflows if any(k in df["id"] for k in keywords)]
-    print(f"\n📊 Found {len(occ)} occupation-related dataflows")
+    print(f"\n Found {len(occ)} occupation-related dataflows")
     return occ
 
 
@@ -127,7 +127,7 @@ def download_complete_occupation_data(
     all_dfs = []
 
     for year in range(start_year, end_year + 1):
-        print(f"\n📅 Year {year}")
+        print(f"\n Year {year}")
         for country in countries:
             try:
                 df = download_country_year(dataflow_id, country, year)
@@ -247,7 +247,7 @@ def main():
     end = input("End year   [2024]: ").strip() or "2024"
 
     download_complete_occupation_data(df["id"], start_year=start, end_year=end)
-    print("\n🎉 DONE!")
+    print("\nDONE!")
 
 
 if __name__ == "__main__":

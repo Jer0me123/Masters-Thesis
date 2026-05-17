@@ -353,37 +353,3 @@ if __name__ == "__main__":
 # ===========================================================
 # EXAMPLE USAGE
 # python ObjectDetection.py --image_dir path/to/images --output_dir path/to/output --model_path yolov8x-oiv7.pt --color_json path/to/color_map.json --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --operation normal white_background --resize 224 224 --label_remap path/to/label_remap.json
-
-# --model_path yolov8x-oiv7.pt -> This is the YOLOv8x model trained on OpenImagesv7 dataset which has 601 classes, it was selected as it provided the best performance in terms of accuracy and number of classes covered when tested against the other models.
-# --color_json path/to/color_map.json -> This is the color map json file which contains the mapping of class names to colors for rendering the bounding boxes.
-# --label_remap path/to/label_remap.json -> This is an optional json file which contains the mapping of certain class names to other class names for remapping purposes. E.g. Remapping Man & Woman to Person.
-# --imgsz 640 -> This is the image size used for inference, it was selected as a good balance between speed and accuracy. (Best parameter based on Hyperparameter tuning)
-# --conf_thresh 0.1 -> This is the confidence threshold for filtering detections, (Best parameter based on Hyperparameter tuning)
-# --iou_thresh 0.5 -> This is the IoU threshold for non-maximum suppression. (Best parameter based on Hyperparameter tuning)
-# --augment -> This flag enables test time augmentation which can improve accuracy at the cost of speed. (Absent as best parameter based on Hyperparameter tuning)
-# --agnostic_nms -> This flag enables class-agnostic NMS which can help in reducing false positives across classes. (Absent as best parameter based on Hyperparameter tuning)
-# --exclude_dirs facemesh -> This is done to exclude any images in the facemesh directory from processing as these are not actual images but rather facemesh data.
-# --exclude_classes [] -> This can be used to exclude specific classes from detection if needed.
-# --include_classes [] -> This can be used to include only specific classes for detection if needed.
-# --operation normal white_background -> This specifies the types of output images to generate, normal for original background and white_background for white background.
-# --resize 224 224 -> This is done as the classification model auto resizes images to 224 x 244 hence its better to resize them prior as this makes processing faster and storge requirements less.
-
-# python ObjectDetection.py --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned" --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\ObjectDetection\test" --model_path "yolov8x-oiv7.pt" --color_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\ObjectDetection\openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh
-
-# python ObjectDetection.py --image_dir "E:\ImageRetrieval\Professions_125k_Cleaned" --output_dir "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\ObjectDetection\test3" --model_path "yolov8x-oiv7.pt" --color_json "C:\MastersRepos\ARI5902-Research-Topics-in-AI\LAION-5B Testing\Spurious_Feature\ObjectDetection\openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --resize 224 224 --operation normal white_background --exclude_classes "Human face" --label_remap "label_remap.json"
-
-# NOTE: The label_remap.json file is not complete and needs to be extended to include all the necessary class mappings.
-
-# python ObjectDetection.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\ObjectDetection" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs face_crops --resize 224 224 --operation normal white_background --label_remap "label_remap.json" --exclude_classes_file "exclude_classes.txt"
-
-# python ObjectDetection.py --image_dir "E:\ImageRetrieval\StableDiffusionGeneratedImages\valid" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\StableDiffusionImages\ObjectDetection_LabelRestricted" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs face_crops --resize 224 224 --operation normal white_background --label_remap "label_remap_restricted.json" --exclude_classes_file "exclude_classes.txt"
-
-# python ObjectDetection.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ObjectDetection" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --resize 224 224 --operation normal white_background --label_remap "label_remap.json" --exclude_classes_file "exclude_classes.txt"
-
-# python ObjectDetection.py --image_dir "F:\ImageRetrieval\Professions_125k_ISCO_Aligned_1k_Subset" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Professions_125k_ISCO_Aligned_1k_Subset\ObjectDetection_LabelRestricted" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --resize 224 224 --operation normal white_background --label_remap "label_remap_restricted.json" --exclude_classes_file "exclude_classes.txt"
-
-
-# python ObjectDetection.py --image_dir "F:\ImageRetrieval\Coco" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Coco\ObjectDetection" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --resize 224 224 --operation normal white_background --label_remap "label_remap.json" --exclude_classes_file "exclude_classes.txt"
-
-# python ObjectDetection.py --image_dir "F:\ImageRetrieval\Coco" --output_dir "F:\ImageRetrieval\SpuriousFeatureImages\Coco\ObjectDetection_LabelRestricted" --model_path "yolov8x-oiv7.pt" --color_json "openImagesv7_color_map.json" --batch_size 16 --chunk_size 32 --imgsz 640 --conf_thresh 0.1 --iou_thresh 0.5 --exclude_dirs facemesh --resize 224 224 --operation normal white_background --label_remap "label_remap_restricted.json" --exclude_classes_file "exclude_classes.txt"
-
