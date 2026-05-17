@@ -11,78 +11,94 @@ across a web-scale training corpus and the generative model trained on it. The f
 address each of the five research objectives and collectively advance understanding of
 bias mechanisms in large-scale vision systems.
 
-\paragraph{Objective 1: Dataset acquisition, preparation, and annotation.}
+\paragraph{Objective 1: Dataset Acquisition, Preparation, and Annotation.}
 A profession-conditioned subset of 200,000 images was retrieved from Re-LAION-5B across
-200 occupations aligned with ISCO-08 categories, and a corresponding set of 200,000 images was generated using Stable Diffusion v1.5 with LCM‐LoRA acceleration for the standard generation pipeline. CLIP embeddings were recomputed from scratch using \texttt{openai/clip-vit-large-patch14} in the absence of pre-computed embeddings, and a two-stage structural validation pipeline was developed to enforce human-centric image suitability across both corpora. Demographic annotation was performed using the Realistic Gender Classifier and a VGG-16 MST10 Regression model selected through systematic evaluation against CCv2, MSTE, and FACET benchmarks, with skin tone extended to the full ten-point Monk Skin Tone scale beyond the binary and six-point scales used in prior work.
+200 occupations aligned with ISCO-08 categories, and a corresponding set of 200,000 images
+was generated using Stable Diffusion v1.5 with LCM-LoRA acceleration for the standard
+generation pipeline. CLIP embeddings were recomputed from scratch using
+\texttt{openai/clip-vit-large-patch14} in the absence of pre-computed embeddings, and a
+two-stage structural validation pipeline was developed to enforce human-centric image
+suitability across both corpora. Demographic annotation was performed using the Realistic
+Gender Classifier and a VGG-16 MST10 Regression model selected through systematic
+evaluation against CCv2, MSTE, and FACET benchmarks, with skin tone extended to the full
+ten-point Monk Skin Tone scale beyond the scales used in prior work.
 
-\paragraph{Objective 2: Spurious feature detection.}
+\paragraph{Objective 2: Spurious Feature Detection.}
 The transformation-based framework of Zeng et al.\ was applied and extended to a
-three-dataset configuration — Re-LAION-5B, Stable Diffusion v1.5, and COCO — enabling
-per-class accuracy attribution that a binary design cannot provide. Fifteen
-transformations spanning frequency, geometry, semantics, and colour were evaluated.
-Every transformation exceeded the 33.3\% chance level, from unmodified images at 99.42\%
-down to mean RGB at 64.19\%, establishing that dataset-specific spurious signatures
-persist even under extreme information compression and are distributed across multiple
-correlated visual attributes rather than concentrated in any single representation.
+three-dataset configuration comprising Re-LAION-5B, Stable Diffusion v1.5, and COCO.
+Fifteen transformations spanning frequency, geometry, semantics, and colour were
+evaluated. Every transformation exceeded the 33.3\% chance level, from unmodified images
+at 99.42\% down to mean RGB at 64.19\%. These results establish that dataset-specific
+spurious signatures persist even under extreme information compression and are distributed
+across multiple correlated visual attributes rather than concentrated in any single
+representation.
 
-% \paragraph{Objective 3: Spurious feature correlations with demographics.}
-% Demographic probing following the occlusion framework of Meister et al.\ revealed a
-% fundamental asymmetry between the two datasets. In Re-LAION-5B, gender and skin tone
-% information is localised entirely within the visible appearance of the depicted person:
-% every occlusion variant collapses to chance, and no residual signal is recoverable from
-% background context. In Stable Diffusion v1.5, demographic information is distributed
-% across the full image, recoverable from background context alone (gender AUC 0.747; skin
-% tone AUC 0.728), from person silhouette geometry (gender AUC 0.834), from object
-% co-occurrence, skeletal geometry, and natural language descriptions (gender AUC 0.771).
-% This cross-modal, cross-representational persistence demonstrates that the generative
-% model does not merely inherit the demographic priors of its training corpus but projects
-% them coherently onto the surrounding scene, spatial layout, and semantic content of
-% generated images. Gender amplification was confirmed in 178 of 200 professions and skin
-% tone amplification toward lighter tones in 175 of 200 professions, with the Dark-bin
-% proportion collapsing by 83\% from Re-LAION-5B to Stable Diffusion v1.5.
+\paragraph{Objective 3: Demographic Correlation Assessment.}
+Demographic probing following the occlusion framework of Meister et al.\ revealed a
+fundamental asymmetry between the two datasets. In Re-LAION-5B, person-hidden occlusion
+variants collapse to chance for both gender and skin tone, indicating that retained
+background context carries no independent demographic signal. The
+full-person-no-background condition also collapses to chance, making person-level signal
+in isolation difficult to interpret under the applied masking protocol. In Stable
+Diffusion v1.5, demographic information is recoverable from representations that do not
+preserve visible person appearance, including background-retained rectangular occlusion
+(gender AUC 0.747; skin tone AUC 0.728), person-region geometry (gender AUC 0.834 under
+segmentation-mask no-background occlusion), object co-occurrence, skeletal geometry, and
+natural language descriptions. This cross-representational persistence demonstrates that
+the generative model does not merely inherit demographic priors from its training corpus
+but projects them onto scene context, spatial structure, and semantic content in generated
+images. Gender amplification was confirmed in 178 of 200 professions and skin tone
+amplification toward lighter tones in 175 of 200 professions, with the Dark-bin
+proportion collapsing by 83\% from Re-LAION-5B to Stable Diffusion v1.5.
 
-\paragraph{Objective 3: Spurious feature correlations with demographics.}
-Demographic probing following the occlusion framework of Meister et al.\ revealed a fundamental asymmetry between the two datasets. In Re-LAION-5B, gender and skin tone information is localised entirely within the visible appearance of the depicted person: every occlusion variant collapses to chance, and no residual signal is recoverable from background context. In Stable Diffusion v1.5, demographic information is uniquely distributed into scene context and background, recoverable from background context alone (gender AUC 0.747; skin tone AUC 0.728), from person silhouette geometry (gender AUC 0.834), from object co-occurrence, skeletal geometry, and natural language descriptions (gender AUC 0.771). This cross-modal, cross-representational persistence demonstrates that the generative model does not merely inherit the demographic priors of its training corpus but projects them coherently onto the surrounding scene, spatial layout, and semantic content of generated images. Gender amplification was confirmed in 178 of 200 professions and skin tone amplification toward lighter tones in 175 of 200 professions, with the Dark-bin proportion collapsing by 83\% from Re-LAION-5B to Stable Diffusion v1.5.
-
-\paragraph{Objective 4: Inference-time debiasing.}
+\paragraph{Objective 4: Inference-Time Debiasing.}
 A combined pipeline of ITI-GEN demographic conditioning, ControlNet OpenPose structural
 conditioning, and Chamfer latent-space colour alignment was implemented and evaluated on
 a 10,000-image debiased doctor corpus. The pipeline successfully overrides the model's
-strongly skewed learned prior, achieving a uniform gender and skin tone distribution by
-construction. At the representation level, every non-person probe collapsed to at or near
-chance for both gender and skin tone, including mean RGB (0.507 for gender; 0.482 for
-skin tone), object detection, pose keypoints, depth at keypoints, and caption-based
-probing (gender 0.530; skin tone 0.490). The near-chance mean RGB skin tone result
-provides the most direct mechanistic evidence that the Chamfer colour alignment
-successfully disrupts the photometric correlations that enable demographic signal to
-propagate through colour statistics. Residual background-level demographic signal persists in the debiased corpus, with the background-retained probe (MaskRect) achieving AUC 0.995 for gender and 0.632 for skin tone, and the background-periphery probe (MaskRectNoBg) achieving AUC 0.701 for gender and 0.543 for skin tone, indicating that scene composition remains partially entangled with the demographic conditioning signal even under pose and appearance control.
+strongly skewed learned prior at the distributional level, achieving a uniform gender and
+skin tone distribution by construction. At the representation level, most non-person
+probes collapse to at or near chance for both gender and skin tone, including mean RGB
+(0.507 for gender; 0.482 for skin tone), object detection, pose keypoints, depth at
+keypoints, and caption-based probing (gender 0.530; skin tone 0.490). The near-chance
+Mean RGB skin tone result provides strong evidence that the colour alignment component
+disrupts the photometric correlations that previously allowed global colour statistics to
+carry demographic signal. However, residual background-level demographic signal persists
+in the debiased corpus. The background-retained rectangular occlusion probe achieves AUC
+0.995 for gender and 0.632 for skin tone, while the rectangular no-background condition
+achieves AUC 0.701 for gender and 0.543 for skin tone. This indicates that scene
+composition remains partially entangled with the demographic conditioning signal even
+under pose and appearance control.
 
-\paragraph{Objective 5: Conclusions on bias mechanisms and mitigation.}
-The combined evidence characterises a two-stage bias propagation process. Re-LAION-5B exhibits gender distributions that diverge from real-world labour force composition in a baseline-dependent manner, falling below US-specific norms in the majority of occupational groups while remaining broadly consistent with global workforce proportions in several others, and exhibits modest demographic signal distributed across colour, geometry, and semantic representations, but confines this signal to person-level appearance. Stable Diffusion v1.5 then amplifies
-these imbalances substantially and transforms their distribution: the generative process
-projects demographic priors beyond the person onto background, scene composition, object
-layout, and textual description, producing a substantially more entrenched and
-pervasive form of bias than is present in the training corpus. Inference-time debiasing
-can measurably reduce spurious correlations at the representation level without model
-retraining, but background-level entanglement persists and represents the primary
-remaining challenge for this class of interventions.
+\paragraph{Objective 5: Synthesis of Bias Mechanisms and Mitigation.}
+The combined evidence characterises a two-stage bias propagation process. Re-LAION-5B
+exhibits gender distributions that diverge from real-world labour force composition in a
+baseline-dependent manner, falling below US-specific norms in the majority of occupational
+groups while remaining broadly consistent with global workforce proportions in several
+others. It also exhibits modest demographic signal across colour, geometry, and semantic
+representations, but no independent demographic signal in retained background context.
+Stable Diffusion v1.5 then amplifies these imbalances and transforms their distribution:
+the generative process projects demographic priors beyond the depicted person onto
+background, scene composition, object layout, and textual description, producing a more
+entrenched and pervasive form of bias than is observed in the retrieved corpus.
+Inference-time debiasing can measurably reduce spurious correlations at the representation
+level without model retraining, but background-level entanglement persists and represents
+the primary remaining challenge for this class of interventions.
 
 \paragraph{Impact on the field.}
 These findings have several direct implications for practitioners and researchers working
 with large-scale visual datasets and generative systems. First, auditing a generative
 model's demographic outputs is insufficient without also auditing the spurious feature
-distributions of the training corpus, as the generative process amplifies and transforms
-biases rather than simply reproducing them. Second, occlusion-based probing provides a
+distributions of the training corpus, as the generative process can amplify and transform
+biases rather than simply reproduce them. Second, occlusion-based probing provides a
 practical and interpretable diagnostic for distinguishing person-localised from
 scene-distributed demographic signal, a distinction that aggregate distribution metrics
 cannot detect. Third, the persistence of demographic signal in natural language
 descriptions of generated images demonstrates that stereotyping in generative systems is
-not confined to pixel statistics but extends into the semantic register, with implications
-for any downstream application that consumes generated text-image pairs. Fourth, the
-debiasing evaluation demonstrates that inference-time interventions can substantially reduce
-low-level spurious correlations effectively, but background-level demographic
-conditioning requires interventions that target scene composition directly rather than
-person appearance alone.
+not confined to pixel statistics but extends into semantic content, with implications for
+downstream applications that consume generated text-image pairs. Fourth, the debiasing
+evaluation demonstrates that inference-time interventions can substantially reduce many
+spurious correlations, but background-level demographic conditioning requires
+interventions that target scene composition directly rather than person appearance alone.
 
 \section{Future Work}
 \label{sec:future_work}
@@ -93,19 +109,18 @@ deeper investigation of the mechanisms identified here.
 
 The most immediate extension concerns the debiasing pipeline. Residual background-level
 demographic signal persists at AUC 0.995 for gender and 0.632 for skin tone under
-background-only probing, indicating that scene composition remains partially entangled
-with the demographic conditioning signal even under pose and appearance control. Future
-work could investigate targeted background conditioning mechanisms that explicitly
+background-retained occlusion, indicating that scene composition remains partially
+entangled with the demographic conditioning signal even under pose and appearance control.
+Future work could investigate targeted background conditioning mechanisms that explicitly
 decorrelate scene composition from demographic attributes, either through adversarial
-background debiasing approaches or through extension of the ITI-GEN framework to
-condition on background properties independently of person appearance. The weight editing
-approach of Unified Concept Editing \cite{Gandikota_2024_UCE} offers a complementary
-avenue, as its direct modification of cross-attention projections may suppress
-background-level demographic associations that inference-time conditioning does not
-address. A systematic comparison of conditioning-based approaches against weight editing
-methods on the same probing protocol would establish whether background entanglement is
-specific to the conditioning paradigm or is a general property of all inference-time
-interventions.
+background debiasing approaches or through extension of the ITI-GEN framework to condition
+on background properties independently of person appearance. The weight editing approach
+of Unified Concept Editing \cite{Gandikota_2024_UCE} offers a complementary avenue, as
+its direct modification of cross-attention projections may suppress background-level
+demographic associations that inference-time conditioning does not address. A systematic
+comparison of conditioning-based approaches against weight editing methods on the same
+probing protocol would establish whether background entanglement is specific to the
+conditioning paradigm or is a general property of inference-time interventions.
 
 The debiasing evaluation in this thesis is restricted to a single profession. Extending
 the evaluation to a stratified sample spanning all ten ISCO-08 major groups would
@@ -122,17 +137,23 @@ classifiers. A complementary evaluation using validated automated skin tone esti
 the debiased corpus would quantify the photometric fidelity of the conditioning,
 assessing whether images conditioned on darker MST tokens exhibit measurably different
 skin pigmentation statistics and whether the Chamfer colour alignment produces coherent
-skin tone variation rather than global colour shifts. This would also enable the debiasing
-evaluation to be compared directly with the eight-class standard corpus results.
+skin tone variation rather than global colour shifts. This would also enable the
+debiasing evaluation to be compared directly with the eight-class standard corpus results.
 
 The transformation-based probing framework applied in this work uses ConvNeXt-Tiny as
 the classification backbone. Future work could evaluate whether the separability ceiling
 identified here reflects genuine representational differences between datasets or the
 capacity limitations of the chosen probe, by applying larger classification architectures
-or self-supervised foundation model representations. The original Zeng et al.\ ablation
-demonstrates limited impact of model size on dataset classification accuracy for
-structural transformations, but this was conducted in a different dataset context and may
-not generalise to the Re-LAION-5B versus Stable Diffusion v1.5 comparison.
+or self-supervised foundation model representations. This is particularly relevant for
+the full-person-no-background condition in the gender analysis, where chance-level
+performance may reflect either a genuine absence of independently learnable person-level
+signal under the applied masking protocol or a limitation of the probe under high
+photographic variability. Evaluating this condition with a higher-capacity backbone, or
+on a larger balanced crop set, would help disambiguate these explanations. The original
+Zeng et al.\ ablation demonstrates limited impact of model size on dataset classification
+accuracy for structural transformations, but this was conducted in a different dataset
+context and may not generalise to the Re-LAION-5B versus Stable Diffusion v1.5
+comparison.
 
 Finally, the analysis is grounded in a subset of four Re-LAION-5B shards, covering
 approximately 3.1\% of the full corpus. Extending the analysis to a larger shard sample

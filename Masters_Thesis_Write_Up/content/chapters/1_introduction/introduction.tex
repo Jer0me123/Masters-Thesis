@@ -2,77 +2,67 @@
 \label{chp:introduction}
 
 \section{Problem Definition}
-The rapid advancement of text-to-image generative models has fundamentally transformed
-visual content creation, with diffusion-based architectures achieving unprecedented image
-quality and prompt controllability. Among these, Stable Diffusion \cite{Rombach_2022_CVPR}
-has emerged as particularly influential due to its open-source availability, widespread
-deployment, and the extensive ecosystem of tools and fine-tuned variants built upon it.
+Text-to-image generative models have transformed visual content creation, with diffusion-based
+architectures achieving high image quality and prompt controllability. Among these, Stable Diffusion \cite{Rombach_2022_CVPR} has emerged as particularly influential due to its open-source availability, widespread deployment, and the extensive ecosystem of tools and fine-tuned variants built upon it.
 
 These systems rely on massive web-scraped datasets to learn the mapping between text and
 visual content. Re-LAION-5B, containing over 5 billion image-text pairs harvested from the
 internet, represents one of the largest publicly available training corpora for such models
 \cite{Schuhmann_2022_Laion5b}. However, the scale and automated nature of web scraping
-introduces systematic biases that reflect and potentially amplify societal inequities present
+introduce systematic biases that reflect and potentially amplify societal inequities present
 in online content \cite{Birhane_2021_MultiModalDatasetsMisogynyPornography}.
 
 Demographic bias in AI is well-documented across natural language processing
 \cite{Bolukbasi_2016_ManComputerProgrammerWoman}, machine learning
 \cite{Mehrabi_2022_SurveyBiasFairnessMachine}, and computer vision
 \cite{Buolamwini_2018_GenderShades}, yet a gap remains between detecting bias
-in generative outputs and understanding the specific low-level image features that cause and
-perpetuate it. Current research predominantly adopts an outcome-focused perspective,
-measuring demographic distributions in generated images against desired benchmarks
-\cite{Luccioni_2023_AnalyzingSocietalRepresentationsDiffusionModels,
-	Bianchi_2023_TTIGenAmplifiesDemographicStereotypes}, treating models as black boxes that
-diagnose symptoms without exposing underlying mechanisms.
+in generative outputs and understanding the spurious features that cause and
+perpetuate it. Current research predominantly measures demographic distributions in generated images against desired benchmarks \cite{Luccioni_2023_AnalyzingSocietalRepresentationsDiffusionModels, Bianchi_2023_TTIGenAmplifiesDemographicStereotypes}, thereby treating models as black boxes and diagnosing symptoms without exposing the underlying mechanisms.
 
-A fundamental yet underexplored dimension involves spurious features, which are low-level
+A fundamental yet under explored dimension involves spurious features, which are low-level
 non-semantic image characteristics such as colour statistics, texture patterns, edge
-distributions, frequency domain properties, and compression artifacts
-\cite{Meister_2023_GenderArtifactsinVisualDatasets,
-	Zeng_2024_UnderstandingBiasinLargeScaleVisualDatasets}. When these features correlate with
-sensitive demographic attributes, models can exploit superficial statistical regularities
-rather than semantic content, creating a form of bias that operates beneath standard
+distributions, frequency domain properties, and compression artefacts
+\cite{Meister_2023_GenderArtifactsinVisualDatasets, Zeng_2024_UnderstandingBiasinLargeScaleVisualDatasets}. When these features correlate with sensitive demographic attributes, models can exploit spurious  statistical regularities rather than semantic content, creating a form of bias that operates beneath standard
 evaluation metrics. It also remains unclear how generative training transforms these spurious
-patterns, making it difficult to predict how training data biases manifest in deployed systems.
+features, making it difficult to predict how training data biases manifest in deployed systems.
 
 Existing mitigation approaches typically require expensive interventions: curating balanced
 training data \cite{Yang_2020_FairerDatasets}, fairness-constrained training
 \cite{Zhang_2018_MitigatingUnwantedBiasesAdversarial}, or fine-tuning on carefully
 constructed demographic distributions \cite{Friedrich_2023_FairDiffusionInstructingTextToImage}.
 These demand substantial computational resources, creating barriers for researchers working
-with pre-trained models. Moreover, outcome-focused corrections may balance demographic
+with pretrained models. Moreover, outcome-focused corrections may balance demographic
 distributions without addressing the spurious features that enable biased shortcuts, yielding
 superficial fixes that fail to generalise.
 
 This thesis addresses these gaps through a mechanistic investigation of spurious features in
 Re-LAION-5B and Stable Diffusion v1.5. Rather than solely measuring outcomes, it applies
-established methodologies to expose the low-level features that distinguish dataset sources
-and correlate with sensitive attributes, then evaluates targeted inference-time interventions
-that address root causes rather than symptoms.
+established methodologies to expose the spurious features that distinguish dataset sources
+and correlate with sensitive attributes, then evaluates targeted inference‐time interventions that address root causes rather than symptoms. Crucially, this investigation reveals that Re‐LAION‐5B and Stable Diffusion v1.5 encode demographic information through qualitatively different mechanisms, a distinction that has direct consequences for how bias is measured, attributed, and mitigated.
 
 \section{Motivation}
 
-Influence and Impact: Re-LAION-5B serves as training data for multiple widely-deployed
-text-to-image models, while Stable Diffusion v1.5 has achieved widespread adoption across
-platforms such as DreamStudio and Hugging Face. Despite this pervasive influence,
-comprehensive analysis of spurious features in Re-LAION-5B and their propagation through
-Stable Diffusion v1.5 remains limited, making understanding bias mechanisms in these systems
-directly relevant to fairness at scale.
-
-\noindent Computational Accessibility: Training or fine-tuning large-scale diffusion models is beyond
-reach for most researchers and practitioners. By focusing on inference-time methods
-applicable to frozen models, this research demonstrates fairness interventions accessible to
-smaller groups and organisations with limited computational budgets.
-
-\noindent Reproducibility and Transparency: The open-source nature of Stable Diffusion v1.5 and the
-research availability of Re-LAION-5B enable findings to be independently verified,
-replicated, and extended, strengthening the credibility and impact of this work.
-
-\noindent Beyond Outcome Measurement: Understanding why biases emerge, and specifically which
-low-level features enable biased shortcuts, supports interventions that address root causes
-rather than symptoms, enabling solutions that generalise rather than superficially correct
-specific evaluation metrics.
+\begin{description}
+	\item[Influence and Impact:] Re-LAION-5B serves as training data for multiple widely-deployed
+	text-to-image models, while Stable Diffusion v1.5 has achieved widespread adoption across
+	platforms such as DreamStudio and Hugging Face. Despite this pervasive influence,
+	comprehensive analysis of spurious features in Re-LAION-5B and their propagation through
+	Stable Diffusion v1.5 remains limited, making the study of bias mechanisms in these systems
+	directly relevant to fairness at scale.
+	
+	\item[Computational Accessibility:] Training or fine-tuning large-scale diffusion models is beyond
+	reach for most researchers and practitioners. By focusing on inference-time methods
+	applicable to frozen models, this research demonstrates fairness interventions accessible to
+	smaller groups and organisations with limited computational budgets.
+	
+	\item[Reproducibility and Transparency:] The open-source nature of Stable Diffusion v1.5 and the
+	research availability of Re-LAION-5B enable findings to be independently verified,
+	replicated, and extended, strengthening the credibility and impact of this work.
+	
+	\item[Beyond Outcome Measurement:] Understanding why biases emerge, and specifically which spurious features enable biased shortcuts, supports interventions that address root causes
+	rather than symptoms, enabling solutions that generalise rather than superficially correct
+	specific evaluation metrics.
+\end{description}
 
 \section{Aims and Objectives}
 
@@ -80,54 +70,54 @@ The overarching aim is to apply established spurious feature detection methodolo
 Re-LAION-5B and Stable Diffusion v1.5, systematically characterise the spurious features
 present in each, quantify their correlation with sensitive demographic attributes, and
 evaluate the effectiveness of existing inference-time debiasing techniques on this
-dataset-model pair.
+dataset-model pair. This aim is addressed through the following set of objectives:
 
-Objective 1: Dataset Acquisition, Preparation, and Annotation.
-Retrieve images from Re-LAION-5B and generate corresponding images using Stable Diffusion
-v1.5 across a set of occupation categories. Annotate all images for gender and skin-tone
-using established computer vision models to enable demographic analysis and spurious feature
-correlation assessment.
+\begin{enumerate}
+	\item \textbf{Dataset Acquisition, Preparation, and Annotation.}
+%	Retrieve images from Re-LAION-5B and generate corresponding images using Stable Diffusion
+%	v1.5 across a set of occupation categories. Annotate all images for gender and skin tone
+%	using established computer vision models to enable demographic analysis and spurious feature
+%	correlation assessment.
+	
+	Retrieve occupation-conditioned images from Re‐LAION‐5B and generate a corresponding set using Stable Diffusion v1.5, annotating all images for gender and skin tone to support subsequent spurious feature and demographic analysis.
+	
+	\item \textbf{Spurious Feature Detection.}
+%	Implement classifier-based methodologies to detect spurious features distinguishing dataset
+%	sources. Apply systematic image transformations to isolate non-semantic features and train
+%	discriminative classifiers to characterise dataset-specific spurious patterns.
+	
+	Detect and characterise spurious features that distinguish Re‐LAION‐5B images from Stable Diffusion v1.5 outputs using transformation-based classifier probing.
+	
+	\item \textbf{Demographic Correlation Assessment.}
+%	Analyse whether identified spurious features exhibit systematic correlations with gender and
+%	skin tone in both datasets. Quantify the extent to which spurious features enable demographic
+%	classification shortcuts and compare distributions against real-world occupational statistics
+%	to identify representation biases.
+	
+	Probe whether identified spurious features encode demographic information differently across the two sources, and compare occupational demographic distributions against real‐world statistics to assess representation bias and generative amplification.
+	
+	\item \textbf{Inference-Time Debiasing.}
+%	Implement established inference-time debiasing techniques for Stable Diffusion v1.5 without
+%	model retraining. Evaluate their effectiveness across demographic representation and spurious
+%	feature mitigation, and assess fairness trade-offs to inform practical deployment.
 
-Objective 2: Spurious Feature Detection.
-Implement classifier-based methodologies to detect spurious features distinguishing dataset
-sources. Apply systematic image transformations to isolate non-semantic features and train
-discriminative classifiers to characterise dataset-specific spurious patterns.
-
-Objective 3: Demographic Correlation Assessment.
-Analyse whether identified spurious features exhibit systematic correlations with gender and
-skin-tone in both datasets. Quantify the extent to which spurious features enable demographic
-classification shortcuts and compare distributions against real-world occupational statistics
-to identify representation biases.
-
-Objective 4: Inference-Time Debiasing.
-Implement established inference-time debiasing techniques for Stable Diffusion v1.5 without
-model retraining. Evaluate their effectiveness across demographic representation and spurious feature mitigation, and assess fairness trade-offs to inform practical deployment.
-
-Objective 5: Conclusions on Bias Mechanisms and Mitigation.
-Synthesise findings to characterise how spurious features manifest in Re-LAION-5B and
-propagate through Stable Diffusion v1.5, determining whether the generative process
-preserves, amplifies, or mitigates training data biases.
+	Implement and evaluate an inference-time debiasing pipeline for Stable Diffusion v1.5, assessing its effectiveness across demographic representation and spurious feature mitigation without model retraining.
+	
+	\item \textbf{Synthesis of Bias Mechanisms and Mitigation.}
+%	Synthesise findings to characterise how spurious features manifest in Re-LAION-5B and
+%	propagate through Stable Diffusion v1.5, determining whether the generative process
+%	preserves, amplifies, or mitigates training data biases.
+	
+	Synthesise findings to characterise how spurious features and demographic biases manifest in Re‐LAION‐5B and are transformed by the Stable Diffusion v1.5 generative process.
+\end{enumerate}
 
 \section{Document Structure}
-The remainder of this dissertation is structured as follows.
-Chapter~\ref{chp:background_lit} provides the background and literature
-review, covering the Re-LAION-5B dataset and Stable Diffusion v1.5
-architecture, spurious feature learning and dataset bias, demographic
-annotation frameworks, skin tone measurement scales, and
-inference-time debiasing approaches for text-to-image models.
-Chapter~\ref{chp:methodology} describes the methodology, detailing
-the image retrieval and generation pipelines, demographic annotation
-procedures, the full image transformation pipeline for spurious
-feature analysis, and the inference-time debiasing configuration.
-Chapter~\ref{chp:evaluation} presents the evaluation and results,
-reporting the demographic distribution analysis across 200
-professions, dataset classification results across all transformations,
-demographic attribute separability findings for both gender and skin
-tone, and an assessment of the debiasing pipeline against the
-aggregate standard Stable Diffusion v1.5 results.
-Chapter~\ref{chp:conclusions} presents the conclusions and future
-work, summarising the main findings and their implications for the
-use of Re-LAION-5B and Stable Diffusion v1.5 in downstream
-applications, and proposing directions for extending the demographic
-probing framework, improving the debiasing pipeline, and broadening
-dataset assessment methodologies.
+
+The remainder of this dissertation is structured as follows. Chapter~\ref{chp:background_lit} reviews the Re-LAION-5B dataset, Stable Diffusion v1.5, spurious feature learning, demographic annotation frameworks, and inference-time debiasing approaches for text-to-image models. Chapter~\ref{chp:methodology} describes
+the image retrieval and generation pipelines, demographic annotation procedure,
+transformation-based probing framework, and debiased generation configuration.
+Chapter~\ref{chp:evaluation} presents the demographic distribution analysis across
+occupations, dataset classification results, demographic attribute separability findings,
+and debiasing evaluation. Chapter~\ref{chp:conclusions} summarises the main findings,
+discusses their implications for dataset and model assessment, and outlines directions
+for future work.

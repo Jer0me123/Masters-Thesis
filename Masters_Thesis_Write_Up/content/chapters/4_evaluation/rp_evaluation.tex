@@ -4,15 +4,13 @@
 
 Both datasets exhibit a pronounced male skew across 200 professions, but the imbalance
 is substantially more severe in SDv1.5. Re-LAION-5B contains 41.5\% female-labelled
-images (58.5\% male), a 17 percentage point gap relative to parity; SDv1.5 widens this
+images (58.5\% male), a 17 percentage-point male--female gap; SDv1.5 widens this
 to 42 percentage points with only 29.02\% female images. Against BLS 2024 and ILOSTAT
 baselines, Re-LAION-5B falls below real-world female proportions relative to US norms
 while remaining broadly consistent with global workforce proportions in several ISCO
 groups. SDv1.5 amplifies this skew across nearly every occupational group regardless of
 baseline, confirming a two-stage bias pattern in which the generative model exacerbates
-rather than inherits training corpus imbalances. Gender amplification is confirmed in 178
-of 200 professions, with extreme cases including Logger (97.5\% male), Nurse (97.5\%
-female), and Receptionist (97.3\% female).
+rather than merely inherits training corpus imbalances. Gender amplification is confirmed in 178 of 200 professions, with extreme cases including Logger (97.5\% male), Nurse (97.5\% female), and Receptionist (97.3\% female).
 
 The skin tone analysis reveals a near-complete collapse of dark-toned representation in
 generative outputs: the Dark-bin proportion falls from 0.81\% in Re-LAION-5B to 0.14\%
@@ -32,12 +30,12 @@ captions 90.99\%, object detection 88.62\%); and global colour statistics (pixel
 80.67\%, mean RGB 64.19\%). No single transformation eliminates separability, confirming
 that dataset identity is redundantly encoded across colour, texture, geometry, semantics,
 and language simultaneously. VAE reconstruction reduces accuracy by only 0.27 percentage
-points (99.15\% vs.\ 99.42\%), ruling out low-level acquisition artefacts as the dominant
-signal source. Accuracies substantially exceed the 82.0\% reference reported by Zeng et
-al.\ for purely web-scraped datasets, consistent with SDv1.5's generative pipeline
-imposing far greater internal homogeneity than a web-scraped corpus.
+points (99.15\% vs.\ 99.42\%), suggesting that low-level acquisition artefacts are
+unlikely to be the dominant source of separability. Accuracies substantially exceed
+the 82.0\% reference reported by Zeng et al.\ for purely web-scraped datasets,
+consistent with SDv1.5's generative pipeline imposing far greater internal homogeneity than a web-scraped corpus.
 
-\section{Demographic Artifact Probing}
+\section{Demographic Artefact Probing}
 
 The occlusion experiments reveal a fundamental asymmetry. In Re-LAION-5B, all
 person-hidden variants collapse to chance for both gender and skin tone regardless of
@@ -45,37 +43,22 @@ whether background is retained, establishing that background context carries no
 recoverable demographic signal. In SDv1.5, background context is a substantial
 independent carrier: with the person masked and background retained, gender AUC reaches
 0.747 and skin tone AUC 0.728; silhouette alone (MaskSegm NoBg) reaches gender AUC
-0.834. This directly replicates and substantially amplifies the contextual artifact
+0.834. This is consistent with and substantially extends the contextual artefact
 identified by Meister et al.
 
 Beyond occlusion, both datasets exhibit modest signal in non-appearance representations.
 Mean RGB achieves gender AUC 0.600/0.579 and skin tone AUC 0.563/0.543 (Re-LAION-5B /
 SDv1.5), consistent with the 0.580 reported by Meister et al.\ on COCO. Pose keypoints
 achieve gender AUC 0.697/0.680, confirming body configuration differences contribute
-independently of photometric properties. Object detection reveals gender-stereotyped
-scene compositions at AUC 0.692 on Re-LAION-5B (0.608 restricted), with the gap
-narrowing substantially in SDv1.5. Caption probing reveals a cross-dataset reversal
+independently of photometric properties. Object detection reveals gender-stereotyped scene
+compositions at AUC 0.692 on Re-LAION-5B (0.615 restricted), with both SDv1.5
+object detection variants converging at AUC 0.608. Caption probing reveals a cross-dataset reversal
 absent from all visual probes: Re-LAION-5B achieves gender AUC 0.901 and skin tone AUC
 0.749 versus SDv1.5 at 0.771 and 0.673, indicating that web-scraped images carry richer
 linguistically recoverable associations while SDv1.5 encodes stronger signal in
-scene-level visual statistics. Together, Re-LAION-5B suggests demographic signal is primarily localised within the person region while SDv1.5 distributes it pervasively across scene context, body
-geometry, object composition, and linguistic register.
-
-%\section{Debiasing Evaluation}
-%
-%The combined ITI-GEN, ControlNet, and Chamfer colour alignment pipeline produces a
-%substantive departure from the standard SDv1.5 demographic and spurious feature profile,
-%achieving the intended 50\% / 50\% gender split and uniform spread across all ten MST
-%levels. Person-level probing confirms successful conditioning: gender AUC reaches
-%${\approx}1.000$ on unmodified images (expected, as labels derive from the generation
-%configuration). Most non-person probes collapse to at or near chance, indicating substantial suppression of person-level demographic cues: mean RGB 0.507, object detection 0.449/0.457, depth at keypoints 0.454, pose keypoints 0.475, captions 0.530 (down 24.1,pp from the SDv1.5 value of 0.771). Skin tone non-person probes show the same pattern: mean RGB 0.482, object detection 0.439/0.461, depth 0.443, pose 0.483, captions 0.490, all at or near the 10-class chance level of 0.500. However, background-retained occlusion (MaskRect) remains highly predictive (gender AUC 0.995; skin tone AUC 0.632), demonstrating that scene-level correlations persist despite debiasing.
-%The meanRGB skin tone value of 0.482 provides the clearest mechanistic confirmation that Chamfer
-%alignment disrupts photometric spurious correlations. Residual background-level signal
-%persists: gender MaskRect AUC 0.995 and skin tone MaskRect 0.632, indicating that scene
-%composition remains partially entangled with demographic conditioning even under pose and
-%appearance control, representing the primary open challenge for future work.
-
-
+scene-level visual statistics. Together, Re-LAION-5B shows no independent demographic signal in retained background context,
+while person-level signal in isolation remains ambiguous under the applied masking protocol; SDv1.5,
+by contrast, distributes demographic signal pervasively across scene context, body geometry, object composition, and linguistic register.
 
 \section{Debiasing Evaluation}
 
@@ -86,8 +69,112 @@ levels. Person-level probing confirms successful conditioning: gender AUC reache
 ${\approx}1.000$ on unmodified images (expected, as labels derive from the generation
 configuration).
 
-Most non-person probes collapse to at or near chance, indicating substantial suppression of person-level demographic cues: mean RGB 0.507, object detection 0.449/0.457, depth at keypoints 0.454, pose keypoints 0.475, captions 0.530 (down 24.1\,pp from the SDv1.5 value of 0.771). Skin tone non-person probes show the same pattern: mean RGB 0.482, object detection 0.439/0.461, depth 0.443, pose 0.483, captions 0.490, all at or near the 10-class chance level of 0.500.
+Most non-person probes collapse to at or near chance, indicating substantial suppression
+of demographic cues in low-level, structural, object-level, and caption-based
+representations: mean RGB 0.507, object detection 0.449/0.457, depth at keypoints
+0.454, pose keypoints 0.475, and captions 0.530, down 24.1\,pp from the SDv1.5 value of
+0.771. Skin tone non-person probes show the same pattern: mean RGB 0.482, object
+detection 0.439/0.461, depth 0.443, pose 0.483, and captions 0.490, all at or near the
+macro-AUC chance level of 0.500.
 
 However, background-retained occlusion (MaskRect) remains highly predictive (gender AUC 0.995; skin tone AUC 0.632), demonstrating that scene-level correlations persist despite debiasing.
 
-The mean RGB skin tone value of 0.482 provides the clearest mechanistic confirmation that Chamfer alignment successfully disrupts photometric spurious correlations. The persistence of MaskRect performance indicates that scene composition remains partially entangled with demographic conditioning even under pose and appearance control, representing the primary open challenge for future work.
+The mean RGB skin tone value of 0.482 provides the clearest mechanistic evidence that
+Chamfer alignment substantially reduces photometric spurious correlations. The persistence of MaskRect performance indicates that scene composition remains
+partially entangled with demographic conditioning even under pose and appearance control,
+representing the primary open challenge for future work.
+
+% OLD EVALUATION
+% \chapter{Evaluation}
+
+% \section{Demographic Distribution Analysis}
+
+% Both datasets exhibit a pronounced male skew across 200 professions, but the imbalance
+% is substantially more severe in SDv1.5. Re-LAION-5B contains 41.5\% female-labelled
+% images (58.5\% male), a 17 percentage point gap relative to parity; SDv1.5 widens this
+% to 42 percentage points with only 29.02\% female images. Against BLS 2024 and ILOSTAT
+% baselines, Re-LAION-5B falls below real-world female proportions relative to US norms
+% while remaining broadly consistent with global workforce proportions in several ISCO
+% groups. SDv1.5 amplifies this skew across nearly every occupational group regardless of
+% baseline, confirming a two-stage bias pattern in which the generative model exacerbates
+% rather than inherits training corpus imbalances. Gender amplification is confirmed in 178
+% of 200 professions, with extreme cases including Logger (97.5\% male), Nurse (97.5\%
+% female), and Receptionist (97.3\% female).
+
+% The skin tone analysis reveals a near-complete collapse of dark-toned representation in
+% generative outputs: the Dark-bin proportion falls from 0.81\% in Re-LAION-5B to 0.14\%
+% in SDv1.5 (83\% reduction), while the Light-bin proportion nearly doubles from 12.45\%
+% to 22.87\%. Skin tone amplification toward lighter tones is confirmed in 175 of 200
+% professions. A real-world comparison was not conducted as the FairFace-derived
+% race-to-skin-tone mapping collapsed all racial groups to the Mid bin.
+
+% \section{Dataset Classification}
+
+% A ConvNeXt-Tiny classifier distinguishes Re-LAION-5B, SDv1.5, and COCO with high
+% accuracy across every transformation, from unmodified images at 99.42\% down to mean RGB
+% at 64.19\%. A consistent discriminating hierarchy emerges: frequency and fine spatial
+% statistics (high-pass 98.64\%, patch shuffle $8{\times}8$ at 97.91\%); structural
+% geometry (depth 96.78\%, Canny edge 93.62\%); dense semantics (segmentation 91.36\%,
+% captions 90.99\%, object detection 88.62\%); and global colour statistics (pixel shuffle
+% 80.67\%, mean RGB 64.19\%). No single transformation eliminates separability, confirming
+% that dataset identity is redundantly encoded across colour, texture, geometry, semantics,
+% and language simultaneously. VAE reconstruction reduces accuracy by only 0.27 percentage
+% points (99.15\% vs.\ 99.42\%), ruling out low-level acquisition artefacts as the dominant
+% signal source. Accuracies substantially exceed the 82.0\% reference reported by Zeng et
+% al.\ for purely web-scraped datasets, consistent with SDv1.5's generative pipeline
+% imposing far greater internal homogeneity than a web-scraped corpus.
+
+% \section{Demographic Artefact Probing}
+
+% The occlusion experiments reveal a fundamental asymmetry. In Re-LAION-5B, all
+% person-hidden variants collapse to chance for both gender and skin tone regardless of
+% whether background is retained, establishing that background context carries no
+% recoverable demographic signal. In SDv1.5, background context is a substantial
+% independent carrier: with the person masked and background retained, gender AUC reaches
+% 0.747 and skin tone AUC 0.728; silhouette alone (MaskSegm NoBg) reaches gender AUC
+% 0.834. This directly replicates and substantially amplifies the contextual artefact
+% identified by Meister et al.
+
+% Beyond occlusion, both datasets exhibit modest signal in non-appearance representations.
+% Mean RGB achieves gender AUC 0.600/0.579 and skin tone AUC 0.563/0.543 (Re-LAION-5B /
+% SDv1.5), consistent with the 0.580 reported by Meister et al.\ on COCO. Pose keypoints
+% achieve gender AUC 0.697/0.680, confirming body configuration differences contribute
+% independently of photometric properties. Object detection reveals gender-stereotyped
+% scene compositions at AUC 0.692 on Re-LAION-5B (0.608 restricted), with the gap
+% narrowing substantially in SDv1.5. Caption probing reveals a cross-dataset reversal
+% absent from all visual probes: Re-LAION-5B achieves gender AUC 0.901 and skin tone AUC
+% 0.749 versus SDv1.5 at 0.771 and 0.673, indicating that web-scraped images carry richer
+% linguistically recoverable associations while SDv1.5 encodes stronger signal in
+% scene-level visual statistics. Together, Re-LAION-5B suggests demographic signal is primarily localised within the person region while SDv1.5 distributes it pervasively across scene context, body
+% geometry, object composition, and linguistic register.
+
+% %\section{Debiasing Evaluation}
+% %
+% %The combined ITI-GEN, ControlNet, and Chamfer colour alignment pipeline produces a
+% %substantive departure from the standard SDv1.5 demographic and spurious feature profile,
+% %achieving the intended 50\% / 50\% gender split and uniform spread across all ten MST
+% %levels. Person-level probing confirms successful conditioning: gender AUC reaches
+% %${\approx}1.000$ on unmodified images (expected, as labels derive from the generation
+% %configuration). Most non-person probes collapse to at or near chance, indicating substantial suppression of person-level demographic cues: mean RGB 0.507, object detection 0.449/0.457, depth at keypoints 0.454, pose keypoints 0.475, captions 0.530 (down 24.1,pp from the SDv1.5 value of 0.771). Skin tone non-person probes show the same pattern: mean RGB 0.482, object detection 0.439/0.461, depth 0.443, pose 0.483, captions 0.490, all at or near the 10-class chance level of 0.500. However, background-retained occlusion (MaskRect) remains highly predictive (gender AUC 0.995; skin tone AUC 0.632), demonstrating that scene-level correlations persist despite debiasing.
+% %The meanRGB skin tone value of 0.482 provides the clearest mechanistic confirmation that Chamfer
+% %alignment disrupts photometric spurious correlations. Residual background-level signal
+% %persists: gender MaskRect AUC 0.995 and skin tone MaskRect 0.632, indicating that scene
+% %composition remains partially entangled with demographic conditioning even under pose and
+% %appearance control, representing the primary open challenge for future work.
+
+
+
+% \section{Debiasing Evaluation}
+
+% The combined ITI-GEN, ControlNet, and Chamfer colour alignment pipeline produces a
+% substantive departure from the standard SDv1.5 demographic and spurious feature profile,
+% achieving the intended 50\% / 50\% gender split and uniform spread across all ten MST
+% levels. Person-level probing confirms successful conditioning: gender AUC reaches
+% ${\approx}1.000$ on unmodified images (expected, as labels derive from the generation
+% configuration).
+
+% Most non-person probes collapse to at or near chance, indicating substantial suppression of person-level demographic cues: mean RGB 0.507, object detection 0.449/0.457, depth at keypoints 0.454, pose keypoints 0.475, captions 0.530 (down 24.1\,pp from the SDv1.5 value of 0.771). Skin tone non-person probes show the same pattern: mean RGB 0.482, object detection 0.439/0.461, depth 0.443, pose 0.483, captions 0.490, all at or near the 10-class chance level of 0.500.
+
+% However, background-retained occlusion (MaskRect) remains highly predictive (gender AUC 0.995; skin tone AUC 0.632), demonstrating that scene-level correlations persist despite debiasing.
+
+% The mean RGB skin tone value of 0.482 provides the clearest mechanistic confirmation that Chamfer alignment successfully disrupts photometric spurious correlations. The persistence of MaskRect performance indicates that scene composition remains partially entangled with demographic conditioning even under pose and appearance control, representing the primary open challenge for future work.
