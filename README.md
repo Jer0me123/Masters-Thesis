@@ -20,7 +20,7 @@ Finally, based on the spurious features identified in the preceding analyses, th
 
 * [Thesis](../main/Masters_Thesis_Write_Up/) - This directory contains the LaTeX source files for the thesis and review paper.
 * [Viva](../main/Viva/) - This directory contains the Viva presentation resources.
-* [1 — CLIP Embedding Creation](../main/1_CLIPEmbeddingCreation/) - Downloads Re-LAION-5B parquet shards, retrieves images, and extracts CLIP (ViT-L/14) embeddings across four shards (~43M images total).
+* [1 — CLIP Embedding Creation](../main/1_ClipEmbeddingsCreation/) - Downloads Re-LAION-5B parquet shards, retrieves images, and extracts CLIP (ViT-L/14) embeddings across four shards (~43M images total).
 * [2 — Image Retrieval](../main/2_ImageRetrieval/) - FAISS-based CLIP similarity search over precomputed embeddings using 200 occupation prompts, with YOLO face/person filtering and MediaPipe FaceMesh segmentation.
 * [3 — Stable Diffusion Image Generation](../main/3_StableDiffusionImageGeneration/) - Stable Diffusion v1.5 + LCM LoRA profession-conditioned image generation with face/person validation.
 * [4 — Dataset Annotation](../main/4_DatasetAnnotation/) - Gender and skin tone annotation of Re-LAION-5B and SD-generated images using the Realistic Gender Classifier and a trained VGG16 MST regression model.
