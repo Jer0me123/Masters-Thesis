@@ -31,13 +31,9 @@ Each subdirectory corresponds to a distinct image transformation type. The scrip
 
 Generates depth map images using Depth-Anything-V2. Depth is normalised to 0–255 and saved as a 3-channel PNG to match classifier input expectations. Supports resumable processing and optional output resizing.
 
-```
-
 ### `DepthAtPosePoints.py`
 
 Combines YOLO pose estimation with Depth-Anything-V2 to extract depth values at each of the 17 COCO skeleton keypoints per person. Outputs a JSONL file with raw and normalised joint depth vectors alongside keypoint coordinates and visibility flags.
-
-```
 
 ---
 
@@ -47,8 +43,6 @@ Combines YOLO pose estimation with Depth-Anything-V2 to extract depth values at 
 
 Generates edge detection images using Canny edge detection and optionally SAM (Segment Anything Model). SAM was evaluated but not used in production due to runtime cost; Canny edges were used as the final transformation.
 
-```
-
 ---
 
 ## `HighLowPassFiltering/`
@@ -56,8 +50,6 @@ Generates edge detection images using Canny edge detection and optionally SAM (S
 ### `HighLowPassFiltering.py`
 
 Applies frequency-domain high-pass and low-pass filtering via 2D FFT following the protocol from the reference paper. Used to measure classifier reliance on low- vs high-frequency visual cues.
-
-```
 
 ---
 

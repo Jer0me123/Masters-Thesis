@@ -18,16 +18,17 @@ Finally, based on the spurious features identified in the preceding analyses, th
 
 ## Repository Content
 
-* [Thesis](../main/Masters_Thesis_Write_Up/) - This directory contains the LaTeX source files for the thesis.
-* [1 — CLIP Embedding Pipeline](../main/1_CLIPEmbeddingPipeline/) - Downloads Re-LAION-5B parquet shards, retrieves images, and extracts CLIP (ViT-L/14) embeddings across four shards (~43M images total).
+* [Thesis](../main/Masters_Thesis_Write_Up/) - This directory contains the LaTeX source files for the thesis and review paper.
+* [Viva](../main/Viva/) - This directory contains the Viva presentation resources.
+* [1 — CLIP Embedding Creation](../main/1_CLIPEmbeddingCreation/) - Downloads Re-LAION-5B parquet shards, retrieves images, and extracts CLIP (ViT-L/14) embeddings across four shards (~43M images total).
 * [2 — Image Retrieval](../main/2_ImageRetrieval/) - FAISS-based CLIP similarity search over precomputed embeddings using 200 occupation prompts, with YOLO face/person filtering and MediaPipe FaceMesh segmentation.
-* [3 — Image Generation](../main/3_ImageGeneration/) - Stable Diffusion v1.5 + LCM LoRA profession-conditioned image generation with face/person validation.
+* [3 — Stable Diffusion Image Generation](../main/3_StableDiffusionImageGeneration/) - Stable Diffusion v1.5 + LCM LoRA profession-conditioned image generation with face/person validation.
 * [4 — Dataset Annotation](../main/4_DatasetAnnotation/) - Gender and skin tone annotation of Re-LAION-5B and SD-generated images using the Realistic Gender Classifier and a trained VGG16 MST regression model.
-* [5 — Spurious Feature Pipeline](../main/5_SpuriousFeature/) - Generates 15 image transformation variants per dataset (depth, edge detection, high/low pass filtering, captioning, object detection, occlusion, pose estimation, semantic segmentation, pixel/patch shuffling, mean RGB, VAE reconstruction).
-* [6 — Debiasing](../main/6_Debiasing/) - ITI-GEN + ControlNet inference-time debiasing using Chamfer colour alignment and Sliced Wasserstein guidance.
+* [5 — Spurious Feature](../main/5_Spurious_Feature/) - Generates 15 image transformation variants per dataset (depth, edge detection, high/low pass filtering, captioning, object detection, occlusion, pose estimation, semantic segmentation, pixel/patch shuffling, mean RGB, VAE reconstruction).
+* [6 — Stable Diffusion Debiasing](../main/6_SDModelDebiasing/) - ITI-GEN + ControlNet inference-time debiasing using Chamfer colour alignment and Sliced Wasserstein guidance.
 * [7 — Dataset Preparation](../main/7_DatasetPreparation/) - Constructs train/val/test splits for spurious feature probe experiments across gender, skin tone, and dataset classification tasks.
-* [8 — Spurious Feature Analysis](../main/8_SpuriousFeatureAnalysis/) - Trains and evaluates spurious feature probes (ConvNeXt-Tiny, ResNet-50, Logistic Regression, MLP, Sentence-T5) and produces all demographic distribution figures and results.
-* [Gender & Skin Tone Proxy](../main/GenderSkinToneProxy/) - Derives real-world gender demographic baselines from US BLS and ILOSTAT data, and establishes a race-to-MST skin tone mapping via FairFace annotation.
+* [8 — Spurious Feature Analysis](../main/8_ClassificationModels/) - Trains and evaluates spurious feature probes (ConvNeXt-Tiny, ResNet-50, Logistic Regression, MLP, Sentence-T5) and produces all demographic distribution figures and results.
+* [9 - Gender & Skin Tone Proxy](../main/9_GenderSkinToneProxy/) - Derives real-world gender demographic baselines from US BLS and ILOSTAT data, and establishes a race-to-MST skin tone mapping via FairFace annotation.
 
 ---
 

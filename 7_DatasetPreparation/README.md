@@ -1,4 +1,4 @@
-This text file outlines the purpose of each .ipynb & .py file in this directory. 
+<!-- This text file outlines the purpose of each .ipynb & .py file in this directory. 
 
 1_CreateSplits.py -> This scripts create the base train/test/validation splits used for model training: UniversalSplits\Professions_125k_ISCO_Aligned_1k_Subset | UniversalSplits\StableDiffusion
 2_CreateObject_OHE_splits.py -> This script converts object detection outputs into fixed-length feature vectors i.e., vector of 1/0s based on if an object apppears in the image or not.
@@ -15,7 +15,7 @@ The code in the above.ipynb & .py has been re-teseted and confirmed to be workin
 
 Furthermore running the relevant notebooks produces the following: 
 
-1. Generates .json files used for training the spuriosu feature identification models
+1. Generates .json files used for training the spuriosu feature identification models -->
 
 # Dataset Preparation Pipeline
 
@@ -42,8 +42,6 @@ The scripts and notebooks in this directory have been re-tested and verified to 
 Creates the base stratified train/val/test splits from annotated JSONL files.
 
 Supports label selection (`gender`, `mst_label`), confidence filtering, face/non-face annotation source selection, and optional class balancing.
-
-```
 
 ---
 
@@ -75,18 +73,13 @@ Updates image paths within split JSON files to reference transformed image varia
 
 Merges two dataset splits into a binary dataset classification split (Re-LAION-5B vs SD). Supports optional class balancing, downsampling, and split membership enforcement via a reference split.
 
-```
-
 ---
 
 ### `7_PseudoDatasetSplitsForDatasetClassification.py`
 
 Assigns arbitrary random dataset labels to existing image splits to serve as a negative control experiment for dataset classification.
 
-Output:
-```
-UniversalSplits\PseudoDatasetClassification\
-```
+Output: UniversalSplits\PseudoDatasetClassification\
 
 ---
 
@@ -94,15 +87,11 @@ UniversalSplits\PseudoDatasetClassification\
 
 Extends binary dataset classification splits with COCO images as a third class, converting the task from binary to multi-class.
 
-```
-
 ---
 
 ### `DebiasedImagesCreateSplits.py`
 
 Generates an `annotations.jsonl` file for the debiased image dataset by parsing gender and MST skin tone labels from the ITI-GEN output folder naming convention.
-
-```
 
 ---
 
@@ -115,5 +104,3 @@ Maps dataset label indices to their corresponding caption JSONL file paths. Used
 ### `openimagesv7_classes_raw.json`
 
 Fixed class list of 601 Open Images v7 object categories used by `2_CreateObject_OHE_Splits.py` to produce consistent one-hot feature vectors.
-
-```

@@ -32,8 +32,6 @@ Functionality:
 - Applies MediaPipe FaceMesh segmentation to each dataset
 - Converts MST labels to 3-bin groupings (Light/Mid/Dark)
 
-```
-
 ---
 
 ### `FacialDetectionEvaluation.ipynb`
@@ -123,15 +121,11 @@ Annotates images with gender and skin tone predictions using the selected produc
 - Gender: Realistic Gender Classifier
 - Skin tone: VGG16 (configurable via CLI)
 
-```
-
 ---
 
 ### `RELaion5B_Subset_Image_Retrieval.py`
 
 Selects the top-N images per profession from the full Re-LAION-5B retrieval results based on CLIP similarity score encoded in the filename. Copies selected images, facemesh crops, and truncates the annotations JSONL to the selected subset.
-
-```
 
 ---
 

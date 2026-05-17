@@ -1,4 +1,4 @@
-This text file outlines the purpose of each .ipynb & .py file in this directory. 
+<!-- This text file outlines the purpose of each .ipynb & .py file in this directory. 
 
 ITI-GEN/ - This directory contains the main debiasing code
     1. ITIGen-ControlNet-ChamferDebiasing_AlignedLikeZeroShot.py & ITIGen-ControlNet-SW-Guidance.py -> These pipelines share identical ITI-GEN and ControlNet conditioning components, differing only in the diffusion sampling strategy and colour alignment mechanism.
@@ -16,7 +16,7 @@ Furthermore running the relevant notebooks produces the following:
 
 1. Generates a training dataset using the CCv2 annotated images -> ITI-GEN\data\CCv2_Gender_benchmark
 2. Trains ITI-GEN debiased models for gender / skintone -> ITI-GEN\ckpts\an_image_of_a_person_CCv2_Gender_CCv2_MSTE_SkinTone
-3. Generated debiased images in terms of gender / skintone / pose / depth / segmentation / colour / objects -> ITI-GEN\outputs\
+3. Generated debiased images in terms of gender / skintone / pose / depth / segmentation / colour / objects -> ITI-GEN\outputs\ -->
 
 
 # Debiasing Pipeline
@@ -45,15 +45,11 @@ Prepares the CCv2 dataset for ITI-GEN training by creating per-label image direc
 
 Reads gender and MST skin tone labels from the CCv2 JSON and creates symlinked image views organised by label, producing the folder structure expected by `train_iti_gen.py`.
 
-```
-
 ---
 
 ### `ITI-GEN/train_iti_gen.py`
 
 Prerequisite training script (from the ITI-GEN repository). Trains ITI-GEN token embeddings for gender and skin tone debiasing using the prepared CCv2 data.
-
-```
 
 ---
 
@@ -78,8 +74,6 @@ Supports ControlNet conditioning types: `pose`, `canny`, `depth`, `seg`.
 ---
 
 Both generation scripts share the same ITI-GEN and ControlNet conditioning components and differ only in the diffusion sampling strategy and colour alignment mechanism.
-
-```
 
 ---
 
