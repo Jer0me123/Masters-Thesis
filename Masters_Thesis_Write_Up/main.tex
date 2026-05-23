@@ -1,4 +1,5 @@
 \documentclass{fict}
+
 \usepackage[backend=biber]{biblatex}
 \addbibresource{references.bib}
 
@@ -8,6 +9,10 @@
 \usepackage{booktabs}
 \usepackage{nicefrac}
 \usepackage{threeparttable}
+
+% Glossaries / acronyms
+% The fict class already loads glossaries with [acronym].
+\makeglossaries
 
 \input{content/glossary}
 \input{content/acronyms}
@@ -20,49 +25,121 @@ Insights into Large-Scale Image Dataset Assessment}
 \titledate{May 2026}
 
 \begin{document}
+
+% Force all double-page clears to behave as normal page clears.
+% This prevents blank verso pages in the front matter.
+\let\cleardoublepage\clearpage
+
 \frontmatter{}
 \pagestyle{pageNumbersOnly}
 
 \input{content/title.tex}
 \input{content/abstract.tex}
- \input{content/acknowledgements.tex}
- \clearpage{}
+\clearpage
 
- \tableofcontents{}
- \addcontentsline{toc}{chapter}{Contents}
- \clearpage{}
+\input{content/acknowledgements.tex}
+\clearpage
 
- \listoffigures{}
- \addcontentsline{toc}{chapter}{List of Figures}
- \clearpage{}
+\tableofcontents
+\clearpage
 
- \listoftables{}
- \addcontentsline{toc}{chapter}{List of Tables}
- \clearpage{}
+\listoffigures
+\clearpage
 
-%\glsaddall
-\printglossary[type=\acronymtype,nonumberlist,title=List of Abbreviations]
- \addcontentsline{toc}{chapter}{List of Abbreviations}
- \clearpage{}
+\listoftables
 
-% \printglossary[nonumberlist,title=Glossary of Symbols]
-% \addcontentsline{toc}{chapter}{Glossary of Symbols}
-% \clearpage{}
+% List of Abbreviations
+\glsaddall[types=\acronymtype]
+\printglossary[
+    type=\acronymtype,
+    nonumberlist,
+    title={List of Abbreviations}
+]
+\clearpage
 
- \mainmatter{}
- \pagestyle{MainMatter}
+\mainmatter{}
+\pagestyle{MainMatter}
 
- \input{content/chapters/1_introduction/introduction.tex}
- \input{content/chapters/2_background/background.tex}
- \input{content/chapters/3_methodology/methodology.tex}
- \input{content/chapters/4_evaluation/evaluation.tex}
- \input{content/chapters/5_conclusion_future_work/future_work.tex}
+\input{content/chapters/1_introduction/introduction.tex}
+\input{content/chapters/2_background/background.tex}
+\input{content/chapters/3_methodology/methodology.tex}
+\input{content/chapters/4_evaluation/evaluation.tex}
+\input{content/chapters/5_conclusion_future_work/future_work.tex}
 
- \printbibliography[title=References]
+\printbibliography[title=References]
 
- \appendix{}
+\appendix{}
 
- \input{content/appendices/appendix_a.tex}
- \input{content/appendices/appendix_b.tex}
+\input{content/appendices/appendix_a.tex}
+\input{content/appendices/appendix_b.tex}
 
 \end{document}
+
+% \documentclass{fict}
+% \usepackage[backend=biber]{biblatex}
+% \addbibresource{references.bib}
+
+% \usepackage{amsmath}
+% \usepackage{amssymb}
+% \usepackage{amsthm}
+% \usepackage{booktabs}
+% \usepackage{nicefrac}
+% \usepackage{threeparttable}
+
+% \input{content/glossary}
+% \input{content/acronyms}
+
+% \title{Evaluating the Quality of the LAION-2B Dataset:
+% Insights into Large-Scale Image Dataset Assessment}
+% \author{Jerome Agius}
+% \supervisor{Dr Dylan Seychell}
+% \degreename{Master of Science in Artificial Intelligence [Taught and Research (Mainly by Research)] (M.Sc.(Melit.))}
+% \titledate{May 2026}
+
+% \begin{document}
+% \frontmatter{}
+% \pagestyle{pageNumbersOnly}
+
+% \input{content/title.tex}
+% \input{content/abstract.tex}
+%  \input{content/acknowledgements.tex}
+%  \clearpage{}
+
+%  \tableofcontents{}
+%  \addcontentsline{toc}{chapter}{Contents}
+%  \clearpage{}
+
+%  \listoffigures{}
+%  \addcontentsline{toc}{chapter}{List of Figures}
+%  \clearpage{}
+
+%  \listoftables{}
+%  \addcontentsline{toc}{chapter}{List of Tables}
+%  \clearpage{}
+
+% \glsaddall
+% \printglossary[type=\acronymtype,nonumberlist,title=List of Abbreviations]
+%  \addcontentsline{toc}{chapter}{List of Abbreviations}
+%  \clearpage{}
+
+% % \printglossary[nonumberlist,title=Glossary of Symbols]
+% % \addcontentsline{toc}{chapter}{Glossary of Symbols}
+% % \clearpage{}
+
+%  \mainmatter{}
+%  \pagestyle{MainMatter}
+
+%  \input{content/chapters/1_introduction/introduction.tex}
+%  \input{content/chapters/2_background/background.tex}
+%  \input{content/chapters/3_methodology/methodology.tex}
+%  \input{content/chapters/4_evaluation/evaluation.tex}
+%  \input{content/chapters/5_conclusion_future_work/future_work.tex}
+
+%  \printbibliography[title=References]
+
+%  \appendix{}
+
+%  \input{content/appendices/appendix_a.tex}
+%  \input{content/appendices/appendix_b.tex}
+
+% \end{document}
