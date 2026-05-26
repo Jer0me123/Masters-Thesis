@@ -1,4 +1,4 @@
-\chapter{Introduction}
+\section{Introduction}
 
 Text-to-image diffusion models, Stable Diffusion v1.5 (SDv1.5)~\cite{Rombach_2022_CVPR}
 in particular, have achieved widespread deployment while relying on massive web-scraped
@@ -26,31 +26,3 @@ occupational representation comparison against real-world statistics;
 (\textit{O4})~inference-time debiasing of SDv1.5; and (\textit{O5})~synthesis of how
 spurious features and demographic biases are transformed by the SDv1.5 generative
 process.
-
-
-% OLD INTRO
-% \chapter{Introduction}
-
-% Text-to-image diffusion models, Stable Diffusion~\cite{Rombach_2022_CVPR} in
-% particular, have achieved widespread deployment while relying on massive web-scraped
-% corpora such as Re-LAION-5B~\cite{Schuhmann_2022_Laion5b}, whose automated construction
-% introduces systematic biases that reflect societal
-% inequities~\cite{Birhane_2021_MultiModalDatasetsMisogynyPornography}. Existing research
-% documents demographic bias in generative
-% outputs~\cite{Luccioni_2023_AnalyzingSocietalRepresentationsDiffusionModels,
-% Bianchi_2023_TTIGenAmplifiesDemographicStereotypes} but treats models as black boxes,
-% ignoring the \emph{spurious features} — low-level non-semantic characteristics such as
-% colour statistics, texture, and edge distributions — that correlate with demographic
-% attributes and enable biased
-% shortcuts~\cite{Meister_2023_GenderArtifactsinVisualDatasets,
-% Zeng_2024_UnderstandingBiasinLargeScaleVisualDatasets}. This thesis addresses this gaps
-% through a mechanistic investigation of spurious features in Re-LAION-5B and SDv1.5,
-% applying established methodologies to expose low-level features that distinguish dataset
-% sources and correlate with demographic attributes, then evaluating targeted
-% inference-time interventions without model retraining. Five objectives structure the
-% work: (\textit{O1})~dataset acquisition and annotation across 200 ISCO-08-aligned
-% occupations; (\textit{O2})~spurious feature detection via classifier-based
-% transformation analysis; (\textit{O3})~demographic correlation assessment against
-% real-world statistics; (\textit{O4})~inference-time debiasing of SDv1.5; and
-% (\textit{O5})~synthesis of how training data biases propagate through the generative
-% process.
